@@ -1,0 +1,116 @@
+$nav-icon-tabs-link-active-bg : #ececfc;
+$nav-icon-tabs-border-color : #f0f0f0;
+
+.tab-icon-list-view{
+    overflow: hidden;
+    @include scroll-x();
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    .nav-item{
+        color: $light;
+        font-size: .875rem;
+        @include border-radius(.3125rem);
+        &:hover{
+            color: $primary;
+        }
+        &.active{
+            background-color: $nav-icon-tabs-link-active-bg;
+            color: $primary;
+        }
+
+    }
+
+    .tab-box-content{
+        padding: 1.25rem;
+    }
+
+}
+
+.tab-icon-view{
+    @extend .tab-icon-list-view;
+    .nav-item{
+        min-width: 6.25rem;
+        text-align: center;
+        position: relative;
+        padding: .6rem .875rem;
+        text-transform: capitalize;
+        [class^="icon-"]{
+            font-size: 1.5rem;
+        }
+        @include media-breakpoint-up(lg){
+            margin: 0 .625rem;
+            font-size: .8125rem;
+            padding: 1rem;
+            min-width: 6.25rem;
+            & + .nav-item {
+                &::before{
+                    content:"";
+                    position: absolute;
+                    left: -.625rem;
+                    top: 1.375rem;
+                    bottom: 1.375rem;
+                    border: 1px solid #f0f0f0;
+                }
+            }
+        }
+    }
+}
+
+.nav-pills{
+    .nav-item{
+        &:not(:disabled):not(.disabled).active{
+            background-color: transparent;
+            border: 1px solid $info;
+            color: $primary;
+        }
+        border: 1px solid transparent;
+    }
+}
+
+
+//required for Tab Flex container 
+.tab-content>.active{
+    &.tab-main-content{
+        @extend .main-content;
+        flex-direction: column;
+    }
+}
+
+.tab-content-wrapper{
+    @media (min-width:1024px){
+        display: flex;
+
+    }
+    @media (max-width:1023px){
+        .tab-data{
+            display: none;
+            max-width: 100%;
+            &.active{
+                display: flex;
+                flex: 1 1 100%;
+                flex-direction: column;
+                &.card-purpose{
+                    display: block;
+                    flex: 0 0 auto;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:1024px){
+    #nav-goal.tab-data{
+        display: flex;
+        flex: 1 1 100%;
+        flex-direction: column;
+    }
+}
+
+.tab-pane{
+    .calendar-view{
+        display: none;
+    }
+}
+
+

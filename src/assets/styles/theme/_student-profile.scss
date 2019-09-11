@@ -1,0 +1,10 @@
+$student-profile-theme : #433197;
+
+.student-theme{
+    .left-nav-wrapper{
+        background-color: $student-profile-theme;
+    }
+    .btn-primary{
+        background-color: $student-profile-theme;
+    }
+}

@@ -1,0 +1,15 @@
+.progress-bar{
+    @include border-radius(.3125rem);
+
+    //.progress-current & {
+    //    width: 50%
+    //}
+    //.progress-history & {
+    //    width: 100%;
+    //}
+    //.progress-future &{
+    //    width:0;
+    //
+    //}
+
+}

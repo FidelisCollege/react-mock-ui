@@ -1,0 +1,25 @@
+.recently-access-head{
+    font-size: 18px;
+    color:$primary;
+    line-height: 1.2;
+    text-transform: capitalize;
+}
+.acessed-list-item{
+ font-size: 14px;
+    overflow-y: scroll;
+    position: relative;
+    height: 789px;
+    .list-group-item{
+        color:$secondary;
+        padding-left:0;
+        .link{
+            color:$secondary;
+            &:hover{
+                color:$primary;
+            }
+        }
+    }
+}
+.min-height-100{
+   min-height: 100%;
+}

@@ -1,0 +1,23 @@
+$breadcrumb-item-color: $light !default;
+
+.breadcrumb {
+    .breadcrumb-item {
+        font-size: .875rem;
+        font-weight: 400;
+        a{
+            color: $breadcrumb-item-color;
+        }
+        //&:first-child {
+        //    @include f-b();
+        //}
+        //&.active {
+        //    color: $white;
+        //}
+        //+ .breadcrumb-item {
+        //    &:before {
+        //        content: '>';
+        //        color: $white;
+        //    }
+        //}
+    }
+}
