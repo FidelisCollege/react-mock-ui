@@ -8,7 +8,7 @@ class NavBarComponent extends React.Component<RouteComponentProps, any> {
     render() {
         return (
             <header>
-                <nav className="navbar navbar-expand bg-white">
+                <nav className="navbar navbar-expand bg-white position-relative position-md-static" >
                     <span className="d-lg-none header-icon-menu mr-3 cursor-pointer" id="menu">
                         <i className="icon-menu" />
                     </span>

@@ -1,0 +1,38 @@
+.left-navs{
+  left: 0;
+  box-shadow: $box-shadow;
+}
+.navs-list{
+  padding: 40px 20px;
+  .navs-list-items{
+    padding: 10px 0;
+    .nav-link{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &.completed{
+        color:$primary;
+
+
+      }
+      &.active{
+        border: 1px solid $primary;
+        border-radius: $border-radius;
+        color: $primary;
+        .nav-list-icons{
+          display: none;
+        }
+      }
+    }
+
+  }
+  .nav-list-icons{
+    margin-left:20px;
+  }
+}
+.left-nav-responsive{
+  position: absolute;
+  top:0;
+  bottom:0;
+  z-index:1;
+}
