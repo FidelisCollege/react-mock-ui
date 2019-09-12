@@ -4,6 +4,7 @@ import {OnBoardingTabs} from "../Models/onBoardingModel";
 import ProfileImageComponent from "./profileImageComponent";
 import WelcomeComponent from "./welcomeScreenComponent";
 import OnboardNavResponsive from "./leftNavResponsive";
+import InterestComponent from "./interestComponent";
 
 export interface OnBoardingState {
     activeTabName: OnBoardingTabs;
@@ -27,10 +28,11 @@ class OnBoardingContainer extends React.Component<any, OnBoardingState> {
         return (
             <main className="d-flex flex-grow-1 onboard-wrapper">
                 <OnboardNav onTabClick={this.onTabClick} activeTab={this.state.activeTabName}/>
-                <OnboardNavResponsive onTabClick={this.onTabClick} activeTab={this.state.activeTabName}/>
-                <section className="flex-grow-1 bg-white">
+                {/*<OnboardNavResponsive onTabClick={this.onTabClick} activeTab={this.state.activeTabName}/>*/}
+                <section className="flex-grow-1  m-0">
                     {activeTabName === OnBoardingTabs.WELCOME && <WelcomeComponent/>}
                     {activeTabName === OnBoardingTabs.PROFILE && <ProfileImageComponent/>}
+                    {activeTabName === OnBoardingTabs.INTEREST && <InterestComponent/>}
 
                 </section>
             </main>
