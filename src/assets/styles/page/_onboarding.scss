@@ -1,6 +1,16 @@
+.onboard-wrapper{
+  margin:60px 153px;
+  box-shadow: $box-shadow;
+  border-radius: $border-radius;
+  .onboard-wrapper-content{
+    padding: 153px 104px;
+    text-align: center;
+  }
+}
 .left-navs{
   left: 0;
   box-shadow: $box-shadow;
+  z-index: 1;
 }
 .navs-list{
   padding: 40px 20px;

@@ -25,10 +25,10 @@ class OnBoardingContainer extends React.Component<any, OnBoardingState> {
         const {activeTabName} = this.state;
 
         return (
-            <main className="d-flex flex-grow-1">
+            <main className="d-flex flex-grow-1 onboard-wrapper">
                 <OnboardNav onTabClick={this.onTabClick} activeTab={this.state.activeTabName}/>
                 <OnboardNavResponsive onTabClick={this.onTabClick} activeTab={this.state.activeTabName}/>
-                <section className="flex-grow-1">
+                <section className="flex-grow-1 bg-white">
                     {activeTabName === OnBoardingTabs.WELCOME && <WelcomeComponent/>}
                     {activeTabName === OnBoardingTabs.PROFILE && <ProfileImageComponent/>}
 
