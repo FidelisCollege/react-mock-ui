@@ -5,6 +5,7 @@ import ProfileImageComponent from "./profileImageComponent";
 import WelcomeComponent from "./welcomeScreenComponent";
 import OnboardNavResponsive from "./leftNavResponsive";
 import InterestComponent from "./interestComponent";
+import ProffessionalComponent from "./proffessionalComponent";
 
 export interface OnBoardingState {
     activeTabName: OnBoardingTabs;
@@ -33,6 +34,7 @@ class OnBoardingContainer extends React.Component<any, OnBoardingState> {
                     {activeTabName === OnBoardingTabs.WELCOME && <WelcomeComponent/>}
                     {activeTabName === OnBoardingTabs.PROFILE && <ProfileImageComponent/>}
                     {activeTabName === OnBoardingTabs.INTEREST && <InterestComponent/>}
+                    {activeTabName === OnBoardingTabs.PROFESSIONAL && <ProffessionalComponent/>}
 
                 </section>
             </main>

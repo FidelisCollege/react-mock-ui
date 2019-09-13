@@ -75,3 +75,23 @@ $badge-bg: #f5f5fa;
   padding: 10px 12px;
   border-radius:10px;
 }
+
+//proffessional
+
+.proffessional-wrapper{
+  padding-right:30px;
+  padding-left:30px;
+  border-right: 1px solid $input-border-color;
+  @media (max-width: 576px) {
+    border-right: 0;
+    padding-right:0;
+  }
+}
+.proffessional-wrapper-right{
+  padding-left:30px;
+  @media (max-width: 576px) {
+
+    padding-left:0;
+  }
+
+}
