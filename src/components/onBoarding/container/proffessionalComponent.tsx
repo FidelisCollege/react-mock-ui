@@ -23,7 +23,7 @@ const ProffessionalComponent = () => {
                         </div>
                     </div>
                 </div>
-                <div className="mt-5">
+                <div className="mt-2 mt-md-5">
                     <button type="button" className="btn btn-primary text-capitalize btn-lg f-16"> continue </button>
                 </div>
             </div>
