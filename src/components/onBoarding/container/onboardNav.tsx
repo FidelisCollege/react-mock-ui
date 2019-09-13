@@ -11,7 +11,7 @@ const OnboardNav = (props: OnBoardNavProps) => {
         const {onTabClick, activeTab} = props;
 
         return (
-            <div className="left-navs bg-white d-none d-md-block">
+            <div className="left-navs bg-white d-none d-md-block rounded-left">
                 <Nav vertical className="navs-list bg-md-white flex-grow-1">
                     <NavItem className="navs-list-items text-capitalize" onClick={() => onTabClick(OnBoardingTabs.WELCOME)}>
                         <NavLink href="#" className={"nav-link completed" + (activeTab === OnBoardingTabs.WELCOME ? " active" : "")}>{OnBoardingTabs.WELCOME}
