@@ -1,4 +1,5 @@
 $onboard-content: #ccc;
+$badge-bg: #f5f5fa;
 
 
 .onboard-wrapper{
@@ -60,7 +61,17 @@ $onboard-content: #ccc;
 }
 .onboard-heading{
   color: $gray-eight;
+  font-size: 24px;
 }
 .onboard-paragraph{
    color: $onboard-content;
+}
+
+//interest
+
+.interest-badge{
+  background-color: $badge-bg;
+  border: 1px solid $secondary;
+  padding: 10px 12px;
+  border-radius:10px;
 }
