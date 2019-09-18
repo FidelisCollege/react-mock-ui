@@ -1,0 +1,40 @@
+$add-mentor-bg: #f5f6ff;
+
+.tab-buttons{
+  border-radius: 4px !important;
+}
+.invite-mentor-btn{
+  &:hover{
+    color: $primary;
+  }
+  &:focus{
+    color: $primary;
+  }
+}
+.mentor-card{
+  width:147px ;
+  padding:18px;
+
+}
+.add-mentor-card{
+  min-height: 244px;
+  border: 1px dotted $border-color
+}
+.add-mentor{
+  width:60px;
+  height:60px;
+  border-radius: 50%;
+  background-color: $add-mentor-bg;
+  font-size: 18px;
+}
+.img-wrapper{
+  max-width: 78px;
+  min-height: 78px;
+  border-radius: 50%;
+  border: 1px solid $primary;
+}
+
+
+
+
+
