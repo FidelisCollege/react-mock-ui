@@ -12,13 +12,14 @@ $add-mentor-bg: #f5f6ff;
   }
 }
 .mentor-card{
-  width:147px ;
+  //width:147px ;
   padding:18px;
+  cursor: pointer;
 
 }
 .add-mentor-card{
-  min-height: 244px;
-  border: 1px dotted $border-color
+  min-height: 254px;
+  border: 1px dashed $border-color
 }
 .add-mentor{
   width:60px;
@@ -32,6 +33,26 @@ $add-mentor-bg: #f5f6ff;
   min-height: 78px;
   border-radius: 50%;
   border: 1px solid $primary;
+}
+.profile-button{
+  background-color: $add-mentor-bg;
+  border-radius: $border-radius;
+}
+.icons-recommend{
+  .icon-info-filled{
+    display: none;
+  }
+  &:hover{
+      .icon-info{
+        display: none;
+      }
+      .icon-info-filled{
+        display: block;
+      }
+  }
+}
+.view-all-card{
+  max-width: 174px;
 }
 
 

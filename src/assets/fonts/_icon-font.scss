@@ -126,278 +126,284 @@ $char: "\E01C";
 @if $filename == dot-menu {
 $char: "\E01D";
 }
-@if $filename == down-arrow {
+@if $filename == dots {
 $char: "\E01E";
 }
-@if $filename == download {
+@if $filename == down-arrow {
 $char: "\E01F";
 }
-@if $filename == drafts {
+@if $filename == download {
 $char: "\E020";
 }
-@if $filename == dropdown {
+@if $filename == drafts {
 $char: "\E021";
 }
-@if $filename == edit-1 {
+@if $filename == dropdown {
 $char: "\E022";
 }
-@if $filename == edit {
+@if $filename == edit-1 {
 $char: "\E023";
 }
-@if $filename == error {
+@if $filename == edit {
 $char: "\E024";
 }
-@if $filename == export {
+@if $filename == error {
 $char: "\E025";
 }
-@if $filename == flag {
+@if $filename == export {
 $char: "\E026";
 }
-@if $filename == goal {
+@if $filename == flag {
 $char: "\E027";
 }
-@if $filename == google {
+@if $filename == goal {
 $char: "\E028";
 }
-@if $filename == graduation {
+@if $filename == google {
 $char: "\E029";
 }
-@if $filename == group-add {
+@if $filename == graduation {
 $char: "\E02A";
 }
-@if $filename == group-nav {
+@if $filename == group-add {
 $char: "\E02B";
 }
-@if $filename == group {
+@if $filename == group-nav {
 $char: "\E02C";
 }
-@if $filename == hand-big {
+@if $filename == group {
 $char: "\E02D";
 }
-@if $filename == help {
+@if $filename == hand-big {
 $char: "\E02E";
 }
-@if $filename == home {
+@if $filename == help {
 $char: "\E02F";
 }
-@if $filename == icon-add {
+@if $filename == home {
 $char: "\E030";
 }
-@if $filename == identity {
+@if $filename == icon-add {
 $char: "\E031";
 }
-@if $filename == image {
+@if $filename == identity {
 $char: "\E032";
 }
-@if $filename == inbox {
+@if $filename == image {
 $char: "\E033";
 }
-@if $filename == info {
+@if $filename == inbox {
 $char: "\E034";
 }
-@if $filename == insert-chart {
+@if $filename == info-filled {
 $char: "\E035";
 }
-@if $filename == keyboard-backspace {
+@if $filename == info {
 $char: "\E036";
 }
-@if $filename == left-arrow {
+@if $filename == insert-chart {
 $char: "\E037";
 }
-@if $filename == like {
+@if $filename == keyboard-backspace {
 $char: "\E038";
 }
-@if $filename == list-view {
+@if $filename == left-arrow {
 $char: "\E039";
 }
-@if $filename == list {
+@if $filename == like {
 $char: "\E03A";
 }
-@if $filename == live-help {
+@if $filename == list-view {
 $char: "\E03B";
 }
-@if $filename == lock {
+@if $filename == list {
 $char: "\E03C";
 }
-@if $filename == logo {
+@if $filename == live-help {
 $char: "\E03D";
 }
-@if $filename == logout {
+@if $filename == lock {
 $char: "\E03E";
 }
-@if $filename == mail {
+@if $filename == logo {
 $char: "\E03F";
 }
-@if $filename == manage-user {
+@if $filename == logout {
 $char: "\E040";
 }
-@if $filename == map-view {
+@if $filename == mail {
 $char: "\E041";
 }
-@if $filename == media {
+@if $filename == manage-user {
 $char: "\E042";
 }
-@if $filename == menu {
+@if $filename == map-view {
 $char: "\E043";
 }
-@if $filename == message-big {
+@if $filename == media {
 $char: "\E044";
 }
-@if $filename == message {
+@if $filename == menu {
 $char: "\E045";
 }
-@if $filename == meter {
+@if $filename == message-big {
 $char: "\E046";
 }
-@if $filename == minus {
+@if $filename == message {
 $char: "\E047";
 }
-@if $filename == more-horiz {
+@if $filename == meter {
 $char: "\E048";
 }
-@if $filename == network {
+@if $filename == minus {
 $char: "\E049";
 }
-@if $filename == notifications {
+@if $filename == more-horiz {
 $char: "\E04A";
 }
-@if $filename == open-new-window {
+@if $filename == network {
 $char: "\E04B";
 }
-@if $filename == outline-pan-tool {
+@if $filename == notifications {
 $char: "\E04C";
 }
-@if $filename == pan-tool {
+@if $filename == open-new-window {
 $char: "\E04D";
 }
-@if $filename == pause {
+@if $filename == outline-pan-tool {
 $char: "\E04E";
 }
-@if $filename == pdf {
+@if $filename == pan-tool {
 $char: "\E04F";
 }
-@if $filename == person-add {
+@if $filename == pause {
 $char: "\E050";
 }
-@if $filename == picture-as {
+@if $filename == pdf {
 $char: "\E051";
 }
-@if $filename == private {
+@if $filename == person-add {
 $char: "\E052";
 }
-@if $filename == reload {
+@if $filename == picture-as {
 $char: "\E053";
 }
-@if $filename == reports {
+@if $filename == pin {
 $char: "\E054";
 }
-@if $filename == restart {
+@if $filename == private {
 $char: "\E055";
 }
-@if $filename == resume {
+@if $filename == reload {
 $char: "\E056";
 }
-@if $filename == right-arrow {
+@if $filename == reports {
 $char: "\E057";
 }
-@if $filename == save {
+@if $filename == restart {
 $char: "\E058";
 }
-@if $filename == search {
+@if $filename == resume {
 $char: "\E059";
 }
-@if $filename == setting-coloured {
+@if $filename == right-arrow {
 $char: "\E05A";
 }
-@if $filename == setting-manage {
+@if $filename == save {
 $char: "\E05B";
 }
-@if $filename == settings {
+@if $filename == search {
 $char: "\E05C";
 }
-@if $filename == show-password {
+@if $filename == setting-coloured {
 $char: "\E05D";
 }
-@if $filename == smartphone {
+@if $filename == setting-manage {
 $char: "\E05E";
 }
-@if $filename == sms-big {
+@if $filename == settings {
 $char: "\E05F";
 }
-@if $filename == sort-ascending {
+@if $filename == show-password {
 $char: "\E060";
 }
-@if $filename == sort-descending {
+@if $filename == smartphone {
 $char: "\E061";
 }
-@if $filename == star-filled {
+@if $filename == sms-big {
 $char: "\E062";
 }
-@if $filename == star {
+@if $filename == sort-ascending {
 $char: "\E063";
 }
-@if $filename == status-error {
+@if $filename == sort-descending {
 $char: "\E064";
 }
-@if $filename == status-offline {
+@if $filename == star-filled {
 $char: "\E065";
 }
-@if $filename == status-online {
+@if $filename == star {
 $char: "\E066";
 }
-@if $filename == status-restarting {
+@if $filename == status-error {
 $char: "\E067";
 }
-@if $filename == status-standby {
+@if $filename == status-offline {
 $char: "\E068";
 }
-@if $filename == super {
+@if $filename == status-online {
 $char: "\E069";
 }
-@if $filename == support {
+@if $filename == status-restarting {
 $char: "\E06A";
 }
-@if $filename == swap-horiz {
+@if $filename == status-standby {
 $char: "\E06B";
 }
-@if $filename == system {
+@if $filename == super {
 $char: "\E06C";
 }
-@if $filename == table-view {
+@if $filename == support {
 $char: "\E06D";
 }
-@if $filename == textsms {
+@if $filename == swap-horiz {
 $char: "\E06E";
 }
-@if $filename == time {
+@if $filename == system {
 $char: "\E06F";
 }
-@if $filename == tools {
+@if $filename == table-view {
 $char: "\E070";
 }
-@if $filename == trash {
+@if $filename == textsms {
 $char: "\E071";
 }
-@if $filename == up-arrow {
+@if $filename == time {
 $char: "\E072";
 }
-@if $filename == up {
+@if $filename == tools {
 $char: "\E073";
 }
-@if $filename == user-group {
+@if $filename == trash {
 $char: "\E074";
 }
-@if $filename == user {
+@if $filename == up-arrow {
 $char: "\E075";
 }
-@if $filename == visibility {
+@if $filename == up {
 $char: "\E076";
 }
-@if $filename == warning {
+@if $filename == user-group {
 $char: "\E077";
 }
-@if $filename == zip {
+@if $filename == user {
 $char: "\E078";
+}
+@if $filename == visibility {
+$char: "\E079";
+}
+@if $filename == warning {
+$char: "\E07A";
 }
 
 @return $char;
@@ -788,6 +794,19 @@ $char: "\E078";
    @include icon(dot-menu);
 }
 
+.icon-dots{
+  &:before {
+   @include icon(dots);
+  }
+}
+
+
+
+@mixin icon-dots {
+   @extend %icon;
+   @include icon(dots);
+}
+
 .icon-down-arrow{
   &:before {
    @include icon(down-arrow);
@@ -1072,6 +1091,19 @@ $char: "\E078";
 @mixin icon-inbox {
    @extend %icon;
    @include icon(inbox);
+}
+
+.icon-info-filled{
+  &:before {
+   @include icon(info-filled);
+  }
+}
+
+
+
+@mixin icon-info-filled {
+   @extend %icon;
+   @include icon(info-filled);
 }
 
 .icon-info{
@@ -1462,6 +1494,19 @@ $char: "\E078";
 @mixin icon-picture-as {
    @extend %icon;
    @include icon(picture-as);
+}
+
+.icon-pin{
+  &:before {
+   @include icon(pin);
+  }
+}
+
+
+
+@mixin icon-pin {
+   @extend %icon;
+   @include icon(pin);
 }
 
 .icon-private{
@@ -1956,18 +2001,5 @@ $char: "\E078";
 @mixin icon-warning {
    @extend %icon;
    @include icon(warning);
-}
-
-.icon-zip{
-  &:before {
-   @include icon(zip);
-  }
-}
-
-
-
-@mixin icon-zip {
-   @extend %icon;
-   @include icon(zip);
 }
 

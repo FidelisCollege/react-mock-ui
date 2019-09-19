@@ -1,8 +1,33 @@
 import * as React from 'react';
-import { TabContent, TabPane, Nav, NavItem, NavLink, Card, Button, CardTitle, CardText, Row, Col } from 'reactstrap';
+import {Button, Col, Nav, NavItem, NavLink, Row, TabContent, TabPane} from 'reactstrap';
 import DefaultMentorCard from "./mentorDefaultCards";
-import RequestMentorCard from "./requestMentorCard";
 import AddMentorCard from "./addmentorCard";
+import RecommendMentorTooltip from "./recommendTooltip";
+
+import {MentorTypes} from "./models/mentorModel";
+import ViewMentorCard from "../viewAllCard";
+
+const MentorData = {
+    name: "Robert Watson",
+    title:"Creative Lead",
+    text:"ThinQbator Inc."
+}
+
+const RecommendedMentorData = [{
+    name: "Robert Watson",
+    title:"Creative Lead",
+    text:"ThinQbator Inc."
+},
+    {
+        name: "Robert Watson",
+        title:"Creative Lead",
+        text:"ThinQbator Inc."
+    },
+    {
+        name: "Robert Watson",
+        title:"Creative Lead",
+        text:"ThinQbator Inc."
+    }]
 
 const MentortabComponent = () => {
     const [activeTab, setActiveTab] = React.useState('1');
@@ -43,24 +68,30 @@ const MentortabComponent = () => {
                 </Nav>
             </header>
 
-            <TabContent className="h-100" activeTab={activeTab}>
+            <TabContent className="h-100 overflow-auto" activeTab={activeTab}>
                 <TabPane tabId="1">
-                    <Row>
-                        <Col md="6">
-                        <DefaultMentorCard/>
+                    <Row className="py-3">
+                        <Col xs="12" md="5">
+                            <DefaultMentorCard mentorType={MentorTypes.DEFAULT} {...MentorData}/>
                         </Col>
-                        <Col md="6">
-                            <DefaultMentorCard/>
+                        <Col xs="12" md="5">
+                            <AddMentorCard/>
                         </Col>
-                        <Col md="6">
-                            <DefaultMentorCard/>
-                        </Col>
-                        <Col md="6">
-                            <DefaultMentorCard/>
-                        </Col>
-                        <AddMentorCard/>
-                        {/*<RequestMentorCard/>*/}
                     </Row>
+                    <div>
+                        <div  className="pb-2 d-flex border-bottom align-items-center">
+                            <h2 className="mb-0">Recommended Mentors</h2>
+                            <RecommendMentorTooltip />
+                        </div>
+                        <Row className="py-3">
+                            {RecommendedMentorData.map(data =>{
+                                return <Col xs="12" md="5">
+                                    <DefaultMentorCard mentorType={MentorTypes.RECOMMENDED} {...data}/>
+                                </Col>
+                            })}
+                            <ViewMentorCard/>
+                        </Row>
+                    </div>
                 </TabPane>
                 <TabPane tabId="2">
                     <Row>

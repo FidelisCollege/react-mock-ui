@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #3b4499;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="on_hover" data-name="on hover" class="cls-1" d="M524,414h2v2h-2v-2Zm0,4h2v6h-2v-6Zm1-9a10,10,0,1,0,10,10A10,10,0,0,0,525,409Z" transform="translate(-515 -409)"/>
+</svg>

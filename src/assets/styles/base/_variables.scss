@@ -616,11 +616,11 @@ $alert-color:                       #ffffff;
 
 //tooltip
 //$tooltip-font-size:                 $font-size-sm !default;
-$tooltip-max-width:                 200px !default;
+$tooltip-max-width:                 284px !default;
 $tooltip-color:                     $white !default;
 $tooltip-bg:                        $primary;
 $tooltip-border-radius:             $border-radius !default;
-//$tooltip-opacity:                   .9 !default;
+$tooltip-opacity:                   1 !default;
 $tooltip-padding-y:                 .25rem !default;
 $tooltip-padding-x:                 .5rem !default;
 $tooltip-margin:                    0 !default;
@@ -631,14 +631,14 @@ $tooltip-arrow-color:               $tooltip-bg !default;
 // Popovers
 // Tooltips
 
-//$tooltip-font-size:                 $font-size-sm !default;
+$tooltip-font-size:                 13px !default;
 $tooltip-max-width:                 200px !default;
 $tooltip-color:                     $white !default;
 $tooltip-bg:                        $primary !default;
 $tooltip-border-radius:             $border-radius !default;
-$tooltip-opacity:                   .9 !default;
-$tooltip-padding-y:                 .25rem !default;
-$tooltip-padding-x:                 .5rem !default;
+//$tooltip-opacity:                   .9 !default;
+$tooltip-padding-y:                 1.2rem !default;
+$tooltip-padding-x:                 1.2rem !default;
 $tooltip-margin:                    0 !default;
 
 $tooltip-arrow-width:               .8rem !default;
