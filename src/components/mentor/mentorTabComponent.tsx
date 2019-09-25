@@ -45,7 +45,7 @@ const MentortabComponent = () => {
                     <div className="d-flex">
                         <NavItem className="mr-3">
                             <NavLink
-                                className={"tab-buttons btn btn-primary text-capitalize" + (activeTab === '1' ? ' active ' : '')}
+                                className={"tab-buttons text-capitalize" + (activeTab === '1' ? ' active ' : '')}
                                 onClick={() => toggle('1')}
                             >
                                 mentors
