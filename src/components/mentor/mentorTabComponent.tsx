@@ -1,35 +1,42 @@
 import * as React from 'react';
-import {Button, Col, Nav, NavItem, NavLink, Row, TabContent, TabPane} from 'reactstrap';
+import { Button, Col, Nav, NavItem, NavLink, Row, TabContent, TabPane } from 'reactstrap';
 import DefaultMentorCard from "./mentorDefaultCards";
 import AddMentorCard from "./addmentorCard";
 import RecommendMentorTooltip from "./recommendTooltip";
 
-import {MentorTypes} from "./models/mentorModel";
+import { MentorTypes } from "./models/mentorModel";
 import ViewMentorCard from "../viewAllCard";
+import { withRouter, RouterProps } from 'react-router';
+import { RouteUrls } from '../routes/routesConfig';
 
 const MentorData = {
     name: "Robert Watson",
-    title:"Creative Lead",
-    text:"ThinQbator Inc."
+    title: "Creative Lead",
+    text: "ThinQbator Inc."
 }
 
 const RecommendedMentorData = [{
     name: "Robert Watson",
-    title:"Creative Lead",
-    text:"ThinQbator Inc."
+    title: "Creative Lead",
+    text: "ThinQbator Inc."
 },
-    {
-        name: "Robert Watson",
-        title:"Creative Lead",
-        text:"ThinQbator Inc."
-    },
-    {
-        name: "Robert Watson",
-        title:"Creative Lead",
-        text:"ThinQbator Inc."
-    }]
+{
+    name: "Robert Watson",
+    title: "Creative Lead",
+    text: "ThinQbator Inc."
+},
+{
+    name: "Robert Watson",
+    title: "Creative Lead",
+    text: "ThinQbator Inc."
+}]
 
-const MentortabComponent = () => {
+export interface MentortabProps extends RouterProps {
+
+}
+
+const MentortabComponent = (props: MentortabProps) => {
+    const { history } = props;
     const [activeTab, setActiveTab] = React.useState('1');
 
     const toggle = (tab) => {
@@ -72,24 +79,24 @@ const MentortabComponent = () => {
                 <TabPane tabId="1">
                     <Row className="py-3">
                         <Col xs="12" md="5">
-                            <DefaultMentorCard mentorType={MentorTypes.DEFAULT} {...MentorData}/>
+                            <DefaultMentorCard mentorType={MentorTypes.DEFAULT} {...MentorData} />
                         </Col>
-                        <Col xs="12" md="5">
-                            <AddMentorCard/>
+                        <Col xs="12" md="5" onClick={() => history.push(RouteUrls.MENTOR_PROFILE)}>
+                            <AddMentorCard />
                         </Col>
                     </Row>
                     <div>
-                        <div  className="pb-2 d-flex border-bottom align-items-center">
+                        <div className="pb-2 d-flex border-bottom align-items-center">
                             <h2 className="mb-0">Recommended Mentors</h2>
                             <RecommendMentorTooltip />
                         </div>
                         <Row className="py-3">
-                            {RecommendedMentorData.map(data =>{
+                            {RecommendedMentorData.map(data => {
                                 return <Col xs="12" md="5">
-                                    <DefaultMentorCard mentorType={MentorTypes.RECOMMENDED} {...data}/>
+                                    <DefaultMentorCard mentorType={MentorTypes.RECOMMENDED} {...data} />
                                 </Col>
                             })}
-                            <ViewMentorCard/>
+                            <ViewMentorCard />
                         </Row>
                     </div>
                 </TabPane>
@@ -106,4 +113,4 @@ const MentortabComponent = () => {
 }
 
 
-export default MentortabComponent;
+export default withRouter(MentortabComponent);
