@@ -81,7 +81,7 @@ const MentortabComponent = (props: MentortabProps) => {
                         <Col xs="12" md="5">
                             <DefaultMentorCard mentorType={MentorTypes.DEFAULT} {...MentorData} />
                         </Col>
-                        <Col xs="12" md="5" onClick={() => history.push(RouteUrls.MENTOR_PROFILE)}>
+                        <Col xs="12" md="5" onClick={() => history.push(RouteUrls.MENTOR_ADVANCE_SEARCH)}>
                             <AddMentorCard />
                         </Col>
                     </Row>

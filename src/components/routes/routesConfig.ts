@@ -1,10 +1,11 @@
 import { RouteConfigInterface } from './model';
 import OnBoardingContainer from '../onBoarding/container/onBoardingContainer';
 import AdvanceSearch from "../mentor/advanceSearch";
+import AddMentorSearch from "../mentor/addmentorSearch";
 
 export enum RouteUrls {
     MENTOR = '/mentor',
-    MENTOR_PROFILE = '/mentor-profile'
+    MENTOR_ADVANCE_SEARCH = '/advance-search'
 }
 
 export const routes: RouteConfigInterface[] = [
@@ -19,8 +20,8 @@ export const routes: RouteConfigInterface[] = [
         childRoutes: []
     },
     {
-        path: RouteUrls.MENTOR_PROFILE,
-        component: OnBoardingContainer,
+        path: RouteUrls.MENTOR_ADVANCE_SEARCH,
+        component: AddMentorSearch,
         childRoutes: []
     },
 ]

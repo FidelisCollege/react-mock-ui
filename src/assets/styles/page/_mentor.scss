@@ -1,4 +1,6 @@
 $add-mentor-bg: #f5f6ff;
+$dropdown-border-color: #ddd;
+
 
 .tab-buttons{
   border-radius: 4px !important;
@@ -54,6 +56,63 @@ $add-mentor-bg: #f5f6ff;
 .view-all-card{
   max-width: 174px;
 }
+
+
+/*advance-search mentor*/
+.advance-search-input{
+  padding: 5px 10px;
+  max-width: 330px;
+  .advance-search-link{
+    border-left: 1px solid $input-border-color;
+    padding: 5px 15px;
+  }
+}
+.dropdown-toggle::after{
+  border: 0;
+}
+.dropdown-menu-save-search {
+    width: 240px;
+    .drop-down-items {
+      font-size: 14px;
+
+      .saved-search-name {
+        border-right: 1px solid $dropdown-border-color;
+
+      }
+
+    }
+}
+.btn-outline-primary{
+    background-color: $white;
+    color: $primary;
+    &:hover{
+      background-color: $primary;
+      color: $white;
+
+    }
+
+}
+.search-filters{
+  background-color: $badge-bg;
+  padding: 6px 14px;
+  border-radius: $border-radius;
+  font-size: 13px;
+
+
+}
+.dropdown-menu-advance-search{
+    width: 627px;
+  .advance-search-name{
+    font-size: 14px;
+
+  }
+  .search-dropdown{
+      border: 1px solid $dropdown-border-color;
+      border-radius: $border-radius;
+      padding: 6px;
+  }
+}
+
 
 
 
