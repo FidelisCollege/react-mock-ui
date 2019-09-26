@@ -2,9 +2,16 @@ import * as React from 'react';
 import SavedSearchDropdown from "../dropdown/savedSearch";
 import AdvanceSearch from "./advanceSearch";
 import AdvancedSearchDropdown from "../dropdown/advanced-search";
+import RandomComponent from './random';
 
 
 const AddMentorSearch = () => {
+    const [isOpen, setIsOpen] = React.useState(false);
+
+    const openModal = (id: number) => {
+        setIsOpen(!isOpen);
+    }
+
     return (
         <div className="inner-container min-height-0 p-lg-3">
             <div className="d-flex flex-grow-1 tab-content-wrapper min-height-0 justify-content-between">
@@ -16,10 +23,10 @@ const AddMentorSearch = () => {
                             <AdvancedSearchDropdown/>
                         </div>
 
-                        <SavedSearchDropdown/>
+                        <SavedSearchDropdown openModal={openModal}/>
                     </div>
 
-
+                    <RandomComponent isOpen={isOpen}></RandomComponent>
                 </div>
                     <div className="flex-column main-content tab-data right-column bg-primary">
                 </div>

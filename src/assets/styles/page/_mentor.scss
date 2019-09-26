@@ -102,19 +102,66 @@ $dropdown-border-color: #ddd;
 }
 .dropdown-menu-advance-search{
     width: 627px;
+  @media (max-width: 576px) {
+    width: auto;
+  }
   .advance-search-name{
     font-size: 14px;
 
   }
   .search-dropdown{
-      border: 1px solid $dropdown-border-color;
+      /*border: 1px solid $dropdown-border-color;*/
       border-radius: $border-radius;
-      padding: 6px;
+      /*padding: 6px;*/
+      width: 100%;
   }
+}
+.css-2b097c-container{
+  width: 100%;
+}
+.css-yk16xz-control {
+    border: 0;
 }
 
 
-
-
+.css-1okebmr-indicatorSeparator{
+  width:0 !important;
+}
+.css-1rhbuit-multiValue{
+  background-color: $badge-bg !important;
+  padding: 6px 14px !important;
+  border-radius: $border-radius !important;
+  font-size: 13px !important;
+  color: $primary;
+}
+.css-1pahdxg-control{
+  border-width: 1px !important;
+  box-shadow: 0 0 0 1px $input-border-color !important;
+  border-color: $input-border-color !important;
+  &:hover{
+    box-shadow: 0 0 0 1px $input-border-color !important;
+    border-width: 0px;
+    border-color: $input-border-color !important;
+  }
+}
+.css-12jo7m5{
+  color: $primary !important;
+  font-size: 13px;
+}
+.css-1alnv5e{
+  &:hover{
+     background-color: $primary !important;
+     color: $white !important;
+  }
+}
+.css-1hwfws3{
+    padding: 0 !important;
+}
+.css-tj5bde-Svg{
+   color: $primary;
+}
+.save-search-button{
+    padding: 10px 37px;
+}
 
 
