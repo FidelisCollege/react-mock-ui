@@ -5,6 +5,7 @@ import MentortabComponent from "./mentorTabComponent";
 import AddMentorSearch from "./addmentorSearch";
 import {MentorTabNames} from "./helper/helpers";
 
+
 export default class MentorTab extends React.Component <{},any> {
     constructor(props) {
         super(props);
@@ -32,9 +33,9 @@ export default class MentorTab extends React.Component <{},any> {
         const {activeMainTab} = this.state;
 
         return (
-            <div>
-                <div className="px-2 border-bottom d-lg-none">
-                    <div className="nav nav-tabs tab-icon-list-view custom-tabs py-2" id="nav-tab" role="tablist">
+            <div className="border-bottom d-lg-none d-flex flex-grow-1 tab-content-wrapper min-height-0">
+                <div className=" d-lg-none">
+                    <div className="nav nav-tabs tab-icon-list-view custom-tabs py-2 border-bottom" id="nav-tab" role="tablist">
                         <a className={"nav-item nav-link" + (activeMainTab === MentorTabNames.COACH ? " active" : "")} onClick={() => this.onSelectMainTab(MentorTabNames.COACH)} id="nav-goal-tab" data-toggle="tab" href="#" role="tab" aria-controls="nav-goal" aria-selected="true">
                             <span className="title">{MentorTabNames.COACH}</span>
                         </a>
@@ -48,23 +49,21 @@ export default class MentorTab extends React.Component <{},any> {
                             <span className="title">{MentorTabNames.COMMUNITIES}</span>
                         </a>
                     </div>
-                </div>
 
-
-
-                <div className="inner-container min-height-0 p-lg-3 px-3">
-                    <div className="d-flex flex-grow-1 tab-content-wrapper min-height-0">
-                        <div className={`list-team tab-data ${activeMainTab === MentorTabNames.COACH ? " active" : ""} left-column`} id="nav-coach">
-                            Coach Component
-                        </div>
-                        <div className={`student-details tab-data ${activeMainTab === MentorTabNames.MENTORS ? " active" : ""} px-lg-3`} id="nav-mentor">
-                            <MentortabComponent/>
-                        </div>
-                        <div className={`student-details tab-data ${activeMainTab === MentorTabNames.MENTEES ? " active" : ""} px-lg-3`} id="nav-mentees">
-                            1
-                        </div>
-                        <div className={`student-details tab-data ${activeMainTab === MentorTabNames.COMMUNITIES ? " active" : ""} px-lg-3`} id="nav-communities">
-                            1
+                    <div className="inner-container min-height-0 p-lg-3 px-3">
+                        <div className="d-flex flex-grow-1 tab-content-wrapper min-height-0">
+                            <div className={`list-team tab-data ${activeMainTab === MentorTabNames.COACH ? " active" : ""} left-column`} id="nav-coach">
+                                Coach Component
+                            </div>
+                            <div className={`student-details tab-data ${activeMainTab === MentorTabNames.MENTORS ? " active" : ""} px-lg-3`} id="nav-mentor">
+                                <MentortabComponent/>
+                            </div>
+                            <div className={`student-details tab-data ${activeMainTab === MentorTabNames.MENTEES ? " active" : ""} px-lg-3`} id="nav-mentees">
+                                1
+                            </div>
+                            <div className={`student-details tab-data ${activeMainTab === MentorTabNames.COMMUNITIES ? " active" : ""} px-lg-3`} id="nav-communities">
+                                1
+                            </div>
                         </div>
                     </div>
                 </div>

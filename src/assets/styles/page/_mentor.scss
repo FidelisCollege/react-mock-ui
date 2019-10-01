@@ -21,7 +21,10 @@ $dropdown-border-color: #ddd;
 }
 .add-mentor-card{
   min-height: 254px;
-  border: 1px dashed $border-color
+  border: 1px dashed $border-color;
+  @media (max-width: 576px){
+    min-height: auto;
+  }
 }
 .add-mentor{
   width:60px;
@@ -239,4 +242,60 @@ $dropdown-border-color: #ddd;
     }
 
 }
+.mentor-tab-wrapper{
+  @media (max-width: 576px){
+    height: 500px;
+  }
+}
+.chat-wrapper{
+  bottom:0;
+  right:0;
+  background-color: $primary;
+  color: $white;
+  display: flex;
+  @media (max-width: 576px){
+      background-color: transparent;
 
+  }
+}
+.badge-choose-function{
+    padding:10px 14px;
+    background-color: $add-mentor-bg;
+    border-radius: $border-radius;
+}
+.choose-function-heading{
+  @media (max-width: 576px){
+    border-bottom: 0 !important;
+  }
+}
+.functions-list{
+  padding-left: 0;
+  .custom-checkbox {
+      &.active {
+        .custom-control-label {
+          color: $dark;
+        }
+      }
+  }
+}
+.modal .modal-dialog .modal-content{
+  border-radius: $border-radius !important;
+}
+.edit-advance-search{
+  @media (max-width: 576px) {
+    .modal-content {
+      flex-direction: column;
+      background-color: transparent;
+    }
+  }
+}
+.saved-edit-search{
+  .modal-content{
+    width: 377px;
+  }
+  @media (max-width: 576px) {
+    .modal-content{
+
+    }
+  }
+}

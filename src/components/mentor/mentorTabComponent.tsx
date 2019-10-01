@@ -76,13 +76,13 @@ const MentortabComponent = (props: MentortabProps) => {
                 </Nav>
             </header>
 
-            <TabContent className="h-100 overflow-auto" activeTab={activeTab}>
+            <TabContent className="overflow-auto mentor-tab-wrapper" activeTab={activeTab}>
                 <TabPane tabId="1">
                     <Row className="py-3">
-                        <Col xs="12" md="6">
+                        <Col xs="12" md="6" className="d-none d-md-block">
                             <DefaultMentorCard mentorType={MentorTypes.DEFAULT} {...MentorData} />
                         </Col>
-                        <Col xs="12" md="6" onClick={() => history.push(RouteUrls.MENTOR_ADVANCE_SEARCH)}>
+                        <Col xs="" md="6" onClick={() => history.push(RouteUrls.MENTOR_ADVANCE_SEARCH)}>
                             <AddMentorCard />
                         </Col>
                     </Row>
@@ -111,7 +111,22 @@ const MentortabComponent = (props: MentortabProps) => {
                     </Row>
                 </TabPane>
             </TabContent>
+            <div className="bg-md-primary position-fixed chat-wrapper px-4 py-2 rounded-top">
+                <div className="d-md-flex d-none">
+                    <div className="mr-5">
+                        <h2 className="mb-0 text-white f-16">Christopher Puckey</h2>
+                        <p className="mb-0 text-white f-13">Mentoring manager</p>
+                    </div>
+                    <a href="#" type="button" className="btn bg-white text-primary  rounded px-3 py-2 text-capitalize">ask</a>
+                </div>
+                <a href="#" type="button" className="btn bg-primary text-white rounded px-3 py-3 text-capitalize  rounded px-2 py-3 text-capitalize chat-wrapper d-md-none">ask</a>
+            </div>
+            <button className="d-lg-none btn-block-custom">
+                <i className="icon-add mr-2"></i>Add New Goal
+            </button>
+
         </div>
+
     );
 }
 
