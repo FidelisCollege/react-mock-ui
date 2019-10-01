@@ -14,7 +14,7 @@ const MentorNotification = (props: MentorNotificationCardProps) => {
         <div>
             <h3 className="card-title text-light d-flex justify-content-between text-capitalize border-0">notification</h3>
             <Card className="mentor-card card-shadow text-center d-flex align-items-center border-0 cursor-pointer mb-2">
-                <CardImg src="images/avatar100.png" className="img-wrapper"/>
+                <CardImg src="images/media-img.png" className="img-wrapper"/>
                 <CardBody className="p-0">
                     <CardImg top width="100%" src="/assets/256x186.svg" alt="Card image cap">{image}</CardImg>
                     <CardSubtitle className="text-light f-14">{title}</CardSubtitle>

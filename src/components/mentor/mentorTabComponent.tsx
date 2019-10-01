@@ -8,6 +8,7 @@ import { MentorTypes } from "./models/mentorModel";
 import ViewMentorCard from "../viewAllCard";
 import { withRouter, RouterProps } from 'react-router';
 import { RouteUrls } from '../routes/routesConfig';
+import MentorTab from "./mentorTab";
 
 const MentorData = {
     name: "Robert Watson",
@@ -47,8 +48,8 @@ const MentortabComponent = (props: MentortabProps) => {
 
     return (
         <div className="h-100">
-            <header className="border-bottom pb-3">
-                <Nav pills className="d-flex justify-content-between align-items-center">
+            <header className="border-md-bottom pb-md-3">
+                <Nav pills className="d-flex justify-content-between align-items-center py-2">
                     <div className="d-flex">
                         <NavItem className="mr-3">
                             <NavLink
@@ -67,8 +68,8 @@ const MentortabComponent = (props: MentortabProps) => {
                             </NavLink>
                         </NavItem>
                     </div>
-                    <div className="">
-                        <Button className="btn btn-outline-primary bg-white invite-mentor-btn py-2 px-4">
+                    <div className="d-none d-md-block">
+                        <Button className="btn btn-outline-primary bg-white invite-mentor-btn py-md-2 px-md-4">
                             <i className="icon-add mr-2"></i>
                             Invite Mentor</Button>
                     </div>
@@ -78,10 +79,10 @@ const MentortabComponent = (props: MentortabProps) => {
             <TabContent className="h-100 overflow-auto" activeTab={activeTab}>
                 <TabPane tabId="1">
                     <Row className="py-3">
-                        <Col xs="12" md="5">
+                        <Col xs="12" md="6">
                             <DefaultMentorCard mentorType={MentorTypes.DEFAULT} {...MentorData} />
                         </Col>
-                        <Col xs="12" md="5" onClick={() => history.push(RouteUrls.MENTOR_ADVANCE_SEARCH)}>
+                        <Col xs="12" md="6" onClick={() => history.push(RouteUrls.MENTOR_ADVANCE_SEARCH)}>
                             <AddMentorCard />
                         </Col>
                     </Row>
@@ -91,12 +92,14 @@ const MentortabComponent = (props: MentortabProps) => {
                             <RecommendMentorTooltip />
                         </div>
                         <Row className="py-3">
-                            {RecommendedMentorData.map(data => {
-                                return <Col xs="12" md="5">
+                            {RecommendedMentorData.map((data, index) => {
+                                return <Col xs="12" sm="6" key={index}>
                                     <DefaultMentorCard mentorType={MentorTypes.RECOMMENDED} {...data} />
                                 </Col>
                             })}
-                            <ViewMentorCard />
+                            <Col xs="12" sm="6">
+                                <ViewMentorCard />
+                            </Col>
                         </Row>
                     </div>
                 </TabPane>

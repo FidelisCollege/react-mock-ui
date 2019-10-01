@@ -57,11 +57,38 @@ $dropdown-border-color: #ddd;
   max-width: 174px;
 }
 
-
+.dropdown-btn{
+  @media (max-width: 576px){
+    padding: 0;
+  }
+}
 /*advance-search mentor*/
 .advance-search-input{
   padding: 5px 10px;
   max-width: 330px;
+
+  @media (max-width: 576px) {
+      max-width: 155px;
+      padding-right: 0;
+      //padding:0;
+      input::placeholder{
+        color: transparent;
+      }
+      .search-input-group > .form-control{
+        padding:0;
+      }
+    input{
+      padding-top:0;
+      padding-bottom:0;
+    }
+    .advance-search-button{
+      display: none;
+    }
+    .advance-search-icon{
+        display: block;
+    }
+
+  }
   .advance-search-link{
     border-left: 1px solid $input-border-color;
     padding: 5px 15px;
@@ -102,9 +129,12 @@ $dropdown-border-color: #ddd;
 }
 .dropdown-menu-advance-search{
     width: 627px;
-  @media (max-width: 576px) {
-    width: auto;
-  }
+    margin-left: -234px !important;
+    @media (max-width: 576px) {
+        width: 341px;
+        margin-left: -119px !important;
+        right:0;
+    }
   .advance-search-name{
     font-size: 14px;
 
@@ -114,6 +144,12 @@ $dropdown-border-color: #ddd;
       border-radius: $border-radius;
       /*padding: 6px;*/
       width: 100%;
+  }
+}
+.save-search-menu{
+  @media (max-width: 576px) {
+      margin-left: -116px;
+
   }
 }
 .css-2b097c-container{
@@ -146,11 +182,11 @@ $dropdown-border-color: #ddd;
 }
 .css-12jo7m5{
   color: $primary !important;
-  font-size: 13px;
+  font-size: 13px !important;
 }
 .css-1alnv5e{
   &:hover{
-     background-color: $primary !important;
+     /*background-color: $primary !important;*/
      color: $white !important;
   }
 }
@@ -160,8 +196,47 @@ $dropdown-border-color: #ddd;
 .css-tj5bde-Svg{
    color: $primary;
 }
-.save-search-button{
-    padding: 10px 37px;
+.css-yk16xz-control{
+  border-color:$dropdown-border-color !important;
 }
 
+
+.edit-saved-search{
+  .modal-content{
+    flex-direction: row;
+    @media (max-width: 576px){
+      flex-direction: column;
+      background-color: transparent;
+    }
+  }
+  .nav-link{
+    padding:10px 14px;
+    border: 1px solid transparent;
+    box-shadow: none !important;
+    &.active{
+      border: 1px solid $info;
+      border-radius: $border-radius;
+      color: $primary !important;
+    }
+    &:hover{
+      box-shadow: none;
+      border-color: $info;
+      color: $primary !important;
+
+    }
+  }
+  .search-input-group{
+    width: 50%;
+    @media (max-width: 576px){
+      width: 100%;
+    }
+  }
+}
+.function-select-dropdown{
+    option{
+        background-color: $white;
+        color:  $primary;;
+    }
+
+}
 
