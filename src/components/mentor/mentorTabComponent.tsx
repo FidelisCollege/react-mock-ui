@@ -9,6 +9,8 @@ import ViewMentorCard from "../viewAllCard";
 import { withRouter, RouterProps } from 'react-router';
 import { RouteUrls } from '../routes/routesConfig';
 import MentorTab from "./mentorTab";
+import RequestTab from "./requeststab";
+import RequestMentorChat from "./chatTab";
 
 const MentorData = {
     name: "Robert Watson",
@@ -48,7 +50,7 @@ const MentortabComponent = (props: MentortabProps) => {
 
     return (
         <div className="h-100">
-            <header className="border-md-bottom pb-md-3">
+            <header className="border-bottom pb-md-3">
                 <Nav pills className="d-flex justify-content-between align-items-center py-2">
                     <div className="d-flex">
                         <NavItem className="mr-3">
@@ -104,26 +106,16 @@ const MentortabComponent = (props: MentortabProps) => {
                     </div>
                 </TabPane>
                 <TabPane tabId="2">
-                    <Row>
-                        <Col sm="12">
-                            <h4>Tab 1 Contents</h4>
-                        </Col>
-                    </Row>
+                    <RequestTab/>
                 </TabPane>
+                <button className="d-lg-none btn-block-custom add-mentor-button">
+                    <i className="icon-add mr-2"></i>Add mentor
+                </button>
             </TabContent>
-            <div className="bg-md-primary position-fixed chat-wrapper px-4 py-2 rounded-top">
-                <div className="d-md-flex d-none">
-                    <div className="mr-5">
-                        <h2 className="mb-0 text-white f-16">Christopher Puckey</h2>
-                        <p className="mb-0 text-white f-13">Mentoring manager</p>
-                    </div>
-                    <a href="#" type="button" className="btn bg-white text-primary  rounded px-3 py-2 text-capitalize">ask</a>
-                </div>
-                <a href="#" type="button" className="btn bg-primary text-white rounded px-3 py-3 text-capitalize  rounded px-2 py-3 text-capitalize chat-wrapper d-md-none">ask</a>
-            </div>
-            <button className="d-lg-none btn-block-custom">
-                <i className="icon-add mr-2"></i>Add New Goal
-            </button>
+            <RequestMentorChat/>
+
+
+
 
         </div>
 

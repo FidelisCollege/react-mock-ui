@@ -24,6 +24,10 @@ $dropdown-border-color: #ddd;
   border: 1px dashed $border-color;
   @media (max-width: 576px){
     min-height: auto;
+    height: 90px;
+    overflow: hidden;
+    padding:10px;
+    box-sizing: content-box;
   }
 }
 .add-mentor{
@@ -32,6 +36,10 @@ $dropdown-border-color: #ddd;
   border-radius: 50%;
   background-color: $add-mentor-bg;
   font-size: 18px;
+  @media (max-width: 576px){
+    width:40px;
+    height: 40px;
+  }
 }
 .img-wrapper{
   max-width: 78px;
@@ -248,8 +256,8 @@ $dropdown-border-color: #ddd;
   }
 }
 .chat-wrapper{
-  bottom:0;
-  right:0;
+  bottom:40px;
+  right: 0;
   background-color: $primary;
   color: $white;
   display: flex;
@@ -298,4 +306,20 @@ $dropdown-border-color: #ddd;
 
     }
   }
+}
+.request-tab-list{
+  .tab-action-button{
+      padding: 5px;
+
+  }
+  .media-img{
+      border-radius: 50%;
+  }
+}
+.add-mentor-button{
+  position: fixed;
+  bottom:0;
+  right:0;
+  left:0;
+
 }
