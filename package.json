@@ -34,6 +34,7 @@
   "devDependencies": {
     "@babel/core": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
+    "@svgr/webpack": "^4.3.3",
     "@types/axios": "^0.14.0",
     "@types/react": "^16.8.18",
     "@types/react-dom": "^16.8.4",
@@ -72,6 +73,8 @@
     "node-sass": "^4.12.0",
     "postcss-loader": "^2.0.6",
     "precss": "^4.0.0",
+    "react-icon-system": "^1.0.4",
+    "react-icons": "^3.5.0",
     "sass-flex-mixin": "1.0.3",
     "sass-loader": "^6.0.6",
     "sass-rem": "2.0.1",

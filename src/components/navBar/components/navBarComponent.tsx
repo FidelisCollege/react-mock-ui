@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { withRouter, RouteComponentProps } from 'react-router';
 import { Link } from 'react-router-dom';
+import NavBarprogressbarComponent from "../../mentor/profile-update-progressbar";
 
 // export interface NavBarProps extends RouteComponentProps { }
 
@@ -17,6 +18,7 @@ class NavBarComponent extends React.Component<RouteComponentProps, any> {
                     </Link>
                     <div className="d-flex align-items-center justify-content-end justify-content-sm-between flex-grow-1">
                         <div className="d-flex align-items-center" />
+                        <NavBarprogressbarComponent/>
                         <div className="d-flex align-items-center">
                             <div className="search-input-group mr-3" id="searchBox">
                                 <input className="form-control" type="text" placeholder="Search" />

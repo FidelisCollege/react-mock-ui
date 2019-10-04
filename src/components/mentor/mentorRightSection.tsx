@@ -1,7 +1,11 @@
 import * as React from 'react';
 import ProfileUpdate from "./profileUpdateComponent";
-import MentorRecommendation from "./recommenndationsCard";
+import MentorResources from "./recommenndationsCard";
 import MentorNotifications from "./notificationCard";
+import {RouteUrls} from "../routes/routesConfig";
+import AddMentorCard from "./mentorTabComponent";
+import {Col} from "reactstrap";
+
 
 
 const MentorRightSection = () => {
@@ -13,8 +17,8 @@ const MentorRightSection = () => {
                 </div>
             </div>
             <div className="card border-0 card-purpose tab-data d-none d-lg-block mt-3">
-                <div className="card-body card-shadow px-3">
-                    <MentorRecommendation />
+                <div className="card-body card-shadow px-3" >
+                    <MentorResources />
                 </div>
             </div>
             <div className="card border-0 card-purpose tab-data d-none d-lg-block mt-3">
