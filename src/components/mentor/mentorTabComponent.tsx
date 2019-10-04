@@ -49,7 +49,7 @@ const MentortabComponent = (props: MentortabProps) => {
     }
 
     return (
-        <div className="h-100">
+        <div className="d-flex flex-column h-100">
             <header className="border-bottom pb-md-3">
                 <Nav pills className="d-flex justify-content-between align-items-center py-2">
                     <div className="d-flex">
@@ -71,14 +71,14 @@ const MentortabComponent = (props: MentortabProps) => {
                         </NavItem>
                     </div>
                     <div className="d-none d-md-block">
-                        <Button className="btn btn-outline-primary bg-white invite-mentor-btn py-md-2 px-md-4">
+                        <Button className="btn btn-outline-primary invite-mentor-btn py-md-2 px-md-4">
                             <i className="icon-add mr-2"></i>
                             Invite Mentor</Button>
                     </div>
                 </Nav>
             </header>
 
-            <TabContent className="overflow-auto mentor-tab-wrapper" activeTab={activeTab}>
+            <TabContent className="overflow-auto mentor-tab-wrapper pt-2 pb-5 flex-grow-1" activeTab={activeTab}>
                 <TabPane tabId="1">
                     <Row className="py-3">
                         <Col xs="12" md="6" className="d-none d-md-block">

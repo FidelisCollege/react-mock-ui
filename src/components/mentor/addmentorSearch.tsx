@@ -65,7 +65,7 @@ const AddMentorSearch =(props: MentortabProps) => {
     return (
         <>
             <div className="inner-container min-height-0 d-md-block p-lg-3">
-                <div className="d-flex flex-grow-1 tab-content-wrapper min-height-0 justify-content-between">
+                <div className="d-flex flex-grow-1 tab-content-wrapper min-height-0 justify-content-between h-100">
                     <div className="list-team tab-data left-column bg-primary"></div>
 
                     <div className="px-3 w-100">
