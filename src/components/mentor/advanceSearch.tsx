@@ -8,14 +8,14 @@ import DefaultMentorCard from "./mentorDefaultCards";
 import MentortabComponent from "./mentorTabComponent";
 import {withRouter} from "react-router";
 
-const AdvanceSearch = () => {
+const Dashboard = () => {
     return (
         <main className="dashboard-container student-profile">
 
                 <div className="border-bottom d-lg-none d-flex flex-grow-1 tab-content-wrapper min-height-0">
                     <MentorTab/>
                 </div>
-                <div className="inner-container min-height-0 d-none d-md-block p-lg-3">
+                <div className="inner-container min-height-0 p-lg-3">
                     <div className="d-flex flex-grow-1 tab-content-wrapper min-height-0">
                         <div className="left-column bg-primary d-none d-md-block"></div>
                         <div className="student-details tab-data active px-3 w-100">
@@ -32,4 +32,4 @@ const AdvanceSearch = () => {
         );
     }
 
-export default (AdvanceSearch);
+export default (Dashboard);

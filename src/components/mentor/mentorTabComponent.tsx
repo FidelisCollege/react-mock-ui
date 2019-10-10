@@ -11,6 +11,7 @@ import { RouteUrls } from '../routes/routesConfig';
 import MentorTab from "./mentorTab";
 import RequestTab from "./requeststab";
 import RequestMentorChat from "./chatTab";
+import {IconAdd} from "../../common";
 
 const MentorData = {
     name: "Robert Watson",
@@ -50,7 +51,7 @@ const MentortabComponent = (props: MentortabProps) => {
 
     return (
         <div className="d-flex flex-column h-100">
-            <header className="border-bottom pb-md-3">
+            <header className="border-bottom pb-md-2">
                 <Nav pills className="d-flex justify-content-between align-items-center py-2">
                     <div className="d-flex">
                         <NavItem className="mr-3">

@@ -3,11 +3,12 @@ import OnBoardingContainer from '../onBoarding/container/onBoardingContainer';
 import AdvanceSearch from "../mentor/advanceSearch";
 import AddMentorSearch from "../mentor/addmentorSearch";
 import Resources from "../mentor/resourceTab";
+import CommunityDashboard from "../community/CommunityDashboard";
 
 export enum RouteUrls {
     MENTOR = '/mentor',
     MENTOR_ADVANCE_SEARCH = '/advance-search',
-    RESOURCES_SEARCH = '/resources'
+    COMMUNITY_DASHBOARD = '/community'
 }
 
 export const routes: RouteConfigInterface[] = [
@@ -27,8 +28,8 @@ export const routes: RouteConfigInterface[] = [
         childRoutes: []
     },
     {
-        path: RouteUrls.RESOURCES_SEARCH,
-        component: Resources,
+        path: RouteUrls.COMMUNITY_DASHBOARD,
+        component: CommunityDashboard,
         childRoutes: []
     }
 ]

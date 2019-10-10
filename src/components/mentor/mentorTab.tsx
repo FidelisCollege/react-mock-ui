@@ -4,9 +4,12 @@ import classnames from 'classnames';
 import MentortabComponent from "./mentorTabComponent";
 import AddMentorSearch from "./addmentorSearch";
 import {MentorTabNames} from "./helper/helpers";
+import CommunityDasboard from "../community/CommunityDashboard";
+import CommunityDashboard from "../community/CommunityDashboard";
 
 
-export default class MentorTab extends React.Component <{},any> {
+
+export default class TabComponents extends React.Component <{},any> {
     constructor(props) {
         super(props);
 
@@ -62,7 +65,7 @@ export default class MentorTab extends React.Component <{},any> {
                                 1
                             </div>
                             <div className={`student-details tab-data ${activeMainTab === MentorTabNames.COMMUNITIES ? " active" : ""} px-lg-3`} id="nav-communities">
-                                1
+                                <CommunityDashboard/>
                             </div>
                         </div>
                     </div>

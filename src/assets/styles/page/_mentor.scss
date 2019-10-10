@@ -4,7 +4,20 @@ $dropdown-border-color: #ddd;
 
 .tab-buttons{
   border-radius: 4px !important;
+  font-size: 14px;
+  @media (max-width: 576px){
+    background-color: $white !important;
+    color: $primary !important;
+    border: 1px solid $primary !important;
+    padding: 6px 10px;
+    &.active{
+      color: $primary !important;
+    }
+
+
+  }
 }
+
 .invite-mentor-btn{
   &:hover{
     color: $primary;
