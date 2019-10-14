@@ -20,7 +20,7 @@ const CommunityCard  = (props: CommunityCardProps) => {
                 <CardImg src="images/media-img.png" className="community-card-image"/>
                 <p className="mb-0 text-dark f-13 text-truncate ml-2">A larger community name</p>
             </div>
-            <hr className='mb-0 mt-1'></hr>
+            <hr className='mb-0 my-2'></hr>
             <Row className="align-items-center">
                 <Col sm="8" xs="8" className="text-center">
                     <a href="#" className="text-dark f-13 font-weight-bold">{memberCount}</a>

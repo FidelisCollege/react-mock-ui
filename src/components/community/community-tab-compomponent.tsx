@@ -3,6 +3,7 @@ import { Button, Col, Nav, NavItem, NavLink, Row, TabContent, TabPane } from 're
 import { withRouter, RouterProps } from 'react-router';
 import CommunityCard from "./community-card";
 import {CommunityTypes} from "./models/communityModels";
+import ExploreCommunityTab from "./exploreCommunity";
 
 const CommuntiyData = {
     memberCount: "03",
@@ -23,7 +24,7 @@ const CommunityTabComponent = (props: CommunityTabProps) => {
     }
 
     return (
-        <div className="d-flex flex-column h-100  px-md-3">
+        <div className="d-flex flex-column h-100  px-3">
             <header className="border-bottom pb-md-2">
                 <Nav pills className="d-flex justify-content-between align-items-center py-2">
                     <div className="d-flex">
@@ -74,7 +75,9 @@ const CommunityTabComponent = (props: CommunityTabProps) => {
                     </div>
                 </TabPane>
 
-                <TabPane tabId="2">2</TabPane>
+                <TabPane tabId="2">
+                    <ExploreCommunityTab/>
+                </TabPane>
 
             </TabContent>
 

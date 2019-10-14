@@ -1,3 +1,4 @@
+$sort-button-bg: #ececfb;
 .recently-access-head{
     font-size: 18px;
     color:$primary;
@@ -42,4 +43,13 @@
 }
 .community-card{
     padding: 10px;
+}
+.card-sort-buttons{
+  color: $light;
+  &:hover{
+      color: $primary;
+      background-color: $sort-button-bg;
+
+    }
+
 }
