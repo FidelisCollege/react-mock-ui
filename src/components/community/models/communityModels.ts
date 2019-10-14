@@ -1,4 +1,6 @@
 export enum CommunityTypes {
-    DEFAULT = 'default',
+    POST = 'post',
+    JOIN = 'join',
+
 
 }

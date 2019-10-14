@@ -1,14 +1,13 @@
 import { RouteConfigInterface } from './model';
 import OnBoardingContainer from '../onBoarding/container/onBoardingContainer';
-import AdvanceSearch from "../mentor/advanceSearch";
+import MentorDashboard from "../mentor/mentorDashboard";
 import AddMentorSearch from "../mentor/addmentorSearch";
-import Resources from "../mentor/resourceTab";
 import CommunityDashboard from "../community/CommunityDashboard";
 
 export enum RouteUrls {
     MENTOR = '/mentor',
     MENTOR_ADVANCE_SEARCH = '/advance-search',
-    COMMUNITY_DASHBOARD = '/community'
+    COMMUNITY = '/CommunityDashboard'
 }
 
 export const routes: RouteConfigInterface[] = [
@@ -19,7 +18,7 @@ export const routes: RouteConfigInterface[] = [
     },
     {
         path: RouteUrls.MENTOR,
-        component: AdvanceSearch,
+        component: MentorDashboard,
         childRoutes: []
     },
     {
@@ -28,8 +27,8 @@ export const routes: RouteConfigInterface[] = [
         childRoutes: []
     },
     {
-        path: RouteUrls.COMMUNITY_DASHBOARD,
+        path: RouteUrls.COMMUNITY,
         component: CommunityDashboard,
         childRoutes: []
-    }
+    },
 ]

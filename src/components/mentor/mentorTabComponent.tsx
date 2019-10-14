@@ -79,7 +79,7 @@ const MentortabComponent = (props: MentortabProps) => {
                 </Nav>
             </header>
 
-            <TabContent className="overflow-auto mentor-tab-wrapper pt-2 pb-5 flex-grow-1" activeTab={activeTab}>
+            <TabContent className="dashboard-tab-wrapper pt-2 pb-5 flex-grow-1" activeTab={activeTab}>
                 <TabPane tabId="1">
                     <Row className="py-3">
                         <Col xs="12" md="6" className="d-none d-md-block">

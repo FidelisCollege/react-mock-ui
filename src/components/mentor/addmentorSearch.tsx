@@ -1,16 +1,12 @@
 import * as React from 'react';
 import SavedSearchDropdown from "../dropdown/savedSearch";
 import AdvancedSearchDropdown from "../dropdown/advanced-search";
-import {Row, Col, DropdownToggle, DropdownMenu, DropdownItem, Dropdown,} from "reactstrap";
+import {Row, Col} from "reactstrap";
 import RequestMentorCard from "./requestMentorCard";
 import MentorRightSection from "./mentorRightSection";
-import {  Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
-import { TabContent, TabPane, Nav, NavItem, NavLink, Card, Button, CardTitle, CardText } from 'reactstrap';
-import DefaultMentorCard from "./mentorTabComponent";
-import {MentorTypes} from "./models/mentorModel";
-import {RouteUrls} from "../routes/routesConfig";
+import {  Modal } from 'reactstrap';
+import { TabContent, TabPane, Nav, NavItem, NavLink } from 'reactstrap';
 import {RouterProps} from "react-router";
-import AdvanceSearch from "./advanceSearch";
 import CreatableMulti from "./AutoSelectDropdown";
 import AdvancedSearchFunctionalDropdown from "../dropdown/AdvanceFuctionaladropdown";
 

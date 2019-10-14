@@ -10,7 +10,7 @@ import DefaultMentorCard from "./mentorTabComponent";
 import {MentorTypes} from "./models/mentorModel";
 import {RouteUrls} from "../routes/routesConfig";
 import {RouterProps} from "react-router";
-import AdvanceSearch from "./advanceSearch";
+import AdvanceSearch from "./mentorDashboard";
 import CreatableMulti from "./AutoSelectDropdown";
 import AdvancedSearchFunctionalDropdown from "../dropdown/AdvanceFuctionaladropdown";
 

@@ -1,23 +1,18 @@
 import * as React from 'react';
 import { Button, Col, Nav, NavItem, NavLink, Row, TabContent, TabPane } from 'reactstrap';
-
-
-
-
 import { withRouter, RouterProps } from 'react-router';
 import CommunityCard from "./community-card";
-import RecommendMentorTooltip from "../mentor/mentorTabComponent";
+import {CommunityTypes} from "./models/communityModels";
 
-
-
-
-
-
-export interface MentortabProps extends RouterProps {
-
+const CommuntiyData = {
+    memberCount: "03",
+    member: "member",
+    activityCount: "03",
+    activity: "activity"
 }
+export interface CommunityTabProps extends RouterProps {}
 
-const CommunityTabComponent = (props: MentortabProps) => {
+const CommunityTabComponent = (props: CommunityTabProps) => {
     const { history } = props;
     const [activeTab, setActiveTab] = React.useState('1');
 
@@ -28,7 +23,7 @@ const CommunityTabComponent = (props: MentortabProps) => {
     }
 
     return (
-        <div className="d-flex flex-column h-100">
+        <div className="d-flex flex-column h-100  px-md-3">
             <header className="border-bottom pb-md-2">
                 <Nav pills className="d-flex justify-content-between align-items-center py-2">
                     <div className="d-flex">
@@ -53,24 +48,24 @@ const CommunityTabComponent = (props: MentortabProps) => {
                 </Nav>
             </header>
 
-            <TabContent className="overflow-auto mentor-tab-wrapper pt-3 pb-5 flex-grow-1" activeTab={activeTab}>
+            <TabContent className="dashboard-tab-wrapper pt-3 pb-5 flex-grow-1" activeTab={activeTab}>
                 <TabPane tabId="1">
                     <Row>
                         <Col xs="24" sm="8">
-                            <CommunityCard/>
+                            <CommunityCard communityTypes={CommunityTypes.POST} {...CommuntiyData}/>
                         </Col>
                         <Col xs="24" sm="8">
-                            <CommunityCard/>
+                            <CommunityCard communityTypes={CommunityTypes.POST} {...CommuntiyData}/>
                         </Col>
                         <Col xs="24" sm="8">
-                            <CommunityCard/>
+                            <CommunityCard communityTypes={CommunityTypes.POST} {...CommuntiyData}/>
                         </Col>
                     </Row>
                     <div className="mt-4">
                         <h2 className="mb-0 pb-2 ">Recommended communities</h2>
                         <Row>
                             <Col xs="24" sm="8">
-                                <CommunityCard/>
+                                <CommunityCard communityTypes={CommunityTypes.JOIN} {...CommuntiyData}/>
                             </Col>
                         </Row>
 

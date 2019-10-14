@@ -53,7 +53,7 @@ export default class TabComponents extends React.Component <{},any> {
                         </a>
                     </div>
 
-                    <div className="inner-container min-height-0 p-lg-3 px-3">
+                    <div className="inner-container min-height-0 p-lg-3 px-2">
                         <div className="d-flex flex-grow-1 tab-content-wrapper min-height-0">
                             <div className={`list-team tab-data ${activeMainTab === MentorTabNames.COACH ? " active" : ""} left-column`} id="nav-coach">
                                 Coach Component
