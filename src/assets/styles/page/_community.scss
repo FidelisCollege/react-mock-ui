@@ -51,5 +51,11 @@ $sort-button-bg: #ececfb;
       background-color: $sort-button-bg;
 
     }
+  &.active{
+    color: $primary;
+    background-color: $sort-button-bg;
+    box-shadow: none !important;
+
+  }
 
 }

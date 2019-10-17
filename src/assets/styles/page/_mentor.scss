@@ -278,7 +278,7 @@ $dropdown-border-color: #ddd;
   display: flex;
   @media (max-width: 576px){
       background-color: transparent;
-      bottom:40px;
+      //bottom:40px;
 
   }
 }
@@ -324,7 +324,7 @@ $dropdown-border-color: #ddd;
   }
 }
 .request-tab-list{
-    height: 300px;
+    //height: 300px;
   .tab-action-button{
       padding: 5px;
       height: auto;
@@ -341,6 +341,19 @@ $dropdown-border-color: #ddd;
   left:0;
 
 }
-.outgoing-request-menu{
+.nav-item{
+    .tab-buttons{
+      &:hover{
+        //color: $white !important;
+      }
+    }
 
+}
+
+.show-list-activity{
+    .person-image{
+        width:48px;
+        height: 48px;
+
+    }
 }

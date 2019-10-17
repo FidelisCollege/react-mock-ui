@@ -41,7 +41,7 @@ const CommunityTabComponent = (props: CommunityTabProps) => {
                                 className={"tab-buttons text-capitalize btn" + (activeTab === '2' ? ' active ' : '')}
                                 onClick={() => toggle('2')}
                             >
-                                explore community
+                                explore communities
                             </NavLink>
                         </NavItem>
                     </div>
@@ -63,9 +63,9 @@ const CommunityTabComponent = (props: CommunityTabProps) => {
                         </Col>
                     </Row>
                     <div className="mt-4">
-                        <h2 className="mb-0 pb-2 ">Recommended communities</h2>
+                        <h2 className="mb-0 pb-2 f-14">Recommended communities</h2>
                         <Row>
-                            <Col xs="24" sm="8">
+                            <Col xs="24" sm="8" className="p-0">
                                 <CommunityCard communityTypes={CommunityTypes.JOIN} {...CommuntiyData}/>
                             </Col>
                         </Row>

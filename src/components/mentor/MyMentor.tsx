@@ -1,16 +1,12 @@
 import * as React from 'react';
 import SavedSearchDropdown from "../dropdown/savedSearch";
 import AdvancedSearchDropdown from "../dropdown/advanced-search";
-import {Row, Col, DropdownToggle, DropdownMenu, DropdownItem, Dropdown,} from "reactstrap";
+import {Row, Col} from "reactstrap";
 import RequestMentorCard from "./requestMentorCard";
 import MentorRightSection from "./mentorRightSection";
-import {  Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
-import { TabContent, TabPane, Nav, NavItem, NavLink, Card, Button, CardTitle, CardText } from 'reactstrap';
-import DefaultMentorCard from "./mentorTabComponent";
-import {MentorTypes} from "./models/mentorModel";
-import {RouteUrls} from "../routes/routesConfig";
+import {  Modal } from 'reactstrap';
+import { TabContent, TabPane, Nav, NavItem, NavLink} from 'reactstrap';
 import {RouterProps} from "react-router";
-import AdvanceSearch from "./mentorDashboard";
 import CreatableMulti from "./AutoSelectDropdown";
 import AdvancedSearchFunctionalDropdown from "../dropdown/AdvanceFuctionaladropdown";
 
@@ -39,7 +35,7 @@ const RecommendedMentorData = [{
 export interface MentortabProps extends RouterProps {
 
 }
-const Resources =(props: MentortabProps) => {
+const MentorTab =(props: MentortabProps) => {
     const [isOpen, setIsOpen] = React.useState(false);
     const [isOpenAdvancedSearch, setIsOpenAdvancedSearch] = React.useState(false);
     const [isOpenMultiSelectSearch, setIsOpenMultiSelectSearch] = React.useState(false);
@@ -68,7 +64,7 @@ const Resources =(props: MentortabProps) => {
                 <div className="d-flex flex-grow-1 tab-content-wrapper min-height-0 justify-content-between h-100">
                     <div className="list-team tab-data left-column bg-primary"></div>
 
-                    <div className="px-3 w-100">
+                    <div className="px-3 w-100 d-flex flex-column">
                         <h2 className="text-capitalize text-primary pt-3">
                             <i className="icon-caret-left text-primary f-12 mr-2"></i>my mentor
                         </h2>
@@ -82,8 +78,8 @@ const Resources =(props: MentortabProps) => {
                         </div>
                         <div className=" d-flex border-bottom align-items-center">
                         </div>
-                        <div className="overflow-scroll h-100 pb-5">
-                            <Row className="pt-3 pb-5">
+                        <div className="overflow-scroll  flex-grow-1">
+                            <Row className="pt-3 m-0">
                                 <Col xs="12" sm="6" className="pb-2">
                                    <RequestMentorCard/>
                                 </Col>
@@ -99,24 +95,10 @@ const Resources =(props: MentortabProps) => {
                                 <Col xs="12" sm="6" className="pb-2">
                                     <RequestMentorCard/>
                                 </Col>
-                                <Col xs="12" sm="6" className="pb-2">
-                                    <RequestMentorCard/>
-                                </Col>
-                                <Col xs="12" sm="6" className="pb-2">
-                                    <RequestMentorCard/>
-                                </Col>
-                                <Col xs="12" sm="6" className="pb-2">
-                                    <RequestMentorCard/>
-                                </Col>
-                                <Col xs="12" sm="6" className="pb-2">
-                                    <RequestMentorCard/>
-                                </Col>
+
 
                             </Row>
                         </div>
-
-                        {/*<RandomComponent isOpen={isOpen}></RandomComponent>*/}
-
 
                         <Modal
                             isOpen={isOpen}
@@ -496,4 +478,4 @@ const Resources =(props: MentortabProps) => {
 }
 
 
-export default  Resources;
+export default  MentorTab;

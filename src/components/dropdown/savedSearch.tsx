@@ -31,7 +31,7 @@ export default class SavedSearchDropdown extends React.Component<SavedSearchProp
                     <Row>
                         <DropdownItem className="d-flex drop-down-items justify-content-between align-items-center">
                             <Col sm="15" xs="15" className="text-truncate">
-                                <div className="saved-search-name pr-4 border-right">UX/UI mentors</div>
+                                <div className="saved-search-name pr-4 border-right f-14">UX/UI mentors</div>
                             </Col>
                             <Col sm="9" xs="9">
                                 <div className="saved-search-action  text-secondary">
@@ -44,7 +44,7 @@ export default class SavedSearchDropdown extends React.Component<SavedSearchProp
                     <Row>
                         <DropdownItem className="d-flex drop-down-items justify-content-between align-items-center">
                             <Col  sm="15" xs="15" className="text-truncate">
-                                <div className="saved-search-name pr-4 border-right">Web mentors</div>
+                                <div className="saved-search-name pr-4 border-right f-14">Web mentors</div>
                             </Col>
                             <Col sm="9" xs="9">
                                 <div className="saved-search-action  text-secondary">
@@ -57,7 +57,7 @@ export default class SavedSearchDropdown extends React.Component<SavedSearchProp
                     <Row>
                         <DropdownItem className="d-flex drop-down-items justify-content-between align-items-center">
                             <Col  sm="15" xs="15" className="text-truncate">
-                                <div className="saved-search-name pr-4 border-right">Frontend</div>
+                                <div className="saved-search-name pr-4 border-right f-14">Frontend</div>
                             </Col>
                             <Col sm="9" xs="9">
                                 <div className="saved-search-action  text-secondary">
@@ -70,7 +70,7 @@ export default class SavedSearchDropdown extends React.Component<SavedSearchProp
                     <Row>
                         <DropdownItem className="d-flex drop-down-items justify-content-between align-items-center">
                             <Col  sm="15" xs="15" className="text-truncate">
-                                <div className="saved-search-name pr-4 border-right">Mentors in Milan</div>
+                                <div className="saved-search-name pr-4 border-right f-14">Mentors in Milan</div>
                             </Col>
                             <Col sm="9" xs="9">
                                 <div className="saved-search-action  text-secondary">

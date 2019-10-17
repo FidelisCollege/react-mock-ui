@@ -1,6 +1,5 @@
 import * as React from 'react';
-import { Nav, NavItem, NavLink } from 'reactstrap';
-import ProgressBarComponent from "./progressBarComponent";
+
 
 const MentorResources = () => {
     return (

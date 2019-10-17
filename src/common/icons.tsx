@@ -21,52 +21,5 @@ export const Logo = (props) => (
 		</g>
 	</svg>
 );
-export const IconActivate = (props) => (
-	<svg viewBox="0 0 22 22" >
-		className={props.className ? `icons ${props.className}` : 'icons'}
-		width={`8rem`}
-		height={props.size ? `${props.size}rem` : `1rem`}
-		fill={props.fill ? `${props.fill}` : `currentColor`}
-		onClick={props.doOnClick}
-		style={{ width: `8rem`, height: `1rem` }}
-		<g id="prefix__icon-activate" transform="translate(-1715 -188)">
-			<path
-				id="prefix__Path_3210"
-				data-name="Path 3210"
-				className="prefix__cls-1"
-				d="M9.2 15.5l-4.7-4.7 1.4-1.3 3.3 3.3 7.1-7 1.3 1.3z"
-				transform="translate(1715 188)"
-			/>
-			<path
-				id="prefix__Path_3211"
-				data-name="Path 3211"
-				className="prefix__cls-1"
-				d="M11 22a11 11 0 1111-11 10.968 10.968 0 01-11 11zm0-20a9 9 0 109 9 8.963 8.963 0 00-9-9z"
-				transform="translate(1715 188)"
-			/>
-		</g>
-	</svg>
-);
-export const IconAdd = (props) => (
-	<svg viewBox="0 0 22 22"
-		className={props.className ? `icons ${props.className}` : 'icons'}
-		width={`8rem`}
-		height={props.size ? `${props.size}rem` : `1rem`}
-		fill={props.fill ? `${props.fill}` : `currentColor`}
-		onClick={props.doOnClick}
-		style={{ width: `8rem`, height: `1rem` }}
-	>
-		<path d="M916.7 458.3h-375v-375c0-23-18.7-41.6-41.7-41.6s-41.7 18.6-41.7 41.6v375h-375c-23 0-41.6 18.7-41.6 41.7s18.6 41.7 41.6 41.7h375v375c0 23 18.7 41.6 41.7 41.6s41.7-18.6 41.7-41.6v-375h375c23 0 41.6-18.7 41.6-41.7s-18.6-41.7-41.6-41.7z"/>
-	</svg>
-);
-// export const IconActivate = (props) => ();
-// export const IconActivate = (props) => ();
-// export const IconActivate = (props) => ();
-// export const IconActivate = (props) => ();
-// export const IconActivate = (props) => ();
-// export const IconActivate = (props) => ();
-// export const IconActivate = (props) => ();
-// export const IconActivate = (props) => ();
-// export const IconActivate = (props) => ();
-// export const IconActivate = (props) => ();
-// export const IconActivate = (props) => ();
+
+

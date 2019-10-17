@@ -64,9 +64,9 @@ const AddMentorSearch =(props: MentortabProps) => {
                 <div className="d-flex flex-grow-1 tab-content-wrapper min-height-0 justify-content-between h-100">
                     <div className="list-team tab-data left-column bg-primary"></div>
 
-                    <div className="px-3 w-100">
+                    <div className="px-3 w-100 d-flex flex-column">
                         <h2 className="text-capitalize text-primary pt-3">
-                            <i className="icon-caret-left text-primary f-12 mr-2"></i>my mentor
+                            <i className="icon-caret-left text-primary f-16 font-weight-bold mr-2"></i>my mentor
                         </h2>
                         <div className="d-flex justify-content-between align-items-center mb-4">
 
@@ -78,8 +78,8 @@ const AddMentorSearch =(props: MentortabProps) => {
                         </div>
                         <div className=" d-flex border-bottom align-items-center">
                         </div>
-                        <div className="overflow-scroll h-100 pb-5">
-                            <Row className="pt-3 pb-5">
+                        <div className="overflow-scroll flex-grow-1">
+                            <Row className="pt-3 m-0">
                                 <Col xs="12" sm="6" className="pb-2">
                                    <RequestMentorCard/>
                                 </Col>
@@ -95,19 +95,6 @@ const AddMentorSearch =(props: MentortabProps) => {
                                 <Col xs="12" sm="6" className="pb-2">
                                     <RequestMentorCard/>
                                 </Col>
-                                <Col xs="12" sm="6" className="pb-2">
-                                    <RequestMentorCard/>
-                                </Col>
-                                <Col xs="12" sm="6" className="pb-2">
-                                    <RequestMentorCard/>
-                                </Col>
-                                <Col xs="12" sm="6" className="pb-2">
-                                    <RequestMentorCard/>
-                                </Col>
-                                <Col xs="12" sm="6" className="pb-2">
-                                    <RequestMentorCard/>
-                                </Col>
-
                             </Row>
                         </div>
 
