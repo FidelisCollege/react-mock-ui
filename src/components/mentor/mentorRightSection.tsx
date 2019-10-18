@@ -1,6 +1,6 @@
 import * as React from 'react';
 import ProfileUpdate from "./profileUpdateComponent";
-import MentorResources from "./recommenndationsCard";
+import MentorResources from "./resourceCard";
 import MentorNotifications from "./notificationCard";
 import {RouteUrls} from "../routes/routesConfig";
 import AddMentorCard from "./mentorTabComponent";

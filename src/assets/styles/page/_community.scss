@@ -59,3 +59,8 @@ $sort-button-bg: #ececfb;
   }
 
 }
+.resource-search{
+  @media (max-width: 576px) {
+      width: 100% !important;
+  }
+}

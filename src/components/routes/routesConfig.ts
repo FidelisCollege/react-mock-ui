@@ -4,12 +4,16 @@ import MentorDashboard from "../mentor/mentorDashboard";
 import AddMentorSearch from "../mentor/addmentorSearch";
 import CommunityDashboard from "../community/CommunityDashboard";
 import ShowingAllActivity from "../community/ShowingAllActivities";
+import ResourcesContent from "../community/Resourcescontent";
+import CommunityProfile from "../community/CommunityProfile";
 
 export enum RouteUrls {
     MENTOR = '/mentor',
     MENTOR_ADVANCE_SEARCH = '/advance-search',
     COMMUNITY = '/CommunityDashboard',
-    SHOWING_ACTIVITIES  ='/all-activity'
+    SHOWING_ACTIVITIES  ='/all-activity',
+    RESOURCES   = '/ResourcesContent',
+    COMMUNITY_PROFILE ='/CommunityProfile'
 }
 
 export const routes: RouteConfigInterface[] = [
@@ -38,4 +42,15 @@ export const routes: RouteConfigInterface[] = [
         component: ShowingAllActivity,
         childRoutes: []
     },
-]
+    {
+        path: RouteUrls.RESOURCES,
+        component: ResourcesContent,
+        childRoutes: []
+    },
+    {
+        path: RouteUrls.COMMUNITY_PROFILE,
+        component: CommunityProfile,
+        childRoutes: []
+    },
+];
+

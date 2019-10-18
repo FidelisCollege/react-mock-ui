@@ -21,5 +21,31 @@ export const Logo = (props) => (
 		</g>
 	</svg>
 );
+export const Comment = (props) => (
+	<svg
+		className={props.className ? `icons ${props.className}` : 'icons'}
+		width={`8rem`}
+		height={props.size ? `${props.size}rem` : `1rem`}
+		fill={props.fill ? `${props.fill}` : `currentColor`}
+		onClick={props.doOnClick}
+		style={{ width: `8rem`, height: `1rem` }}
+	>
+		<path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z" />
+		<path d="M0 0h24v24H0z" fill="none" />
+	</svg>
+);
+export const Recommend = (props) => (
+	<svg
+		className={props.className ? `icons ${props.className}` : 'icons'}
+		width={`8rem`}
+		height={props.size ? `${props.size}rem` : `1rem`}
+		fill={props.fill ? `${props.fill}` : `currentColor`}
+		onClick={props.doOnClick}
+		style={{ width: `8rem`, height: `1rem` }}
+	>
+		<path fill="none" d="M0 0h24v24H0V0z" viewBox="0 0 24 24" />
+		<path d="M3.5 18.99l11 .01c.67 0 1.27-.33 1.63-.84L20.5 12l-4.37-6.16c-.36-.51-.96-.84-1.63-.84l-11 .01L8.34 12 3.5 18.99z" />
+	</svg>
+);
 
 

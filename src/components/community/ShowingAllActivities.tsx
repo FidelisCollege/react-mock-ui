@@ -3,8 +3,6 @@ import * as React from 'react';
 const ShowingAllActivity  = () => {
     return (
         <main className="dashboard-container student-profile">
-
-
             <div className="inner-container min-height-0 p-lg-3">
                 <div className="d-flex flex-grow-1 tab-content-wrapper min-height-0 h-100 px-md-3">
                     <div className="left-column bg-primary d-none d-md-block">p</div>
