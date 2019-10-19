@@ -2,8 +2,20 @@ import * as React from 'react';
 import { withRouter, RouteComponentProps } from 'react-router';
 import { Link } from 'react-router-dom';
 import NavBarprogressbarComponent from "../../mentor/profile-update-progressbar";
+import {Modal} from "reactstrap";
 
 class NavBarComponent extends React.Component<RouteComponentProps,  any> {
+    constructor(props, state) {
+        super(props, state);
+        this.state = {
+            isOpen: false,
+        }
+    }
+
+    toggleModal = () => {
+        this.setState({isOpen: !this.state.isOpen});
+    }
+
     render() {
         return (
             <>
@@ -26,6 +38,9 @@ class NavBarComponent extends React.Component<RouteComponentProps,  any> {
                                 <a className="mr-4 header-icon-search" href="#" id="searchIcon">
                                     <i className="icon-search"/>
                                 </a>
+                                <a className="mr-4" href="#" onClick={this.toggleModal}>
+                                    <i className="icon-check"/>
+                                </a>
                                 <a href="#" data-toggle="modal">
                                     <i className="icon-list header-icon-list"/>
                                 </a>
@@ -33,6 +48,15 @@ class NavBarComponent extends React.Component<RouteComponentProps,  any> {
                         </div>
                     </nav>
                 </header>
+
+                <Modal
+                    isOpen={this.state.isOpen}
+                    toggle={this.toggleModal}
+                >
+                    <div>
+                        this is modal
+                    </div>
+                </Modal>
 
             </>
 

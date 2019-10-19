@@ -64,3 +64,70 @@ $sort-button-bg: #ececfb;
       width: 100% !important;
   }
 }
+.profile-banner-wrapper{
+  @media (max-width: 576px){
+      height: 116px;
+  }
+  .banner-img{
+      object-fit: cover;
+  }
+  .profile-banner-content{
+      position: absolute;
+      top:0;
+      justify-content: space-between;
+      align-items: center;
+      .profile-img{
+          border-radius: 50%;
+          border: 4px solid $white;
+      }
+    .profile-banner-heading{
+        font-size: 24px;
+      @media (max-width: 576px){
+          font-size: 16px;
+      }
+
+    }
+  }
+  .joined-wrapper{
+      width: 14px;
+      height: 14px;
+      background: white;
+      color: $info;
+      border-radius: 50%;
+  }
+  .joinned-badge{
+      padding-left: 78px;
+  }
+}
+.community-details{
+  .nav{
+    z-index: 1;
+  }
+  .nav-item{
+      width: 100%;
+
+  }
+  .nav-link{
+    padding:10px 14px;
+    border: 1px solid transparent;
+    box-shadow: none !important;
+    &.active{
+      border: 1px solid $info;
+      border-radius: $border-radius;
+      color: $primary !important;
+    }
+    &:hover{
+      box-shadow: none;
+      border-color: $info;
+      color: $primary !important;
+
+    }
+  }
+
+}
+.content-wrapper{
+    padding:30px;
+    p{
+      width: 468px;
+    }
+}
