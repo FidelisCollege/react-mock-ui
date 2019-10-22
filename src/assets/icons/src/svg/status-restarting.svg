@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <title>status-restarting</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <g>
+        <circle cx="15" cy="15" r="15" fill="#fff"/>
+        <circle cx="15" cy="15" r="13" fill="#eb9100"/>
+        <g>
+          <circle id="Ellipse_121" data-name="Ellipse 121" cx="9" cy="15" r="2" fill="#fff"/>
+          <circle id="Ellipse_122" data-name="Ellipse 122" cx="15" cy="15" r="2" fill="#fff"/>
+          <circle id="Ellipse_123" data-name="Ellipse 123" cx="21" cy="15" r="2" fill="#fff"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

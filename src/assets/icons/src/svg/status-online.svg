@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <title>status-online</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+        <path d="M0,15a15,15 0 1,0 30,0a15,15 0 1,0 -30,0"/>
+        <path d="M2,15a13,13 0 1,0 26,0a13,13 0 1,0 -26,0" fill="#5bf523"/>
+
+    </g>
+  </g>
+</svg>

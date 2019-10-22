@@ -1,0 +1,25 @@
+/*........Necessary Includes.......*/
+@import "../node_modules/bootstrap/scss/functions";
+
+//Custom Variables.  It should be after bootstrap function and before bootstrap variables.
+@import "../src/assets/styles/base/_variables.scss";
+
+@import "../../react-mock-ui/node_modules/bootstrap/scss/_variables.scss";
+@import "../../react-mock-ui/node_modules/bootstrap/scss/mixins";
+
+.icons{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.icon-primary{
+    fill: $primary;
+}
+
+.icon-warning{
+    fill: $warning;
+}
+
+.icon-danger{
+    fill: $danger;
+}
