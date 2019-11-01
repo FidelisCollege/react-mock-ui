@@ -14,9 +14,6 @@ const CommunityAllActivity  = () => {
             <li className="py-3">
                 <CommunityActivityPostDetail/>
             </li>
-             <li>
-                 <CommunityActivityPost/>
-             </li>
             <li>
                 <CommunityMissedActivity/>
             </li>

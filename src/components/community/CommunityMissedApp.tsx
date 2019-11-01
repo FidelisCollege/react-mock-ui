@@ -1,10 +1,5 @@
-
 import * as React from 'react';
-import CommunityActivityPostDetail from "./communityActivityPostDetail";
-import CommunityActivityPost from "./communityActivityPost";
-import {IconComment, IconLikeFilled, IconRecommend, IconReport} from "../../common";
-
-
+import {IconComment, IconRecommend, IconReport} from "../../common";
 
 
 const CommunityMissedActivity  = () => {
@@ -19,18 +14,20 @@ const CommunityMissedActivity  = () => {
                 </h6>
                 <time className="f-14 text-secondary">5 mins ago</time>
                 <p className="text-dark f-14">aptitude text of army training</p>
-                <div className="activity-footer px-4 py-2 d-flex justify-content-between align-items-center ">
+                <div className="activity-footer  py-2 d-flex justify-content-between align-items-center ">
                     <div className="d-flex">
-                        <div className="cursor-pointer">
+                        <a href="#" className="cursor-pointer mr-4">
                             <IconComment className="text-secondary"/>
                             <span className="action-links">Comment</span>
-                        </div>
-                        <div className="cursor-pointer" data-toggle="modal" data-target="#recommendModal">
+                        </a>
+                        <a href="#" className="cursor-pointer" data-toggle="modal" data-target="#recommendModal">
                             <IconRecommend className="text-secondary"/>
                             <span className="action-links"> Recommend</span>
-                        </div>
+                        </a>
                     </div>
-                    <i className="icon-info-filled text-primary"></i>
+                    <a className="cursor-pointer action-links ml-5" href="#">
+                        <IconReport className="text-secondary"/>
+                    </a>
                 </div>
             </div>
         </div>
