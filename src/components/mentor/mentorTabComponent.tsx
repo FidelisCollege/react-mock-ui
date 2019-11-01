@@ -11,7 +11,7 @@ import { RouteUrls } from '../routes/routesConfig';
 import MentorTab from "./mentorTab";
 import RequestTab from "./requeststab";
 import RequestMentorChat from "./chatTab";
-import {IconAdd} from "../../common";
+// import {IconAdd} from "../../common";
 
 const MentorData = {
     name: "Robert Watson",

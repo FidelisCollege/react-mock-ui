@@ -100,14 +100,20 @@ $sort-button-bg: #ececfb;
   }
 }
 .community-details{
+  position: absolute;
+  top: 154px;
+  bottom: 0;
+  right: 48px;
+  left: 279px;
   .nav{
     z-index: 1;
+    min-width:194px;
   }
-  .nav-item{
+  .nav-items{
       width: 100%;
 
   }
-  .nav-link{
+  .tab-buttons{
     padding:10px 14px;
     border: 1px solid transparent;
     box-shadow: none !important;
@@ -130,4 +136,22 @@ $sort-button-bg: #ececfb;
     p{
       width: 468px;
     }
+}
+.community-activity-tabs{
+    .nav-link {
+      font-size: 14px;
+      color: $dark !important;
+      &.active {
+        background-color: $nav-icon-tabs-link-active-bg;
+        color: $primary !important;
+        font-weight: bold;
+        box-shadow: none !important;
+      }
+
+    }
+
+}
+.post-button{
+    padding: 7px 34px;
+    font-size: 16px;
 }

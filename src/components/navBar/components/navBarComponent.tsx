@@ -3,6 +3,7 @@ import { withRouter, RouteComponentProps } from 'react-router';
 import { Link } from 'react-router-dom';
 import NavBarprogressbarComponent from "../../mentor/profile-update-progressbar";
 import {Modal} from "reactstrap";
+import {UpdateProfileProgressbar} from "../updateProfilebar"
 
 class NavBarComponent extends React.Component<RouteComponentProps,  any> {
     constructor(props, state) {
@@ -39,11 +40,12 @@ class NavBarComponent extends React.Component<RouteComponentProps,  any> {
                                     <i className="icon-search"/>
                                 </a>
                                 <a className="mr-4" href="#" onClick={this.toggleModal}>
-                                    <i className="icon-check"/>
+                                    <UpdateProfileProgressbar />
                                 </a>
                                 <a href="#" data-toggle="modal">
                                     <i className="icon-list header-icon-list"/>
                                 </a>
+
                             </div>
                         </div>
                     </nav>

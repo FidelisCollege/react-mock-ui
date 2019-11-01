@@ -26,7 +26,7 @@ const ShowingAllActivity  = () => {
                                                 <p className="text-dark f-14">aptitude text of army training</p>
                                                 <div className="activity-footer px-4 py-2 d-flex justify-content-between align-items-center ">
                                                     <div className="d-flex">
-                                                        <div className="cursor-pointer mr-4">
+                                                        <div className="cursor-pointer">
                                                             <i className="icon-message footer-icon text-primary"></i>
                                                             <span className="d-none d-lg-inline action-links text-primary">Comment</span>
                                                         </div>
