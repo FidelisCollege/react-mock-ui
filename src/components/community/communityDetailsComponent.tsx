@@ -6,6 +6,9 @@ import {MentorTabNames} from "../mentor/helper/helpers";
 import MentortabComponent from "../mentor/mentorTab";
 import AboutCommuinityDetails from "./AboutCommunity";
 import ActivityCommuinity from "./ActivityCommunity";
+import RelatedCommunityDetails from "./relatedCommunityDetails";
+import CommunityMembers from "./communityMembers";
+import CommunityResources from "./communityResources";
 
 const CommunityDetailsComponent = (props) => {
     const [activeTab, setActiveTab] = useState('1');
@@ -74,8 +77,14 @@ const CommunityDetailsComponent = (props) => {
                     <TabPane tabId="2" className="h-100">
                         <ActivityCommuinity/>
                     </TabPane>
+                    <TabPane tabId="3" className="h-100">
+                        <CommunityMembers/>
+                    </TabPane>
+                    <TabPane tabId="4" className="h-100">
+                        <CommunityResources/>
+                    </TabPane>
                     <TabPane tabId="5" className="h-100">
-                        djjasdkjhfk
+                        <RelatedCommunityDetails/>
                     </TabPane>
                 </TabContent>
         </div>

@@ -155,3 +155,26 @@ $sort-button-bg: #ececfb;
     padding: 7px 34px;
     font-size: 16px;
 }
+
+.communities-detail-content{
+   .sort-select{
+      max-width: 139px;
+   }
+    .community-activity-tabs{
+      min-height: auto !important;
+    }
+  .search-input-group{
+      min-width: 298px;
+  }
+  .resource-app-card{
+
+    .icon-bookmark{
+        color: $secondary;
+        &:hover{
+            color: $primary;
+        }
+
+    }
+  }
+
+}

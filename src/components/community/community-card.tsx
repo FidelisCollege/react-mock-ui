@@ -31,7 +31,7 @@ const CommunityCard  = (props: CommunityCardProps) => {
                     <h6 className="text-secondary f-13 text-capitalize">{activity}</h6>
                 </Col>
                 <Col sm="8"  xs="8" className="p-0">
-                    <Button className="btn btn-outline-primary text-capitalize f-13">{communityTypes === CommunityTypes.POST ? 'post' : ' join'}</Button>
+                    <button className="btn btn-primary text-capitalize f-13 text-white">{communityTypes === CommunityTypes.POST ? 'post' : ' join'}</button>
 
                 </Col>
 

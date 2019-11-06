@@ -5,13 +5,14 @@ import MentorNotifications from "./notificationCard";
 import {RouteUrls} from "../routes/routesConfig";
 import AddMentorCard from "./mentorTabComponent";
 import {Col} from "reactstrap";
+import ChatWrapper from "../community/chatWrapper";
 
 
 
 const MentorRightSection = () => {
     return (
-        <div>
-            <div className="card border-0 card-purpose tab-data m-3 m-lg-0 d-none d-lg-block">
+        <div className="right-section-actions">
+            <div className="card border-0 card-purpose tab-data m-3 m-lg-0 d-none d-lg-block action-cards">
                 <div className="card-body card-shadow px-3">
                     <ProfileUpdate/>
                 </div>
@@ -32,17 +33,7 @@ const MentorRightSection = () => {
                     </div>
                 </div>
             </div>
-            <div className="bg-md-primary position-fixed chat-wrapper px-4 py-2 rounded-top">
-                <div className="d-md-flex d-none">
-                    <div className="mr-5">
-                        <h2 className="mb-0 text-white f-16">Christopher Puckey</h2>
-                        <p className="mb-0 text-white f-13">Mentoring manager</p>
-                    </div>
-                    <a href="#" type="button" className="btn bg-white text-primary  rounded px-3 py-2 text-capitalize">ask</a>
-                </div>
-                    <a href="#" type="button" className="btn bg-primary text-white rounded px-3 py-3 text-capitalize  rounded px-2 py-3 text-capitalize chat-wrapper d-md-none">ask</a>
-            </div>
-
+            <ChatWrapper/>
         </div>
     );
 }

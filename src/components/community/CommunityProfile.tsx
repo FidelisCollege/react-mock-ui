@@ -1,5 +1,4 @@
 import * as React from 'react';
-import {Comment, Recommend} from "../../common";
 import CommunityDetailComponent from "./communityDetailsComponent";
 
 

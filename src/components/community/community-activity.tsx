@@ -21,8 +21,6 @@ const CommunityActivity = () => {
                             <Media paragraph className="f-14 text-dark">
                                 Luke started the badge exam  first time
                             </Media>
-
-
                         </Media>
                     </Media>
 

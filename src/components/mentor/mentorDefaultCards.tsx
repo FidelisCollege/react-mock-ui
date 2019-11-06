@@ -20,7 +20,7 @@ const DefaultMentorCard = (props: MentorCardProps) => {
                     <CardTitle className="border-0 my-3 text-dark">{name}</CardTitle>
                     <CardSubtitle className="text-light f-14">{title}</CardSubtitle>
                     <CardText className="text-secondary f-14">{text}</CardText>
-                    <Button className="btn btn-outline-primary  mt-2 text-capitalize f-13">{mentorType === MentorTypes.DEFAULT ? 'message' : 'send request'}</Button>
+                    <button className="btn btn-outline-primary  mt-2 text-capitalize f-13 w-100">{mentorType === MentorTypes.DEFAULT ? 'message' : 'send request'}</button>
                 </CardBody>
             </Card>
         </div>
