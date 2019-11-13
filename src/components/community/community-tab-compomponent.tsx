@@ -24,13 +24,13 @@ const CommunityTabComponent = (props: CommunityTabProps) => {
     }
 
     return (
-        <div className="d-flex flex-column h-100  px-3">
+        <div className="d-flex flex-column h-100  px-md-3 px-2">
             <header className="border-bottom pb-md-2">
                 <Nav pills className="d-flex justify-content-between align-items-center py-2">
                     <div className="d-flex">
                         <NavItem className="mr-3">
                             <NavLink
-                                className={"tab-buttons text-capitalize" + (activeTab === '1' ? ' active ' : '')}
+                                className={"tab-buttons text-capitalize btn" + (activeTab === '1' ? ' active ' : '')}
                                 onClick={() => toggle('1')}
                             >
                                 community
@@ -38,7 +38,7 @@ const CommunityTabComponent = (props: CommunityTabProps) => {
                         </NavItem>
                         <NavItem>
                             <NavLink
-                                className={"tab-buttons text-capitalize btn" + (activeTab === '2' ? ' active ' : '')}
+                                className={"tab-buttons text-capitalize" + (activeTab === '2' ? ' active ' : '')}
                                 onClick={() => toggle('2')}
                             >
                                 explore communities
@@ -49,23 +49,23 @@ const CommunityTabComponent = (props: CommunityTabProps) => {
                 </Nav>
             </header>
 
-            <TabContent className="dashboard-tab-wrapper pt-3 pb-5 flex-grow-1" activeTab={activeTab}>
+            <TabContent className="dashboard-tab-wrapper pt-3 flex-grow-1 overflow-auto" activeTab={activeTab}>
                 <TabPane tabId="1">
-                    <Row>
-                        <Col xs="24" sm="8">
+                    <Row className="m-0">
+                        <Col xs="24" sm="8" md="12">
                             <CommunityCard communityTypes={CommunityTypes.POST} {...CommuntiyData}/>
                         </Col>
-                        <Col xs="24" sm="8">
+                        <Col xs="24" sm="8" md="12">
                             <CommunityCard communityTypes={CommunityTypes.POST} {...CommuntiyData}/>
                         </Col>
-                        <Col xs="24" sm="8">
+                        <Col xs="24" sm="8" md="12">
                             <CommunityCard communityTypes={CommunityTypes.POST} {...CommuntiyData}/>
                         </Col>
                     </Row>
                     <div className="mt-4">
                         <h2 className="mb-0 pb-2 f-14">Recommended communities</h2>
-                        <Row>
-                            <Col xs="24" sm="8" className="p-0">
+                        <Row className="m-0">
+                            <Col xs="24" sm="8" md="12" className="p-0">
                                 <CommunityCard communityTypes={CommunityTypes.JOIN} {...CommuntiyData}/>
                             </Col>
                         </Row>
@@ -74,7 +74,6 @@ const CommunityTabComponent = (props: CommunityTabProps) => {
 
                     </div>
                 </TabPane>
-
                 <TabPane tabId="2">
                     <ExploreCommunityTab/>
                 </TabPane>

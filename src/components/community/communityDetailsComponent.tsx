@@ -11,82 +11,161 @@ import CommunityMembers from "./communityMembers";
 import CommunityResources from "./communityResources";
 
 const CommunityDetailsComponent = (props) => {
-    const [activeTab, setActiveTab] = useState('1');
+    const [activeTab, setActiveTab] = useState('about');
 
     const toggle = tab => {
         if(activeTab !== tab) setActiveTab(tab);
     }
 
     return (
-        <div className="community-details d-flex py-3 community-activity-detail">
-            <Nav className="d-flex flex-column align-content-start align-items-start p-2 card-shadow bg-white">
+        <div className="community-details community-activity-detail h-100 overflow-hidden">
+            <div className="d-lg-none d-flex flex-column mh-100">
+                <Nav pills className="d-flex justify-content-between align-items-center py-2 px-2 border-bottom community-activity-tabs overflow-auto d-lg-none">
+                    <div className="d-flex">
+                        <NavItem className="mr-3">
+                            <NavLink
+                                className={"text-capitalize" + (activeTab === 'about' ? ' active ' : '')}
+                                onClick={() => toggle('about')}
+                            >
+                                about
+                            </NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <NavLink
+                                className={"text-capitalize btn" + (activeTab === 'activities' ? ' active ' : '')}
+                                onClick={() => toggle('activities')}
+                            >
+                                activities
+                            </NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <NavLink
+                                className={"text-capitalize btn" + (activeTab === 'members' ? ' active ' : '')}
+                                onClick={() => toggle('members')}
+                            >
+                                members
+                            </NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <NavLink
+                                className={"text-capitalize btn" + (activeTab === 'resource' ? ' active ' : '')}
+                                onClick={() => toggle('resource')}
+                            >
+                                resources
+                            </NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <NavLink
+                                className={"text-capitalize btn" + (activeTab === 'relatedCommunities' ? ' active ' : '')}
+                                onClick={() => toggle('relatedCommunities')}
+                            >
+                                communities
+                            </NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <NavLink
+                                className={"text-capitalize btn" + (activeTab === 'calender' ? ' active ' : '')}
+                                onClick={() => toggle('calender')}
+                            >
+                                calender
+                            </NavLink>
+                        </NavItem>
+                    </div>
+                </Nav>
+                <TabContent activeTab={activeTab} className="bg-white py-3 community-tab-content overflow-auto mh-100">
+                    <TabPane tabId="about">
+                        <AboutCommuinityDetails/>
+                    </TabPane>
+                    <TabPane tabId="activities" className="h-100">
+                        <ActivityCommuinity/>
+                    </TabPane>
+                    <TabPane tabId="members" className="h-100">
+                        <CommunityMembers/>
+                    </TabPane>
+                    <TabPane tabId="resource" className="h-100">
+                        <CommunityResources/>
+                    </TabPane>
+                    <TabPane tabId="relatedCommunities" className="h-100">
+                        <RelatedCommunityDetails/>
+                    </TabPane>
+                    <TabPane tabId="calender" className="h-100">
+                        <RelatedCommunityDetails/>
+                    </TabPane>
+                </TabContent>
+            </div>
+            <div className="d-md-flex h-100 d-none">
+                <Nav className="d-none d-lg-flex flex-column align-content-start align-items-start p-2 card-shadow bg-white">
                     <NavItem className="mb-2 nav-items">
                         <NavLink
-                            className={"tab-buttons text-capitalize text-dark f-14" + (activeTab === '1' ? ' active ' : '')}
-                            onClick={() => { toggle('1'); }}
+                            className={"tab-buttons text-capitalize text-dark f-14" + (activeTab === 'about' ? ' active ' : '')}
+                            onClick={() => { toggle('about'); }}
                         >
                             about
                         </NavLink>
                     </NavItem>
                     <NavItem className="mb-2 nav-items">
                         <NavLink
-                            className={"tab-buttons text-capitalize text-dark f-14" + (activeTab === '2' ? ' active ' : '')}
-                            onClick={() => { toggle('2'); }}
+                            className={"tab-buttons text-capitalize text-dark f-14" + (activeTab === 'activities' ? ' active ' : '')}
+                            onClick={() => { toggle('activities'); }}
                         >
                             activities
                         </NavLink>
                     </NavItem>
                     <NavItem className="mb-2 nav-items">
                         <NavLink
-                            className={"tab-buttons text-capitalize text-dark f-14" + (activeTab === '3' ? ' active ' : '')}
-                            onClick={() => { toggle('3'); }}
+                            className={"tab-buttons text-capitalize text-dark f-14" + (activeTab === 'members' ? ' active ' : '')}
+                            onClick={() => { toggle('members'); }}
                         >
                             members
                         </NavLink>
                     </NavItem>
                     <NavItem className="mb-2 nav-items">
                         <NavLink
-                            className={"tab-buttons text-capitalize text-dark f-14" + (activeTab === '4' ? ' active ' : '')}
-                            onClick={() => { toggle('4'); }}
+                            className={"tab-buttons text-capitalize text-dark f-14" + (activeTab === 'resource' ? ' active ' : '')}
+                            onClick={() => { toggle('resource'); }}
                         >
                             resources
                         </NavLink>
                     </NavItem>
                     <NavItem className="mb-2 nav-items">
                         <NavLink
-                            className={"tab-buttons text-capitalize text-dark f-14" + (activeTab === '5' ? ' active ' : '')}
-                            onClick={() => { toggle('5'); }}
+                            className={"tab-buttons text-capitalize text-dark f-14" + (activeTab === 'relatedCommunities' ? ' active ' : '')}
+                            onClick={() => { toggle('relatedCommunities'); }}
                         >
                             related communities
                         </NavLink>
                     </NavItem>
                     <NavItem className="mb-2 nav-items">
                         <NavLink
-                            className={"tab-buttons text-capitalize text-dark f-14" + (activeTab === '7' ? ' active ' : '')}
-                            onClick={() => { toggle('6'); }}
+                            className={"tab-buttons text-capitalize text-dark f-14" + (activeTab === 'calender' ? ' active ' : '')}
+                            onClick={() => { toggle('calender'); }}
                         >
                             calender
                         </NavLink>
                     </NavItem>
                 </Nav>
-
-                <TabContent activeTab={activeTab} className="w-100 bg-white px-3">
-                    <TabPane tabId="1">
+                <TabContent activeTab={activeTab} className="w-100 bg-white p-lg-3 py-3 community-tab-content overflow-auto">
+                    <TabPane tabId="about">
                         <AboutCommuinityDetails/>
                     </TabPane>
-                    <TabPane tabId="2" className="h-100">
+                    <TabPane tabId="activities" className="h-100">
                         <ActivityCommuinity/>
                     </TabPane>
-                    <TabPane tabId="3" className="h-100">
+                    <TabPane tabId="members" className="h-100">
                         <CommunityMembers/>
                     </TabPane>
-                    <TabPane tabId="4" className="h-100">
+                    <TabPane tabId="resource" className="h-100">
                         <CommunityResources/>
                     </TabPane>
-                    <TabPane tabId="5" className="h-100">
+                    <TabPane tabId="relatedCommunities" className="h-100">
+                        <RelatedCommunityDetails/>
+                    </TabPane>
+                    <TabPane tabId="calender" className="h-100">
                         <RelatedCommunityDetails/>
                     </TabPane>
                 </TabContent>
+            </div>
+
         </div>
 
     );

@@ -46,7 +46,7 @@
     display: flex;
     align-items: center;
     cursor: pointer;
-    padding: 0.416rem 0;
+    padding: .416rem;
     margin-bottom:0.208rem;
     .person-name{
         color: $secondary;
@@ -58,7 +58,7 @@
    
     &:hover{
         box-shadow: 0 0 10px 0 rgba(221, 221, 221, 0.6);
-        padding: 0.416rem 0;
+        padding: .416rem;
         margin-bottom:0.208rem;
     }
 }

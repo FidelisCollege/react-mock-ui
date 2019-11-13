@@ -5,6 +5,7 @@ import {useState} from "react";
 import CommunityAllActivity from "./communityAllActivities";
 import CommunityActivityAnnouncement from "./communityActivityAnnouncement";
 import CommunityActivityPost from "./communityActivityPost";
+import CommunityPostModal from "./postModal";
 
 
 
@@ -51,7 +52,7 @@ const ActivityCommuinity = () => {
                             className={"text-capitalize btn" + (activeTab === '4' ? ' active ' : '')}
                             onClick={() => toggle('4')}
                         >
-                            my posts
+                            posts
                         </NavLink>
                     </NavItem>
                 </div>
@@ -68,9 +69,9 @@ const ActivityCommuinity = () => {
                     <CommunityActivityAnnouncement/>
                 </TabPane>
                 <TabPane tabId="4" className="h-100 ">
-                    <div className="d-flex justify-content-between pl-5 ml-3 py-3">
+                    <div className="d-flex justify-content-between pl-lg-5 ml-lg-3 py-3">
                         <input className="form-control py-0" type="text" placeholder="Search for mentors" />
-                        <button type="button" className="btn btn-primary text-capitalize ml-3 post-button">post</button>
+                        <CommunityPostModal/>
                     </div>
                     <CommunityActivityPost/>
                 </TabPane>

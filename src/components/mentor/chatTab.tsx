@@ -1,11 +1,11 @@
 
 import * as React from 'react';
-import { ListGroup, ListGroupItem, Button, Row, Col } from 'reactstrap';
+
 
 export default class RequestMentorChat extends React.Component {
     render() {
         return (
-            <div className="bg-md-primary position-fixed chat-wrapper px-4 py-2 rounded-top">
+            <div className="bg-md-primary position-fixed chat-wrapper rounded-top">
                 <div className="d-md-flex d-none">
                     <div className="mr-5">
                         <h2 className="mb-0 text-white f-16">Christopher Puckey</h2>

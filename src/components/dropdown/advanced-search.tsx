@@ -71,8 +71,8 @@ class AdvancedSearchDropdown extends React.Component<AdvancedSearchProps,Advance
                             <div className="d-flex justify-content-between align-items-center py-4 px-4 border-top ">
                                 <a  href="#" className="text-capitalize text-primary f-14 pl-2">close</a>
                                 <div>
-                                    <button type="button" className="btn btn-outline-primary mr-2 text-capitalize save-search-button btn-lg">apply</button>
-                                    <button type="button" className="btn btn-primary text-capitalize save-search-button btn-lg"> save & apply</button>
+                                    <button type="button" className="btn btn-outline-primary mr-2 text-capitalize save-search-button py-2">apply</button>
+                                    <button type="button" className="btn btn-primary text-capitalize save-search-button py-2"> save & apply</button>
                                 </div>
 
                             </div>

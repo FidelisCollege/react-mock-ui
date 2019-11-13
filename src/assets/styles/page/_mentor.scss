@@ -5,6 +5,7 @@ $dropdown-border-color: #ddd;
 .tab-buttons{
   border-radius: 4px !important;
   font-size: 14px;
+  cursor: pointer;
   @media (max-width: 576px){
     background-color: $white !important;
     color: $primary !important;
@@ -33,7 +34,7 @@ $dropdown-border-color: #ddd;
 
 }
 .add-mentor-card{
-  min-height: 254px;
+  //min-height: 257px;
   border: 1px dashed $border-color;
   @media (max-width: 576px){
     min-height: auto;
@@ -78,7 +79,7 @@ $dropdown-border-color: #ddd;
   }
 }
 .view-all-card{
-  max-width: 174px;
+  //max-width: 174px;
 }
 
 .dropdown-btn{
@@ -92,7 +93,7 @@ $dropdown-border-color: #ddd;
   max-width: 330px;
 
   @media (max-width: 576px) {
-      max-width: 155px;
+      min-width: 155px;
       padding-right: 0;
       //padding:0;
       input::placeholder{
@@ -264,11 +265,11 @@ $dropdown-border-color: #ddd;
 
 }
 .dashboard-tab-wrapper{
-  overflow-y: auto;
+  /*overflow-y: auto;
   overflow-x: hidden ;
   @media (max-width: 576px){
     height: 500px;
-  }
+  }*/
 }
 .chat-wrapper{
   bottom:0px;
@@ -359,6 +360,6 @@ $dropdown-border-color: #ddd;
 }
 .right-section-actions{
   .card-body{
-      max-height: 129px;
+      /*max-height: 129px;*/
   }
 }

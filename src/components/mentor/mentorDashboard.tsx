@@ -7,28 +7,30 @@ import AddMentorSearch from "./addmentorSearch";
 import DefaultMentorCard from "./mentorDefaultCards";
 import MentortabComponent from "./mentorTabComponent";
 import {withRouter} from "react-router";
+import LeftNavComponent from "../../common/components/left-nav";
 
 const MentorDashboard = () => {
     return (
-        <main className="dashboard-container student-profile">
-
-                <div className="border-bottom d-lg-none d-flex flex-grow-1 tab-content-wrapper min-height-0 h-100">
+        <>
+            <main className="dashboard-container student-profile">
+                <div className=" d-lg-none d-flex flex-grow-1 tab-content-wrapper min-height-0 h-100 overflow-hidden">
                     <MentorTab/>
                 </div>
                 <div className="inner-container min-height-0 p-lg-3 d-none d-md-block">
                     <div className="d-flex flex-grow-1 tab-content-wrapper min-height-0 h-100">
-                        <div className="left-column bg-primary d-none d-md-block"></div>
-                        <div className="student-details tab-data active px-3 w-100">
+                        <div className="left-column d-lg-flex left-column d-none d-md-none d-lg-flex ">
+                            <LeftNavComponent/>
+                        </div>
+                        <div className="student-details tab-data active px-3 d-flex flex-column flex-grow-1">
                             <MentortabComponent/>
                         </div>
-                        <div className="flex-column tab-data right-column d-none d-md-block">
+                        <div className="flex-column tab-data right-column d-none d-lg-flex">
                             <MentorRightSection/>
                         </div>
                     </div>
                 </div>
-
-
-        </main>
+            </main>
+        </>
         );
     }
 

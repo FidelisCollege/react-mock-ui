@@ -9,7 +9,7 @@ import {CommunityTypes} from "./models/communityModels";
 const RelatedCommunityDetails  = () => {
     return (
         <div className="communities-detail-content d-flex flex-column h-100">
-            <div className="d-flex  py-3 related-communities-header justify-content-between">
+            <div className="d-flex  pb-3 related-communities-header justify-content-between">
                 <div className="search-input-group" id="searchBox">
                     <input className="form-control" type="text" placeholder="Search by name or skills" />
                 </div>

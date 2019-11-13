@@ -6,7 +6,7 @@ const CommunityActivity = () => {
     return (
         <div className="card border-0 card-purpose tab-data d-none d-lg-block mt-3">
             <div className="card-body card-shadow px-3">
-                <h3 className="card-title text-light d-flex justify-content-between text-capitalize border-0 align-items-center">Activities (10)
+                <h3 className="card-title text-light d-flex justify-content-between text-capitalize border-0 align-items-center">Posts (10)
                     <div className="border-0 d-block text-right f-13">
                         <a href="#" className="text-primary">view all</a>
                     </div>

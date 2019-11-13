@@ -80,26 +80,25 @@ const MentorTab =(props: MentortabProps) => {
                         </div>
                         <div className="overflow-scroll  flex-grow-1">
                             <Row className="pt-3 m-0">
-                                <Col xs="12" sm="6" className="pb-2">
+                                <Col xs="12" sm="8" className="pb-2">
                                    <RequestMentorCard/>
                                 </Col>
-                                <Col xs="12" sm="6" className="pb-2">
+                                <Col xs="12" sm="8" className="pb-2">
                                     <RequestMentorCard/>
                                 </Col>
-                                <Col xs="12" sm="6" className="pb-2">
+                                <Col xs="12" sm="8" className="pb-2">
                                     <RequestMentorCard/>
                                 </Col>
-                                <Col xs="12" sm="6" className="pb-2">
+                                <Col xs="12" sm="8" className="pb-2">
                                     <RequestMentorCard/>
                                 </Col>
-                                <Col xs="12" sm="6" className="pb-2">
+                                <Col xs="12" sm="8" className="pb-2">
                                     <RequestMentorCard/>
                                 </Col>
 
 
                             </Row>
                         </div>
-
                         <Modal
                             isOpen={isOpen}
                             toggle={toggleEditSearchModal}
@@ -181,9 +180,9 @@ const MentorTab =(props: MentortabProps) => {
                                     <div className="d-flex justify-content-between align-items-center py-md-4 py-3 px-md-4 px-3 border-top border-secondary">
                                         <a  href="#" className="text-capitalize text-danger f-14 pl-2">delete</a>
                                         <div className="d-flex">
-                                            <button type="button" className="btn btn-outline-primary mr-2 text-capitalize save-search-button btn-lg  d-none d-md-block">close</button>
+                                            <button type="button" className="btn btn-outline-primary mr-2 text-capitalize save-search-button py-2 d-none d-md-block">close</button>
                                             <button type="button" className="btn btn-outline-primary mr-2 text-capitalize save-search-button d-md-none">close</button>
-                                            <button type="button" className="btn btn-primary text-capitalize save-search-button btn-lg d-none d-md-block" onClick={() => toggleAdvancedMultiSelectSearchModal()}>save search</button>
+                                            <button type="button" className="btn btn-primary text-capitalize save-search-button py-2 d-none d-md-block" onClick={() => toggleAdvancedMultiSelectSearchModal()}>save search</button>
                                             <button type="button" className="btn btn-primary text-capitalize save-search-button d-md-none" onClick={() => toggleAdvancedMultiSelectSearchModal()}>save</button>
                                         </div>
 

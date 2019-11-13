@@ -12,7 +12,7 @@ import ChatWrapper from "./chatWrapper";
 
 const CommunityRightSection = () => {
     return (
-        <div>
+        <div className="overflow-auto flex-grow-1 pb-5">
             <CommunityAnnouncements/>
             <CommunityEvents/>
             <CommunityActivity/>

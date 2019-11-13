@@ -30,6 +30,12 @@ const RecommendedMentorData = [{
     text: "ThinQbator Inc."
 },
 {
+        name: "Robert Watson",
+        title: "Creative Lead",
+        text: "ThinQbator Inc."
+    },
+
+{
     name: "Robert Watson",
     title: "Creative Lead",
     text: "ThinQbator Inc."
@@ -78,14 +84,13 @@ const MentortabComponent = (props: MentortabProps) => {
                     </div>
                 </Nav>
             </header>
-
-            <TabContent className="dashboard-tab-wrapper pt-2 flex-grow-1" activeTab={activeTab}>
-                <TabPane tabId="1">
-                    <Row className="py-3">
-                        <Col xs="12" md="6" className="d-none d-md-block">
+            <TabContent className="d-flex dashboard-tab-wrapper pt-2 flex-grow-1 overflow-auto" activeTab={activeTab}>
+                <TabPane tabId="1" className="flex-grow-1">
+                    <Row className="py-3 m-0">
+                        <Col xs="12" md="8" className="d-none d-lg-block mb-2">
                             <DefaultMentorCard mentorType={MentorTypes.DEFAULT} {...MentorData} />
                         </Col>
-                        <Col xs="" md="6" onClick={() => history.push(RouteUrls.MENTOR_ADVANCE_SEARCH)}>
+                        <Col xs="" md="8" className="d-flex mb-2" onClick={() => history.push(RouteUrls.MENTOR_ADVANCE_SEARCH)}>
                             <AddMentorCard />
                         </Col>
                     </Row>
@@ -94,31 +99,34 @@ const MentortabComponent = (props: MentortabProps) => {
                             <h2 className="mb-0">Recommended Mentors</h2>
                             <RecommendMentorTooltip />
                         </div>
-                        <Row className="py-3">
+                        <Row className="py-3 m-0">
                             {RecommendedMentorData.map((data, index) => {
-                                return <Col xs="12" sm="6" key={index}>
+                                return <Col xs="12" sm="8" className="mb-2" key={index}>
                                     <DefaultMentorCard mentorType={MentorTypes.RECOMMENDED} {...data} />
                                 </Col>
                             })}
-                            <Col xs="12" sm="6">
+                            <Col xs="12" sm="8" className="d-flex mb-2">
                                 <ViewMentorCard />
                             </Col>
                         </Row>
                     </div>
                 </TabPane>
-                <TabPane tabId="2">
+                <TabPane tabId="2" className="h-100">
                     <RequestTab/>
                 </TabPane>
                 <button className="d-lg-none btn-block-custom add-mentor-button">
                     <i className="icon-add mr-2"></i>Add mentor
                 </button>
             </TabContent>
-            <RequestMentorChat/>
-
-
-
-
+            {/*<RequestMentorChat/>*/}
         </div>
+
+
+
+
+
+
+
 
     );
 }

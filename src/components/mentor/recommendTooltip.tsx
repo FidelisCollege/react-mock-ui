@@ -10,8 +10,8 @@ const RecommendMentorTooltip = () => {
     }
 
     return (
-        <div>
-            <div  id="DisabledAutoHideExample" className=" icons-recommend">
+        <>
+            <div  id="DisabledAutoHideExample" className="icons-recommend cursor-pointer">
                 <i className="icon-info text-primary ml-2 icon-recommend f-20 py-2" ></i>
                 <i className="icon-info-filled text-primary ml-2 f-20  py-2"></i>
             </div>
@@ -21,7 +21,7 @@ const RecommendMentorTooltip = () => {
                 and view the complete information by clicking on the
                 profile image / name.
             </Tooltip>
-        </div>
+        </>
     );
 }
 
