@@ -13,7 +13,7 @@ const MentorDashboard = () => {
     return (
         <>
             <main className="dashboard-container student-profile">
-                <div className=" d-lg-none d-flex flex-grow-1 tab-content-wrapper min-height-0 h-100 overflow-hidden">
+                <div className="d-lg-none d-flex flex-column flex-grow-1 overflow-hidden">
                     <MentorTab/>
                 </div>
                 <div className="inner-container min-height-0 p-lg-3 d-none d-md-block">

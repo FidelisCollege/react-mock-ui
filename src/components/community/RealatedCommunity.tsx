@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {Button, Card, CardImg, Col, Row} from "reactstrap";
-import CommunityCard, {CommunityCardProps} from "./community-card";
+// import CommunityCard, {CommunityCardProps} from "../community/";
 import {CommunityTypes} from "./models/communityModels";
 
 export interface CommunityCardProps {

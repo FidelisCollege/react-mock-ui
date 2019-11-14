@@ -36,8 +36,8 @@ export default class TabComponents extends React.Component <{},any> {
         const {activeMainTab} = this.state;
 
         return (
-            <div className="d-lg-none d-md-flex flex-grow-1 tab-content-wrapper min-height-0 overflow-hidden ">
-                <div className=" d-lg-none d-md-flex flex-column flex-grow-1 overflow-hidden mh-100 d-flex">
+            <div className="overflow-hidden d-flex flex-column flex-grow-1">
+                <div className="overflow-hidden">
                     <div className="nav nav-tabs tab-icon-list-view custom-tabs py-2 border-bottom justify-content-between" id="nav-tab" role="tablist">
                         <a className={"nav-item nav-link" + (activeMainTab === MentorTabNames.COACH ? " active" : "")} onClick={() => this.onSelectMainTab(MentorTabNames.COACH)} id="nav-goal-tab" data-toggle="tab" href="#" role="tab" aria-controls="nav-goal" aria-selected="true">
                             <span className="title">{MentorTabNames.COACH}</span>
@@ -53,8 +53,8 @@ export default class TabComponents extends React.Component <{},any> {
                         </a>
                     </div>
 
-                    <div className="inner-container min-height-0 p-lg-3 px-2">
-                        <div className="d-flex flex-grow-1 tab-content-wrapper min-height-0">
+                    <div className="inner-container p-lg-3 px-2">
+                        <div className="d-flex flex-grow-1 tab-content-wrapper">
                             <div className={`list-team tab-data ${activeMainTab === MentorTabNames.COACH ? " active" : ""} left-column`} id="nav-coach">
                                 Coach Component
                             </div>
