@@ -4,8 +4,8 @@ import CommunityDetailsComponent from "./communityDetailsComponent";
 
 
 
-const AboutCommuinityDetails = () => {
-
+const AboutCommuinityDetails = (props) => {
+        console.log(props.aboutCommuinityDetails);
         return (
             <div className="content-wrapper">
                 <p className="f-14 text-light ">Lorem Ipsum is simply dummy text of the printing and typesetting industry.

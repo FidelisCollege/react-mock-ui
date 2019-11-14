@@ -31,6 +31,7 @@ const apiMiddleware: Middleware = (store: Store<any>) => (next: any): any => (
     return api
         .callAPI(callAPI)
         .then((response) => {
+            debugger;
             if (
                 action.actionData
                 && action.actionData.successMessage
@@ -56,6 +57,7 @@ const apiMiddleware: Middleware = (store: Store<any>) => (next: any): any => (
             }
         })
         .catch((error) => {
+            debugger;
             if (
                 (error && error.response && error.response.status === 404) ||
                 (error && error.response && error.response.status === 403) ||

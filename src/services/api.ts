@@ -27,5 +27,6 @@ export function setHeaders(requestConfig: AxiosRequestConfig) {
         'Content-Type': 'application/json',
         Accept: 'application/json',
     };
+    axios.defaults.withCredentials = true;
     return requestConfig;
 }

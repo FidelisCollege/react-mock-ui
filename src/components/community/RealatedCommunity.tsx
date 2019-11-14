@@ -3,14 +3,6 @@ import {Button, Card, CardImg, Col, Row} from "reactstrap";
 import CommunityCard, {CommunityCardProps} from "./community-card";
 import {CommunityTypes} from "./models/communityModels";
 
-export interface CommunityCardProps {
-    communityTypes: CommunityTypes ;
-    memberCount: string;
-    member: string;
-    activityCount: string;
-    activity: string;
-
-}
 const RelatedCommunities  = (props: CommunityCardProps) => {
     const {communityTypes, memberCount, member, activityCount, activity } = props;
 

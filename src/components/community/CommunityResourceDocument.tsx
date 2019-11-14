@@ -16,7 +16,7 @@ const CommunityResourceDocument = () => {
             <Row className="m-0 py-2 justify-content-around justify-content-lg-between">
                 <Col sm="12" xs="10">
                     <a href="#" className="d-flex">
-                        <IconFileInsert classname="text-secondary"/>
+                        <IconFileInsert className="text-secondary"/>
                         <p className="file-name mb-0 f-14 text-dark text-truncate">System Design Document</p>
                     </a>
                 </Col>
@@ -33,7 +33,7 @@ const CommunityResourceDocument = () => {
             <Row className="m-0 py-2">
                 <Col sm="12" xs="10">
                     <a href="#" className="d-flex">
-                        <IconAttachment classname="text-secondary"/>
+                        <IconAttachment className="text-secondary"/>
                         <p className="file-name mb-0 f-14 text-dark text-truncate">System Design Document</p>
                     </a>
                 </Col>

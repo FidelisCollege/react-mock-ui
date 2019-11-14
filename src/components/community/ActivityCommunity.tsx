@@ -6,9 +6,7 @@ import CommunityAllActivity from "./communityAllActivities";
 import CommunityActivityAnnouncement from "./communityActivityAnnouncement";
 import CommunityActivityPost from "./communityActivityPost";
 import CommunityPostModal from "./postModal";
-
-
-
+import {ActivitiesPane} from '../community/helpers/helper';
 
 
 
@@ -19,42 +17,24 @@ const ActivityCommuinity = () => {
         if (activeTab !== tab) setActiveTab(tab);
     }
 
+    const ActivityPane = ActivitiesPane.map((value, index) => {
+        return (
+            <NavItem key = {value} className={value === "All" ? "mr-3":""}>
+            <NavLink
+                className={"text-capitalize" + (activeTab === (index+1).toString() ? ' active ' : '')}
+                onClick={() => toggle((index+1).toString())}
+            >
+                {value}
+            </NavLink>
+        </NavItem>
+        )
+    })
+
     return (
         <>
             <Nav pills className="d-flex justify-content-between align-items-center py-2 px-2 border-bottom community-activity-tabs">
                 <div className="d-flex">
-                    <NavItem className="mr-3">
-                        <NavLink
-                            className={"text-capitalize" + (activeTab === '1' ? ' active ' : '')}
-                            onClick={() => toggle('1')}
-                        >
-                            all
-                        </NavLink>
-                    </NavItem>
-                    <NavItem>
-                        <NavLink
-                            className={"text-capitalize btn" + (activeTab === '2' ? ' active ' : '')}
-                            onClick={() => toggle('2')}
-                        >
-                            events
-                        </NavLink>
-                    </NavItem>
-                    <NavItem>
-                        <NavLink
-                            className={"text-capitalize btn" + (activeTab === '3' ? ' active ' : '')}
-                            onClick={() => toggle('3')}
-                        >
-                            announcements
-                        </NavLink>
-                    </NavItem>
-                    <NavItem>
-                        <NavLink
-                            className={"text-capitalize btn" + (activeTab === '4' ? ' active ' : '')}
-                            onClick={() => toggle('4')}
-                        >
-                            posts
-                        </NavLink>
-                    </NavItem>
+                    {ActivityPane}
                 </div>
 
             </Nav>

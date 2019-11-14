@@ -4,7 +4,15 @@ import rootReducer from './rootReducer';
 import api from '../middlewares/api';
 import { enableBatching } from 'redux-batched-actions';
 
+export interface ApiCallInterface {
+    loading: boolean;
+    data: any;
+    error: boolean;
+    total?: number;
+}
+
 export interface StateInterface {
+    communityAbout : ApiCallInterface
 }
 
 export default function configureStore(initialState = {}) {

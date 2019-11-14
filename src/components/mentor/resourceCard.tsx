@@ -7,7 +7,9 @@ const ResourceModal = (props) => {
     return (
 
             <div>
-                <h3 className="card-title text-light d-flex justify-content-between text-capitalize border-0 mb-0">resources</h3>
+                <h3 className="card-title text-light d-flex justify-content-between text-capitalize border-0 mb-0">
+                    <a href="/ResourcesContent"><span>Resources</span></a>
+                </h3>
             </div>
 
 
@@ -17,3 +19,6 @@ const ResourceModal = (props) => {
 }
 
 export default  ResourceModal;
+{/* <NavLink href='/ResourcesContent' activeClassName="is-active-sidebar-link" className="left-nav-item">
+<span className="left-nav-text">Resources</span>
+</NavLink> */}
