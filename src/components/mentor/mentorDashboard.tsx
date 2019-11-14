@@ -17,7 +17,7 @@ const MentorDashboard = () => {
                     <MentorTab/>
                 </div>
                 <div className="inner-container min-height-0 p-lg-3 d-none d-md-flex">
-                    <div className="d-flex flex-grow-1 tab-content-wrapper min-height-0 h-100">
+                    <div className="d-flex flex-grow-1 tab-content-wrapper min-height-0">
                         <div className="left-column d-lg-flex left-column d-none d-md-none d-lg-flex ">
                             <LeftNavComponent/>
                         </div>

@@ -11,7 +11,7 @@ const CommunityDashboard = () => {
         <main className="dashboard-container student-profile">
             <div className="inner-container min-height-0 p-lg-3">
                 <div className="d-flex flex-grow-1 tab-content-wrapper min-height-0 h-100">
-                    <div className="left-column d-none d-md-none d-lg-flex ">
+                    <div className="left-column d-lg-flex left-column d-none d-md-none d-lg-flex ">
                         <LeftNavComponent/>
                     </div>
                     <div className="student-details tab-data active w-100">

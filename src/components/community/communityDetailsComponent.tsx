@@ -18,8 +18,8 @@ const CommunityDetailsComponent = (props) => {
     }
 
     return (
-        <div className="community-details community-activity-detail h-100 overflow-hidden">
-            <div className="d-lg-none d-flex flex-column mh-100">
+        <div className="community-details community-activity-detail overflow-hidden">
+            <div className="d-lg-none h-100">
                 <Nav pills className="d-flex justify-content-between align-items-center py-2 px-2 border-bottom community-activity-tabs overflow-auto d-lg-none">
                     <div className="d-flex">
                         <NavItem className="mr-3">

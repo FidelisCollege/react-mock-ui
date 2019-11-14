@@ -48,7 +48,6 @@ const CommunityTabComponent = (props: CommunityTabProps) => {
 
                 </Nav>
             </header>
-
             <TabContent className="dashboard-tab-wrapper pt-3 flex-grow-1 overflow-auto" activeTab={activeTab}>
                 <TabPane tabId="1">
                     <Row className="m-0">
@@ -79,11 +78,6 @@ const CommunityTabComponent = (props: CommunityTabProps) => {
                 </TabPane>
 
             </TabContent>
-
-
-
-
-
         </div>
 
     );

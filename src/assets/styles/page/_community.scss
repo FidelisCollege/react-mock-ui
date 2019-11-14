@@ -170,6 +170,9 @@ $sort-button-bg: #ececfb;
     }
   .search-input-group{
       min-width: 298px;
+    @media (max-width: 576px){
+      min-width: auto;
+    }
   }
   .resource-app-card{
 
