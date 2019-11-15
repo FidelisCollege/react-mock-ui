@@ -2,10 +2,25 @@ import * as React from 'react';
 import { connect } from 'react-redux';
 import {
     getCommunityAbout,
-    clearCommunityAbout
+    clearCommunityAbout,
+    getCommunityActivity,
+    clearCommunityActivity,
+    getCommunityCalendar,
+    clearCommunityCalendar,
+    getCommunityMembers,
+    clearCommunityMembers,
+    getCommunityRelated,
+    clearCommunityRelated,
+    getCommunityResource,
+    clearCommunityResource
 } from './actions';
 import {StateInterface, ApiCallInterface} from '../../store';
-import {CommunitiesActionsInterface} from './actions';
+import {CommunitiesAboutActionsInterface,
+        CommunitiesActivityActionsInterface,
+        CommunitiesCalendarActionsInterface,
+        CommunitiesMembersActionsInterface,
+        CommunitiesRelatedActionsInterface,
+        CommunitiesResourceActionsInterface} from './actions';
 import { withRouter } from 'react-router-dom';
 import { TabContent, TabPane, Nav, NavItem, NavLink } from 'reactstrap';
 import AboutCommuinityDetails from "./AboutCommunity";
@@ -15,8 +30,13 @@ import CommunityMembers from "./communityMembers";
 import CommunityResources from "./communityResources";
 import {CommunityDetailsNames, CommunityDetails} from "../community/helpers/helper";
 
-export interface CommunityDetailsProps extends CommunitiesActionsInterface {
-    communityAboutInfo : ApiCallInterface
+export interface CommunityDetailsProps extends CommunitiesAboutActionsInterface, CommunitiesActivityActionsInterface, CommunitiesCalendarActionsInterface, CommunitiesMembersActionsInterface, CommunitiesRelatedActionsInterface, CommunitiesResourceActionsInterface {
+    communityAboutInfo : ApiCallInterface,
+    communityActivityInfo : ApiCallInterface,
+    communityCalendarInfo : ApiCallInterface,
+    communityMemberInfo : ApiCallInterface,
+    communityRelatedInfo : ApiCallInterface,
+    communityResourceInfo : ApiCallInterface
 }  
 
 export interface CommunityDetailsState {
@@ -32,6 +52,11 @@ class CommunityDetailsComponent extends React.Component<CommunityDetailsProps, C
     componentDidMount() {
         const communityId = 1470
         this.props.getCommunityAbout(communityId);
+        this.props.getCommunityActivity(communityId, 1, 'ALL');
+        // this.props.getCommunityCalendar(communityId);
+        this.props.getCommunityMembers(communityId, 1, '');
+        this.props.getCommunityRelated(communityId);
+        this.props.getCommunityResource(communityId);
     }
 
     toggle = tab => {
@@ -136,11 +161,26 @@ class CommunityDetailsComponent extends React.Component<CommunityDetailsProps, C
 
 const mapStateToProps = (state: StateInterface) => ({
     communityAboutInfo: state.communityAbout,
+    communityActivityInfo : state.communityActivity,
+    communityCalendarInfo : state.communityCalendar,
+    communityMemberInfo : state.communityMember,
+    communityRelatedInfo : state.communityRelated,
+    communityResourceInfo : state.communityResources
 });
 
 const mapDispatchToProps = {
     getCommunityAbout,
-    clearCommunityAbout
+    clearCommunityAbout,
+    getCommunityActivity,
+    clearCommunityActivity,
+    getCommunityCalendar,
+    clearCommunityCalendar,
+    getCommunityMembers,
+    clearCommunityMembers,
+    getCommunityRelated,
+    clearCommunityRelated,
+    getCommunityResource,
+    clearCommunityResource
 };
 
 export default withRouter(connect<any, any, any>(

@@ -6,7 +6,7 @@ export const GET_COMMUNITY_ABOUT_SUCCESS = 'GET_COMMUNITY_ABOUT_SUCCESS';
 export const GET_COMMUNITY_ABOUT_FAILURE = 'GET_COMMUNITY_ABOUT_FAILURE';
 export const CLEAR_COMMUNITY_ABOUT = 'CLEAR_COMMUNITY_ABOUT';
 
-export interface CommunitiesActionsInterface {
+export interface CommunitiesAboutActionsInterface {
     getCommunityAbout: Function;
     clearCommunityAbout: Function;
 }

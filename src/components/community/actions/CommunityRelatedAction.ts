@@ -1,24 +1,24 @@
 import { CALL_API } from "../../../middlewares/api";
 import * as api from '../../../services/api';
 
-export const GET_COMMUNITY_ABOUT_REQUEST = 'GET_COMMUNITY_ABOUT_REQUEST';
-export const GET_COMMUNITY_ABOUT_SUCCESS = 'GET_COMMUNITY_ABOUT_SUCCESS';
-export const GET_COMMUNITY_ABOUT_FAILURE = 'GET_COMMUNITY_ABOUT_FAILURE';
-export const CLEAR_COMMUNITY_ABOUT = 'CLEAR_COMMUNITY_ABOUT';
+export const GET_COMMUNITY_RELATED_REQUEST = 'GET_COMMUNITY_RELATED_REQUEST';
+export const GET_COMMUNITY_RELATED_SUCCESS = 'GET_COMMUNITY_RELATED_SUCCESS';
+export const GET_COMMUNITY_RELATED_FAILURE = 'GET_COMMUNITY_RELATED_FAILURE';
+export const CLEAR_COMMUNITY_RELATED = 'CLEAR_COMMUNITY_RELATED';
 
-export interface CommunitiesActionsInterface {
-    getCommunityAbout: Function;
-    clearCommunityAbout: Function;
+export interface CommunitiesRelatedActionsInterface {
+    getCommunityRelated: Function;
+    clearCommunityRelated: Function;
 }
 
-function getCommunityAboutInfo(url: string) {
+function getCommunityRelatedInfo(url: string) {
     console.log(url);
     return {
         [CALL_API]: {
             types: [
-                GET_COMMUNITY_ABOUT_REQUEST,
-                GET_COMMUNITY_ABOUT_SUCCESS,
-                GET_COMMUNITY_ABOUT_FAILURE
+                GET_COMMUNITY_RELATED_REQUEST,
+                GET_COMMUNITY_RELATED_SUCCESS,
+                GET_COMMUNITY_RELATED_FAILURE
             ],
             url: url,
             method: 'GET'
@@ -29,21 +29,21 @@ function getCommunityAboutInfo(url: string) {
     }
 }
 
-function clearCommunityAboutInfo() {
+function clearCommunityRelatedInfo() {
     return {
-        type: CLEAR_COMMUNITY_ABOUT
+        type: CLEAR_COMMUNITY_RELATED
     }
 }
 
-export function getCommunityAbout(communityId: number): Function {
+export function getCommunityRelated(communityId: number): Function {
     return function (dispatch: any, getState: Function) {
         debugger;
-        return dispatch(getCommunityAboutInfo(api.getDataApiBaseUrl() + `/community/${communityId}/about`));
+        return dispatch(getCommunityRelatedInfo(api.getDataApiBaseUrl() + `/community/${communityId}/related`));
     }
 }
 
-export function clearCommunityAbout(): Function {
+export function clearCommunityRelated(): Function {
     return function (dispatch: any, getState: Function) {
-        return dispatch(clearCommunityAboutInfo());
+        return dispatch(clearCommunityRelatedInfo());
     }
 }

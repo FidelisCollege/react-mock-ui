@@ -12,7 +12,13 @@ export interface ApiCallInterface {
 }
 
 export interface StateInterface {
-    communityAbout : ApiCallInterface
+    communityAbout : ApiCallInterface,
+    communityActivity : ApiCallInterface,
+    communityCalendar : ApiCallInterface,
+    communityMember : ApiCallInterface,
+    communityRelated : ApiCallInterface,
+    communityResources : ApiCallInterface
+
 }
 
 export default function configureStore(initialState = {}) {

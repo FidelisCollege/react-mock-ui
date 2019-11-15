@@ -1,24 +1,24 @@
 import { CALL_API } from "../../../middlewares/api";
 import * as api from '../../../services/api';
 
-export const GET_COMMUNITY_ABOUT_REQUEST = 'GET_COMMUNITY_ABOUT_REQUEST';
-export const GET_COMMUNITY_ABOUT_SUCCESS = 'GET_COMMUNITY_ABOUT_SUCCESS';
-export const GET_COMMUNITY_ABOUT_FAILURE = 'GET_COMMUNITY_ABOUT_FAILURE';
-export const CLEAR_COMMUNITY_ABOUT = 'CLEAR_COMMUNITY_ABOUT';
+export const GET_COMMUNITY_RESOURCE_REQUEST = 'GET_COMMUNITY_RESOURCE_REQUEST';
+export const GET_COMMUNITY_RESOURCE_SUCCESS = 'GET_COMMUNITY_RESOURCE_SUCCESS';
+export const GET_COMMUNITY_RESOURCE_FAILURE = 'GET_COMMUNITY_RESOURCE_FAILURE';
+export const CLEAR_COMMUNITY_RESOURCE = 'CLEAR_COMMUNITY_RESOURCE';
 
-export interface CommunitiesActionsInterface {
-    getCommunityAbout: Function;
-    clearCommunityAbout: Function;
+export interface CommunitiesResourceActionsInterface {
+    getCommunityResource: Function;
+    clearCommunityResource: Function;
 }
 
-function getCommunityAboutInfo(url: string) {
+function getCommunityResourceInfo(url: string) {
     console.log(url);
     return {
         [CALL_API]: {
             types: [
-                GET_COMMUNITY_ABOUT_REQUEST,
-                GET_COMMUNITY_ABOUT_SUCCESS,
-                GET_COMMUNITY_ABOUT_FAILURE
+                GET_COMMUNITY_RESOURCE_REQUEST,
+                GET_COMMUNITY_RESOURCE_SUCCESS,
+                GET_COMMUNITY_RESOURCE_FAILURE
             ],
             url: url,
             method: 'GET'
@@ -29,21 +29,22 @@ function getCommunityAboutInfo(url: string) {
     }
 }
 
-function clearCommunityAboutInfo() {
+function clearCommunityResourceInfo() {
     return {
-        type: CLEAR_COMMUNITY_ABOUT
+        type: CLEAR_COMMUNITY_RESOURCE
     }
 }
 
-export function getCommunityAbout(communityId: number): Function {
+export function getCommunityResource(communityId: number): Function {
     return function (dispatch: any, getState: Function) {
         debugger;
-        return dispatch(getCommunityAboutInfo(api.getDataApiBaseUrl() + `/community/${communityId}/about`));
+        return dispatch(getCommunityResourceInfo(api.getDataApiBaseUrl() + `/community/${communityId}/apps/216909`));
     }
 }
 
-export function clearCommunityAbout(): Function {
+export function clearCommunityResource(): Function {
     return function (dispatch: any, getState: Function) {
-        return dispatch(clearCommunityAboutInfo());
+        return dispatch(clearCommunityResourceInfo());
     }
 }
+// https://dev2.fideliseducation.com/api/community/1470/apps/216909

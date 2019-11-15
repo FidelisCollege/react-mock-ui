@@ -1,49 +1,49 @@
 import { CALL_API } from "../../../middlewares/api";
 import * as api from '../../../services/api';
 
-export const GET_COMMUNITY_ABOUT_REQUEST = 'GET_COMMUNITY_ABOUT_REQUEST';
-export const GET_COMMUNITY_ABOUT_SUCCESS = 'GET_COMMUNITY_ABOUT_SUCCESS';
-export const GET_COMMUNITY_ABOUT_FAILURE = 'GET_COMMUNITY_ABOUT_FAILURE';
-export const CLEAR_COMMUNITY_ABOUT = 'CLEAR_COMMUNITY_ABOUT';
+export const GET_COMMUNITY_ACTIVITY_REQUEST = 'GET_COMMUNITY_ACTIVITY_REQUEST';
+export const GET_COMMUNITY_ACTIVITY_SUCCESS = 'GET_COMMUNITY_ACTIVITY_SUCCESS';
+export const GET_COMMUNITY_ACTIVITY_FAILURE = 'GET_COMMUNITY_ACTIVITY_FAILURE';
+export const CLEAR_COMMUNITY_ACTIVITY = 'CLEAR_COMMUNITY_ACTIVITY';
 
-export interface CommunitiesActionsInterface {
-    getCommunityAbout: Function;
-    clearCommunityAbout: Function;
+export interface CommunitiesActivityActionsInterface {
+    getCommunityActivity: Function;
+    clearCommunityActivity: Function;
 }
 
-function getCommunityAboutInfo(url: string) {
+function getCommunityActivityInfo(url: string) {
     console.log(url);
     return {
         [CALL_API]: {
             types: [
-                GET_COMMUNITY_ABOUT_REQUEST,
-                GET_COMMUNITY_ABOUT_SUCCESS,
-                GET_COMMUNITY_ABOUT_FAILURE
+                GET_COMMUNITY_ACTIVITY_REQUEST,
+                GET_COMMUNITY_ACTIVITY_SUCCESS,
+                GET_COMMUNITY_ACTIVITY_FAILURE
             ],
             url: url,
             method: 'GET'
         },
         actionData: {
-            errorMessage: "Community About Not Given"
+            errorMessage: "Community Activity Not Present"
         }
     }
 }
 
-function clearCommunityAboutInfo() {
+function clearCommunityActivityInfo() {
     return {
-        type: CLEAR_COMMUNITY_ABOUT
+        type: CLEAR_COMMUNITY_ACTIVITY  
     }
 }
 
-export function getCommunityAbout(communityId: number): Function {
+export function getCommunityActivity(communityId: number, pageId: number, filterEvent: string): Function {
     return function (dispatch: any, getState: Function) {
         debugger;
-        return dispatch(getCommunityAboutInfo(api.getDataApiBaseUrl() + `/community/${communityId}/about`));
+        return dispatch(getCommunityActivityInfo(api.getDataApiBaseUrl() + `/activity/community/${communityId}?page=${pageId}&filter=${filterEvent}`));
     }
 }
 
-export function clearCommunityAbout(): Function {
+export function clearCommunityActivity(): Function {
     return function (dispatch: any, getState: Function) {
-        return dispatch(clearCommunityAboutInfo());
+        return dispatch(clearCommunityActivityInfo());
     }
 }
