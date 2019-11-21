@@ -50,7 +50,7 @@ const CommunityTabComponent = (props: CommunityTabProps) => {
                     </div>
 
                 </Nav>
-                <div className="d-flex f-14">
+                <div className="f-14 d-none d-lg-flex">
                     <a href="#" className="text-capitalize text-primary">current</a>
                     <div className="px-2">|</div>
                     <a href="#" className="text-capitalize text-secondary">past</a>
@@ -75,7 +75,7 @@ const CommunityTabComponent = (props: CommunityTabProps) => {
                     <div className="mt-4">
                         <h2 className="mb-0 pb-2 f-14 font-weight-normal px-2 text-capitalize">recommended communities</h2>
                         <Row className="m-0">
-                            <Col xs="24" sm="8" md="12" className="p-0">
+                            <Col xs="24" sm="8" md="12" className="">
                                 <CommunityCard communityTypes={CommunityTypes.JOIN} {...CommuntiyData}/>
                             </Col>
                         </Row>

@@ -218,7 +218,33 @@ $sort-button-bg: #ececfb;
     }
 }
 .card-background{
-  //background-image: url("card-bg.png");
-  background-position: center;
-
+  background-image: url("images/cardBg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10px;
+}
+.community-card{
+    &:hover{
+      .card-close{
+        display: block;
+      }
+    }
+  .card-close{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: $white;
+    position: absolute;
+    right: -4px;
+    top:-4px;
+    display: none;
+    color: $primary;
+    .icon-close{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-weight: bold;
+    }
+  }
 }

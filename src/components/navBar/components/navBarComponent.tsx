@@ -26,7 +26,7 @@ class NavBarComponent extends React.Component<RouteComponentProps,  any> {
                             <i className="icon-menu"/>
                         </span>
                         <Link to="/" className="navbar-brand p-0">
-                            <img src={require('../../../assets/images/logo.png')} alt=""/>
+                            <img src={require('../../../assets/styles/images/logo.png')} alt=""/>
                         </Link>
                         <div
                             className="d-flex align-items-center justify-content-end justify-content-sm-between flex-grow-1">
