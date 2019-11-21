@@ -5,6 +5,7 @@ import { RouteConfigInterface } from '../model';
 import NavBarComponent from '../../navBar/components/navBarComponent';
 import LeftNavComponent from "../../../common/components/left-nav";
 import CommonLeftNav from "../../../common/components/commonLeftNav";
+import LoginFormComponent from "../../login/login";
 
 class Routes extends React.Component<any, any> {
     renderRoutes(routes: RouteConfigInterface[]) {
@@ -36,7 +37,6 @@ class Routes extends React.Component<any, any> {
         return (
             <BrowserRouter>
                 <NavBarComponent />
-
                 <div className="main-content">
                     <CommonLeftNav/>
                     <Switch>{this.renderRoutes(routes)}</Switch>

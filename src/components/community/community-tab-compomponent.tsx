@@ -50,7 +50,7 @@ const CommunityTabComponent = (props: CommunityTabProps) => {
                     </div>
 
                 </Nav>
-                <div className="f-14 d-none d-lg-flex">
+                <div className="f-14 d-none d-lg-flex d-md-flex">
                     <a href="#" className="text-capitalize text-primary">current</a>
                     <div className="px-2">|</div>
                     <a href="#" className="text-capitalize text-secondary">past</a>
