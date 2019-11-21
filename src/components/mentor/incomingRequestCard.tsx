@@ -7,7 +7,7 @@ import { ListGroup, ListGroupItem, Button, Row, Col } from 'reactstrap';
 export default class IncomingRequestsCard extends React.Component {
     render() {
         return (
-            <ListGroupItem href="#" className="media mb-3 card-shadow p-2 px-lg-3 py-lg-4 d-flex align-items-center">
+            <ListGroupItem href="#" className="media mb-3 card-shadow p-2 px-lg-3 py-lg-3 d-flex align-items-center">
                 <div className="pr-1">
                     <img src="images/media-img.png" alt="..." className="border media-img"/>
                 </div>
@@ -24,8 +24,8 @@ export default class IncomingRequestsCard extends React.Component {
                     </Col>
                     <Col xs="8" sm="8" className="">
                         <div className="d-md-flex justify-content-end d-none">
-                            <Button className="btn btn-outline-primary mr-2">decline</Button>
-                            <Button className="btn btn-outline-primary active">accept</Button>
+                            <Button className="btn btn-outline-primary mr-2 text-capitalize">decline</Button>
+                            <Button className="btn btn-outline-primary active text-capitalize">accept</Button>
                         </div>
                         <div className="d-md-none d-flex justify-content-end align-items-center">
                             <a className="mr-2 " href="#" role="button">

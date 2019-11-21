@@ -58,7 +58,7 @@ export default class TabComponents extends React.Component <{},any> {
                             <div className={`list-team tab-data ${activeMainTab === MentorTabNames.COACH ? " active" : ""} left-column`} id="nav-coach">
                                 Coach Component
                             </div>
-                            <div className={`student-details tab-data ${activeMainTab === MentorTabNames.MENTORS ? " active" : ""} px-lg-3`} id="nav-mentor">
+                            <div className={`student-details tab-data ${activeMainTab === MentorTabNames.MENTORS ? " active" : ""} px-lg-3 px-md-3`} id="nav-mentor">
                                 <MentortabComponent/>
                             </div>
                             <div className={`student-details tab-data ${activeMainTab === MentorTabNames.MENTEES ? " active" : ""} px-lg-3`} id="nav-mentees">

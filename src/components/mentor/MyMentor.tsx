@@ -458,7 +458,7 @@ const MentorTab =(props: MentortabProps) => {
                                         <i className="icon-close text-secondary"></i>
                                     </h2>
                                     <div className="search-input-group d-flex align-items-center bg-white form-control my-3" id="searchBox">
-                                        <input className="form-control rounded-0 py-0 border-0" type="text" placeholder="Search for mentors" />
+                                        <input className="form-control rounded-0 py-0 border-0" type="text" placeholder="Enter Search Name" />
                                     </div>
                                 </div>
                                 <div className="p-3 d-flex justify-content-end border-top">

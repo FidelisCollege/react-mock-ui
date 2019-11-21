@@ -90,7 +90,7 @@ const MentortabComponent = (props: MentortabProps) => {
                         <Col xs="12" md="8" className="d-none d-lg-block mb-2">
                             <DefaultMentorCard mentorType={MentorTypes.DEFAULT} {...MentorData} />
                         </Col>
-                        <Col xs="" md="8" className="d-flex mb-2" onClick={() => history.push(RouteUrls.MENTOR_ADVANCE_SEARCH)}>
+                        <Col xs="" md="24" lg="8"  className="d-flex mb-2" onClick={() => history.push(RouteUrls.MENTOR_ADVANCE_SEARCH)}>
                             <AddMentorCard />
                         </Col>
                     </Row>

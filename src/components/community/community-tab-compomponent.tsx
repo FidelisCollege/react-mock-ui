@@ -1,9 +1,11 @@
 import * as React from 'react';
-import { Button, Col, Nav, NavItem, NavLink, Row, TabContent, TabPane } from 'reactstrap';
+import {Button, Col, ListGroup, Nav, NavItem, NavLink, Row, TabContent, TabPane} from 'reactstrap';
 import { withRouter, RouterProps } from 'react-router';
 import CommunityCard from "./community-card";
 import {CommunityTypes} from "./models/communityModels";
 import ExploreCommunityTab from "./exploreCommunity";
+import IncomingRequestsCard from "../mentor/IncomingRquests";
+import IncomingRequstsMentorTab from "../mentor/IncomingRquests";
 
 const CommuntiyData = {
     memberCount: "03",
@@ -25,7 +27,8 @@ const CommunityTabComponent = (props: CommunityTabProps) => {
 
     return (
         <div className="d-flex flex-column h-100  px-md-3 px-2">
-            <header className="border-bottom pb-md-2">
+            <h2 className="text-capitalize py-3 border-bottom f-18 text-dark font-weight-normal">Communities</h2>
+            <header className="border-bottom pb-md-2 d-flex justify-content-between align-items-center">
                 <Nav pills className="d-flex justify-content-between align-items-center py-2">
                     <div className="d-flex">
                         <NavItem className="mr-3">
@@ -47,9 +50,17 @@ const CommunityTabComponent = (props: CommunityTabProps) => {
                     </div>
 
                 </Nav>
+                <div className="d-flex f-14">
+                    <a href="#" className="text-capitalize text-primary">current</a>
+                    <div className="px-2">|</div>
+                    <a href="#" className="text-capitalize text-secondary">past</a>
+
+                </div>
             </header>
             <TabContent className="dashboard-tab-wrapper pt-3 flex-grow-1 overflow-auto" activeTab={activeTab}>
                 <TabPane tabId="1">
+                    <IncomingRequstsMentorTab/>
+                    <h2 className="f-14 text-light font-weight-normal px-2 text-capitalize">my communities</h2>
                     <Row className="m-0">
                         <Col xs="24" sm="8" md="12">
                             <CommunityCard communityTypes={CommunityTypes.POST} {...CommuntiyData}/>
@@ -62,7 +73,7 @@ const CommunityTabComponent = (props: CommunityTabProps) => {
                         </Col>
                     </Row>
                     <div className="mt-4">
-                        <h2 className="mb-0 pb-2 f-14">Recommended communities</h2>
+                        <h2 className="mb-0 pb-2 f-14 font-weight-normal px-2 text-capitalize">recommended communities</h2>
                         <Row className="m-0">
                             <Col xs="24" sm="8" md="12" className="p-0">
                                 <CommunityCard communityTypes={CommunityTypes.JOIN} {...CommuntiyData}/>

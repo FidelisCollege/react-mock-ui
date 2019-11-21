@@ -18,8 +18,8 @@ const CommunityDetailsComponent = (props) => {
     }
 
     return (
-        <div className="community-details community-activity-detail overflow-hidden">
-            <div className="d-lg-none h-100">
+        <div className="community-details community-activity-detail d-flex flex-grow-1">
+            <div className="d-lg-none d-md-flex flex-column flex-grow-1">
                 <Nav pills className="d-flex justify-content-between align-items-center py-2 px-2 border-bottom community-activity-tabs overflow-auto d-lg-none">
                     <div className="d-flex">
                         <NavItem className="mr-3">
@@ -72,7 +72,7 @@ const CommunityDetailsComponent = (props) => {
                         </NavItem>
                     </div>
                 </Nav>
-                <TabContent activeTab={activeTab} className="bg-white py-3 community-tab-content overflow-auto mh-100">
+                <TabContent activeTab={activeTab} className="bg-white py-3 community-tab-content flex-grow-1">
                     <TabPane tabId="about">
                         <AboutCommuinityDetails/>
                     </TabPane>
@@ -93,7 +93,7 @@ const CommunityDetailsComponent = (props) => {
                     </TabPane>
                 </TabContent>
             </div>
-            <div className="d-md-flex h-100 d-none">
+            <div className="d-md-none  d-lg-flex flex-grow-1 d-none">
                 <Nav className="d-none d-lg-flex flex-column align-content-start align-items-start p-2 card-shadow bg-white">
                     <NavItem className="mb-2 nav-items">
                         <NavLink

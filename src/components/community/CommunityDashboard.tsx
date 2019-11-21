@@ -15,6 +15,7 @@ const CommunityDashboard = () => {
                         <LeftNavComponent/>
                     </div>
                     <div className="student-details tab-data active w-100">
+
                        <CommunityTabComponent/>
                     </div>
                     <div className="flex-column tab-data right-column d-none d-lg-flex">

@@ -7,7 +7,7 @@ const ResourceModal = (props) => {
     return (
 
             <div>
-                <h3 className="card-title text-light d-flex justify-content-between text-capitalize border-0 mb-0">resources</h3>
+                <h3 className="card-title text-light d-flex justify-content-between text-capitalize border-0 mb-0"><a href="/ResourcesContent">resources</a></h3>
             </div>
 
 
