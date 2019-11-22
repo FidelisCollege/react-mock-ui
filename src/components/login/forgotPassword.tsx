@@ -1,14 +1,15 @@
 import * as React from 'react';
+import {IconGoogle} from "../../common";
 
 
 
 
+const ForgotPasswordComponent  = () => {
 
-const SignUpComponent  = () => {
 
     return (
         <div className="" id="loginForm">
-            <h1 className="login-heading">sign Up</h1>
+            <h1 className="login-heading">reset password</h1>
             <div className="form-wrapper">
                 <fieldset className="">
                     <div className="form-group has-error mb-4">
@@ -26,11 +27,8 @@ const SignUpComponent  = () => {
                         <label className="f-14 text-dark">Confirm Password</label>
                         <input className="form-control input-lg f-14" placeholder="Confirm Password" name="password" value="" type="password"/>
                     </div>
-                    <div className="custom-control custom-checkbox mb-3">
-                        <input className="custom-control-input" id="customCheckCustom" type="checkbox" value=""/>
-                        <label className="custom-control-label f-14 text-dark pt-1" htmlFor="customCheckCustom">I have read and agree</label>
-                    </div>
-                    <input className="btn btn-lg btn-primary btn-block f-16" value="Sign Up" type="submit"
+
+                    <input className="btn btn-lg btn-primary btn-block f-16" value="Confirm Password" type="submit"
                            id="submitButton"/>
 
                 </fieldset>
@@ -47,4 +45,4 @@ const SignUpComponent  = () => {
 }
 
 
-export default  SignUpComponent;
+export default  ForgotPasswordComponent;

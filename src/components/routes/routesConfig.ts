@@ -7,6 +7,8 @@ import ShowingAllActivity from "../community/ShowingAllActivities";
 import ResourcesContent from "../community/Resourcescontent";
 import CommunityProfile from "../community/CommunityProfile";
 import LoginFormComponent from "../login/login";
+import SignUpComponent from "../login/signUp";
+import ForgotPasswordComponent from "../login/forgotPassword";
 
 export enum RouteUrls {
     MENTOR = '/mentor',
@@ -15,7 +17,9 @@ export enum RouteUrls {
     SHOWING_ACTIVITIES  ='/all-activity',
     RESOURCES   = '/ResourcesContent',
     COMMUNITY_PROFILE ='/CommunityProfile',
-    LOGIN_FORM ='/login'
+    LOGIN_FORM ='/login',
+    SIGN_UP ='/signUp',
+    FORGOT_PASSWORD ='/forgotPassword'
 }
 
 export const routes: RouteConfigInterface[] = [
@@ -57,6 +61,16 @@ export const routes: RouteConfigInterface[] = [
     {
         path: RouteUrls.LOGIN_FORM,
         component: LoginFormComponent,
+        childRoutes: []
+    },
+    {
+        path: RouteUrls.SIGN_UP,
+        component: SignUpComponent,
+        childRoutes: []
+    },
+    {
+        path: RouteUrls.FORGOT_PASSWORD,
+        component: ForgotPasswordComponent,
         childRoutes: []
     },
 ];

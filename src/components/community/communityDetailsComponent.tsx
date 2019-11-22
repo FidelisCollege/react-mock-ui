@@ -95,7 +95,7 @@ const CommunityDetailsComponent = (props) => {
             </div>
             <div className="d-md-none  d-lg-flex flex-grow-1 d-none">
                 <Nav className="d-none d-lg-flex flex-column align-content-start align-items-start p-2 card-shadow bg-white">
-                    <NavItem className="mb-2 nav-items">
+                    <NavItem className="mb-2 nav-items ">
                         <NavLink
                             className={"tab-buttons text-capitalize text-dark f-14" + (activeTab === 'about' ? ' active ' : '')}
                             onClick={() => { toggle('about'); }}

@@ -1,56 +1,66 @@
 import * as React from 'react';
-import OnboardNav from "../onBoarding/container/onBoardingContainer";
-import {OnBoardingTabs} from "../onBoarding/Models/onBoardingModel";
+import {IconGoogle} from "../../common";
+import SignUpComponent from "./signUp";
 
 
 
 
 const LoginFormComponent  = () => {
-
-
-    return (
-        <main className="dashboard-container student-profile">
-            <div className="row d-flex justify-content-center h-100 align-items-center p-2">
-                <div className="col-md-8 col-lg-7 mx-auto">
-                    <div className="text-center pb-3">
-                        <h1 className="text-capitalize text-dark f-30 font-weight-normal">sign in</h1>
-                    </div>
-                    <div className="card card-body login-in card-shadow p-3">
-                        <fieldset>
-                            <div className="form-group has-error">
-                                <label htmlFor="validationCustom03">Email</label>
-                                <input className="form-control input-lg" placeholder="E-mail Address" name="email"
+    const [flag, setFlag] = React.useState(0);
+    if (!flag) {
+        return (
+            <main className="dashboard-container student-profile">
+                <div className="" id="loginForm">
+                    <h1 className="login-heading">sign in</h1>
+                    <div className="form-wrapper">
+                        <div className="label-heading">
+                            <a className=" text-center" href="">
+                                <IconGoogle/>
+                                <span className="ml-2 f-14 text-dark">Sign in using Google account</span>
+                            </a>
+                        </div>
+                        <div className="or-wrapper ">
+                            <hr></hr>
+                            <div className="or-block">OR</div>
+                        </div>
+                        <fieldset className="mt-4">
+                            <div className="form-group has-error mb-4">
+                                <label htmlFor="validationCustom03" className="f-14 text-dark">Enter Email
+                                    Address</label>
+                                <input className="form-control input-lg f-14" placeholder="E-mail Address" name="email"
                                        type="text" id="validationCustom03"/>
-                                <div className="invalid-feedback d-block">Please provide a valid email.</div>
+                                {/*<div className="invalid-feedback d-block">Please provide a valid email.</div>*/}
                             </div>
-                            <div className="form-group has-success">
-                                <label>Password</label>
-                                <input className="form-control input-lg" placeholder="Password" name="password" value=""
-                                       type="password"/>
+                            <div className="form-group has-success mb-4">
+                                <label className="f-14 text-dark">Password</label>
+                                <input className="form-control input-lg f-14" placeholder="Enter Password"
+                                       name="password" value="" type="password"/>
                             </div>
-                            <label></label>
-                            <input className="btn btn-lg btn-primary btn-block" value="Sign In" type="submit"
+
+                            <input className="btn btn-lg btn-primary btn-block f-16" value="Sign In" type="submit"
                                    id="submitButton"/>
-                            <div className="mt-3 label-heading text-center"><a
-                                className="btn btn-outline-primary text-center" href=""><i
-                                className="icon-google"></i><span className="ml-1">Sign in with google</span></a></div>
-                            <div className="mt-1 label-heading text-center"><a
-                                className="text-secondary text-center mr-2" href="forgot-password.html"
-                                id="forgotPssword">Forgot Password?</a><a className="text-secondary text-center"
-                                                                          href="signup.html" id="logIn">New User</a>
+
+                            <div className="d-flex justify-content-between mt-2 f-14 ">
+                                <a className="text-secondary" href="" id="forgotPssword">Forgot Password?</a>
+                                <a className="text-primary" href="" id="" onClick={() => setFlag(1)}>New User?</a>
                             </div>
                         </fieldset>
                     </div>
-                    <footer className="text-center mt-2" id="copyrightFooter"><a className="copyright-link" href="#"
-                                                                                 target="_blank">Powered by
-                        Fidelis &copy;<span className="copyright-year">2019</span></a></footer>
+                    <footer className="text-center mt-2 f-13" id="copyrightFooter">
+                        <a className="text-secondary" href="#" target="_blank">Powered by Fidelis &copy; 2019</a>
+                    </footer>
+
                 </div>
-            </div>
-        </main>
+            </main>
 
+        );
+    }
+    else {
+        return (
+            <SignUpComponent/>
+        )
+    }
 
-
-    );
 }
 
 

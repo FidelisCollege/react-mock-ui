@@ -1,0 +1,50 @@
+#loginForm {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  .login-heading {
+    font-size: 30px;
+    text-transform: capitalize;
+    color: $dark;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .form-wrapper{
+    width: 380px;
+    max-width: 100%;
+    background-color: $white;
+    border-radius: $border-radius;
+    box-shadow: $card-shadows;
+    padding: 30px 20px 24px;
+  }
+  .label-heading{
+    border: 1px solid $input-border-color;
+    border-radius: $border-radius;
+    padding: 12px 30px;
+
+  }
+  .or-wrapper{
+    position: relative;
+    margin-top:24px;
+    .or-block{
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      border: 1px solid $input-border-color;
+      position: absolute;
+      top: -16px;
+      left: 45%;
+      background-color: $white;
+      color: $dark;
+      font-size: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+
