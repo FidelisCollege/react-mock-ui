@@ -20,12 +20,7 @@ $dropdown-border-color: #ddd;
 }
 
 .invite-mentor-btn{
-  &:hover{
-    color: $primary;
-  }
-  &:focus{
-    color: $primary;
-  }
+
 }
 .mentor-card{
   //width:147px ;
@@ -133,16 +128,6 @@ $dropdown-border-color: #ddd;
       }
 
     }
-}
-.btn-outline-primary{
-    background-color: $white;
-    color: $primary;
-    &:hover{
-      background-color: $primary;
-      color: $white;
-
-    }
-
 }
 .search-filters{
   background-color: $badge-bg;

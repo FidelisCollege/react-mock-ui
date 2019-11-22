@@ -24,8 +24,8 @@ export default class IncomingRequestsCard extends React.Component {
                     </Col>
                     <Col xs="8" sm="8" className="">
                         <div className="d-md-flex justify-content-end d-none">
-                            <Button className="btn btn-outline-primary mr-2 text-capitalize">decline</Button>
-                            <Button className="btn btn-outline-primary active text-capitalize">accept</Button>
+                            <button className="btn btn-outline-primary mr-2 text-capitalize">decline</button>
+                            <button className="btn btn-outline-primary active text-capitalize">accept</button>
                         </div>
                         <div className="d-md-none d-flex justify-content-end align-items-center">
                             <a className="mr-2 " href="#" role="button">

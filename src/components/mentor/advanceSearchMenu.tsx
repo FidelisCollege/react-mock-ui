@@ -15,7 +15,7 @@ class AdvanceSearch extends React.Component<{},any> {
     render() {
         return (
             <div>
-                <Button color="primary" onClick={this.toggle} style={{ marginBottom: '1rem' }}>Toggle</Button>
+                <button color="primary" onClick={this.toggle} style={{ marginBottom: '1rem' }}>Toggle</button>
                 <Collapse isOpen={this.state.collapse}>
                     <Card>
                         <CardBody>

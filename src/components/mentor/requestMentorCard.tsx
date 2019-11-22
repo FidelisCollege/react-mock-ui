@@ -10,7 +10,7 @@ const RequestMentorCard = () => {
                 <CardTitle className="border-0 my-3 text-dark">Robert Watson</CardTitle>
                 <CardSubtitle className="text-light f-14">Creative Lead</CardSubtitle>
                 <CardText className="text-secondary f-14">ThinQbator Inc.</CardText>
-                <Button className="btn btn-outline-primary  mt-2 text-capitalize f-13 px-2">send request</Button>
+                <button className="btn btn-outline-primary  mt-2 text-capitalize f-13 px-2">send request</button>
             </CardBody>
         </Card>
 

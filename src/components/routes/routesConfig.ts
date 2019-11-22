@@ -5,10 +5,11 @@ import AddMentorSearch from "../mentor/addmentorSearch";
 import CommunityDashboard from "../community/CommunityDashboard";
 import ShowingAllActivity from "../community/ShowingAllActivities";
 import ResourcesContent from "../community/Resourcescontent";
-import CommunityProfile from "../community/CommunityProfile";
+import CommunityMember from "../community/communityMember";
 import LoginFormComponent from "../login/login";
 import SignUpComponent from "../login/signUp";
 import ForgotPasswordComponent from "../login/forgotPassword";
+import CommunityNonMember from "../community/communityNonMember";
 
 export enum RouteUrls {
     MENTOR = '/mentor',
@@ -16,10 +17,11 @@ export enum RouteUrls {
     COMMUNITY = '/CommunityDashboard',
     SHOWING_ACTIVITIES  ='/all-activity',
     RESOURCES   = '/ResourcesContent',
-    COMMUNITY_PROFILE ='/CommunityProfile',
+    COMMUNITY_MEMBER ='/CommunityMember',
     LOGIN_FORM ='/login',
     SIGN_UP ='/signUp',
-    FORGOT_PASSWORD ='/forgotPassword'
+    FORGOT_PASSWORD ='/forgotPassword',
+    COMMUNITY_NON_MEMBER ='/CommunityNonMember'
 }
 
 export const routes: RouteConfigInterface[] = [
@@ -54,8 +56,8 @@ export const routes: RouteConfigInterface[] = [
         childRoutes: []
     },
     {
-        path: RouteUrls.COMMUNITY_PROFILE,
-        component: CommunityProfile,
+        path: RouteUrls.COMMUNITY_MEMBER,
+        component: CommunityMember,
         childRoutes: []
     },
     {
@@ -71,6 +73,11 @@ export const routes: RouteConfigInterface[] = [
     {
         path: RouteUrls.FORGOT_PASSWORD,
         component: ForgotPasswordComponent,
+        childRoutes: []
+    },
+    {
+        path: RouteUrls.COMMUNITY_NON_MEMBER,
+        component: CommunityNonMember,
         childRoutes: []
     },
 ];

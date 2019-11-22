@@ -64,14 +64,18 @@ $sort-button-bg: #ececfb;
       width: 100% !important;
   }
 }
+
 .profile-banner-wrapper{
-    min-height: 101px;
+  min-height: 101px;
+  background-image: url("images/profile-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  border-radius: 4px;
   @media (max-width: 576px){
       min-height: 116px;
   }
-  .banner-img{
-      object-fit: cover;
-  }
+
   .profile-banner-content{
       position: absolute;
       top:0;

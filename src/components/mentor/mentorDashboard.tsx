@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Container } from 'reactstrap';
 
 import MentorRightSection from "./mentorRightSection";
-import MentorTab from "./mentorTab";
+import MentorTab from "./mentorTabMob";
 import AddMentorSearch from "./addmentorSearch";
 import DefaultMentorCard from "./mentorDefaultCards";
 import MentortabComponent from "./mentorTabComponent";

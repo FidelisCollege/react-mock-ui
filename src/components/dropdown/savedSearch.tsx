@@ -1,6 +1,9 @@
 import * as React from 'react';
 import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem, Row, Col } from 'reactstrap';
 
+
+
+
 export interface SavedSearchProps {
     toggleEditSearchModal: Function;
 }
@@ -24,7 +27,7 @@ export default class SavedSearchDropdown extends React.Component<SavedSearchProp
 
         return (
             <Dropdown isOpen={this.state.dropdownOpen} toggle={this.toggle} className="mr-md-3">
-                <DropdownToggle caret className="btn-outline-primary btn-dropdown text-capitalize shadow-none py-md-1 px-md-3">
+                <DropdownToggle caret className="btn btn-outline-primary btn-dropdown text-capitalize shadow-none py-md-1 px-md-3">
                     saved search
                 </DropdownToggle>
                 <DropdownMenu className="dropdown-menu border-0 rounded py-2  save-search-menu">

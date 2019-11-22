@@ -55,16 +55,16 @@ export default class TabComponents extends React.Component <{},any> {
 
                     <div className="inner-container  min-height-0 p-lg-3 d-lg-none d-flex">
                         <div className="d-flex flex-grow-1 tab-content-wrapper min-height-0">
-                            <div className={`list-team tab-data ${activeMainTab === MentorTabNames.COACH ? " active" : ""} left-column`} id="nav-coach">
+                            <div className={`list-team tab-data ${activeMainTab === MentorTabNames.COACH ? " active" : ""}  px-lg-3 px-md-3 p-2`} id="nav-coach">
                                 Coach Component
                             </div>
-                            <div className={`student-details tab-data ${activeMainTab === MentorTabNames.MENTORS ? " active" : ""} px-lg-3 px-md-3`} id="nav-mentor">
+                            <div className={`student-details tab-data ${activeMainTab === MentorTabNames.MENTORS ? " active" : ""} px-lg-3 px-md-3 p-2`} id="nav-mentor">
                                 <MentortabComponent/>
                             </div>
-                            <div className={`student-details tab-data ${activeMainTab === MentorTabNames.MENTEES ? " active" : ""} px-lg-3`} id="nav-mentees">
+                            <div className={`student-details tab-data ${activeMainTab === MentorTabNames.MENTEES ? " active" : ""} px-lg-3 p-2`} id="nav-mentees">
                                 1
                             </div>
-                            <div className={`student-details tab-data ${activeMainTab === MentorTabNames.COMMUNITIES ? " active" : ""} px-lg-3`} id="nav-communities">
+                            <div className={`student-details tab-data ${activeMainTab === MentorTabNames.COMMUNITIES ? " active" : ""} px-lg-3 p-2`} id="nav-communities">
                                 <CommunityDashboard/>
                             </div>
                         </div>

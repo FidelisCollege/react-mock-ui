@@ -24,7 +24,7 @@ const MentorRightSection = () => {
             </div>
             <div className="card border-0 card-purpose tab-data d-none d-lg-block mt-3">
                 <div className="card-body card-shadow px-3">
-                    <h3 className="card-title text-light d-flex justify-content-between text-capitalize border-0">notifications</h3>
+                    <h3 className="card-title text-light d-flex justify-content-between text-capitalize border-0"> mentor activity</h3>
                     <hr></hr>
                     <div className="overflow-auto right-card-data">
                         <MentorNotifications />

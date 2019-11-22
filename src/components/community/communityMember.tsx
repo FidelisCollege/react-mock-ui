@@ -3,7 +3,7 @@ import CommunityDetailComponent from "./communityDetailsComponent";
 import LeftNavComponent from "../../common/components/left-nav";
 
 
-const CommunityProfile = () => {
+const CommunityMember = () => {
     return (
         <>
 
@@ -47,4 +47,4 @@ const CommunityProfile = () => {
     );
 }
 
-export default  CommunityProfile;
+export default  CommunityMember;
