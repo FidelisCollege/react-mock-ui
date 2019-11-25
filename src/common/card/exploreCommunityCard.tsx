@@ -26,7 +26,7 @@ const ExploreCommunityCard  = () => {
                         <h6 className="text-secondary f-13 text-capitalize">activity</h6>
                     </Col>
                     <Col sm="8"  xs="8" className="p-0 text-center">
-                        <Button className="btn btn-outline-primary text-capitalize f-13">join</Button>
+                        <button className="btn btn-outline-primary text-capitalize f-13">join</button>
 
                     </Col>
 
