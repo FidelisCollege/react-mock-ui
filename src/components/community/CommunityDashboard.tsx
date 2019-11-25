@@ -1,7 +1,7 @@
 import * as React from 'react';
 import CommunityRightSection from "./community-right-section";
 import CommunityTabComponent from "./community-tab-compomponent";
-import TabComponents from "../mentor/mentorTabMob";
+import TabComponents from "../../common/dashboard/mentorMenteeTabMob";
 import LeftNavComponent from "../../common/components/left-nav";
 
 

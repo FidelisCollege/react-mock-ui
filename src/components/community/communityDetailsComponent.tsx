@@ -3,7 +3,7 @@ import { TabContent, TabPane, Nav, NavItem, NavLink, Card, Button, CardTitle, Ca
 import classnames from 'classnames';
 import {useState} from "react";
 import {MentorTabNames} from "../mentor/helper/helpers";
-import MentortabComponent from "../mentor/mentorTabMob";
+import MentortabComponent from "../../common/dashboard/mentorMenteeTabMob";
 import AboutCommuinityDetails from "./AboutCommunity";
 import ActivityCommuinity from "./ActivityCommunity";
 import RelatedCommunityDetails from "./relatedCommunityDetails";

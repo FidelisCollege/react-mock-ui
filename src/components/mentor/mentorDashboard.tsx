@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Container } from 'reactstrap';
 
 import MentorRightSection from "./mentorRightSection";
-import MentorTab from "./mentorTabMob";
+import MentorTab from "../../common/dashboard/mentorMenteeTabMob";
 import AddMentorSearch from "./addmentorSearch";
 import DefaultMentorCard from "./mentorDefaultCards";
 import MentortabComponent from "./mentorTabComponent";
@@ -21,7 +21,7 @@ const MentorDashboard = () => {
                         <div className="left-column d-lg-flex left-column d-none d-md-none d-lg-flex ">
                             <LeftNavComponent/>
                         </div>
-                        <div className="student-details tab-data active px-3 d-flex flex-column flex-grow-1">
+                        <div className="student-details tab-data active d-flex flex-column flex-grow-1">
                             <MentortabComponent/>
                         </div>
                         <div className="flex-column tab-data right-column d-none d-lg-flex">

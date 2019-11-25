@@ -1,11 +1,12 @@
 import * as React from 'react';
 import { TabContent, TabPane, Nav, NavItem, NavLink, Card, Button, CardTitle, CardText, Row, Col } from 'reactstrap';
 import classnames from 'classnames';
-import MentortabComponent from "./mentorTabComponent";
-import AddMentorSearch from "./addmentorSearch";
-import {MentorTabNames} from "./helper/helpers";
-import CommunityDasboard from "../community/CommunityDashboard";
-import CommunityDashboard from "../community/CommunityDashboard";
+import MentortabComponent from "../../components/mentor/mentorTabComponent";
+import AddMentorSearch from "../../components/mentor/addmentorSearch";
+import {MentorTabNames} from "../../components/mentor/helper/helpers";
+import CommunityDasboard from "../../components/community/CommunityDashboard";
+import CommunityDashboard from "../../components/community/CommunityDashboard";
+import MenteeTabComponent from "../../components/mentee/menteeTabComponent";
 
 
 
@@ -36,6 +37,7 @@ export default class TabComponents extends React.Component <{},any> {
         const {activeMainTab} = this.state;
 
         return (
+
             <div className="overflow-hidden d-flex flex-column flex-grow-1">
 
                     <div className="nav nav-tabs tab-icon-list-view custom-tabs py-2 border-bottom justify-content-between flex-shrink-0" id="nav-tab" role="tablist">
@@ -62,7 +64,7 @@ export default class TabComponents extends React.Component <{},any> {
                                 <MentortabComponent/>
                             </div>
                             <div className={`student-details tab-data ${activeMainTab === MentorTabNames.MENTEES ? " active" : ""} px-lg-3 p-2`} id="nav-mentees">
-                                1
+                                <MenteeTabComponent/>
                             </div>
                             <div className={`student-details tab-data ${activeMainTab === MentorTabNames.COMMUNITIES ? " active" : ""} px-lg-3 p-2`} id="nav-communities">
                                 <CommunityDashboard/>

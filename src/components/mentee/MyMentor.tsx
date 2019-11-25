@@ -2,14 +2,13 @@ import * as React from 'react';
 import SavedSearchDropdown from "../dropdown/savedSearch";
 import AdvancedSearchDropdown from "../dropdown/advanced-search";
 import {Row, Col} from "reactstrap";
-import RequestMentorCard from "./requestMentorCard";
-import MentorRightSection from "./mentorRightSection";
+import RequestMenteeCard from "./requestMenteeCard";
+import MenteeRightSection from "./menteeRightSection";
 import {  Modal } from 'reactstrap';
 import { TabContent, TabPane, Nav, NavItem, NavLink} from 'reactstrap';
 import {RouterProps} from "react-router";
 import CreatableMulti from "./AutoSelectDropdown";
 import AdvancedSearchFunctionalDropdown from "../dropdown/AdvanceFuctionaladropdown";
-import ChooseFunctionBadge from "../../common/badges/chooseFunctionBadge";
 
 const MentorData = {
     name: "Robert Watson",
@@ -82,19 +81,19 @@ const MentorTab =(props: MentortabProps) => {
                         <div className="overflow-scroll  flex-grow-1">
                             <Row className="pt-3 m-0">
                                 <Col xs="12" sm="8" className="pb-2">
-                                   <RequestMentorCard/>
+                                   <RequestMenteeCard/>
                                 </Col>
                                 <Col xs="12" sm="8" className="pb-2">
-                                    <RequestMentorCard/>
+                                    <RequestMenteeCard/>
                                 </Col>
                                 <Col xs="12" sm="8" className="pb-2">
-                                    <RequestMentorCard/>
+                                    <RequestMenteeCard/>
                                 </Col>
                                 <Col xs="12" sm="8" className="pb-2">
-                                    <RequestMentorCard/>
+                                    <RequestMenteeCard/>
                                 </Col>
                                 <Col xs="12" sm="8" className="pb-2">
-                                    <RequestMentorCard/>
+                                    <RequestMenteeCard/>
                                 </Col>
 
 
@@ -146,7 +145,7 @@ const MentorTab =(props: MentortabProps) => {
                                     <div className="search-input-group mx-3 m" id="searchBox">
                                         <input className="form-control" type="text" placeholder="Search" />
                                     </div>
-                                    <Row className="mb-2 flex-column mt-2 no-gutters">
+                                    <Row className="mb-2 flex-column mt-2  px-4">
                                         <Col   sm="3" className="text-truncate advance-search-fields mb-1 pl-0">
                                             <div className="advance-search-name text-capitalize text-dark f-14">function</div>
                                         </Col>
@@ -154,7 +153,7 @@ const MentorTab =(props: MentortabProps) => {
                                             <CreatableMulti />
                                         </Col>
                                     </Row>
-                                    <Row className="mb-2 flex-column mt-2 no-gutters">
+                                    <Row className="mb-2 flex-column mt-2  px-4">
                                         <Col   sm="3" className="text-truncate advance-search-fields mb-1 pl-0">
                                             <div className="advance-search-name text-capitalize text-dark f-14">industry</div>
                                         </Col>
@@ -162,7 +161,7 @@ const MentorTab =(props: MentortabProps) => {
                                             <CreatableMulti />
                                         </Col>
                                     </Row>
-                                    <Row className="mb-2 flex-column mt-2  no-gutters">
+                                    <Row className="mb-2 flex-column mt-2  px-4">
                                         <Col   sm="3" className="text-truncate advance-search-fields mb-1 pl-0">
                                             <div className="advance-search-name text-capitalize text-dark f-14">interest</div>
                                         </Col>
@@ -170,7 +169,7 @@ const MentorTab =(props: MentortabProps) => {
                                             <CreatableMulti />
                                         </Col>
                                     </Row>
-                                    <Row className="mb-4 flex-column mt-2 no-gutters">
+                                    <Row className="mb-4 flex-column mt-2 px-4">
                                         <Col   sm="3" className="text-truncate advance-search-fields mb-1 pl-0">
                                             <div className="advance-search-name text-capitalize text-dark f-14">location</div>
                                         </Col>
@@ -193,7 +192,7 @@ const MentorTab =(props: MentortabProps) => {
                                     <div className="search-input-group w-50 ml-3 m" id="searchBox">
                                         <input className="form-control" type="text" placeholder="Search" />
                                     </div>
-                                    <Row className="mb-2 flex-column mt-2 no-gutters">
+                                    <Row className="mb-2 flex-column mt-2  px-4">
                                         <Col   sm="3" className="text-truncate advance-search-fields mb-1 pl-0">
                                             <div className="advance-search-name text-capitalize text-dark f-14">function</div>
                                         </Col>
@@ -201,7 +200,7 @@ const MentorTab =(props: MentortabProps) => {
                                             <CreatableMulti />
                                         </Col>
                                     </Row>
-                                    <Row className="mb-2 flex-column mt-2  no-gutters">
+                                    <Row className="mb-2 flex-column mt-2  px-4">
                                         <Col   sm="3" className="text-truncate advance-search-fields mb-1 pl-0">
                                             <div className="advance-search-name text-capitalize text-dark f-14">industry</div>
                                         </Col>
@@ -209,7 +208,7 @@ const MentorTab =(props: MentortabProps) => {
                                             <CreatableMulti />
                                         </Col>
                                     </Row>
-                                    <Row className="mb-2 flex-column mt-2 no-gutters">
+                                    <Row className="mb-2 flex-column mt-2  px-4">
                                         <Col   sm="3" className="text-truncate advance-search-fields mb-1 pl-0">
                                             <div className="advance-search-name text-capitalize text-dark f-14">interest</div>
                                         </Col>
@@ -217,7 +216,7 @@ const MentorTab =(props: MentortabProps) => {
                                             <CreatableMulti />
                                         </Col>
                                     </Row>
-                                    <Row className="mb-4 flex-column mt-2 no-gutters">
+                                    <Row className="mb-4 flex-column mt-2 px-4">
                                         <Col   sm="3" className="text-truncate advance-search-fields mb-1 pl-0">
                                             <div className="advance-search-name text-capitalize text-dark f-14">location</div>
                                         </Col>
@@ -237,7 +236,7 @@ const MentorTab =(props: MentortabProps) => {
                                     <div className="search-input-group w-50 ml-3 m" id="searchBox">
                                         <input className="form-control" type="text" placeholder="Search" />
                                     </div>
-                                    <Row className="mb-2 flex-column mt-2 no-gutters">
+                                    <Row className="mb-2 flex-column mt-2  px-4">
                                         <Col   sm="3" className="text-truncate advance-search-fields mb-1 pl-0">
                                             <div className="advance-search-name text-capitalize text-dark f-14">function</div>
                                         </Col>
@@ -245,7 +244,7 @@ const MentorTab =(props: MentortabProps) => {
                                             <CreatableMulti />
                                         </Col>
                                     </Row>
-                                    <Row className="mb-2 flex-column mt-2  no-gutters">
+                                    <Row className="mb-2 flex-column mt-2  px-4">
                                         <Col   sm="3" className="text-truncate advance-search-fields mb-1 pl-0">
                                             <div className="advance-search-name text-capitalize text-dark f-14">industry</div>
                                         </Col>
@@ -253,7 +252,7 @@ const MentorTab =(props: MentortabProps) => {
                                             <CreatableMulti />
                                         </Col>
                                     </Row>
-                                    <Row className="mb-2 flex-column mt-2  no-gutters">
+                                    <Row className="mb-2 flex-column mt-2  px-4">
                                         <Col   sm="3" className="text-truncate advance-search-fields mb-1 pl-0">
                                             <div className="advance-search-name text-capitalize text-dark f-14">interest</div>
                                         </Col>
@@ -261,7 +260,7 @@ const MentorTab =(props: MentortabProps) => {
                                             <CreatableMulti />
                                         </Col>
                                     </Row>
-                                    <Row className="mb-4 flex-column mt-2 no-gutters">
+                                    <Row className="mb-4 flex-column mt-2 px-4">
                                         <Col   sm="3" className="text-truncate advance-search-fields mb-1 pl-0">
                                             <div className="advance-search-name text-capitalize text-dark f-14">location</div>
                                         </Col>
@@ -281,7 +280,7 @@ const MentorTab =(props: MentortabProps) => {
                                     <div className="search-input-group w-50 ml-3 m" id="searchBox">
                                         <input className="form-control" type="text" placeholder="Search" />
                                     </div>
-                                    <Row className="mb-2 flex-column mt-2 no-gutters">
+                                    <Row className="mb-2 flex-column mt-2  px-4">
                                         <Col   sm="3" className="text-truncate advance-search-fields mb-1 pl-0">
                                             <div className="advance-search-name text-capitalize text-dark f-14">function</div>
                                         </Col>
@@ -289,7 +288,7 @@ const MentorTab =(props: MentortabProps) => {
                                             <CreatableMulti />
                                         </Col>
                                     </Row>
-                                    <Row className="mb-2 flex-column mt-2  no-gutters">
+                                    <Row className="mb-2 flex-column mt-2  px-4">
                                         <Col   sm="3" className="text-truncate advance-search-fields mb-1 pl-0">
                                             <div className="advance-search-name text-capitalize text-dark f-14">industry</div>
                                         </Col>
@@ -297,7 +296,7 @@ const MentorTab =(props: MentortabProps) => {
                                             <CreatableMulti />
                                         </Col>
                                     </Row>
-                                    <Row className="mb-2 flex-column mt-2 no-gutters">
+                                    <Row className="mb-2 flex-column mt-2  px-4">
                                         <Col   sm="3" className="text-truncate advance-search-fields mb-1 pl-0">
                                             <div className="advance-search-name text-capitalize text-dark f-14">interest</div>
                                         </Col>
@@ -305,7 +304,7 @@ const MentorTab =(props: MentortabProps) => {
                                             <CreatableMulti />
                                         </Col>
                                     </Row>
-                                    <Row className="mb-4 flex-column mt-2no-gutters">
+                                    <Row className="mb-4 flex-column mt-2 px-4">
                                         <Col   sm="3" className="text-truncate advance-search-fields mb-1 pl-0">
                                             <div className="advance-search-name text-capitalize text-dark f-14">location</div>
                                         </Col>
@@ -372,10 +371,14 @@ const MentorTab =(props: MentortabProps) => {
                                     <div>
                                         <Row>
                                             <Col className="" xs="12" sm="4">
-                                                <ChooseFunctionBadge/>
+                                                <span className="badge badge-choose-function text-primary mr-2">UX/UI Designer
+                                                    <i className="icon-close text-primary f-14"></i>
+                                                </span>
                                             </Col>
                                             <Col className="" xs="12" sm="4">
-                                                <ChooseFunctionBadge/>
+                                                <span className="badge badge-choose-function text-primary mr-2">UX/UI Designer
+                                                    <i className="icon-close text-primary f-14"></i>
+                                                </span>
                                             </Col>
 
 
@@ -465,7 +468,7 @@ const MentorTab =(props: MentortabProps) => {
                             </div>
                         </Modal>
                     </div>
-                    <MentorRightSection/>
+                    <MenteeRightSection/>
                 </div>
 
             </div>

@@ -45,6 +45,7 @@ $sort-button-bg: #ececfb;
     padding: 10px;
 }
 .card-sort-buttons{
+  padding: 10px 14px;
   color: $light;
   &:hover{
       color: $primary;
@@ -201,13 +202,6 @@ $sort-button-bg: #ececfb;
   min-height: 254px;
 }
 
-//.nav-pills .nav-link.active,
-//.nav-pills .show > .nav-link {
-//  color: $white !important;
-//  @media (max-width: 576px) {
-//    color: $primary !important;
-//  }
-//}
 
 .community-tab-content{
     display: flex;
@@ -250,5 +244,14 @@ $sort-button-bg: #ececfb;
       transform: translate(-50%, -50%);
       font-weight: bold;
     }
+  }
+}
+.dashboard-tab-wrapper{
+  .search-input-group{
+    width: 328px;
+    @media (max-width: 576px){
+      width: 100%;
+    }
+
   }
 }

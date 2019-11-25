@@ -26,8 +26,8 @@ export default class SavedSearchDropdown extends React.Component<SavedSearchProp
         const {toggleEditSearchModal} = this.props;
 
         return (
-            <Dropdown isOpen={this.state.dropdownOpen} toggle={this.toggle} className="mr-md-3">
-                <DropdownToggle caret className="btn btn-outline-primary btn-dropdown text-capitalize shadow-none py-md-1 px-md-3">
+            <Dropdown isOpen={this.state.dropdownOpen} toggle={this.toggle} className="">
+                <DropdownToggle outline color="primary" className=" btn-dropdown text-capitalize shadow-none py-md-1 px-md-3">
                     saved search
                 </DropdownToggle>
                 <DropdownMenu className="dropdown-menu border-0 rounded py-2  save-search-menu">

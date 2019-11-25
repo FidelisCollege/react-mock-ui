@@ -16,7 +16,7 @@ const ExploreCommunityCard  = () => {
                     <p className="mb-0 text-dark f-13 text-truncate ml-2">A larger community name</p>
                 </div>
                 <hr className='mb-0 my-2'></hr>
-                <Row className="align-items-center">
+                <Row className="align-items-center no-gutters">
                     <Col sm="8" xs="8" className="text-center">
                         <a href="#" className="text-dark f-13 font-weight-bold">03</a>
                         <h6 className="text-secondary f-13 text-capitalize">member</h6>
@@ -26,7 +26,7 @@ const ExploreCommunityCard  = () => {
                         <h6 className="text-secondary f-13 text-capitalize">activity</h6>
                     </Col>
                     <Col sm="8"  xs="8" className="p-0 text-center">
-                        <button className="btn btn-outline-primary text-capitalize f-13">join</button>
+                        <button className="btn btn-outline-primary text-capitalize f-13">post</button>
 
                     </Col>
 

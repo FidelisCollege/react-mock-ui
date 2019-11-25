@@ -11,6 +11,10 @@ import CreatableMulti from "./AutoSelectDropdown";
 import AdvancedSearchFunctionalDropdown from "../dropdown/AdvanceFuctionaladropdown";
 import CommonLeftNav from "../../common/components/commonLeftNav";
 import LeftNavComponent from "../../common/components/left-nav";
+import ChooseFuncionModal from "./chooseFunctionModal";
+import OnboardBadgeComponent from "../onBoarding/container/onboardBadgeComponent";
+import ChooseFunctionBadge from "../../common/badges/chooseFunctionBadge";
+
 
 const MentorData = {
     name: "Robert Watson",
@@ -69,11 +73,11 @@ const AddMentorSearch =(props: MentortabProps) => {
                             <LeftNavComponent/>
                         </div>
 
-                        <div className="px-3 w-100 d-flex flex-column">
-                            <h2 className="text-capitalize text-primary pt-3">
-                                <i className="icon-caret-left text-primary f-16 font-weight-bold mr-2"></i>my mentor
+                        <div className="px-lg-3 d-flex flex-column flex-grow-1 px-2">
+                            <h2 className="text-capitalize text-primary py-3">
+                                <i className="icon-caret-left text-primary f-16 font-weight-bold mr-2 mb-0"></i>my mentor
                             </h2>
-                            <div className="d-flex justify-content-between align-items-center mb-4">
+                            <div className="d-flex justify-content-between align-items-center mb-3">
 
                                 <div className="search-input-group advance-search-input d-flex align-items-center bg-white form-control" id="searchBox">
                                     <input className="form-control  border-top-0 border-left-0 border-bottom-0 border-right rounded-0 py-0" type="text" placeholder="Search for mentors" />
@@ -84,7 +88,7 @@ const AddMentorSearch =(props: MentortabProps) => {
                             <div className=" d-flex border-bottom align-items-center">
                             </div>
                             <div className="overflow-scroll flex-grow-1">
-                                <Row className="pt-3 m-0">
+                                <Row className="py-3 m-0">
                                     <Col xs="12" sm="8" className="pb-2 cursor-pointer">
                                        <RequestMentorCard/>
                                     </Col>
@@ -152,7 +156,7 @@ const AddMentorSearch =(props: MentortabProps) => {
                                         <div className="search-input-group mx-3 m" id="searchBox">
                                             <input className="form-control" type="text" placeholder="Search" />
                                         </div>
-                                        <Row className="mb-2 flex-column mt-2  px-4">
+                                        <Row className="mb-2 flex-column mt-2 px-2 no-gutters">
                                             <Col   sm="3" className="text-truncate advance-search-fields mb-1 pl-0">
                                                 <div className="advance-search-name text-capitalize text-dark f-14">function</div>
                                             </Col>
@@ -160,7 +164,7 @@ const AddMentorSearch =(props: MentortabProps) => {
                                                 <CreatableMulti />
                                             </Col>
                                         </Row>
-                                        <Row className="mb-2 flex-column mt-2  px-4">
+                                        <Row className="mb-2 flex-column mt-2 px-2 no-gutters">
                                             <Col   sm="3" className="text-truncate advance-search-fields mb-1 pl-0">
                                                 <div className="advance-search-name text-capitalize text-dark f-14">industry</div>
                                             </Col>
@@ -168,7 +172,7 @@ const AddMentorSearch =(props: MentortabProps) => {
                                                 <CreatableMulti />
                                             </Col>
                                         </Row>
-                                        <Row className="mb-2 flex-column mt-2  px-4">
+                                        <Row className="mb-2 flex-column mt-2 px-2 no-gutters">
                                             <Col   sm="3" className="text-truncate advance-search-fields mb-1 pl-0">
                                                 <div className="advance-search-name text-capitalize text-dark f-14">interest</div>
                                             </Col>
@@ -176,7 +180,7 @@ const AddMentorSearch =(props: MentortabProps) => {
                                                 <CreatableMulti />
                                             </Col>
                                         </Row>
-                                        <Row className="mb-4 flex-column mt-2 px-4">
+                                        <Row className="mb-4 flex-column mt-2 px-2 no-gutters">
                                             <Col   sm="3" className="text-truncate advance-search-fields mb-1 pl-0">
                                                 <div className="advance-search-name text-capitalize text-dark f-14">location</div>
                                             </Col>
@@ -184,7 +188,8 @@ const AddMentorSearch =(props: MentortabProps) => {
                                                 <CreatableMulti />
                                             </Col>
                                         </Row>
-                                        <div className="d-flex justify-content-between align-items-center py-md-4 py-3 px-md-4 px-3 border-top border-secondary">
+                                        <hr></hr>
+                                        <div className="d-flex justify-content-between align-items-center pb-2 px-2">
                                             <a  href="#" className="text-capitalize text-danger f-14 pl-2">delete</a>
                                             <div className="d-flex">
                                                 <button type="button" className="btn btn-outline-primary mr-2 text-capitalize save-search-button btn-lg  d-none d-md-block">close</button>
@@ -199,7 +204,7 @@ const AddMentorSearch =(props: MentortabProps) => {
                                         <div className="search-input-group w-50 ml-3 m" id="searchBox">
                                             <input className="form-control" type="text" placeholder="Search" />
                                         </div>
-                                        <Row className="mb-2 flex-column mt-2  px-4">
+                                        <Row className="mb-2 flex-column mt-2 px-4 no-gutters">
                                             <Col   sm="3" className="text-truncate advance-search-fields mb-1 pl-0">
                                                 <div className="advance-search-name text-capitalize text-dark f-14">function</div>
                                             </Col>
@@ -207,7 +212,7 @@ const AddMentorSearch =(props: MentortabProps) => {
                                                 <CreatableMulti />
                                             </Col>
                                         </Row>
-                                        <Row className="mb-2 flex-column mt-2  px-4">
+                                        <Row className="mb-2 flex-column mt-2  px-4 no-gutters">
                                             <Col   sm="3" className="text-truncate advance-search-fields mb-1 pl-0">
                                                 <div className="advance-search-name text-capitalize text-dark f-14">industry</div>
                                             </Col>
@@ -215,7 +220,7 @@ const AddMentorSearch =(props: MentortabProps) => {
                                                 <CreatableMulti />
                                             </Col>
                                         </Row>
-                                        <Row className="mb-2 flex-column mt-2  px-4">
+                                        <Row className="mb-2 flex-column mt-2  px-4 no-gutters">
                                             <Col   sm="3" className="text-truncate advance-search-fields mb-1 pl-0">
                                                 <div className="advance-search-name text-capitalize text-dark f-14">interest</div>
                                             </Col>
@@ -223,7 +228,7 @@ const AddMentorSearch =(props: MentortabProps) => {
                                                 <CreatableMulti />
                                             </Col>
                                         </Row>
-                                        <Row className="mb-4 flex-column mt-2 px-4">
+                                        <Row className="mb-4 flex-column mt-2 px-4 no-gutters">
                                             <Col   sm="3" className="text-truncate advance-search-fields mb-1 pl-0">
                                                 <div className="advance-search-name text-capitalize text-dark f-14">location</div>
                                             </Col>
@@ -243,7 +248,7 @@ const AddMentorSearch =(props: MentortabProps) => {
                                         <div className="search-input-group w-50 ml-3 m" id="searchBox">
                                             <input className="form-control" type="text" placeholder="Search" />
                                         </div>
-                                        <Row className="mb-2 flex-column mt-2  px-4">
+                                        <Row className="mb-2 flex-column mt-2  px-4 no-gutters">
                                             <Col   sm="3" className="text-truncate advance-search-fields mb-1 pl-0">
                                                 <div className="advance-search-name text-capitalize text-dark f-14">function</div>
                                             </Col>
@@ -251,7 +256,7 @@ const AddMentorSearch =(props: MentortabProps) => {
                                                 <CreatableMulti />
                                             </Col>
                                         </Row>
-                                        <Row className="mb-2 flex-column mt-2  px-4">
+                                        <Row className="mb-2 flex-column mt-2  px-4 no-gutters">
                                             <Col   sm="3" className="text-truncate advance-search-fields mb-1 pl-0">
                                                 <div className="advance-search-name text-capitalize text-dark f-14">industry</div>
                                             </Col>
@@ -259,7 +264,7 @@ const AddMentorSearch =(props: MentortabProps) => {
                                                 <CreatableMulti />
                                             </Col>
                                         </Row>
-                                        <Row className="mb-2 flex-column mt-2  px-4">
+                                        <Row className="mb-2 flex-column mt-2  px-4 no-gutters">
                                             <Col   sm="3" className="text-truncate advance-search-fields mb-1 pl-0">
                                                 <div className="advance-search-name text-capitalize text-dark f-14">interest</div>
                                             </Col>
@@ -267,7 +272,7 @@ const AddMentorSearch =(props: MentortabProps) => {
                                                 <CreatableMulti />
                                             </Col>
                                         </Row>
-                                        <Row className="mb-4 flex-column mt-2 px-4">
+                                        <Row className="mb-4 flex-column mt-2 px-4 no-gutters">
                                             <Col   sm="3" className="text-truncate advance-search-fields mb-1 pl-0">
                                                 <div className="advance-search-name text-capitalize text-dark f-14">location</div>
                                             </Col>
@@ -287,7 +292,7 @@ const AddMentorSearch =(props: MentortabProps) => {
                                         <div className="search-input-group w-50 ml-3 m" id="searchBox">
                                             <input className="form-control" type="text" placeholder="Search" />
                                         </div>
-                                        <Row className="mb-2 flex-column mt-2  px-4">
+                                        <Row className="mb-2 flex-column mt-2  px-4 no-gutters">
                                             <Col   sm="3" className="text-truncate advance-search-fields mb-1 pl-0">
                                                 <div className="advance-search-name text-capitalize text-dark f-14">function</div>
                                             </Col>
@@ -295,7 +300,7 @@ const AddMentorSearch =(props: MentortabProps) => {
                                                 <CreatableMulti />
                                             </Col>
                                         </Row>
-                                        <Row className="mb-2 flex-column mt-2  px-4">
+                                        <Row className="mb-2 flex-column mt-2  px-4 no-gutters">
                                             <Col   sm="3" className="text-truncate advance-search-fields mb-1 pl-0">
                                                 <div className="advance-search-name text-capitalize text-dark f-14">industry</div>
                                             </Col>
@@ -303,7 +308,7 @@ const AddMentorSearch =(props: MentortabProps) => {
                                                 <CreatableMulti />
                                             </Col>
                                         </Row>
-                                        <Row className="mb-2 flex-column mt-2  px-4">
+                                        <Row className="mb-2 flex-column mt-2  px-4 no-gutters">
                                             <Col   sm="3" className="text-truncate advance-search-fields mb-1 pl-0">
                                                 <div className="advance-search-name text-capitalize text-dark f-14">interest</div>
                                             </Col>
@@ -311,7 +316,7 @@ const AddMentorSearch =(props: MentortabProps) => {
                                                 <CreatableMulti />
                                             </Col>
                                         </Row>
-                                        <Row className="mb-4 flex-column mt-2 px-4">
+                                        <Row className="mb-4 flex-column mt-2 px-4 no-gutters">
                                             <Col   sm="3" className="text-truncate advance-search-fields mb-1 pl-0">
                                                 <div className="advance-search-name text-capitalize text-dark f-14">location</div>
                                             </Col>
@@ -334,17 +339,17 @@ const AddMentorSearch =(props: MentortabProps) => {
                                    toggle={toggleAdvancedSearchModal}
                                    className="modal-dialog d-flex justify-content-center align-items-center h-100 edit-advance-search" >
                                 <div className="bg-white rounded">
-                                    <div className="border-bottom py-md-4 px-2 px-md-3">
+                                    <div className="border-bottom p-lg-3 px-2">
                                         <h2 className="border-bottom text-capitalize text-dark py-3 d-flex justify-content-between choose-function-heading mb-0 align-items-center">choose function
                                             <i className="icon-close f-20 text-secondary d-none d-md-block"></i>
                                             <button className="btn btn-primary text-capitalize d-md-none d-block">done</button>
                                         </h2>
-                                        <div className="bg-white form-control w-50 my-4 d-none d-md-block" id="searchBox">
+                                        <div className="bg-white form-control w-50 my-3 d-none d-md-block" id="searchBox">
                                             <input className="form-control rounded-0 py-0 border-0" type="text" placeholder="Search for functions" />
                                         </div>
                                         <div className="d-md-flex d-none align-items-center">
                                             <h3 className="mr-3 text-secondary mb-0">sort by:</h3>
-                                            <div className="py-2">
+                                            <div className="">
                                                 <a href="#" className="p-2 text-capitalize">a</a>
                                                 <a href="#" className="p-2 text-capitalize">b</a>
                                                 <a href="#" className="p-2 text-capitalize">c</a>
@@ -378,14 +383,10 @@ const AddMentorSearch =(props: MentortabProps) => {
                                         <div>
                                             <Row>
                                                 <Col className="" xs="12" sm="4">
-                                                    <span className="badge badge-choose-function text-primary mr-2">UX/UI Designer
-                                                        <i className="icon-close text-primary f-14"></i>
-                                                    </span>
+                                                    <ChooseFunctionBadge/>
                                                 </Col>
                                                 <Col className="" xs="12" sm="4">
-                                                    <span className="badge badge-choose-function text-primary mr-2">UX/UI Designer
-                                                        <i className="icon-close text-primary f-14"></i>
-                                                    </span>
+
                                                 </Col>
 
 
@@ -460,15 +461,21 @@ const AddMentorSearch =(props: MentortabProps) => {
                                    toggle={toggleAdvancedMultiSelectSearchModal}
                                    className="modal-dialog d-flex justify-content-center align-items-center h-100 saved-edit-search">
                                 <div>
-                                    <div className="px-3 py-3">
-                                        <h2 className="d-flex justify-content-between pb-2 mb-0 border-bottom text-capitalize">saved search
-                                            <i className="icon-close text-secondary"></i>
-                                        </h2>
-                                        <div className="search-input-group d-flex align-items-center bg-white form-control my-3" id="searchBox">
-                                            <input className="form-control rounded-0 py-0 border-0" type="text" placeholder="Search for mentors" />
+                                    <div className="pt-3">
+                                        <div className="">
+                                            <h2 className="px-3 d-flex justify-content-between pb-2  border-bottom text-capitalize mb-0">
+                                                <span>saved search</span>
+                                                <i className="icon-close text-secondary"></i>
+                                            </h2>
+                                        </div>
+                                        <div className="px-3 pt-3">
+                                            <div className="search-input-group d-flex align-items-center bg-white form-control" id="searchBox">
+                                                <input className="form-control rounded-0 py-0 border-0" type="text" placeholder="Search for mentors" />
+                                            </div>
                                         </div>
                                     </div>
-                                    <div className="p-3 d-flex justify-content-end border-top">
+                                    <hr></hr>
+                                    <div className="px-3 pb-3 d-flex justify-content-end">
                                         <button type="button" className="btn btn-outline-primary mr-2 text-capitalize save-search-button">cancel</button>
                                         <button type="button" className="btn btn-primary text-capitalize save-search-button p-2">save & apply</button>
                                     </div>

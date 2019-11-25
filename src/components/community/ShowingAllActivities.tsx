@@ -12,7 +12,7 @@ const ShowingAllActivity  = () => {
                     <div className="left-column d-none d-md-none d-lg-flex ">
                         <LeftNavComponent/>
                     </div>
-                    <div className="student-details tab-data active px-3 d-flex flex-column flex-grow-1">
+                    <div className="student-details tab-data active d-flex flex-column flex-grow-1">
                         <div className="card border-0 h-100">
                             <div className="card-body d-flex flex-column mh-100">
                                 <h2 className="card-title text-capitalize text-dark f-14 py-3 d-flex justify-content-between">showing all activities

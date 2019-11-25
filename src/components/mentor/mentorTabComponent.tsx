@@ -8,10 +8,11 @@ import { MentorTypes } from "./models/mentorModel";
 import ViewMentorCard from "../viewAllCard";
 import { withRouter, RouterProps } from 'react-router';
 import { RouteUrls } from '../routes/routesConfig';
-import MentorTab from "./mentorTabMob";
+import MentorTab from "../../common/dashboard/mentorMenteeTabMob";
 import RequestTab from "./requeststab";
 import RequestMentorChat from "./chatTab";
 import {IconAdd} from "../../common";
+import AddMentorButton from "../../common/card/addMentorButton";
 // import {IconAdd} from "../../common";
 
 const MentorData = {
@@ -58,7 +59,12 @@ const MentortabComponent = (props: MentortabProps) => {
 
     return (
         <div className="d-flex flex-column overflow-hidden">
-            <h2 className="text-capitalize py-3 border-bottom f-18 text-dark font-weight-normal">mentor</h2>
+            <div className="d-flex align-items-center justify-content-between  border-bottom pb-2">
+                <h2 className="text-capitalize f-18 text-dark font-weight-normal mb-0">mentor dashboard</h2>
+                <button className="btn btn-outline-primary invite-mentor-btn py-md-2 px-md-4 px-2">
+                    <IconAdd className=""/>Invite Mentor
+                </button>
+            </div>
             <header className="border-bottom">
                 <Nav pills className="d-flex justify-content-between align-items-center py-2">
                     <div className="d-flex">
@@ -84,19 +90,15 @@ const MentortabComponent = (props: MentortabProps) => {
                             <a href="#" className="text-capitalize text-primary">current</a>
                             <div className="px-2">|</div>
                             <a href="#" className="text-capitalize text-secondary">past</a>
-
                         </div>
-                        <button className="btn btn-outline-primary invite-mentor-btn py-md-2 px-md-4 px-2">
-                            <IconAdd className=""/>Invite Mentor
-                        </button>
                     </div>
                 </Nav>
             </header>
-            <div className="text-secondary f-14 pt-2">You have 6 Mentor spot(s) still available.
+            <div className="text-secondary f-14 py-2">You have 6 Mentor spot(s) still available.
                 <a href="" className="text-primary">Click here</a> to change your max mentor limit.</div>
             <TabContent className="dashboard-tab-wrapper pt-2 overflow-auto" activeTab={activeTab}>
                 <TabPane tabId="1" className="flex-grow-1">
-                    <Row className="py-3 m-0">
+                    <Row className="m-0">
                         <Col xs="12" md="8" className="d-none d-lg-block mb-2">
                             <DefaultMentorCard mentorType={MentorTypes.DEFAULT} {...MentorData} />
                         </Col>
@@ -106,7 +108,7 @@ const MentortabComponent = (props: MentortabProps) => {
                     </Row>
                     <div>
                         <div className="pb-2 d-flex border-bottom align-items-center">
-                            <h2 className="mb-0">Recommended Mentors</h2>
+                            <h2 className="mb-0 font-weight-normal">Recommended Mentors</h2>
                             <RecommendMentorTooltip />
                         </div>
                         <Row className="py-3 m-0">
@@ -124,9 +126,7 @@ const MentortabComponent = (props: MentortabProps) => {
                 <TabPane tabId="2" className="">
                     <RequestTab/>
                 </TabPane>
-                <button className="d-lg-none btn-block-custom add-mentor-button">
-                    <i className="icon-add mr-2"></i>Add mentor
-                </button>
+                <AddMentorButton/>
             </TabContent>
             {/*<RequestMentorChat/>*/}
         </div>

@@ -6,6 +6,7 @@ import {CommunityTypes} from "./models/communityModels";
 import ExploreCommunityTab from "./exploreCommunity";
 import IncomingRequestsCard from "../mentor/IncomingRquests";
 import IncomingRequstsMentorTab from "../mentor/IncomingRquests";
+import CommunityRecommendCard from "./communityRecommendCard";
 
 const CommuntiyData = {
     memberCount: "03",
@@ -27,9 +28,9 @@ const CommunityTabComponent = (props: CommunityTabProps) => {
 
     return (
         <div className="d-flex flex-column h-100  px-md-3 px-2">
-            <h2 className="text-capitalize py-3 border-bottom f-18 text-dark font-weight-normal">Communities</h2>
-            <header className="border-bottom pb-md-2 d-flex justify-content-between align-items-center">
-                <Nav pills className="d-flex justify-content-between align-items-center py-2">
+            <h2 className="text-capitalize py-3 border-bottom f-18 text-dark font-weight-normal">Communities dashboard</h2>
+            <header className="border-bottom pb-2 d-flex justify-content-between align-items-center">
+                <Nav pills className="d-flex justify-content-between align-items-center">
                     <div className="d-flex">
                         <NavItem className="mr-3">
                             <NavLink
@@ -57,7 +58,7 @@ const CommunityTabComponent = (props: CommunityTabProps) => {
 
                 </div>
             </header>
-            <TabContent className="dashboard-tab-wrapper pt-3 flex-grow-1 overflow-auto" activeTab={activeTab}>
+            <TabContent className="dashboard-tab-wrapper flex-grow-1 overflow-auto" activeTab={activeTab}>
                 <TabPane tabId="1">
                     <IncomingRequstsMentorTab/>
                     <h2 className="f-14 text-light font-weight-normal px-2 text-capitalize">my communities</h2>
@@ -76,7 +77,7 @@ const CommunityTabComponent = (props: CommunityTabProps) => {
                         <h2 className="mb-0 pb-2 f-14 font-weight-normal px-2 text-capitalize">recommended communities</h2>
                         <Row className="m-0">
                             <Col xs="24" sm="8" md="12" className="">
-                                <CommunityCard communityTypes={CommunityTypes.JOIN} {...CommuntiyData}/>
+                                {/*<CommunityRecommendCard/>*/}
                             </Col>
                         </Row>
 
