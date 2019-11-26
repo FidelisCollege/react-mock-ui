@@ -62,7 +62,7 @@ const MentortabComponent = (props: MentortabProps) => {
             <div className="d-flex align-items-center justify-content-between  border-bottom pb-2">
                 <h2 className="text-capitalize f-18 text-dark font-weight-normal mb-0">mentor dashboard</h2>
                 <button className="btn btn-outline-primary invite-mentor-btn py-md-2 px-md-4 px-2">
-                    <IconAdd className=""/>Invite Mentor
+                    <IconAdd className="p-1"/>Invite Mentor
                 </button>
             </div>
             <header className="border-bottom">

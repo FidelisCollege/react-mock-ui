@@ -8,7 +8,7 @@ $dropdown-border-color: #ddd;
   cursor: pointer;
   &:hover{
     color: $white !important;
-    background-color: $primary;
+    //background-color: $primary;
   }
   @media (max-width: 576px){
     background-color: $white;
@@ -19,7 +19,7 @@ $dropdown-border-color: #ddd;
 }
 
 .invite-mentor-btn{
-
+  line-height: 1.2;
 }
 .mentor-card{
   //width:147px ;
@@ -261,6 +261,12 @@ $dropdown-border-color: #ddd;
   background-color: $primary;
   color: $white;
   display: flex;
+  .chat-wrapper-img{
+    width: 30px;
+    height: 30px;
+    margin-right: 4px;
+    border-radius: 4px;
+  }
   @media (max-width: 576px){
       background-color: transparent;
       //bottom:40px;

@@ -18,7 +18,7 @@ const CommunityNonMember = () => {
                                 <i className="icon-caret-left text-primary f-14 mr-2 font-weight-bold"></i>my communities
                             </h3>
                             <div className="position-relative profile-banner-wrapper">
-                                <div className="profile-banner-content w-100 h-100 p-3 d-md-flex">
+                                <div className="profile-banner-content w-100 p-3 d-md-flex">
                                     <div className="d-flex align-items-center">
                                         <img src="images/media-img.png" alt="..." className="profile-img"/>
                                         <h6 className="profile-banner-heading text-white font-weight-bold ml-3">Community for Mountaineers & Trekkers of North America

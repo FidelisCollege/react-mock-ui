@@ -10,13 +10,15 @@ import CommunityMissedActivity from "./CommunityMissedApp";
 
 const CommunityAllActivity  = () => {
     return (
-        <ul className="list-unstyled show-list-activity mb-0 overflow-auto">
+        <ul className="list-unstyled show-list-activity mb-0 overflow-auto h-100">
             <li className="py-3">
                 <CommunityActivityPostDetail/>
             </li>
             <li>
                 <CommunityMissedActivity/>
             </li>
+
+
 
 
         </ul>

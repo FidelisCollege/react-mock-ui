@@ -18,7 +18,7 @@ const CommunityMember = () => {
                                 <i className="icon-caret-left text-primary f-14 mr-2 font-weight-bold"></i>my communities
                             </h3>
                             <div className="position-relative profile-banner-wrapper">
-                                <img src='images/profile-background.png' className="w-100 img-fluid h-100 banner-img"/>
+                                <img src='images/profile-background.png' className="w-100 img-fluid  banner-img"/>
                                 <div className="profile-banner-content w-100 h-100 p-3 d-md-flex">
                                     <div className="d-flex align-items-center">
                                         <img src="images/media-img.png" alt="..." className="profile-img"/>

@@ -18,8 +18,8 @@ const CommunityDetailsComponent = (props) => {
     }
 
     return (
-        <div className="community-details community-activity-detail d-flex flex-grow-1 overflow-hidden mh-100">
-            <div className="d-lg-none d-md-flex flex-column flex-grow-1 overflow-auto">
+        <div className="community-details community-activity-detail d-flex flex-grow-1 overflow-hidden">
+            <div className="d-lg-none d-md-flex flex-column flex-grow-1 overflow-hidden">
                 <Nav pills className="d-flex justify-content-between align-items-center py-2 px-2 border-bottom community-activity-tabs overflow-auto d-lg-none">
                     <div className="d-flex">
                         <NavItem className="mr-3">
@@ -72,24 +72,23 @@ const CommunityDetailsComponent = (props) => {
                         </NavItem>
                     </div>
                 </Nav>
-                <TabContent activeTab={activeTab} className="bg-white py-3 community-tab-content flex-grow-1">
-                    <TabPane tabId="activities">
+                <TabContent activeTab={activeTab} className="flex-grow-1 bg-white p-lg-3 py-3 community-tab-content">
+                    <TabPane tabId="activities" className="flex-grow-1 overflow-hidden">
                         <ActivityCommuinity/>
                     </TabPane>
-                    <TabPane tabId="about" className="h-100">
-
+                    <TabPane tabId="about" className="flex-grow-1 overflow-hidden">
                         <AboutCommuinityDetails/>
                     </TabPane>
-                    <TabPane tabId="members" className="h-100">
+                    <TabPane tabId="members" className="flex-grow-1 overflow-hidden">
                         <CommunityMembers/>
                     </TabPane>
-                    <TabPane tabId="resource" className="h-100">
+                    <TabPane tabId="resource" className="flex-grow-1 overflow-hidden">
                         <CommunityResources/>
                     </TabPane>
-                    <TabPane tabId="relatedCommunities" className="h-100">
+                    <TabPane tabId="relatedCommunities" className="flex-grow-1 overflow-hidden">
                         <RelatedCommunityDetails/>
                     </TabPane>
-                    <TabPane tabId="calender" className="h-100">
+                    <TabPane tabId="calender" className="flex-grow-1 overflow-hidden">
                         <RelatedCommunityDetails/>
                     </TabPane>
                 </TabContent>
@@ -145,23 +144,23 @@ const CommunityDetailsComponent = (props) => {
                         </NavLink>
                     </NavItem>
                 </Nav>
-                <TabContent activeTab={activeTab} className="w-100 bg-white p-lg-3 py-3 community-tab-content overflow-auto">
-                    <TabPane tabId="about">
+                <TabContent activeTab={activeTab} className="flex-grow-1 bg-white p-lg-3 py-3 community-tab-content">
+                    <TabPane tabId="about" className="flex-grow-1 overflow-hidden">
                         <AboutCommuinityDetails/>
                     </TabPane>
-                    <TabPane tabId="activities" className="h-100">
+                    <TabPane tabId="activities" className="flex-grow-1 overflow-hidden">
                         <ActivityCommuinity/>
                     </TabPane>
-                    <TabPane tabId="members" className="h-100">
+                    <TabPane tabId="members" className="flex-grow-1 overflow-hidden">
                         <CommunityMembers/>
                     </TabPane>
-                    <TabPane tabId="resource" className="h-100">
+                    <TabPane tabId="resource" className="flex-grow-1 overflow-hidden">
                         <CommunityResources/>
                     </TabPane>
-                    <TabPane tabId="relatedCommunities" className="h-100">
+                    <TabPane tabId="relatedCommunities" className="flex-grow-1 overflow-hidden">
                         <RelatedCommunityDetails/>
                     </TabPane>
-                    <TabPane tabId="calender" className="h-100">
+                    <TabPane tabId="calender" className="flex-grow-1 overflow-hidden">
                         <RelatedCommunityDetails/>
                     </TabPane>
                 </TabContent>

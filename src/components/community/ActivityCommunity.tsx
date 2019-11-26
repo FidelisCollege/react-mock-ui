@@ -20,7 +20,7 @@ const ActivityCommuinity = () => {
     }
 
     return (
-        <>
+        <div className="d-flex h-100 flex-column overflow-hidden">
             <Nav pills className="d-flex justify-content-between align-items-center py-2 px-2 border-bottom community-activity-tabs">
                 <div className="d-flex">
                     <NavItem className="mr-3">
@@ -58,17 +58,17 @@ const ActivityCommuinity = () => {
                 </div>
 
             </Nav>
-            <TabContent activeTab={activeTab} className="w-100 bg-white">
-                <TabPane tabId="1">
+            <TabContent activeTab={activeTab} className="flex-grow-1 bg-white h-100">
+                <TabPane tabId="1" className="h-100 flex-grow-1 overflow-hidden">
                     <CommunityAllActivity/>
                 </TabPane>
-                <TabPane tabId="2">
+                <TabPane tabId="2" className="h-100 flex-grow-1 overflow-hidden">
                     rrrr
                 </TabPane>
-                <TabPane tabId="3">
+                <TabPane tabId="3" className="h-100 flex-grow-1 overflow-hidden">
                     <CommunityActivityAnnouncement/>
                 </TabPane>
-                <TabPane tabId="4" className="h-100 ">
+                <TabPane tabId="4" className="h-100 flex-grow-1 overflow-hidden">
                     <div className="d-flex justify-content-between pl-lg-5 ml-lg-3 py-3">
                         <input className="form-control py-0" type="text" placeholder="Search for mentors" />
                         <CommunityPostModal/>
@@ -76,7 +76,7 @@ const ActivityCommuinity = () => {
                     <CommunityActivityPost/>
                 </TabPane>
             </TabContent>
-    </>
+    </div>
 
 
     );
