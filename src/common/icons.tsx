@@ -8,7 +8,7 @@ export const IconRecommend = (props) => (
 		height={props.size ? `${props.size}rem` : `1rem`}
 		fill={props.fill ? `${props.fill}` : `currentColor`}
 		onClick={props.doOnClick}
-		style={{ width: `20px`, height: `` }}
+		style={{ width: `20px`, height: `24px` }}
 	>
 		<path fill="none" d="M0 0h24v24H0V0z" viewBox="0 0 24 24" />
 		<path d="M3.5 18.99l11 .01c.67 0 1.27-.33 1.63-.84L20.5 12l-4.37-6.16c-.36-.51-.96-.84-1.63-.84l-11 .01L8.34 12 3.5 18.99z" />
@@ -21,7 +21,7 @@ export const IconReport = (props) => (
 		height={props.size ? `${props.size}rem` : `1rem`}
 		fill={props.fill ? `${props.fill}` : `currentColor`}
 		onClick={props.doOnClick}
-		style={{ width: `24px`, height: `` }}
+		style={{ width: `24px`, height: `24px` }}
 	>
 		<path fill="none" d="M0 0h24v24H0V0z" />
 		<path d="M15.73 3H8.27L3 8.27v7.46L8.27 21h7.46L21 15.73V8.27L15.73 3zM19 14.9L14.9 19H9.1L5 14.9V9.1L9.1 5h5.8L19 9.1v5.8z" />
@@ -36,7 +36,7 @@ export const IconComment = (props) => (
 		height={props.size ? `${props.size}rem` : `1rem`}
 		fill={props.fill ? `${props.fill}` : `currentColor`}
 		onClick={props.doOnClick}
-		style={{ width: `24px`, height: `` }}
+		style={{ width: `24px`, height: `24px` }}
 	>
 
 			<path fill="none" d="M0 0h24v24H0V0z" />
@@ -51,7 +51,7 @@ export const IconLikeFilled = (props) => (
 		height={props.size ? `${props.size}rem` : `1rem`}
 		fill={props.fill ? `${props.fill}` : `currentColor`}
 		onClick={props.doOnClick}
-		style={{ width: `24px`, height: `` }}
+		style={{ width: `24px`, height: `24px` }}
 	>
 
 			<path fill="none" d="M24 24H0V0h24v24z" />
@@ -66,7 +66,7 @@ export const IconBookMark = (props) => (
 		height={props.size ? `${props.size}rem` : `1rem`}
 		fill={props.fill ? `${props.fill}` : `currentColor`}
 		onClick={props.doOnClick}
-		style={{ width: `24px`, height: `` }}
+		style={{ width: `24px`, height: `24px` }}
 	>
 
 			<path d="M17 3H7c-1.1 0-1.99.9-1.99 2L5 21l7-3 7 3V5c0-1.1-.9-2-2-2z" />
@@ -81,7 +81,7 @@ export const IconAttachment = (props) => (
 		height={props.size ? `${props.size}rem` : `1rem`}
 		fill={props.fill ? `${props.fill}` : `currentColor`}
 		onClick={props.doOnClick}
-		style={{ width: `24px`, height: `` }}
+		style={{ width: `24px`, height: `24px` }}
 	>
 		<svg width={24} height={24} {...props}>
 			<path fill="none" d="M0 0h24v24H0V0z" />
@@ -96,7 +96,7 @@ export const IconFileInsert = (props) => (
 		height={props.size ? `${props.size}rem` : `1rem`}
 		fill={props.fill ? `${props.fill}` : `currentColor`}
 		onClick={props.doOnClick}
-		style={{ width: `24px`, height: `` }}
+		style={{ width: `24px`, height: `24px` }}
 	>
 
 			<path fill="none" d="M0 0h24v24H0V0z" />
@@ -111,7 +111,7 @@ export const IconCamera = (props) => (
 		height={props.size ? `${props.size}rem` : `1rem`}
 		fill={props.fill ? `${props.fill}` : `currentColor`}
 		onClick={props.doOnClick}
-		style={{ width: `24px`, height: `` }}
+		style={{ width: `24px`, height: `24px` }}
 	>
 
 			<circle cx={12} cy={12} r={3.2} />
@@ -142,7 +142,7 @@ export const IconGoogle = (props) => (
 		height={props.size ? `${props.size}rem` : `1rem`}
 		fill={props.fill ? `${props.fill}` : `currentColor`}
 		onClick={props.doOnClick}
-		style={{ width: `24px`, height: `` }}
+		style={{ width: `24px`, height: `24px` }}
 	>
 		<path
 			d="M113.47 309.408L95.648 375.94l-65.139 1.378C11.042 341.211 0 299.9 0 256c0-42.451 10.324-82.483 28.624-117.732h.014L86.63 148.9l25.404 57.644c-5.317 15.501-8.215 32.141-8.215 49.456.002 18.792 3.406 36.797 9.651 53.408z"
@@ -170,7 +170,7 @@ export const IconAdd = (props) => (
 		height={props.size ? `${props.size}rem` : `1rem`}
 		fill={props.fill ? `${props.fill}` : `currentColor`}
 		onClick={props.doOnClick}
-		style={{ width: `20px`, height: `` }}
+		style={{ width: `20px`, height: `24px` }}
 	>
 		<path
 			d="M10 6H6v4H4V6H0V4h4V0h2v4h4v2z"

@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import NavBarprogressbarComponent from "../../mentor/profile-update-progressbar";
 import {Modal} from "reactstrap";
 import {UpdateProfileProgressbar} from "../updateProfilebar"
+import HelpPopoverComponent from "../../../common/popovers/helpPopover";
 
 class NavBarComponent extends React.Component<RouteComponentProps,  any> {
     constructor(props, state) {
@@ -28,11 +29,10 @@ class NavBarComponent extends React.Component<RouteComponentProps,  any> {
                         <Link to="/" className="navbar-brand p-0">
                             <img src={require('../../../assets/styles/images/logo.png')} alt=""/>
                         </Link>
-                        <div
-                            className="d-flex align-items-center justify-content-end justify-content-sm-between flex-grow-1">
-                            <div className="d-flex align-items-center"/>
+                        <div className="d-flex align-items-center justify-content-end justify-content-sm-between flex-grow-1">
                             <NavBarprogressbarComponent/>
                             <div className="d-flex align-items-center">
+                                <HelpPopoverComponent/>
                                 <div className="search-input-group mr-3" id="searchBox">
                                     <input className="form-control" type="text" placeholder="Search"/>
                                 </div>

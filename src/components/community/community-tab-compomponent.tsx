@@ -6,7 +6,6 @@ import {CommunityTypes} from "./models/communityModels";
 import ExploreCommunityTab from "./exploreCommunity";
 import IncomingRequestsCard from "../mentor/IncomingRquests";
 import IncomingRequstsMentorTab from "../mentor/IncomingRquests";
-import CommunityRecommendCard from "./communityRecommendCard";
 
 const CommuntiyData = {
     memberCount: "03",
@@ -77,8 +76,18 @@ const CommunityTabComponent = (props: CommunityTabProps) => {
                         <h2 className="mb-0 pb-2 f-14 font-weight-normal px-2 text-capitalize">recommended communities</h2>
                         <Row className="m-0">
                             <Col xs="24" sm="8" md="12" className="">
-                                {/*<CommunityRecommendCard/>*/}
+                                <CommunityCard communityTypes={CommunityTypes.JOIN} {...CommuntiyData}/>
                             </Col>
+                            <Col xs="24" sm="8" md="12" className="">
+                                <CommunityCard communityTypes={CommunityTypes.JOIN} {...CommuntiyData}/>
+                            </Col>
+                            <Col xs="24" sm="8" md="12" className="">
+                                <CommunityCard communityTypes={CommunityTypes.JOIN} {...CommuntiyData}/>
+                            </Col>
+                            <Col xs="24" sm="8" md="12" className="">
+                                <CommunityCard communityTypes={CommunityTypes.JOIN} {...CommuntiyData}/>
+                            </Col>
+
                         </Row>
 
 

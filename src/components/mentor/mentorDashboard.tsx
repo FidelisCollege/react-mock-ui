@@ -21,7 +21,7 @@ const MentorDashboard = () => {
                         <div className="left-column d-lg-flex left-column d-none d-md-none d-lg-flex ">
                             <LeftNavComponent/>
                         </div>
-                        <div className="student-details tab-data active d-flex flex-column flex-grow-1">
+                        <div className="student-details tab-data active d-flex flex-column flex-grow-1 px-md-3">
                             <MentortabComponent/>
                         </div>
                         <div className="flex-column tab-data right-column d-none d-lg-flex">
