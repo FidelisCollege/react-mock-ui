@@ -18,9 +18,9 @@ const CommunityDetailsComponent = (props) => {
     }
 
     return (
-        <div className="community-details community-activity-detail d-flex flex-lg-row flex-column flex-grow-1 mt-3 overflow-auto bg-white">
+        <div className="community-details community-activity-detail d-flex flex-lg-row flex-column flex-grow-1 mt-2 mt-md-3 overflow-auto bg-white rounded card-shadow">
             <div className="d-lg-none d-flex flex-column overflow-auto community-nav-pills">
-                <Nav pills className="d-flex justify-content-between align-items-center py-2 border-bottom community-activity-tabs overflow-auto d-lg-none">
+                <Nav pills className="d-flex justify-content-between align-items-center p-2 border-bottom community-activity-tabs overflow-auto d-lg-none">
                     <div className="d-flex">
                         <NavItem className="mr-3">
                             <NavLink
