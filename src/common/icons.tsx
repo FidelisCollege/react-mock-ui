@@ -220,4 +220,45 @@ export const IconUpload = (props) => (
 
 	</svg>
 );
+export const IconAttachments = (props) => (
+	<svg
+		  className={props.className ? `icons ${props.className}` : 'icons'}
+		  width={``}
+		  height={props.size ? `${props.size}rem` : `1rem`}
+		  fill={props.fill ? `${props.fill}` : `currentColor`}
+		  onClick={props.doOnClick}
+		  style={{ width: `20px`, height: `20px` }}
+	>
+		<defs>
+			<filter
+				id="prefix__a"
+				x={939}
+				y={478}
+				width={18}
+				height={20}
+				filterUnits="userSpaceOnUse"
+			>
+				<feFlood result="flood" floodColor="#aaa" />
+				<feComposite result="composite" operator="in" in2="SourceGraphic" />
+				<feBlend result="blend" in2="SourceGraphic" />
+			</filter>
+		</defs>
+		<g
+			transform="translate(-938.5 -477.5)"
+			fill="none"
+			filter="url(#prefix__a)"
+		>
+			<path
+				id="prefix__b"
+				d="M955.918 486.86l-8.36 8.389a4.12 4.12 0 01-5.816-5.836l9.087-9.118a2.575 2.575 0 113.635 3.647l-7.633 7.66a1.03 1.03 0 01-1.454-1.459l6.906-6.93-1.09-1.094-6.907 6.93a2.575 2.575 0 103.635 3.647l7.634-7.659a4.12 4.12 0 00-5.816-5.836l-9.088 9.118a5.664 5.664 0 008 8.024l8.361-8.389z"
+				stroke="inherit"
+				filter="none"
+				fill="inherit"
+				strokeWidth={1}
+				fillRule="evenodd"
+			/>
+		</g>
+
+	</svg>
+);
 

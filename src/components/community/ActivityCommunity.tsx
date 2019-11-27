@@ -20,8 +20,8 @@ const ActivityCommuinity = () => {
     }
 
     return (
-        <div className="d-flex h-100 flex-column overflow-hidden">
-            <Nav pills className="d-flex justify-content-between align-items-center py-2 px-2 border-bottom community-activity-tabs">
+        <div className="d-flex flex-column  flex-grow-1">
+            <Nav pills className="d-flex justify-content-between align-items-center py-2 px-2 border-bottom community-activity-tabs mb-2">
                 <div className="d-flex">
                     <NavItem className="mr-3">
                         <NavLink
@@ -58,19 +58,19 @@ const ActivityCommuinity = () => {
                 </div>
 
             </Nav>
-            <TabContent activeTab={activeTab} className="flex-grow-1 bg-white h-100">
-                <TabPane tabId="1" className="h-100 flex-grow-1 overflow-hidden">
+            <TabContent activeTab={activeTab} className="flex-grow-1 bg-white d-flex overflow-auto">
+                <TabPane tabId="1" className=" flex-grow-1 ">
                     <CommunityAllActivity/>
                 </TabPane>
-                <TabPane tabId="2" className="h-100 flex-grow-1 overflow-hidden">
+                <TabPane tabId="2" className="flex-grow-1">
                     rrrr
                 </TabPane>
-                <TabPane tabId="3" className="h-100 flex-grow-1 overflow-hidden">
+                <TabPane tabId="3" className="flex-grow-1">
                     <CommunityActivityAnnouncement/>
                 </TabPane>
-                <TabPane tabId="4" className="h-100 flex-grow-1 overflow-hidden">
+                <TabPane tabId="4" className="flex-grow-1">
                     <div className="d-flex justify-content-between py-3">
-                        <input className="form-control py-0" type="text" placeholder="Search for mentors" />
+                        <input className="form-control py-0" type="text" placeholder="Start a Post" />
                         <CommunityPostModal/>
                     </div>
                     <CommunityActivityPost/>

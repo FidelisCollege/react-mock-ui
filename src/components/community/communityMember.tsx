@@ -13,14 +13,12 @@ const CommunityMember = () => {
                         <div className="left-column d-lg-flex left-column d-none d-md-none d-lg-flex ">
                             <LeftNavComponent/>
                         </div>
-                        <div className="student-details tab-data active w-100 pl-lg-3 p-2 d-flex flex-column">
-                            <h3 className="text-capitalize text-primary pt-3 f-18">
+                        <div className="student-details tab-data active flex-grow-1 pl-lg-3 d-flex flex-column p-2">
+                            <h3 className="text-capitalize text-primary f-18">
                                 <i className="icon-caret-left text-primary f-14 mr-2 font-weight-bold"></i>my communities
                             </h3>
-                            <div className="position-relative profile-banner-wrapper">
-
-
-                                <div className="profile-banner-content w-100 h-100 p-3 d-md-flex">
+                             <div className="profile-banner-wrapper">
+                                <div className="profile-banner-content  p-3 d-md-flex">
                                     <div className="d-flex align-items-center">
                                         <img src="images/media-img.png" alt="..." className="profile-img"/>
                                         <h6 className="profile-banner-heading text-white font-weight-bold ml-3">Community for Mountaineers & Trekkers of North America
@@ -40,6 +38,7 @@ const CommunityMember = () => {
                                 </div>
                             </div>
                             <CommunityDetailComponent/>
+
                         </div>
                     </div>
                 </div>

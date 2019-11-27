@@ -67,21 +67,23 @@ $sort-button-bg: #ececfb;
 }
 
 .profile-banner-wrapper{
-  min-height: 101px;
   background-image: url("images/profile-background.png");
   background-repeat: no-repeat;
   background-size: cover;
   object-fit: cover;
   border-radius: 4px;
   @media (max-width: 576px){
-      min-height: 116px;
   }
-
   .profile-banner-content{
-      position: absolute;
-      top:0;
-      justify-content: space-between;
-      align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: 576px ) {
+      flex-direction: column;
+      align-items: baseline;
+    }
+
+
       .profile-img{
           border-radius: 50%;
           border: 4px solid $white;
@@ -95,11 +97,12 @@ $sort-button-bg: #ececfb;
     }
   }
   .joined-wrapper{
-      width: 14px;
-      height: 14px;
-      background: white;
-      color: $info;
-      border-radius: 50%;
+    width: 14px;
+    height: 14px;
+    background: white;
+    color: $info;
+    border-radius: 50%;
+    text-align: center;
   }
   .joinned-badge{
       padding-left: 78px;
@@ -115,18 +118,18 @@ $sort-button-bg: #ececfb;
       width: 100%;
 
   }
-  //.tab-buttons{
-  //  padding:10px 14px;
-  //  border: 1px solid transparent;
-  //  box-shadow: none !important;
-  //
-  //  &:active{
-  //    border: 1px solid $info;
-  //    border-radius: $border-radius;
-  //    color: $primary !important;
-  //  }
-  //
-  //}
+  .tab-buttons{
+    padding:10px 14px;
+    border: 1px solid transparent;
+    box-shadow: none !important;
+
+    &.active{
+      border: 1px solid $info;
+      border-radius: $border-radius;
+      color: $primary !important;
+    }
+
+  }
 
 }
 .content-wrapper{
@@ -141,24 +144,24 @@ $sort-button-bg: #ececfb;
       }
     }
 }
-//.community-activity-tabs{
-//  //.nav-pills .nav-link.active,
-//  //.nav-pills .show > .nav-link {
-//  //  color: $primary !important;
-//  //}
-//  .nav-link {
-//      font-size: 14px;
-//      //color: $dark !important;
-//      &:active {
-//        //background-color: $nav-icon-tabs-link-active-bg;
-//        //color: $primary !important;
-//        //font-weight: bold;
-//        box-shadow: none !important;
-//      }
-//
-//    }
-//
-//}
+.community-activity-tabs{
+  .nav-pills .nav-link.active,
+  .nav-pills .show > .nav-link {
+    color: $primary !important;
+  }
+  .nav-link {
+      font-size: 14px;
+      color: $dark !important;
+      &.active {
+        background-color: $nav-icon-tabs-link-active-bg;
+        color: $primary !important;
+        font-weight: 500;
+        box-shadow: none !important;
+      }
+
+    }
+
+}
 .post-button{
     padding: 7px 34px;
     font-size: 16px;
@@ -202,8 +205,8 @@ $sort-button-bg: #ececfb;
     flex-direction: column;
 
     @media (max-width: 576px) {
-      flex-grow: 1;
-      overflow: auto;
+      //flex-grow: 1;
+      //overflow: auto;
     }
 }
 .card-background{
@@ -245,4 +248,7 @@ $sort-button-bg: #ececfb;
     }
 
   }
+}
+.community-nav-pills{
+  min-height:60px;
 }

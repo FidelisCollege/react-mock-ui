@@ -1,7 +1,7 @@
 import * as React from 'react';
 import {Button, Modal, ModalHeader, ModalBody, ModalFooter, FormGroup, Label, Input} from 'reactstrap';
 import {useState} from "react";
-import {IconAttachment, IconCamera} from "../../common";
+import {IconAttachment, IconAttachments, IconCamera} from "../../common";
 
 const CommunityPostModal = (props) => {
     const {
@@ -41,8 +41,8 @@ const CommunityPostModal = (props) => {
                         </a>
                     </div>
                 </ModalBody>
-                <ModalFooter className="mt-5">
-                    <button type="button" className=" btn btn-outline-primary f-14 px-4 py-2 text-capitalize" onClick={toggle}>cancel</button>{' '}
+                <ModalFooter className="">
+                    <button type="button" className=" btn btn-outline-primary f-14 px-4 py-2 text-capitalize" onClick={toggle}>cancel</button>
                     <button type="button" className=" btn btn-outline-primary active f-14 px-4 py-2 text-capitalize" onClick={toggle}>post</button>
                 </ModalFooter>
             </Modal>

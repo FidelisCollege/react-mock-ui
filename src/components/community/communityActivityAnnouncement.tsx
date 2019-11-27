@@ -6,7 +6,7 @@ import CommentCollapse from "../../common/collapse/commentCollapse";
 const CommunityActivityAnnouncement  = () => {
     return (
 
-        <ul className="list-unstyled show-list-activity mb-0 ">
+        <ul className="list-unstyled show-list-activity mb-0">
             <li className="py-3">
                 <div className="media pb-0 text-capitalize">
                     <div className="media-left">
@@ -19,7 +19,7 @@ const CommunityActivityAnnouncement  = () => {
                         <time className="f-14 text-secondary pb-3 border-bottom d-flex">5 Sep 2019</time>
                         <div className="pt-3">
                             <h3 className="f-14 ">Clay Modelling Workshop - Clayform Studio</h3>
-                            <p className="text-secondary f-14 pr-5" >This course is ideal for beginners with an interest in ceramics and who wish
+                            <p className="text-secondary f-14 pr-lg-5" >This course is ideal for beginners with an interest in ceramics and who wish
                                 to participate in an enjoyable practical ceramics course...
                                 <a href="#" className="text-capitalize text-primary f-14">See full details</a>
                             </p>
