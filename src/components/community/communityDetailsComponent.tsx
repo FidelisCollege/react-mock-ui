@@ -11,16 +11,16 @@ import CommunityMembers from "./communityMembers";
 import CommunityResources from "./communityResources";
 
 const CommunityDetailsComponent = (props) => {
-    const [activeTab, setActiveTab] = useState('about');
+    const [activeTab, setActiveTab] = useState('activities');
 
     const toggle = tab => {
         if(activeTab !== tab) setActiveTab(tab);
     }
 
     return (
-        <div className="community-details community-activity-detail d-flex flex-grow-1 overflow-hidden">
-            <div className="d-lg-none d-md-flex flex-column flex-grow-1 overflow-hidden">
-                <Nav pills className="d-flex justify-content-between align-items-center py-2 px-2 border-bottom community-activity-tabs overflow-auto d-lg-none">
+        <div className="community-details community-activity-detail d-flex flex-grow-1 overflow-auto">
+            <div className="d-lg-none d-md-flex flex-column flex-grow-1 overflow-auto">
+                <Nav pills className="d-flex justify-content-between align-items-center py-2 border-bottom community-activity-tabs overflow-auto d-lg-none">
                     <div className="d-flex">
                         <NavItem className="mr-3">
                             <NavLink
@@ -72,37 +72,42 @@ const CommunityDetailsComponent = (props) => {
                         </NavItem>
                     </div>
                 </Nav>
-                <TabContent activeTab={activeTab} className="flex-grow-1 bg-white p-lg-3 py-3 community-tab-content">
-                    <TabPane tabId="activities" className="flex-grow-1 overflow-hidden">
+                <TabContent activeTab={activeTab} className="bg-white p-lg-3 py-3 community-tab-content">
+                    <TabPane tabId="activities" className="">
                         <ActivityCommuinity/>
                     </TabPane>
-                    <TabPane tabId="about" className="flex-grow-1 overflow-hidden">
+                    <TabPane tabId="about" className="">
                         <AboutCommuinityDetails/>
                     </TabPane>
-                    <TabPane tabId="members" className="flex-grow-1 overflow-hidden">
+                    <TabPane tabId="members" className="">
                         <CommunityMembers/>
                     </TabPane>
-                    <TabPane tabId="resource" className="flex-grow-1 overflow-hidden">
+                    <TabPane tabId="resource" className="">
                         <CommunityResources/>
                     </TabPane>
-                    <TabPane tabId="relatedCommunities" className="flex-grow-1 overflow-hidden">
+                    <TabPane tabId="relatedCommunities" className="">
                         <RelatedCommunityDetails/>
                     </TabPane>
-                    <TabPane tabId="calender" className="flex-grow-1 overflow-hidden">
+                    <TabPane tabId="calender" className="">
                         <RelatedCommunityDetails/>
                     </TabPane>
                 </TabContent>
             </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
             <div className="d-md-none  d-lg-flex flex-grow-1 d-none">
                 <Nav className="d-none d-lg-flex flex-column align-content-start align-items-start p-2 card-shadow bg-white">
-                    <NavItem className="mb-2 nav-items ">
-                        <NavLink
-                            className={"tab-buttons text-capitalize text-dark f-14" + (activeTab === 'about' ? ' active ' : '')}
-                            onClick={() => { toggle('about'); }}
-                        >
-                            about
-                        </NavLink>
-                    </NavItem>
                     <NavItem className="mb-2 nav-items">
                         <NavLink
                             className={"tab-buttons text-capitalize text-dark f-14" + (activeTab === 'activities' ? ' active ' : '')}
@@ -111,6 +116,15 @@ const CommunityDetailsComponent = (props) => {
                             activities
                         </NavLink>
                     </NavItem>
+                    <NavItem className="mb-2 nav-items ">
+                        <NavLink
+                            className={"tab-buttons text-capitalize text-dark f-14" + (activeTab === 'about' ? ' active ' : '')}
+                            onClick={() => { toggle('about'); }}
+                        >
+                            about
+                        </NavLink>
+                    </NavItem>
+
                     <NavItem className="mb-2 nav-items">
                         <NavLink
                             className={"tab-buttons text-capitalize text-dark f-14" + (activeTab === 'members' ? ' active ' : '')}

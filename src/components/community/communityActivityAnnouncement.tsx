@@ -1,5 +1,6 @@
 import * as React from 'react';
 import {IconComment, IconLikeFilled, IconReport} from "../../common";
+import CommentCollapse from "../../common/collapse/commentCollapse";
 
 
 const CommunityActivityAnnouncement  = () => {
@@ -25,15 +26,18 @@ const CommunityActivityAnnouncement  = () => {
                         </div>
 
                         <div className="activity-footer px-2 py-2 d-flex justify-content-between align-items-center">
-                            <div>
-                                <a className="cursor-pointer action-links" href="#">
-                                    <IconLikeFilled className="text-secondary mr-2"/>
-                                    <span className="d-none d-lg-inline f-14">like</span>
-                                </a>
-                                <a className="cursor-pointer action-links ml-5" href="#">
-                                    <IconComment className="text-secondary mr-2"/>
-                                    <span className="d-none d-lg-inline f-14">comment</span>
-                                </a>
+                            <div className="d-flex">
+                                <div>
+                                    <a className="cursor-pointer action-links" href="#">
+                                        <IconLikeFilled className="text-secondary mr-2"/>
+                                        <span className="d-none d-lg-inline f-14">like</span>
+                                    </a>
+                                </div>
+                                <CommentCollapse/>
+                                {/*<a className="cursor-pointer action-links ml-5" href="#">*/}
+                                    {/*<IconComment className="text-secondary mr-2"/>*/}
+                                    {/*<span className="d-none d-lg-inline f-14">comment</span>*/}
+                                {/*</a>*/}
                             </div>
                             <IconReport className="text-secondary"/>
                         </div>

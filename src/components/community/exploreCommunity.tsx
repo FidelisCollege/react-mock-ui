@@ -22,9 +22,9 @@ const ExploreCommunityTab  = () => {
                     <a className="text-capitalize btn f-14 card-sort-buttons btn-lg active mx-1" href="#">number of app</a>
                     <a className="text-capitalize f-14 card-sort-buttons btn btn-lg" href="#">community size</a>
                 </div>
-                <div className="d-flex justify-content-end align-items-center  d-lg-none ">
+                <div className="d-flex justify-content-end align-items-center  d-lg-none w-100">
                     <span className="f-14 text-light mr-1 text-capitalize">sort by:</span>
-                    <div className="input-group py-2 sort-select">
+                    <div className="input-group py-2 sort-select w-auto">
                         <select className="custom-select py-2" id="inputGroupSelect04">
                             <option className="text-capitalize" selected >Number Of App</option>
                             <option value="1">One</option>

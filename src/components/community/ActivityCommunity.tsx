@@ -69,7 +69,7 @@ const ActivityCommuinity = () => {
                     <CommunityActivityAnnouncement/>
                 </TabPane>
                 <TabPane tabId="4" className="h-100 flex-grow-1 overflow-hidden">
-                    <div className="d-flex justify-content-between pl-lg-5 ml-lg-3 py-3">
+                    <div className="d-flex justify-content-between py-3">
                         <input className="form-control py-0" type="text" placeholder="Search for mentors" />
                         <CommunityPostModal/>
                     </div>

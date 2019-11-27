@@ -1,7 +1,7 @@
 import * as React from 'react';
 import {Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle, Button} from 'reactstrap';
 import CommunityActivityPostDetail from "./communityAllActivities";
-import {IconBookMark} from "../../common";
+import {IconAdd, IconBookMark} from "../../common";
 
 const ResourceAppCard = () => {
     return (
@@ -21,7 +21,10 @@ const ResourceAppCard = () => {
                     <a href="#">
                         <IconBookMark className="icon-bookmark"/>
                     </a>
-                    <button type="button" className="btn btn-outline-primary text-capitalize px-4 ml-2">add</button>
+                    <a  href="#">
+                        <IconAdd className="text-primary ml-2 p-1"/>
+                    </a>
+
                 </div>
 
             </div>
