@@ -23,8 +23,8 @@ export default class OutgoingRequestCard extends React.Component {
                     </Col>
                     <Col xs="8" sm="8" className="">
                         <div className="d-md-flex justify-content-end d-none">
-                            <button type="button" className="btn btn-outline-primary mr-2">withdraw</button>
-                            <button className="btn btn-outline-primary active">resend</button>
+                            <button type="button" className="btn btn-outline-primary mr-2 text-capitalize">withdraw</button>
+                            <button className="btn btn-outline-primary active text-capitalize">resend</button>
                         </div>
                         <OutgoingMentorActions/>
                     </Col>

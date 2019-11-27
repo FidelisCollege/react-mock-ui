@@ -15,7 +15,7 @@ const CommunityCard  = (props: CommunityCardProps) => {
     const {communityTypes, memberCount, member, activityCount, activity } = props;
 
     return (
-        <Card className="card-shadow border-0 cursor-pointer mb-2 community-card p-0">
+        <Card className="card-shadow border-0 cursor-pointer mb-2 community-card">
             <div className="d-flex align-items-center card-background">
                 <CardImg src="images/media-img.png" className="community-card-image"/>
                 <p className="mb-0 text-white f-13 ml-2 text-break">A larger community name</p>

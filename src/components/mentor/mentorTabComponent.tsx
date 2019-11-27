@@ -61,11 +61,11 @@ const MentortabComponent = (props: MentortabProps) => {
         <div className="d-flex flex-column overflow-hidden">
             <div className="d-flex align-items-center justify-content-between  border-bottom pb-2">
                 <h2 className="text-capitalize f-18 text-dark font-weight-normal mb-0">mentor dashboard</h2>
-                <button className="btn btn-outline-primary invite-mentor-btn py-md-2 px-md-4 px-2">
+                <button type="button" className="btn btn-outline-primary invite-mentor-btn">
                     <IconAdd className="p-1"/>Invite Mentor
                 </button>
             </div>
-            <header className="border-bottom">
+            <header className="border-bottom dashboard-tab-header">
                 <Nav pills className="d-flex justify-content-between align-items-center py-2">
                     <div className="d-flex">
                         <NavItem className="mr-3">
@@ -107,8 +107,8 @@ const MentortabComponent = (props: MentortabProps) => {
                         </Col>
                     </Row>
                     <div>
-                        <div className="pb-2 d-flex border-bottom align-items-center">
-                            <h2 className="mb-0 font-weight-normal">Recommended Mentors</h2>
+                        <div className="d-flex border-bottom align-items-center">
+                            <h2 className="mb-0 font-weight-normal f-16">Recommended Mentors</h2>
                             <RecommendMentorTooltip />
                         </div>
                         <Row className="py-3 m-0">
@@ -128,7 +128,7 @@ const MentortabComponent = (props: MentortabProps) => {
                 </TabPane>
                 <AddMentorButton/>
             </TabContent>
-            {/*<RequestMentorChat/>*/}
+            <RequestMentorChat/>
         </div>
 
 

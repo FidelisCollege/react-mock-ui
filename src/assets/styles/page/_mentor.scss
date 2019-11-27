@@ -6,10 +6,6 @@ $dropdown-border-color: #ddd;
   border-radius: 4px !important;
   font-size: 14px;
   cursor: pointer;
-  &:hover{
-    color: $white !important;
-    //background-color: $primary;
-  }
   @media (max-width: 576px){
     background-color: $white;
     color: $primary;
@@ -20,6 +16,8 @@ $dropdown-border-color: #ddd;
 
 .invite-mentor-btn{
   line-height: 1.2;
+  background-color: $white;
+  padding: 8px 12px;
 }
 .mentor-card{
   //width:147px ;
@@ -268,9 +266,23 @@ $dropdown-border-color: #ddd;
     border-radius: 4px;
   }
   @media (max-width: 576px){
-      background-color: transparent;
-      //bottom:40px;
+    bottom:50px;
+    border-radius: 8px;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 1px 9px 0;
+    text-transform: capitalize;
 
+
+  }
+  .chat-wrapper-btn{
+    border-radius: 4px;
+    background-color: $white;
+    padding: 7px 14px;
+    font-size: 14px;
+    color: $primary;
   }
 }
 .badge-choose-function{
@@ -342,4 +354,12 @@ $dropdown-border-color: #ddd;
 }
 .save-search-button{
   min-width: 111px;
+}
+.dashboard-tab-header{
+    .tab-buttons{
+      &:hover{
+        color: $white !important;
+        background-color: $primary;
+      }
+    }
 }

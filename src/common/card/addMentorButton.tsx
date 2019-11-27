@@ -7,7 +7,7 @@ import * as React from 'react';
 const AddMentorButton = () => {
     return (
 
-        <button className="d-lg-none btn-block-custom add-mentor-button">
+        <button className="d-lg-none btn-block-custom add-mentor-button text-capitalize">
             <i className="icon-add mr-2"></i>Add mentor
         </button>
     );

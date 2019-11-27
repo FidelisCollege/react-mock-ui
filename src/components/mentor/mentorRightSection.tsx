@@ -11,7 +11,7 @@ import ChatWrapper from "../community/chatWrapper";
 
 const MentorRightSection = () => {
     return (
-        <div className="right-section-actions flex-grow-1 overflow-auto">
+        <div className="right-section-actions flex-grow-1 overflow-auto pb-5">
             <div className="card border-0 card-purpose tab-data m-3 m-lg-0 d-none d-lg-block action-cards">
                 <div className="card-body card-shadow px-3">
                     <ProfileUpdate/>

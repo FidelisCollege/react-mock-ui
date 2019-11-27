@@ -28,7 +28,7 @@ const CommunityTabComponent = (props: CommunityTabProps) => {
     return (
         <div className="d-flex flex-column h-100  px-md-3 px-2">
             <h2 className="text-capitalize py-3 border-bottom f-18 text-dark font-weight-normal">Community dashboard</h2>
-            <header className="border-bottom pb-2 d-flex justify-content-between align-items-center">
+            <header className="border-bottom pb-2 d-flex justify-content-between align-items-center  dashboard-tab-header">
                 <Nav pills className="d-flex justify-content-between align-items-center">
                     <div className="d-flex">
                         <NavItem className="mr-3">
