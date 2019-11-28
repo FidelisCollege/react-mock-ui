@@ -66,9 +66,9 @@ const MentortabComponent = (props: MentortabProps) => {
                 </button>
             </div>
             <header className="border-bottom dashboard-tab-header">
-                <Nav pills className="d-flex justify-content-between align-items-center py-2">
+                <Nav pills className="d-flex justify-content-between align-items-center pt-2 pb-3">
                     <div className="d-flex">
-                        <NavItem className="mr-3">
+                        <NavItem className="">
                             <NavLink
                                 className={"tab-buttons text-capitalize" + (activeTab === '1' ? ' active ' : '')}
                                 onClick={() => toggle('1')}
@@ -97,27 +97,28 @@ const MentortabComponent = (props: MentortabProps) => {
             <div className="text-secondary f-14 py-2">You have 6 Mentor spot(s) still available.
                 <a href="" className="text-primary">Click here</a> to change your max mentor limit.</div>
             <TabContent className="dashboard-tab-wrapper pt-2 overflow-auto" activeTab={activeTab}>
-                <TabPane tabId="1" className="flex-grow-1">
-                    <Row className="m-0">
-                        <Col xs="12" md="8" className="d-none d-lg-block mb-2">
+                <TabPane tabId="1" className="flex-grow-1 card-row">
+                    <Row className="card-row m-0">
+                        <Col xs="12" md="8" className="d-none d-lg-block mb-2 card-col">
                             <DefaultMentorCard mentorType={MentorTypes.DEFAULT} {...MentorData} />
                         </Col>
-                        <Col xs="" md="24" lg="8"  className="d-flex mb-2" onClick={() => history.push(RouteUrls.MENTOR_ADVANCE_SEARCH)}>
+                        <Col xs="" md="24" lg="8"  className="d-flex mb-2 card-col" onClick={() => history.push(RouteUrls.MENTOR_ADVANCE_SEARCH)}>
                             <AddMentorCard />
                         </Col>
+
                     </Row>
                     <div>
                         <div className="d-flex border-bottom align-items-center">
                             <h2 className="mb-0 font-weight-normal f-16">Recommended Mentors</h2>
                             <RecommendMentorTooltip />
                         </div>
-                        <Row className="py-3 m-0">
+                        <Row className="py-3 card-row">
                             {RecommendedMentorData.map((data, index) => {
-                                return <Col xs="12" sm="8" className="mb-2" key={index}>
+                                return <Col xs="12" sm="8" className="mb-2 card-col" key={index}>
                                     <DefaultMentorCard mentorType={MentorTypes.RECOMMENDED} {...data} />
                                 </Col>
                             })}
-                            <Col xs="12" sm="8" className="d-flex mb-2">
+                            <Col xs="12" sm="8" className="d-flex mb-2 card-col">
                                 <ViewMentorCard />
                             </Col>
                         </Row>

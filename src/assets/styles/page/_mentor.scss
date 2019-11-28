@@ -6,6 +6,7 @@ $dropdown-border-color: #ddd;
   border-radius: 4px !important;
   font-size: 14px;
   cursor: pointer;
+  max-height: 37px !important;
   @media (max-width: 576px){
     background-color: $white;
     color: $primary;
@@ -34,6 +35,9 @@ $dropdown-border-color: #ddd;
     overflow: hidden;
     padding:10px;
     box-sizing: content-box;
+  }
+  .card-title{
+    max-width: 125px;
   }
 }
 .add-mentor{
@@ -262,13 +266,13 @@ $dropdown-border-color: #ddd;
   .chat-wrapper-img{
     width: 30px;
     height: 30px;
-    margin-right: 4px;
+    margin-right: 16px;
     border-radius: 4px;
   }
   @media (max-width: 576px){
-    bottom:50px;
+    bottom:15px;
     border-radius: 8px;
-    padding: 12px;
+    padding: 14px 12px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -362,4 +366,11 @@ $dropdown-border-color: #ddd;
         background-color: $primary;
       }
     }
+}
+
+.card-row .card-col:nth-child(1){
+    padding-left:0;
+}
+.card-row .card-col:nth-child(3){
+  padding-right:0;
 }

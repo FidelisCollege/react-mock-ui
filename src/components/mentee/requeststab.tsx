@@ -7,7 +7,7 @@ export default class RequestMentorTab extends React.Component {
         return (
             <>
                 <div>
-                    <h4 className="my-3 f-14 text-light font-weight-normal mb-0">Incoming</h4>
+                    <h4 className="my-2 f-14 text-light font-weight-normal mb-0">Incoming</h4>
                     <IncomingRequstsMentorTab/>
                 </div>
                 <div className="mt-2">

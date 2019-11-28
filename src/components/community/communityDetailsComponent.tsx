@@ -72,26 +72,6 @@ const CommunityDetailsComponent = (props) => {
                         </NavItem>
                     </div>
                 </Nav>
-                {/*<TabContent activeTab={activeTab} className="bg-white p-lg-3 py-3 community-tab-content">*/}
-                    {/*<TabPane tabId="activities" className="">*/}
-                        {/*<ActivityCommuinity/>*/}
-                    {/*</TabPane>*/}
-                    {/*<TabPane tabId="about" className="">*/}
-                        {/*<AboutCommuinityDetails/>*/}
-                    {/*</TabPane>*/}
-                    {/*<TabPane tabId="members" className="">*/}
-                        {/*<CommunityMembers/>*/}
-                    {/*</TabPane>*/}
-                    {/*<TabPane tabId="resource" className="">*/}
-                        {/*<CommunityResources/>*/}
-                    {/*</TabPane>*/}
-                    {/*<TabPane tabId="relatedCommunities" className="">*/}
-                        {/*<RelatedCommunityDetails/>*/}
-                    {/*</TabPane>*/}
-                    {/*<TabPane tabId="calender" className="">*/}
-                        {/*<RelatedCommunityDetails/>*/}
-                    {/*</TabPane>*/}
-                {/*</TabContent>*/}
             </div>
 
             <div className="d-md-none d-lg-flex  d-none ">
@@ -148,7 +128,7 @@ const CommunityDetailsComponent = (props) => {
                 </Nav>
 
             </div>
-            <TabContent activeTab={activeTab} className="flex-grow-1 bg-white p-lg-3 py-3 community-tab-content overflow-auto">
+            <TabContent activeTab={activeTab} className="flex-grow-1 bg-white p-3  community-tab-content overflow-auto">
                 <TabPane tabId="about" className="overflow-auto">
                     <AboutCommuinityDetails/>
                 </TabPane>

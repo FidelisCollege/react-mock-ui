@@ -7,6 +7,8 @@ import {MentorTabNames} from "../../components/mentor/helper/helpers";
 import CommunityDasboard from "../../components/community/CommunityDashboard";
 import CommunityDashboard from "../../components/community/CommunityDashboard";
 import MenteeTabComponent from "../../components/mentee/menteeTabComponent";
+import ChatWrapper from "../../components/community/chatWrapper";
+import AddMentorButton from "../card/addMentorButton";
 
 
 
@@ -71,6 +73,8 @@ export default class TabComponents extends React.Component <{},any> {
                             </div>
                         </div>
                     </div>
+                <ChatWrapper/>
+
 
             </div>
         );

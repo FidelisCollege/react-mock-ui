@@ -7,7 +7,7 @@ import { ListGroup, ListGroupItem, Button, Row, Col } from 'reactstrap';
 export default class IncomingRequestsCard extends React.Component {
     render() {
         return (
-            <ListGroupItem href="#" className="media mb-3 card-shadow p-2 px-lg-3 py-lg-3 d-flex align-items-center">
+            <ListGroupItem href="#" className="media card-shadow p-2 px-lg-3 py-lg-3 d-flex align-items-center">
                 <div className="pr-2">
                     <img src="images/media-img.png" alt="..." className="border media-img"/>
                 </div>

@@ -66,7 +66,7 @@ const MenteeTabComponent = (props: MentortabProps) => {
                 </button>
             </div>
             <header className="border-bottom">
-                <Nav pills className="d-flex justify-content-between align-items-center py-2">
+                <Nav pills className="d-flex justify-content-between align-items-center py-3">
                     <div className="d-flex">
                         <NavItem className="mr-3">
                             <NavLink

@@ -22,7 +22,7 @@ const RelatedCommunityDetails  = () => {
                     </select></div>
                 </div>
             </div>
-            <Row className="pt-1 flex-grow-1 overflow-auto">
+            <Row className="pt-1 flex-grow-1 overflow-auto m-0">
                 <Col xs="24" sm="8">
                     <CommunityCard communityTypes={CommunityTypes.JOIN} memberCount="" member="" activityCount="" activity=""/>
                 </Col>

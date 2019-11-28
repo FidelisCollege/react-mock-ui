@@ -21,7 +21,7 @@ const ActivityCommuinity = () => {
 
     return (
         <div className="d-flex flex-column  flex-grow-1">
-            <Nav pills className="d-flex justify-content-between align-items-center py-2 px-2 border-bottom community-activity-tabs mb-2">
+            <Nav pills className="pb-2 pt-0 border-bottom community-activity-tabs">
                 <div className="d-flex">
                     <NavItem className="mr-3">
                         <NavLink
@@ -58,7 +58,7 @@ const ActivityCommuinity = () => {
                 </div>
 
             </Nav>
-            <TabContent activeTab={activeTab} className="flex-grow-1 bg-white d-flex overflow-auto">
+            <TabContent activeTab={activeTab} className="flex-grow-1 bg-white d-flex overflow-auto px-2">
                 <TabPane tabId="1" className=" flex-grow-1 ">
                     <CommunityAllActivity/>
                 </TabPane>
