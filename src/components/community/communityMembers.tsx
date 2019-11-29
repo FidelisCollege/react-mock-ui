@@ -19,38 +19,38 @@ const CommunityMembers = () => {
                     <input className="form-control" type="text" placeholder="Search members by name or skills" />
                 </div>
             </div>
-            <Row className="flex-grow-1 overflow-auto py-3 mx-0">
-                <Col xs="12" md="6" className="mb-2">
+            <Row className="flex-grow-1 overflow-auto py-3 mx-0 card-row">
+                <Col xs="12" md="6" className="mb-2 card-col">
                     <DefaultMentorCard mentorType={MentorTypes.DEFAULT} {...MentorData} />
                 </Col>
-                <Col xs="12" md="6" className="mb-2">
+                <Col xs="12" md="6" className="mb-2 card-col">
                     <DefaultMentorCard mentorType={MentorTypes.DEFAULT} {...MentorData} />
                 </Col>
-                <Col xs="12" md="6" className="mb-2">
+                <Col xs="12" md="6" className="mb-2 card-col">
                     <DefaultMentorCard mentorType={MentorTypes.DEFAULT} {...MentorData} />
                 </Col>
-                <Col xs="12" md="6" className="mb-2">
+                <Col xs="12" md="6" className="mb-2 card-col">
                     <DefaultMentorCard mentorType={MentorTypes.DEFAULT} {...MentorData} />
                 </Col>
-                <Col xs="12" md="6" className="mb-2">
+                <Col xs="12" md="6" className="mb-2 card-col">
                     <DefaultMentorCard mentorType={MentorTypes.DEFAULT} {...MentorData} />
                 </Col>
-                <Col xs="12" md="6" className="mb-2">
+                <Col xs="12" md="6" className="mb-2 card-col">
                     <DefaultMentorCard mentorType={MentorTypes.DEFAULT} {...MentorData} />
                 </Col>
-                <Col xs="12" md="6" className="mb-2">
+                <Col xs="12" md="6" className="mb-2 card-col">
                     <DefaultMentorCard mentorType={MentorTypes.DEFAULT} {...MentorData} />
                 </Col>
-                <Col xs="12" md="6" className="mb-2">
+                <Col xs="12" md="6" className="mb-2 card-col">
                     <DefaultMentorCard mentorType={MentorTypes.DEFAULT} {...MentorData} />
                 </Col>
-                <Col xs="12" md="6" className="mb-2">
+                <Col xs="12" md="6" className="mb-2 card-col">
                     <DefaultMentorCard mentorType={MentorTypes.DEFAULT} {...MentorData} />
                 </Col>
-                <Col xs="12" md="6" className="mb-2">
+                <Col xs="12" md="6" className="mb-2 card-col">
                     <DefaultMentorCard mentorType={MentorTypes.DEFAULT} {...MentorData} />
                 </Col>
-                <Col xs="12" md="6" className="mb-2">
+                <Col xs="12" md="6" className="mb-2 card-col">
                     <DefaultMentorCard mentorType={MentorTypes.DEFAULT} {...MentorData} />
                 </Col>
 

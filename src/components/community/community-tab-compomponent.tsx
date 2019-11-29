@@ -31,7 +31,7 @@ const CommunityTabComponent = (props: CommunityTabProps) => {
             <header className="border-bottom pb-2 d-flex justify-content-between align-items-center  dashboard-tab-header">
                 <Nav pills className="d-flex justify-content-between align-items-center">
                     <div className="d-flex">
-                        <NavItem className="mr-3">
+                        <NavItem className="">
                             <NavLink
                                 className={"tab-buttons text-capitalize btn" + (activeTab === '1' ? ' active ' : '')}
                                 onClick={() => toggle('1')}

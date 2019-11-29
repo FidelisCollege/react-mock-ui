@@ -3,17 +3,14 @@ import { Button, Col, Nav, NavItem, NavLink, Row, TabContent, TabPane } from 're
 import DefaultMentorCard from "./mentorDefaultCards";
 import AddMentorCard from "./addmentorCard";
 import RecommendMentorTooltip from "./recommendTooltip";
-
 import { MentorTypes } from "./models/mentorModel";
 import ViewMentorCard from "../viewAllCard";
 import { withRouter, RouterProps } from 'react-router';
 import { RouteUrls } from '../routes/routesConfig';
-import MentorTab from "../../common/dashboard/mentorMenteeTabMob";
 import RequestTab from "./requeststab";
 import RequestMentorChat from "./chatTab";
 import {IconAdd} from "../../common";
 import AddMentorButton from "../../common/card/addMentorButton";
-// import {IconAdd} from "../../common";
 
 const MentorData = {
     name: "Robert Watson",
@@ -95,7 +92,8 @@ const MentortabComponent = (props: MentortabProps) => {
                 </Nav>
             </header>
             <div className="text-secondary f-14 py-2">You have 6 Mentor spot(s) still available.
-                <a href="" className="text-primary">Click here</a> to change your max mentor limit.</div>
+                <a href="" className="text-primary">Click here</a> to change your max mentor limit.
+            </div>
             <TabContent className="dashboard-tab-wrapper pt-2 overflow-auto" activeTab={activeTab}>
                 <TabPane tabId="1" className="flex-grow-1 card-row">
                     <Row className="card-row m-0">
@@ -129,6 +127,7 @@ const MentortabComponent = (props: MentortabProps) => {
                 </TabPane>
                 <AddMentorButton/>
             </TabContent>
+
             <RequestMentorChat/>
         </div>
 

@@ -17,7 +17,7 @@ const CommunityActivityPostDetail  = () => {
                 </h6>
                 <time className="f-12 text-secondary pb-3 border-bottom d-flex">5 minutes ago</time>
 
-                <div className="d-flex pt-3">
+                <div className="d-flex py-3">
                     <div className="mr-3 text-center">
                         <p className="f-14 text-dark mb-0">sep</p>
                         <p className=" f-16 font-weight-bold text-dark mb-0">20</p>
