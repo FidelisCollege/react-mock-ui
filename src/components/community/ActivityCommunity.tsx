@@ -58,7 +58,7 @@ const ActivityCommuinity = () => {
                 </div>
 
             </Nav>
-            <TabContent activeTab={activeTab} className="flex-grow-1 bg-white d-flex overflow-auto px-2">
+            <TabContent activeTab={activeTab} className="flex-grow-1 bg-white d-flex overflow-auto">
                 <TabPane tabId="1" className=" flex-grow-1 ">
                     <CommunityAllActivity/>
                 </TabPane>
