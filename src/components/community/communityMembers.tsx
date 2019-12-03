@@ -14,7 +14,7 @@ const CommunityMembers = () => {
     return (
 
         <div className="communities-detail-content d-flex flex-column h-100">
-            <div className="d-flex   related-communities-header justify-content-between pb-2">
+            <div className="d-flex   related-communities-header justify-content-between mb-2">
                 <div className="search-input-group" id="searchBox">
                     <input className="form-control" type="text" placeholder="Search members by name or skills" />
                 </div>

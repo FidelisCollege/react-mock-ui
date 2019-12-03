@@ -27,7 +27,7 @@ const CommunityResources = () => {
 
                 <Nav pills className="d-flex justify-content-between align-items-center py-2 community-activity-tabs">
                     <div className="d-flex">
-                        <NavItem className="mr-3">
+                        <NavItem className="">
                             <NavLink
                                 className={"text-capitalize" + (activeTab === '1' ? ' active ' : '')}
                                 onClick={() => toggle('1')}
