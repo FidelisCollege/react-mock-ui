@@ -13,16 +13,16 @@ const ProfileUpdate = () => {
             <hr></hr>
             <Nav vertical className="f-14">
                 <NavItem>
-                    <NavLink href="#">Add Interest</NavLink>
+                    <NavLink href="#" className="px-0">Add Interest</NavLink>
                 </NavItem>
                 <NavItem>
-                    <NavLink href="#">Update Professional Experience</NavLink>
+                    <NavLink href="#" className="px-0">Update Professional Experience</NavLink>
                 </NavItem>
                 <NavItem>
-                    <NavLink href="#">Manage Preferences</NavLink>
+                    <NavLink href="#" className="px-0">Manage Preferences</NavLink>
                 </NavItem>
                 <NavItem>
-                    <NavLink href="#">Review Training</NavLink>
+                    <NavLink href="#" className="px-0">Review Training</NavLink>
                 </NavItem>
             </Nav>
         </div>

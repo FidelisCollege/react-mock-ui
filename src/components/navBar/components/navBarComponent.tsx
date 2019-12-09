@@ -2,9 +2,11 @@ import * as React from 'react';
 import { withRouter, RouteComponentProps } from 'react-router';
 import { Link } from 'react-router-dom';
 import NavBarprogressbarComponent from "../../mentor/profile-update-progressbar";
-import {Modal} from "reactstrap";
+import {Col, Modal, Row} from "reactstrap";
 import {UpdateProfileProgressbar} from "../updateProfilebar"
 import HelpPopoverComponent from "../../../common/popovers/helpPopover";
+import ChooseFunctionBadge from "../../mentor/addmentorSearch";
+import ProfileUpdate from "../../mentor/profileUpdateComponent";
 
 class NavBarComponent extends React.Component<RouteComponentProps,  any> {
     constructor(props, state) {
@@ -50,15 +52,21 @@ class NavBarComponent extends React.Component<RouteComponentProps,  any> {
                         </div>
                     </nav>
                 </header>
-
                 <Modal
                     isOpen={this.state.isOpen}
                     toggle={this.toggleModal}
+                    className="update-profile-modal"
                 >
-                    <div>
-                        this is modal
-                    </div>
+
+                        <div className="bg-white rounded">
+                            <div className="card border-0 card-purpose tab-data  d-lg-none action-cards">
+                                <div className="card-body card-shadow px-3">
+                                    <ProfileUpdate/>
+                                </div>
+                            </div>
+                        </div>
                 </Modal>
+
 
             </>
 

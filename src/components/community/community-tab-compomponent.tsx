@@ -60,14 +60,14 @@ const CommunityTabComponent = (props: CommunityTabProps) => {
             <TabContent className="dashboard-tab-wrapper flex-grow-1 overflow-auto" activeTab={activeTab}>
                 <TabPane tabId="1">
                     {/*<h2 className="f-14 text-light font-weight-normal px-2 py-2 text-capitalize">my communities</h2>*/}
-                    <Row className="my-2 mx-0">
-                        <Col xs="24" sm="8" md="12">
+                    <Row className="my-2 mx-0 card-row">
+                        <Col xs="24" sm="8" md="12" className="card-col">
                             <CommunityCard communityTypes={CommunityTypes.POST} {...CommuntiyData}/>
                         </Col>
-                        <Col xs="24" sm="8" md="12">
+                        <Col xs="24" sm="8" md="12" className="card-col">
                             <CommunityCard communityTypes={CommunityTypes.POST} {...CommuntiyData}/>
                         </Col>
-                        <Col xs="24" sm="8" md="12">
+                        <Col xs="24" sm="8" md="12" className="card-col">
                             <CommunityCard communityTypes={CommunityTypes.POST} {...CommuntiyData}/>
                         </Col>
                     </Row>

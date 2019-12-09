@@ -56,6 +56,7 @@ const ActivityCommuinity = () => {
                         </NavLink>
                     </NavItem>
                 </div>
+                <CommunityPostModal/>
 
             </Nav>
             <TabContent activeTab={activeTab} className="flex-grow-1 bg-white d-flex overflow-auto">
@@ -69,10 +70,10 @@ const ActivityCommuinity = () => {
                     <CommunityActivityAnnouncement/>
                 </TabPane>
                 <TabPane tabId="4" className="flex-grow-1">
-                    <div className="d-flex justify-content-between py-3">
-                        <input className="form-control py-0" type="text" placeholder="Start a Post" />
-                        <CommunityPostModal/>
-                    </div>
+                    {/*<div className="d-flex justify-content-between py-3">*/}
+                        {/*<input className="form-control py-0" type="text" placeholder="Start a Post" />*/}
+                        {/**/}
+                    {/*</div>*/}
                     <CommunityActivityPost/>
                 </TabPane>
             </TabContent>
