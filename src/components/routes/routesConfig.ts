@@ -11,6 +11,7 @@ import SignUpComponent from "../login/signUp";
 import ForgotPasswordComponent from "../login/forgotPassword";
 import CommunityNonMember from "../community/communityNonMember";
 import MenteesDashboard from "../mentee/menteeDashboard";
+import MentorDetail from "../mentor/mentorDetail";
 
 export enum RouteUrls {
     MENTOR = '/mentor',
@@ -23,7 +24,8 @@ export enum RouteUrls {
     SIGN_UP ='/signUp',
     FORGOT_PASSWORD ='/forgotPassword',
     COMMUNITY_NON_MEMBER ='/CommunityNonMember',
-    MENTEE ='/mentee'
+    MENTEE ='/mentee',
+    MENTOR_DETAILS = '/mentor-detail'
 }
 
 export const routes: RouteConfigInterface[] = [
@@ -85,6 +87,11 @@ export const routes: RouteConfigInterface[] = [
     {
         path: RouteUrls.MENTEE,
         component: MenteesDashboard,
+        childRoutes: []
+    },
+    {
+        path: RouteUrls.MENTOR_DETAILS,
+        component: MentorDetail,
         childRoutes: []
     },
 ];

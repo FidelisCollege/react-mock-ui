@@ -97,7 +97,7 @@ const MentortabComponent = (props: MentortabProps) => {
             <TabContent className="dashboard-tab-wrapper pt-2 overflow-auto" activeTab={activeTab}>
                 <TabPane tabId="1" className="flex-grow-1 card-row">
                     <Row className="card-row m-0">
-                        <Col xs="12" md="8" className="d-none d-lg-block mb-2 card-col">
+                        <Col xs="12" md="8" className="d-none d-lg-block mb-2 card-col" onClick={ () => history.push(RouteUrls.MENTOR_DETAILS)}>
                             <DefaultMentorCard mentorType={MentorTypes.DEFAULT} {...MentorData} />
                         </Col>
                         <Col xs="" md="24" lg="8"  className="d-flex mb-2 card-col" onClick={() => history.push(RouteUrls.MENTOR_ADVANCE_SEARCH)}>
