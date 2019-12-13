@@ -89,10 +89,10 @@ export const routes: RouteConfigInterface[] = [
         component: MenteesDashboard,
         childRoutes: []
     },
-    {
-        path: RouteUrls.MENTOR_DETAILS,
-        component: MentorDetail,
-        childRoutes: []
-    },
+    // {
+    //     path: RouteUrls.MENTOR_DETAILS,
+    //     component: MentorDetail,
+    //     childRoutes: []
+    // },
 ];
 
