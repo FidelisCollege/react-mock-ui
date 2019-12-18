@@ -233,6 +233,19 @@ export const IconleftCaret = (props) => (
 		<path fill="none" d="M0 0h24v24H0V0z" />
 	</svg>
 );
+export const IconRightCaret = (props) => (
+    <svg
+        className={props.className ? `icons ${props.className}` : 'icons'}
+        width={``}
+        height={props.size ? `${props.size}rem` : `1rem`}
+        fill={props.fill ? `${props.fill}` : `currentColor`}
+        onClick={props.doOnClick}
+        style={{ width: `20px`, height: `20px` }}
+    >
+        <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z" />
+        <path fill="none" d="M0 0h24v24H0V0z" />
+    </svg>
+);
 
 
 

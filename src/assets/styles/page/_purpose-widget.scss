@@ -1,0 +1,74 @@
+.section-heading{
+  font-size: 18px;
+  color: $primary;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin: 12px 0;
+}
+.my-purpose{
+  background-color: $white;
+  @media (max-width: 767px) {
+    background-color: transparent;
+  }
+
+  .nav{
+    padding: 40px 20px;
+    max-width: 223px;
+  }
+}
+.purpose-heading{
+  font-size: 20px;
+  font-weight: bold;
+  color: $dark;
+  padding: 76px 0 35px 0;
+}
+.purpose-drag-head{
+   font-size: 13px;
+}
+.purpose-nav-item{
+  white-space: nowrap;
+  font-size: 14px;
+  color: $primary;
+}
+.pagination-compponent{
+  padding: 6px;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: $white;
+  align-items: center;
+  box-shadow: 0px 1px 9px 0px rgba(121, 121, 121, 0.35);
+
+}
+.pagination-icon-wrapper{
+  padding: 12px 15px;
+  border-radius: 4px;
+  background-color: rgb(236, 236, 252);
+}
+.page-count{
+  font-size: 14px;
+  color: $dark ;
+}
+
+
+
+@media (max-width: 767px) {
+  .my-purpose{
+    .nav{
+      max-width: 100%;
+    }
+  }
+
+  .page-count{
+
+  }
+
+}
+@media (max-width: 1024px) {
+  .purpose-heading{
+    padding: 74px 12px 30px;
+  }
+}

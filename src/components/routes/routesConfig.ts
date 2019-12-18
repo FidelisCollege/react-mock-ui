@@ -12,6 +12,7 @@ import ForgotPasswordComponent from "../login/forgotPassword";
 import CommunityNonMember from "../community/communityNonMember";
 import MenteesDashboard from "../mentee/menteeDashboard";
 import MentorDetail from "../mentor/mentorDetail";
+import PurposeWidget from "../student/porposeWidget";
 
 export enum RouteUrls {
     MENTOR = '/mentor',
@@ -25,7 +26,8 @@ export enum RouteUrls {
     FORGOT_PASSWORD ='/forgotPassword',
     COMMUNITY_NON_MEMBER ='/CommunityNonMember',
     MENTEE ='/mentee',
-    MENTOR_DETAILS = '/mentor-detail'
+    MENTOR_DETAILS = '/mentor-detail',
+    PURPOSE_WIDGET = '/purpose-widget'
 }
 
 export const routes: RouteConfigInterface[] = [
@@ -89,10 +91,15 @@ export const routes: RouteConfigInterface[] = [
         component: MenteesDashboard,
         childRoutes: []
     },
-    // {
-    //     path: RouteUrls.MENTOR_DETAILS,
-    //     component: MentorDetail,
-    //     childRoutes: []
-    // },
+    {
+        path: RouteUrls.MENTOR_DETAILS,
+        component: MentorDetail,
+        childRoutes: []
+    },
+    {
+        path: RouteUrls.PURPOSE_WIDGET,
+        component: PurposeWidget,
+        childRoutes: []
+    },
 ];
 
