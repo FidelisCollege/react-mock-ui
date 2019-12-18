@@ -14,6 +14,8 @@ import MenteesDashboard from "../mentee/menteeDashboard";
 import MentorDetail from "../mentor/mentorDetail";
 import PurposeWidget from "../student/porposeWidget";
 
+import EditPurposeWidget from "../student/editPurposeFlow";
+
 export enum RouteUrls {
     MENTOR = '/mentor',
     MENTOR_ADVANCE_SEARCH = '/advance-search',
@@ -27,7 +29,8 @@ export enum RouteUrls {
     COMMUNITY_NON_MEMBER ='/CommunityNonMember',
     MENTEE ='/mentee',
     MENTOR_DETAILS = '/mentor-detail',
-    PURPOSE_WIDGET = '/purpose-widget'
+    PURPOSE_WIDGET = '/purpose-widget',
+    EDIT_PURPOSE_WIDGET = '/EditPurposeWidget'
 }
 
 export const routes: RouteConfigInterface[] = [
@@ -99,6 +102,11 @@ export const routes: RouteConfigInterface[] = [
     {
         path: RouteUrls.PURPOSE_WIDGET,
         component: PurposeWidget,
+        childRoutes: []
+    },
+    {
+        path: RouteUrls.EDIT_PURPOSE_WIDGET,
+        component: EditPurposeWidget,
         childRoutes: []
     },
 ];

@@ -1,8 +1,7 @@
 import * as React from 'react';
-import MentorTab from "../mentor/mentorDashboard";
 import LeftNavComponent from "../../common/components/left-nav";
 import PurposeWidgetDetail from "./purposeWidgetDetail";
-import {IconAdd} from "../../common";
+
 
 
 const PurposeWidget = () => {
@@ -16,7 +15,7 @@ const PurposeWidget = () => {
                     <div className="student-details tab-data active d-flex flex-column flex-grow-1 px-md-3">
                         <div className="align-items-center justify-content-between d-none d-md-flex d-lg-flex">
                             <h2 className="section-heading">my purpose</h2>
-                            <a href="#" className="f-14 text-primary">Close</a>
+                            <a href="/EditPurposeWidget" className="f-14 text-primary">Close</a>
                         </div>
                         <PurposeWidgetDetail/>
                     </div>

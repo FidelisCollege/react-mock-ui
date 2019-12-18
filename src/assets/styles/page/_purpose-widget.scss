@@ -12,15 +12,25 @@
   }
 
   .nav{
-    padding: 40px 20px;
-    max-width: 223px;
+    max-width: 202px;
+    width: 100%;
+  }
+  .onboard-wrapper-content{
+    padding: 18px 0;
   }
 }
 .purpose-heading{
   font-size: 20px;
   font-weight: bold;
   color: $dark;
-  padding: 76px 0 35px 0;
+
+  @media (max-width: 767px){
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+.middle-container{
+  padding: 18px 0;
 }
 .purpose-drag-head{
    font-size: 13px;
@@ -53,22 +63,78 @@
   color: $dark ;
 }
 
-
-
-@media (max-width: 767px) {
-  .my-purpose{
-    .nav{
-      max-width: 100%;
-    }
+.content-container{
+  padding: 77px 155px;
+  height: 100%;
+  text-align: center;
+  @media (max-width: 1024px) {
+      padding-left:45px;
+      padding-right:45px;
   }
+  @media (max-width: 767px) {
+      padding: 0;
 
-  .page-count{
+  }
+}
+.purpose-badge{
+    padding:6px 24px;
+    font-size: 14px;
+    border-radius: 30px;
+    color: $primary !important;
+    text-transform: capitalize;
+    &:hover{
+      color: $white !important;
+    }
 
+}
+.middle-container{
+  max-height: 371px;
+  overflow: auto;
+  textarea{
+    font-size: 14px;
   }
 
 }
-@media (max-width: 1024px) {
-  .purpose-heading{
-    padding: 74px 12px 30px;
+.footer-buttons{
+  font-size: 16px;
+  text-transform: capitalize;
+  padding: 12px 32px;
+  line-height: 1;
+
+}
+
+.purpose-input-box{
+  min-height: 135px;
+}
+
+.edit-purpose-wrapper{
+  padding: 24px 17px;
+  @media (max-width: 767px) {
+    padding-left: 0;
   }
+}
+.select-label{
+  padding-left:36px;
+}
+.edit-purpose-header{
+
+}
+.send-button{
+  background-color: $btn-light-bg;
+  font-size: 14px;
+  color: $dark;
+  padding: 15px 20px;
+  line-height: 1;
+}
+.right-purpose-column{
+    border-right: 1px solid $btn-light-bg;
+  @media (max-width: 767px) {
+    border-right: 0 !important;
+  }
+}
+.purpose-card-img{
+  width:48px;
+  height: 48px;
+  border-radius:50%;
+
 }

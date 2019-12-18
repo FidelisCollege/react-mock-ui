@@ -16,6 +16,9 @@ import {
 import {useState} from "react";
 import ProfessionalPriorities from "./professional-priorities";
 import PaginationComponent from "../../common/pagination";
+import FunctionRoles from "./functionalRoles";
+import LocationPreferences from "./locationPreference";
+import PurposeStatemnt from "./purposeStatement";
 
 
 const PurposeWidgetDetail = (props) => {
@@ -40,7 +43,7 @@ const PurposeWidgetDetail = (props) => {
                         </NavItem>
                         <NavItem  className="mr-3 purpose-nav-item">
                             <NavLink
-                                className={"text-capitalize btn" + (activeTab === 'Functions' ? ' active ' : '')}
+                                className={"text-capitalize " + (activeTab === 'Functions' ? ' active ' : '')}
                                 onClick={() => toggle('Functions')}
                             >
                                 Functions / Roles
@@ -48,7 +51,7 @@ const PurposeWidgetDetail = (props) => {
                         </NavItem>
                         <NavItem className="mr-3 purpose-nav-item">
                             <NavLink
-                                className={"text-capitalize btn" + (activeTab === 'Industry' ? ' active ' : '')}
+                                className={"text-capitalize" + (activeTab === 'Industry' ? ' active ' : '')}
                                 onClick={() => toggle('Industry')}
                             >
                                 Industry preferences
@@ -56,7 +59,7 @@ const PurposeWidgetDetail = (props) => {
                         </NavItem>
                         <NavItem className="mr-3 purpose-nav-item">
                             <NavLink
-                                className={"text-capitalize btn" + (activeTab === 'Location' ? ' active ' : '')}
+                                className={"text-capitalize" + (activeTab === 'Location' ? ' active ' : '')}
                                 onClick={() => toggle('Location')}
                             >
                                 Location preferences
@@ -64,7 +67,7 @@ const PurposeWidgetDetail = (props) => {
                         </NavItem>
                         <NavItem className="mr-3 purpose-nav-item">
                             <NavLink
-                                className={"text-capitalize btn" + (activeTab === 'Purpose' ? ' active ' : '')}
+                                className={"text-capitalize" + (activeTab === 'Purpose' ? ' active ' : '')}
                                 onClick={() => toggle('Purpose')}
                             >
                                 Purpose Statement
@@ -75,14 +78,14 @@ const PurposeWidgetDetail = (props) => {
                 </Nav>
             </div>
 
-            <Nav className="d-none d-lg-flex flex-column align-content-start align-items-start p-2 card-shadow  navs-list flex-grow-1">
+            <Nav className="d-none d-lg-flex flex-column align-content-start align-items-start p-2 card-shadow  navs-list">
                 <NavItem className="mb-2 nav-items navs-list-items text-capitalize nav-item">
                     <NavLink
                         className={"tab-buttons text-capitalize text-dark f-14 nav-link completed nav-link" + (activeTab === 'Priorities' ? ' active ' : '')}
                         onClick={() => { toggle('Priorities'); }}
                     >
                         Professional Priorities
-                        <i className="icon-checkmark nav-list-icons f-14"></i>
+                        <i className="icon-checkmark nav-list-icons f-14 ml-0"></i>
                     </NavLink>
                 </NavItem>
                 <NavItem className="mb-2 nav-items navs-list-items text-capitalize nav-item">
@@ -131,16 +134,16 @@ const PurposeWidgetDetail = (props) => {
                     <ProfessionalPriorities/>
                 </TabPane>
                 <TabPane tabId="Functions" className="overflow-auto flex-grow-1 text-center">
-                    2
+                    <FunctionRoles/>
                 </TabPane>
                 <TabPane tabId="Industry" className="overflow-auto flex-grow-1 ">
                    3
                 </TabPane>
                 <TabPane tabId="Location" className="overflow-auto flex-grow-1 ">
-                    4
+                    <LocationPreferences/>
                 </TabPane>
                 <TabPane tabId="Purpose" className="overflow-auto flex-grow-1 ">
-                    5
+                    <PurposeStatemnt/>
                 </TabPane>
             </TabContent>
 
