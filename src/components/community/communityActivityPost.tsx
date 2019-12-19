@@ -39,9 +39,9 @@ const CommunityActivityPost  = () => {
                                         <span className="d-none d-lg-inline f-14">comment</span>
                                     </a>
                                 </div>
-                                <a className="cursor-pointer action-links ml-5" href="#">
-                                    <IconReport className="text-secondary"/>
-                                </a>
+                                {/*<a className="cursor-pointer action-links ml-5" href="#">*/}
+                                    {/*<IconReport className="text-secondary"/>*/}
+                                {/*</a>*/}
                             </div>
                         </div>
                     </div>

@@ -1,7 +1,8 @@
 
 import * as React from 'react';
 import {InputGroup} from "reactstrap";
-import {IconComment, IconLikeFilled, IconReport} from "../../common";
+import {IconComment, IconLikeFilled, IconMoreVertical, IconReport} from "../../common";
+import PostDropdown from "../../common/dropdown/postDropdown";
 
 
 const CommunityActivityPostDetail  = () => {
@@ -11,10 +12,13 @@ const CommunityActivityPostDetail  = () => {
             <div className="media-left">
                 <img className="cursor-pointer rounded-circle mr-3 person-image" src="images/media-img.png" alt=""/></div>
             <div className="media-body">
-                <h6 className="mb-0 person-message">
-                    <a href="#" className="f-14 text-dark font-weight-bold text-capitalize">Resham Pal Pundalik </a>
-                    <span className="f-14 text-dark ml-1 text-lowercase font-weight-normal">has posted an event in Smoke Test</span>
-                </h6>
+                <div className="d-flex justify-content-between align-items-center">
+                    <h6 className="mb-0 person-message">
+                        <a href="#" className="f-14 text-dark font-weight-bold text-capitalize">Resham Pal Pundalik </a>
+                        <span className="f-14 text-dark ml-1 text-lowercase font-weight-normal">has posted an event in Smoke Test</span>
+                    </h6>
+                    <PostDropdown/>
+                </div>
                 <time className="f-12 text-secondary pb-3 border-bottom d-flex">5 minutes ago</time>
 
                 <div className="d-flex py-3">

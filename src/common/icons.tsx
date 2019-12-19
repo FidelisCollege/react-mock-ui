@@ -2,20 +2,20 @@ import * as React from "react";
 
 
 export const IconRecommend = (props) => (
-	<svg
+	<svg viewBox="0 0 20 20"
 		className={props.className ? `icons ${props.className}` : 'icons'}
 		width={`8rem`}
 		height={props.size ? `${props.size}rem` : `1rem`}
 		fill={props.fill ? `${props.fill}` : `currentColor`}
 		onClick={props.doOnClick}
-		style={{ width: `20px`, height: `24px` }}
+		style={{ width: `20px`, height: `16px` }}
 	>
 		<path fill="none" d="M0 0h24v24H0V0z" viewBox="0 0 24 24" />
 		<path d="M3.5 18.99l11 .01c.67 0 1.27-.33 1.63-.84L20.5 12l-4.37-6.16c-.36-.51-.96-.84-1.63-.84l-11 .01L8.34 12 3.5 18.99z" />
 	</svg>
 );
 export const IconReport = (props) => (
-	<svg
+	<svg viewBox="0 0 20 20"
 		className={props.className ? `icons ${props.className}` : 'icons'}
 		width={`8rem`}
 		height={props.size ? `${props.size}rem` : `1rem`}
@@ -30,13 +30,13 @@ export const IconReport = (props) => (
 	</svg>
 );
 export const IconComment = (props) => (
-	<svg
+	<svg viewBox="0 0 20 20"
 		className={props.className ? `icons ${props.className}` : 'icons'}
 		width={`8rem`}
 		height={props.size ? `${props.size}rem` : `1rem`}
 		fill={props.fill ? `${props.fill}` : `currentColor`}
 		onClick={props.doOnClick}
-		style={{ width: `24px`, height: `24px` }}
+		style={{ width: `20px`, height: `16px` }}
 	>
 
 			<path fill="none" d="M0 0h24v24H0V0z" />
@@ -45,13 +45,13 @@ export const IconComment = (props) => (
 	</svg>
 );
 export const IconLikeFilled = (props) => (
-	<svg
+	<svg viewBox="0 0 20 20"
 		className={props.className ? `icons ${props.className}` : 'icons'}
 		width={`8rem`}
 		height={props.size ? `${props.size}rem` : `1rem`}
 		fill={props.fill ? `${props.fill}` : `currentColor`}
 		onClick={props.doOnClick}
-		style={{ width: `24px`, height: `24px` }}
+		style={{ width: `20px`, height: `16px` }}
 	>
 
 			<path fill="none" d="M24 24H0V0h24v24z" />
@@ -60,13 +60,13 @@ export const IconLikeFilled = (props) => (
 	</svg>
 );
 export const IconBookMark = (props) => (
-	<svg
+	<svg viewBox="0 0 20 20"
 		className={props.className ? `icons ${props.className}` : 'icons'}
 		width={`8rem`}
 		height={props.size ? `${props.size}rem` : `1rem`}
 		fill={props.fill ? `${props.fill}` : `currentColor`}
 		onClick={props.doOnClick}
-		style={{ width: `24px`, height: `24px` }}
+		style={{ width: `20px`, height: `16px` }}
 	>
 
 			<path d="M17 3H7c-1.1 0-1.99.9-1.99 2L5 21l7-3 7 3V5c0-1.1-.9-2-2-2z" />
@@ -75,13 +75,13 @@ export const IconBookMark = (props) => (
 	</svg>
 );
 export const IconAttachment = (props) => (
-	<svg
+	<svg viewBox="0 0 20 20"
 		className={props.className ? `icons ${props.className}` : 'icons'}
 		width={`8rem`}
 		height={props.size ? `${props.size}rem` : `1rem`}
 		fill={props.fill ? `${props.fill}` : `currentColor`}
 		onClick={props.doOnClick}
-		style={{ width: `24px`, height: `24px` }}
+		style={{ width: `20px`, height: `16px` }}
 	>
 		<svg width={24} height={24} {...props}>
 			<path fill="none" d="M0 0h24v24H0V0z" />
@@ -90,13 +90,13 @@ export const IconAttachment = (props) => (
 	</svg>
 );
 export const IconFileInsert = (props) => (
-	<svg
+	<svg viewBox="0 0 20 20"
 		className={props.className ? `icons ${props.className}` : 'icons'}
 		width={`8rem`}
 		height={props.size ? `${props.size}rem` : `1rem`}
 		fill={props.fill ? `${props.fill}` : `currentColor`}
 		onClick={props.doOnClick}
-		style={{ width: `24px`, height: `24px` }}
+		style={{ width: `20px`, height: `16px` }}
 	>
 
 			<path fill="none" d="M0 0h24v24H0V0z" />
@@ -105,13 +105,13 @@ export const IconFileInsert = (props) => (
 	</svg>
 );
 export const IconCamera = (props) => (
-	<svg
+	<svg viewBox="0 0 20 20"
 		className={props.className ? `icons ${props.className}` : 'icons'}
 		width={`8rem`}
 		height={props.size ? `${props.size}rem` : `1rem`}
 		fill={props.fill ? `${props.fill}` : `currentColor`}
 		onClick={props.doOnClick}
-		style={{ width: `24px`, height: `24px` }}
+		style={{ width: `20px`, height: `16px` }}
 	>
 
 			<circle cx={12} cy={12} r={3.2} />
@@ -121,13 +121,13 @@ export const IconCamera = (props) => (
 	</svg>
 );
 export const IconFiledownload = (props) => (
-	<svg
+	<svg viewBox="0 0 20 20"
 		className={props.className ? `icons ${props.className}` : 'icons'}
 		width={`8rem`}
 		height={props.size ? `${props.size}rem` : `1rem`}
 		fill={props.fill ? `${props.fill}` : `currentColor`}
 		onClick={props.doOnClick}
-		style={{ width: `24px`, height: `24px` }}
+		style={{ width: `20px`, height: `16px` }}
 	>
 
 			<path d="M0 0h24v24H0z" fill="none" />
@@ -136,13 +136,13 @@ export const IconFiledownload = (props) => (
 	</svg>
 );
 export const IconGoogle = (props) => (
-	<svg viewBox="0 0 512 512"
+	<svg viewBox="0 0 20 20"
 		className={props.className ? `icons ${props.className}` : 'icons'}
 		width={`8rem`}
 		height={props.size ? `${props.size}rem` : `1rem`}
 		fill={props.fill ? `${props.fill}` : `currentColor`}
 		onClick={props.doOnClick}
-		style={{ width: `24px`, height: `24px` }}
+		style={{ width: `20px`, height: `16px` }}
 	>
 		<path
 			d="M113.47 309.408L95.648 375.94l-65.139 1.378C11.042 341.211 0 299.9 0 256c0-42.451 10.324-82.483 28.624-117.732h.014L86.63 148.9l25.404 57.644c-5.317 15.501-8.215 32.141-8.215 49.456.002 18.792 3.406 36.797 9.651 53.408z"
@@ -164,13 +164,13 @@ export const IconGoogle = (props) => (
 );
 
 export const IconAdd = (props) => (
-	<svg
+	<svg viewBox="0 0 20 20"
 		className={props.className ? `icons ${props.className}` : 'icons'}
 		width={`8rem`}
 		height={props.size ? `${props.size}rem` : `1rem`}
 		fill={props.fill ? `${props.fill}` : `currentColor`}
 		onClick={props.doOnClick}
-		style={{ width: `20px`, height: `20px` }}
+		style={{ width: `20px`, height: `16px` }}
 	>
 		<path
 			d="M10 6H6v4H4V6H0V4h4V0h2v4h4v2z"
@@ -180,26 +180,26 @@ export const IconAdd = (props) => (
 	</svg>
 );
 export const IconDown = (props) => (
-	<svg
+	<svg viewBox="0 0 20 20"
 		className={props.className ? `icons ${props.className}` : 'icons'}
 		width={``}
 		height={props.size ? `${props.size}rem` : `1rem`}
 		fill={props.fill ? `${props.fill}` : `currentColor`}
 		onClick={props.doOnClick}
-		style={{ width: `39`, height: `24` }}
+		style={{ width: `20px`, height: `16px` }}
 	>
 		<path fill="none" d="M0 0h24v24H0V0z" />
 		<path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z" />
 	</svg>
 );
 export const IconAttach = (props) => (
-	<svg  viewBox="0 0 512.092 512.092"
+	<svg viewBox="0 0 20 20"
 		className={props.className ? `icons ${props.className}` : 'icons'}
 		width={``}
 		height={props.size ? `${props.size}rem` : `1rem`}
 		fill={props.fill ? `${props.fill}` : `currentColor`}
 		onClick={props.doOnClick}
-		style={{ width: `20px`, height: `` }}
+		style={{ width: `20px`, height: `16px` }}
 	>
 		<path d="M312.453 199.601a116.167 116.167 0 00-20.053-16.128 119.472 119.472 0 00-64.427-18.859 118.952 118.952 0 00-84.48 34.987L34.949 308.23a119.466 119.466 0 00-34.91 84.318c-.042 65.98 53.41 119.501 119.39 119.543a118.7 118.7 0 0084.395-34.816l89.6-89.6a8.534 8.534 0 00-6.059-14.592h-3.413a143.626 143.626 0 01-54.613-10.581 8.533 8.533 0 00-9.301 1.877l-64.427 64.512c-20.006 20.006-52.442 20.006-72.448 0-20.006-20.006-20.006-52.442 0-72.448l108.971-108.885c19.99-19.965 52.373-19.965 72.363 0 13.472 12.679 34.486 12.679 47.957 0a34.134 34.134 0 009.899-21.675 34.137 34.137 0 00-9.9-26.282z" />
 		<path d="M477.061 34.993c-46.657-46.657-122.303-46.657-168.96 0l-89.515 89.429a8.533 8.533 0 00-1.792 9.387 8.532 8.532 0 008.021 5.205h3.157a143.357 143.357 0 0154.528 10.667 8.533 8.533 0 009.301-1.877l64.256-64.171c20.006-20.006 52.442-20.006 72.448 0 20.006 20.006 20.006 52.442 0 72.448l-80.043 79.957-.683.768-27.989 27.819c-19.99 19.965-52.373 19.965-72.363 0-13.472-12.679-34.486-12.679-47.957 0a34.139 34.139 0 00-9.899 21.845 34.137 34.137 0 009.899 26.283 118.447 118.447 0 0034.133 23.893c1.792.853 3.584 1.536 5.376 2.304 1.792.768 3.669 1.365 5.461 2.048a67.799 67.799 0 005.461 1.792l5.035 1.365c3.413.853 6.827 1.536 10.325 2.133 4.214.626 8.458 1.025 12.715 1.195H284.461l5.12-.597c1.877-.085 3.84-.512 6.059-.512h2.901l5.888-.853 2.731-.512 4.949-1.024h.939a119.456 119.456 0 0055.381-31.403l108.629-108.629c46.66-46.657 46.66-122.303.003-168.96z" />
@@ -207,13 +207,13 @@ export const IconAttach = (props) => (
 	</svg>
 );
 export const IconUpload = (props) => (
-	<svg  viewBox="0 0 512 512"
+	<svg  viewBox="0 0 20 20"
 		  className={props.className ? `icons ${props.className}` : 'icons'}
 		  width={``}
 		  height={props.size ? `${props.size}rem` : `1rem`}
 		  fill={props.fill ? `${props.fill}` : `currentColor`}
 		  onClick={props.doOnClick}
-		  style={{ width: `20px`, height: `` }}
+		  style={{ width: `20px`, height: `16px` }}
 	>
 		<path d="M259.257 0c-10.794 0-19.542 8.748-19.542 19.542v310.066c0 10.794 8.748 19.542 19.542 19.542s19.542-8.748 19.542-19.542V19.542C278.799 8.748 270.051 0 259.257 0z" />
 		<path d="M380.73 106.224L272.598 5.257c-7.511-7.009-19.164-7.009-26.675 0L137.79 106.224c-7.888 7.367-8.318 19.731-.951 27.619a19.475 19.475 0 0014.285 6.208c4.781 0 9.569-1.739 13.334-5.257l94.798-88.519 94.798 88.519c7.901 7.367 20.258 6.937 27.619-.951 7.362-7.888 6.945-20.252-.943-27.619zM454.677 166.758H350.453c-10.794 0-19.542 8.748-19.542 19.542 0 10.794 8.748 19.542 19.542 19.542h84.682v267.074H76.865V205.842h84.682c10.794 0 19.542-8.748 19.542-19.542 0-10.794-8.748-19.542-19.542-19.542H57.323c-10.794 0-19.542 8.748-19.542 19.542v306.158c0 10.794 8.748 19.542 19.542 19.542h397.354c10.794 0 19.542-8.748 19.542-19.542V186.3c0-10.793-8.748-19.542-19.542-19.542z" />
@@ -222,12 +222,13 @@ export const IconUpload = (props) => (
 );
 export const IconleftCaret = (props) => (
 	<svg
+		  viewBox="0 0 20 20"
 		  className={props.className ? `icons ${props.className}` : 'icons'}
 		  width={``}
 		  height={props.size ? `${props.size}rem` : `1rem`}
 		  fill={props.fill ? `${props.fill}` : `currentColor`}
 		  onClick={props.doOnClick}
-		  style={{ width: `20px`, height: `20px` }}
+		  style={{ width: `20px`, height: `16px` }}
 	>
 		<path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z" />
 		<path fill="none" d="M0 0h24v24H0V0z" />
@@ -235,12 +236,13 @@ export const IconleftCaret = (props) => (
 );
 export const IconRightCaret = (props) => (
     <svg
+		viewBox="0 0 20 20"
         className={props.className ? `icons ${props.className}` : 'icons'}
         width={``}
         height={props.size ? `${props.size}rem` : `1rem`}
         fill={props.fill ? `${props.fill}` : `currentColor`}
         onClick={props.doOnClick}
-        style={{ width: `20px`, height: `20px` }}
+        style={{ width: `20px`, height: `16px` }}
     >
         <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z" />
         <path fill="none" d="M0 0h24v24H0V0z" />
@@ -248,12 +250,13 @@ export const IconRightCaret = (props) => (
 );
 export const IconClock = (props) => (
 	<svg
+		viewBox="0 0 20 20"
 		className={props.className ? `icons ${props.className}` : 'icons'}
 		width={``}
 		height={props.size ? `${props.size}rem` : `1rem`}
 		fill={props.fill ? `${props.fill}` : `currentColor`}
 		onClick={props.doOnClick}
-		style={{ width: `24px`, height: `24px` }}
+		style={{ width: `20px`, height: `16px` }}
 	>
 		<path fill="none" d="M0 0h24v24H0V0z" />
 		<path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z" />
@@ -261,15 +264,30 @@ export const IconClock = (props) => (
 );
 export const IconEdit = (props) => (
 	<svg
+		viewBox="0 0 20 20"
 		className={props.className ? `icons ${props.className}` : 'icons'}
 		width={``}
 		height={props.size ? `${props.size}rem` : `1rem`}
 		fill={props.fill ? `${props.fill}` : `currentColor`}
 		onClick={props.doOnClick}
-		style={{ width: `20px`, height: `20px` }}
+		style={{ width: `20px`, height: `16px` }}
 	>
 		<path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04a.996.996 0 000-1.41l-2.34-2.34a.996.996 0 00-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z" />
 		<path d="M0 0h24v24H0z" fill="none" />
+	</svg>
+);
+export const IconMoreVertical = (props) => (
+	<svg
+		viewBox="0 0 20 20"
+		className={props.className ? `icons ${props.className}` : 'icons'}
+		width={``}
+		height={props.size ? `${props.size}rem` : `1rem`}
+		fill={props.fill ? `${props.fill}` : `currentColor`}
+		onClick={props.doOnClick}
+		style={{ width: `20px`, height: `16px` }}
+	>
+		<path d="M0 0h24v24H0z" fill="none" />
+		<path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
 	</svg>
 );
 

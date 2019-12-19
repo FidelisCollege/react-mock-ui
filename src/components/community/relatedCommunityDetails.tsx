@@ -14,7 +14,7 @@ const RelatedCommunityDetails  = () => {
                     <input className="form-control" type="text" placeholder="Search by name or skills" />
                 </div>
                 <div className="d-flex align-items-center">
-                    <span className="f-14 text-light mr-2 text-capitalize">sort by:</span>
+                    <span className="f-14 text-light mr-2 text-capitalize text-nowrap">sort by:</span>
                     <div className="input-group sort-select">
                         <select className="custom-select py-2" id="inputGroupSelect04">
                         <option className="text-capitalize">community size</option>

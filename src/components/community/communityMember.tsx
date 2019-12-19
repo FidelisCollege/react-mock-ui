@@ -28,6 +28,13 @@ const CommunityMember = () => {
                                                 <div className="ml-1 mr-1">|</div>
                                                 <a href="" className=" text-white">980 Activities</a>
                                             </div>
+                                            <div className="f-12 d-flex font-weight-normal">
+                                                <label>email:</label>
+                                                <a href="" className="text-white ml-1"> averylongcommunityname@fidelis-inc</a>
+                                                <div className="ml-1 mr-1">|</div>
+                                                <label>phone:</label>
+                                                <a href="" className="text-white ml-1"> +1 123 234 2345</a>
+                                            </div>
                                         </h6>
                                     </div>
                                     <div className="d-flex joinned-badge">
