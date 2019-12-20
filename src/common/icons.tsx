@@ -96,7 +96,7 @@ export const IconFileInsert = (props) => (
 		height={props.size ? `${props.size}rem` : `1rem`}
 		fill={props.fill ? `${props.fill}` : `currentColor`}
 		onClick={props.doOnClick}
-		style={{ width: `20px`, height: `16px` }}
+		style={{ width: `24px`, height: `24px` }}
 	>
 
 			<path fill="none" d="M0 0h24v24H0V0z" />
@@ -164,13 +164,13 @@ export const IconGoogle = (props) => (
 );
 
 export const IconAdd = (props) => (
-	<svg viewBox="0 0 20 20"
+	<svg viewBox=""
 		className={props.className ? `icons ${props.className}` : 'icons'}
 		width={`8rem`}
 		height={props.size ? `${props.size}rem` : `1rem`}
 		fill={props.fill ? `${props.fill}` : `currentColor`}
 		onClick={props.doOnClick}
-		style={{ width: `20px`, height: `16px` }}
+		style={{ width: `20px`, height: `20px` }}
 	>
 		<path
 			d="M10 6H6v4H4V6H0V4h4V0h2v4h4v2z"

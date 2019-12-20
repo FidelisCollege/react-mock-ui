@@ -6,6 +6,7 @@ import CommunityAllActivity from "./communityAllActivities";
 import CommunityActivityAnnouncement from "./communityActivityAnnouncement";
 import CommunityActivityPost from "./communityActivityPost";
 import CommunityPostModal from "./postModal";
+import CommunityActivityEventPost from "./communityEventPost";
 
 
 
@@ -64,7 +65,7 @@ const ActivityCommuinity = () => {
                     <CommunityAllActivity/>
                 </TabPane>
                 <TabPane tabId="2" className="flex-grow-1">
-                    rrrr
+                    <CommunityActivityEventPost/>
                 </TabPane>
                 <TabPane tabId="3" className="flex-grow-1">
                     <CommunityActivityAnnouncement/>

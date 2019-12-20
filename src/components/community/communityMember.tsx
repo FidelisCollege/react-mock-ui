@@ -23,12 +23,12 @@ const CommunityMember = () => {
                                     <div className="d-flex align-items-center">
                                         <img src="images/media-img.png" alt="..." className="profile-img"/>
                                         <h6 className="profile-banner-heading text-white font-weight-bold ml-3">Community for Mountaineers & Trekkers of North America
-                                            <div className="d-flex f-14 font-weight-normal mt-2">
+                                            <div className="d-flex f-14 font-weight-normal py-2">
                                                 <a href="" className=" text-white">2.5K Members</a>
                                                 <div className="ml-1 mr-1">|</div>
                                                 <a href="" className=" text-white">980 Activities</a>
                                             </div>
-                                            <div className="f-12 d-flex font-weight-normal">
+                                            <div className="f-14 d-flex font-weight-normal text-capitalize">
                                                 <label>email:</label>
                                                 <a href="" className="text-white ml-1"> averylongcommunityname@fidelis-inc</a>
                                                 <div className="ml-1 mr-1">|</div>

@@ -1,6 +1,7 @@
 import * as React from 'react';
 import {IconComment, IconLikeFilled, IconReport} from "../../common";
 import CommentCollapse from "../../common/collapse/commentCollapse";
+import PostDropdown from "../../common/dropdown/postDropdown";
 
 
 const CommunityActivityAnnouncement  = () => {
@@ -12,12 +13,16 @@ const CommunityActivityAnnouncement  = () => {
                     <div className="media-left">
                         <img className="cursor-pointer rounded-circle mr-3 person-image" src="images/media-img.png" alt=""/></div>
                     <div className="media-body">
-                        <h6 className="mb-0 person-message">
-                            <a href="#" className="f-14 text-dark font-weight-bold text-capitalize">Resham Pal Pundalik </a>
-                            <span className="f-14 text-dark ml-1 text-lowercase font-weight-normal">has posted an event in Smoke Test</span>
-                        </h6>
-                        <time className="f-14 text-secondary pb-3 border-bottom d-flex">5 Sep 2019</time>
-                        <div className="pt-3">
+                        <div className="d-flex justify-content-between align-items-center">
+                            <h6 className="mb-0 person-message">
+                                <a href="#" className="f-14 text-dark font-weight-bold text-capitalize">Resham Pal Pundalik </a>
+                                <span className="f-14 text-dark ml-1 text-lowercase font-weight-normal">has posted an announcement in Smoke Test</span>
+                            </h6>
+                            <PostDropdown/>
+                        </div>
+                        <time className="f-14 text-secondaryd-flex">5 Sep 2019</time>
+                        <hr/>
+                        <div className="">
                             <h3 className="f-14 ">Clay Modelling Workshop - Clayform Studio</h3>
                             <p className="text-secondary f-14 pr-lg-5" >This course is ideal for beginners with an interest in ceramics and who wish
                                 to participate in an enjoyable practical ceramics course...
@@ -33,13 +38,13 @@ const CommunityActivityAnnouncement  = () => {
                                         <span className="d-none d-lg-inline f-14">like</span>
                                     </a>
                                 </div>
-                                <CommentCollapse/>
-                                {/*<a className="cursor-pointer action-links ml-5" href="#">*/}
-                                    {/*<IconComment className="text-secondary mr-2"/>*/}
-                                    {/*<span className="d-none d-lg-inline f-14">comment</span>*/}
-                                {/*</a>*/}
+
+                                <a className="cursor-pointer action-links ml-5" href="#">
+                                    <IconComment className="text-secondary mr-2"/>
+                                    <span className="d-none d-lg-inline f-14">comment</span>
+                                </a>
                             </div>
-                            <IconReport className="text-secondary"/>
+                            {/*<IconReport className="text-secondary"/>*/}
                         </div>
                     </div>
                 </div>

@@ -1,11 +1,11 @@
 
 import * as React from 'react';
-import {InputGroup} from "reactstrap";
+import {CardImg, InputGroup} from "reactstrap";
 import {IconComment, IconLikeFilled, IconMoreVertical, IconReport} from "../../common";
 import PostDropdown from "../../common/dropdown/postDropdown";
 
 
-const CommunityActivityPostDetail  = () => {
+const CommunityActivityEventPost  = () => {
     return (
 
         <div className="media pb-0 text-capitalize">
@@ -19,7 +19,10 @@ const CommunityActivityPostDetail  = () => {
                     </h6>
                     <PostDropdown/>
                 </div>
-                <time className="f-12 text-secondary pb-3 border-bottom d-flex">5 minutes ago</time>
+                <time className="f-12 text-secondary pb-3 d-flex">5 minutes ago</time>
+                <div className="evnet-image-wrapper">
+                    <CardImg src="images/media-img.png" className="event-post-img"/>
+                </div>
 
                 <div className="d-flex py-3">
                     <div className="mr-3 text-center">
@@ -45,9 +48,9 @@ const CommunityActivityPostDetail  = () => {
                             <span className="d-none d-lg-inline f-14">comment</span>
                         </a>
                     </div>
-                    <a className="cursor-pointer action-links ml-5" href="#">
-                        <IconReport className="text-secondary"/>
-                    </a>
+                    {/*<a className="cursor-pointer action-links ml-5" href="#">*/}
+                        {/*<IconReport className="text-secondary"/>*/}
+                    {/*</a>*/}
                 </div>
             </div>
         </div>
@@ -58,4 +61,4 @@ const CommunityActivityPostDetail  = () => {
 }
 
 
-export default  CommunityActivityPostDetail;
+export default  CommunityActivityEventPost;

@@ -11,7 +11,7 @@ const PostDropdown = (props) => {
 
     return (
         <Dropdown isOpen={dropdownOpen} toggle={toggle}>
-            <DropdownToggle className="bg-transparent border-0 shadow-none">
+            <DropdownToggle className="bg-transparent border-0 shadow-none p-0">
                 <IconMoreVertical className="text-secondary"/>
             </DropdownToggle>
             <DropdownMenu>

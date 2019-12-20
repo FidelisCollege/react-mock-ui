@@ -1,14 +1,12 @@
 import * as React from 'react';
-import { TabContent, TabPane, Nav, NavItem, NavLink, Card, Button, CardTitle, CardText, Row, Col } from 'reactstrap';
-import classnames from 'classnames';
+import { TabContent, TabPane, Nav, NavItem, NavLink} from 'reactstrap';
 import {useState} from "react";
-import {MentorTabNames} from "../mentor/helper/helpers";
-import MentortabComponent from "../../common/dashboard/mentorMenteeTabMob";
 import AboutCommuinityDetails from "./AboutCommunity";
 import ActivityCommuinity from "./ActivityCommunity";
 import RelatedCommunityDetails from "./relatedCommunityDetails";
 import CommunityMembers from "./communityMembers";
 import CommunityResources from "./communityResources";
+import CommunityAdminTab from "./communityAdmin";
 
 const CommunityDetailsComponent = (props) => {
     const [activeTab, setActiveTab] = useState('activities');
@@ -70,6 +68,14 @@ const CommunityDetailsComponent = (props) => {
                                 calender
                             </NavLink>
                         </NavItem>
+                        <NavItem>
+                            <NavLink
+                                className={"text-capitalize btn" + (activeTab === 'admin' ? ' active ' : '')}
+                                onClick={() => toggle('admin')}
+                            >
+                                admin
+                            </NavLink>
+                        </NavItem>
                     </div>
                 </Nav>
             </div>
@@ -125,6 +131,14 @@ const CommunityDetailsComponent = (props) => {
                             calender
                         </NavLink>
                     </NavItem>
+                    <NavItem className="mb-2 nav-items">
+                        <NavLink
+                            className={"tab-buttons text-capitalize text-dark f-14" + (activeTab === 'admin' ? ' active ' : '')}
+                            onClick={() => { toggle('admin'); }}
+                        >
+                            admin
+                        </NavLink>
+                    </NavItem>
                 </Nav>
 
             </div>
@@ -145,7 +159,10 @@ const CommunityDetailsComponent = (props) => {
                     <RelatedCommunityDetails/>
                 </TabPane>
                 <TabPane tabId="calender" className="overflow-auto flex-grow-1 ">
-                    <RelatedCommunityDetails/>
+                    calender
+                </TabPane>
+                <TabPane tabId="admin" className="overflow-auto flex-grow-1 ">
+                    <CommunityAdminTab />
                 </TabPane>
             </TabContent>
 

@@ -1,7 +1,7 @@
 
 import * as React from 'react';
 import {IconComment, IconRecommend, IconReport} from "../icons";
-import PostDropdown from "../../components/community/communityActivityPostDetail";
+import PostDropdown from "../../components/community/communityEventPost";
 
 
 

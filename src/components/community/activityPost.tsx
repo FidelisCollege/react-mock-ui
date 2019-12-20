@@ -2,7 +2,7 @@ import * as React from 'react';
 import {IconComment, IconRecommend, IconReport} from "../../common";
 
 
-const CommunityMissedActivity  = () => {
+const CommunityActivityPost  = () => {
     return (
         <div className="media pb-0 text-capitalize">
             <div className="media-left">
@@ -36,4 +36,4 @@ const CommunityMissedActivity  = () => {
 }
 
 
-export default  CommunityMissedActivity;
+export default  CommunityActivityPost;

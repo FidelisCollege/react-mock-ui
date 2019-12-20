@@ -1,8 +1,10 @@
 
 import * as React from 'react';
-import CommunityActivityPostDetail from "./communityActivityPostDetail";
+import CommunityActivityPostDetail from "./communityEventPost";
 import CommunityActivityPost from "./communityActivityPost";
-import CommunityMissedActivity from "./CommunityMissedApp";
+import CommunityActivityEventPost from "./communityEventPost";
+import CommunityActivityAnnouncement from "./communityActivityAnnouncement";
+
 
 
 
@@ -12,11 +14,15 @@ const CommunityAllActivity  = () => {
     return (
         <ul className="list-unstyled show-list-activity mb-0">
             <li className="py-3">
-                <CommunityActivityPostDetail/>
+                <CommunityActivityEventPost/>
             </li>
             <li>
-                <CommunityMissedActivity/>
+                <CommunityActivityAnnouncement/>
             </li>
+            <li>
+                <CommunityActivityPost/>
+            </li>
+
 
 
 
