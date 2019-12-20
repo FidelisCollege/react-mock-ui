@@ -1,5 +1,7 @@
 import * as React from 'react';
 import CommunityDetailsComponent from "./communityDetailsComponent";
+import {Col, Row} from "reactstrap";
+import {IconTrash} from "../../common";
 
 
 
@@ -13,6 +15,31 @@ const AboutCommuinityDetails = () => {
                     1500s, when an unknown printer took a galley of type and scrambled it to
                     make a type specimen book.
                 </p>
+                <div className="d-flex justify-content-between align-items-center flex-wrap">
+                    <div className="mb-2 position-relative"  >
+                        <img className="cursor-pointer about-us-image img-fluid" src="images/media-img.png" alt=""/>
+                        <a href="" className="delete-image-bg">
+                            <IconTrash className="position-absolute delete-image-icon"/>
+                        </a>
+                    </div>
+                    <a className="mb-2" href="">
+                        <img className="cursor-pointer about-us-image img-fluid" src="images/media-img.png" alt=""/>
+                    </a>
+                    <a className="mb-2" href="">
+                        <img className="cursor-pointer about-us-image img-fluid" src="images/media-img.png" alt=""/>
+                    </a>
+                    <a className="mb-2" href="">
+                        <img className="cursor-pointer about-us-image img-fluid" src="images/media-img.png" alt=""/>
+                    </a>
+                </div>
+
+
+
+
+
+
+
+
                 <div className="mt-4">
                     <h3 className="text-capitalize f-14 text-dark">active since</h3>
                     <div className="text-capitalize f-14 text-light">01 Feb 2018</div>

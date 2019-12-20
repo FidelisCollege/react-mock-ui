@@ -288,3 +288,28 @@ $sort-button-bg: #ececfb;
 .footer-modal-buttons{
   font-size: 12px;
 }
+.about-us-image{
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+.delete-image-icon{
+
+
+}
+.delete-image-bg{
+  width: 35px;
+  height: 35px;
+  background-color: #3b4499;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  border-radius: 0 0 0px 29px;
+}
