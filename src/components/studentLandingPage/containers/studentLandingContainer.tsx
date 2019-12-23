@@ -134,42 +134,15 @@ class StudentLandingContainer extends React.Component<StudentLandingProps, Stude
         const coach = localStorage.getItem('coach') && localStorage.getItem('coach') !== 'undefined' && JSON.parse(localStorage.getItem('coach'));
 
         return (
-            <main className="dashboard-container student-profile">
-                <div className="px-2 border-bottom d-lg-none">
-                    <div className="nav nav-tabs tab-icon-list-view custom-tabs py-2" id="nav-tab" role="tablist">
-                        <a className={"nav-item nav-link" + (activeMainTab === StudentLandingMainTabs.GOALS ? " active" : "")} onClick={() => this.onSelectMainTab(StudentLandingMainTabs.GOALS)} id="nav-goal-tab" data-toggle="tab" href="#" role="tab" aria-controls="nav-goal" aria-selected="true">
-                            <span className="title">{StudentLandingMainTabs.GOALS}</span>
-                        </a>
-                        <a className={"nav-item nav-link" + (activeMainTab === StudentLandingMainTabs.TEAM ? " active" : "")} onClick={() => this.onSelectMainTab(StudentLandingMainTabs.TEAM)} id="nav-team-tab" data-toggle="tab" href="#" role="tab" aria-controls="nav-team" aria-selected="false">
-                            <span className="title">{StudentLandingMainTabs.TEAM}</span>
-                        </a>
-                        <a className={"nav-item nav-link" + (activeMainTab === StudentLandingMainTabs.PURPOSE ? " active" : "")} onClick={() => this.onSelectMainTab(StudentLandingMainTabs.PURPOSE)} id="nav-purpose-tab" data-toggle="tab" href="#" role="tab" aria-controls="nav-purpose" aria-selected="false">
-                            <span className="title">{StudentLandingMainTabs.PURPOSE}</span>
-                        </a>
-                        <a className={"nav-item nav-link" + (activeMainTab === StudentLandingMainTabs.RECOMMENDATIONS ? " active" : "")} onClick={() => this.onSelectMainTab(StudentLandingMainTabs.RECOMMENDATIONS)} id="nav-recommend-tab" data-toggle="tab" href="#" role="tab" aria-controls="nav-recommend" aria-selected="false">
-                            <span className="title">{StudentLandingMainTabs.RECOMMENDATIONS}</span>
-                        </a>
-                    </div>
-                </div>
-                <div className="inner-container min-height-0 p-lg-3">
-                    <div className="d-flex flex-grow-1 tab-content-wrapper min-height-0">
-                        {/*<div className={`list-team tab-data ${activeMainTab === StudentLandingMainTabs.TEAM ? " active" : ""} left-column`} id="nav-team">*/}
-                            {/*{*/}
-                                {/*(mentorList && mentorList.data) &&*/}
-                                {/*(menteeList && menteeList.data) &&*/}
-                                {/*(communityList && communityList.data) &&*/}
-                                {/*<TeamComponent teamListData={getTeamProps(this.props)} coach={coach} />*/}
-                            {/*}*/}
-                        {/*</div>*/}
-                        <div className={`student-details tab-data ${activeMainTab === StudentLandingMainTabs.GOALS ? " active" : ""} px-lg-3`} id="nav-goal">
+
+
+
+                        <div className={`student-details tab-data ${activeMainTab === StudentLandingMainTabs.GOALS ? " active" : ""}`} id="nav-goal">
                             <GoalComponent activeTab={activeGoalsTab} {...this.getGoalTabData()} getGoals={this.getGoals} />
                         </div>
-                        {/*<div className={`flex-column main-content tab-data right-column${activeMainTab === StudentLandingMainTabs.PURPOSE || activeMainTab === StudentLandingMainTabs.RECOMMENDATIONS ? " active" : ""}`}>*/}
-                            {/*<StudentPRQComponent purpose={purpose} currentGoals={currentGoals} activeMainTab={activeMainTab} />*/}
-                        {/*</div>*/}
-                    </div>
-                </div>
-            </main>
+
+
+
         );
     }
 }

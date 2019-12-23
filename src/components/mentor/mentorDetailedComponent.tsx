@@ -122,7 +122,7 @@ const MentorDetailedComponent = (props) => {
                         </NavItem>
                     </Nav>
                 </div>
-                <TabContent activeTab={activeTab}>
+                <TabContent activeTab={activeTab} className="overflow-auto">
                     <TabPane tabId="1">
                         acas
                     </TabPane>
