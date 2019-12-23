@@ -2,6 +2,7 @@ import * as React from 'react';
 import { TabContent, TabPane, Nav, NavItem, NavLink, Card, Button, CardTitle, CardText, Row, Col } from 'reactstrap';
 import {useState} from "react";
 import classnames from 'classnames';
+import StudentLandingContainer from "../studentLandingPage/containers/studentLandingContainer";
 
 
 const MentorDetailedComponent = (props) => {
@@ -44,8 +45,8 @@ const MentorDetailedComponent = (props) => {
                         </NavItem>
                         <NavItem>
                             <NavLink
-                                className={"nav-item ml-0" + (activeTab === '2' ? ' active ' : '')}
-                                onClick={() => { toggle('2'); }}
+                                className={"nav-item ml-0" + (activeTab === 'goals' ? ' active ' : '')}
+                                onClick={() => { toggle('goals'); }}
                             >
 
                                 <i className="icon-goal mb-3 d-none d-lg-block"></i>
@@ -125,8 +126,8 @@ const MentorDetailedComponent = (props) => {
                     <TabPane tabId="1">
                         acas
                     </TabPane>
-                    <TabPane tabId="2">
-                        sac
+                    <TabPane tabId="goals">
+                        <StudentLandingContainer/>
                     </TabPane>
                 </TabContent>
             </div>

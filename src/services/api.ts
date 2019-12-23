@@ -1,8 +1,9 @@
 import { AxiosRequestConfig } from 'axios';
 import axios from 'axios';
-
-
 import { ApiConfigInterface, apiConfig } from '../config/apiConfig';
+
+declare var Cookies: any;
+
 
 export interface ApiInterface {
     getDataApiBaseUrl(apiConfig: ApiConfigInterface): string;
@@ -25,7 +26,8 @@ export function callAPI(requestConfig: AxiosRequestConfig) {
 export function setHeaders(requestConfig: AxiosRequestConfig) {
     requestConfig.headers = {
         'Content-Type': 'application/json',
-        Accept: 'application/json',
+        Accept: 'application/json'
     };
+    axios.defaults.withCredentials = true;
     return requestConfig;
 }

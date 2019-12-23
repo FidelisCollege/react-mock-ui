@@ -6,8 +6,8 @@ export interface ApiConfigInterface {
 }
 
 export const apiConfig: ApiConfigInterface = {
-    protocol: 'http',
-    host: 'localhost:9999',
-    dataApiUrl: 'data',
+    protocol: 'https',
+    host: 'dev2.fideliseducation.com',
+    dataApiUrl: 'api',
     apiUrl: '',
 };

@@ -13,7 +13,7 @@ import CommunityNonMember from "../community/communityNonMember";
 import MenteesDashboard from "../mentee/menteeDashboard";
 import MentorDetail from "../mentor/mentorDetail";
 import PurposeWidget from "../student/porposeWidget";
-
+import StudentLandingContainer from '../studentLandingPage/containers/studentLandingContainer';
 import EditPurposeWidget from "../student/editPurposeFlow";
 
 export enum RouteUrls {
@@ -35,7 +35,7 @@ export enum RouteUrls {
 
 export const routes: RouteConfigInterface[] = [
     {
-        path: '/',
+        path: '/onboarding',
         component: OnBoardingContainer,
         childRoutes: [],
     },
@@ -108,6 +108,11 @@ export const routes: RouteConfigInterface[] = [
         path: RouteUrls.EDIT_PURPOSE_WIDGET,
         component: EditPurposeWidget,
         childRoutes: []
+    },
+    {
+        path: '/',
+        component: StudentLandingContainer,
+        childRoutes: [],
     },
 ];
 
