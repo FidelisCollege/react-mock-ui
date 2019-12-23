@@ -305,11 +305,14 @@ $sort-button-bg: #ececfb;
   position: absolute;
   top: 0;
   right: 0;
-  display: -webkit-box;
   display: flex;
-  -webkit-box-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
   align-items: center;
   border-radius: 0 0 0px 29px;
+  padding-bottom: 7px;
+}
+.add-image-card{
+  border: 1px dotted $secondary;
+  background-color: #F4F4F4;
+  color: $secondary;
 }

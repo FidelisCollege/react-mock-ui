@@ -14,7 +14,7 @@ const CommunityPostModal = (props) => {
     const toggle = () => setModal(!modal);
 
     return (
-        <div  className="Community-Post-Modal">
+        <div  className="Community-Post-Modal d-none d-md-block">
             <button type="button" className="btn btn-primary text-capitalize ml-3 post-button"  onClick={toggle}>{buttonLabel}post</button>
             <Modal isOpen={modal} toggle={toggle} className="h-100 d-flex justify-content-center align-items-center">
                 <ModalHeader toggle={toggle}>Post</ModalHeader>
