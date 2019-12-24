@@ -17,10 +17,10 @@ const GoalComponent = (props: GoalPropsInterface) => {
     return (
         <>
             <header>
-                <h2 className="student-name d-none d-lg-flex justify-content-between">
-                    {user && user.fullName}'s Goal
-                    <button className="btn btn-outline-primary text-capitalize">add goals</button>
-                </h2>
+                {/*<h2 className="student-name d-none d-lg-flex justify-content-between">*/}
+                    {/*{user && user.fullName}'s Goal*/}
+                    {/*<button className="btn btn-outline-primary text-capitalize">add goals</button>*/}
+                {/*</h2>*/}
                 <div className="d-flex justify-content-between align-items-center mt-lg-3">
                     <div className="nav nav-pills p-2 p-lg-0 cursor-pointer" id="nav-button-tab" role="tablist">
                         <a className={"nav-item nav-link nav-tab" + (activeTab === GoalTabs.CURRENT ? " active" : "")}

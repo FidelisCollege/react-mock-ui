@@ -13,7 +13,7 @@ import CommunityActivityAnnouncement from "./communityActivityAnnouncement";
 const CommunityAllActivity  = () => {
     return (
         <ul className="list-unstyled show-list-activity mb-0">
-            <li className="py-3">
+            <li className="">
                 <CommunityActivityEventPost/>
             </li>
             <li>

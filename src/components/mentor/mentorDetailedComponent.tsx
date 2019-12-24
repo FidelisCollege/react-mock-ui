@@ -3,6 +3,8 @@ import { TabContent, TabPane, Nav, NavItem, NavLink, Card, Button, CardTitle, Ca
 import {useState} from "react";
 import classnames from 'classnames';
 import StudentLandingContainer from "../studentLandingPage/containers/studentLandingContainer";
+import RecommendCardComponent from "../../common/card/recommendCardComponent";
+import ActivityStreamComponent from "../community/activityStreamComponent";
 
 
 const MentorDetailedComponent = (props) => {
@@ -15,7 +17,7 @@ const MentorDetailedComponent = (props) => {
     return (
         <div className="flex-grow-1 tab-content card card-shadow border-0 flex-column main-content">
             <div className="overflow-parent-wrapper p-0 p-lg-3">
-                <header className="person d-flex align-items-center student-details-header border-bottom p-3 p-lg-0 pb-lg-3 position-relative">
+                <header className="person d-flex align-items-center student-details-header p-3 p-lg-0 pb-lg-3 position-relative">
                     <img src="images/avatar28.png" alt="" className="rounded-circle border person-img d-none d-md-inline-block mr-3" />
                     <div className="d-flex justify-content-center person-info flex-column">
                         <div>
@@ -28,7 +30,12 @@ const MentorDetailedComponent = (props) => {
                     <a href="base-layout-dashboard.html" aria-label="Close" className="close position-absolute">
                         <i className="icon-close"></i>
                     </a>
+
                 </header>
+                <div className="p-3 p-lg-0 pb-lg-3">
+                    <RecommendCardComponent/>
+                </div>
+
                 <div className="px-2 border-bottom mb-0 mb-lg-3">
 
                     <Nav tabs className="nav-tabs tab-icon-view py-2">
@@ -124,7 +131,7 @@ const MentorDetailedComponent = (props) => {
                 </div>
                 <TabContent activeTab={activeTab} className="overflow-auto">
                     <TabPane tabId="1">
-                        acas
+                        <ActivityStreamComponent/>
                     </TabPane>
                     <TabPane tabId="goals">
                         <StudentLandingContainer/>

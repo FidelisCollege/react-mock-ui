@@ -5,6 +5,7 @@ import DefaultMentorCard from "../mentor/mentorTabComponent";
 import {Button, Card, CardImg, Col, Row} from "reactstrap";
 import CommunityCard, {CommunityCardProps} from "./community-card";
 import {CommunityTypes} from "./models/communityModels";
+import CommunitySortDropdown from "../../common/dropdown/communitySortDropdown";
 
 const RelatedCommunityDetails  = () => {
     return (
@@ -15,11 +16,7 @@ const RelatedCommunityDetails  = () => {
                 </div>
                 <div className="d-flex align-items-center">
                     <span className="f-14 text-light mr-2 text-capitalize text-nowrap">sort by:</span>
-                    <div className="input-group sort-select">
-                        <select className="custom-select py-2" id="inputGroupSelect04">
-                        <option className="text-capitalize">community size</option>
-                        <option value="1">One</option>
-                    </select></div>
+                    <CommunitySortDropdown/>
                 </div>
             </div>
             <Row className="pt-1 flex-grow-1 overflow-auto m-0 card-row">

@@ -374,3 +374,26 @@ $dropdown-border-color: #ddd;
 .card-row .card-col:nth-child(3){
   padding-right:0;
 }
+.recommend-card{
+  background-color: $info;
+  border-radius: 6px;
+  padding: 12px;
+  line-height: 1;
+}
+.recommend-btn{
+  border: 1px solid $white;
+  color: $white;
+  background-color: transparent;
+  &:hover{
+    background-color: $white;
+    color: $info;
+    border: 1px solid $white;
+
+  }
+}
+.recommend-btn-wrapper{
+  white-space: nowrap;
+}
+.search-input-group{
+  min-width: 275px;
+}

@@ -1,6 +1,6 @@
 import * as React from 'react';
 import MentorNotifications from "../mentor/notificationCard";
-import CommunityAnnouncements from "./Announcement-card";
+import CommunityAnnouncements from "./AnnouncementSection";
 import CommunityEvents from "./communityEvents";
 import CommunityActivity from "./community-activity";
 import {Media} from "reactstrap";

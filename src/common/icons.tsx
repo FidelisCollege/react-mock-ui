@@ -170,7 +170,7 @@ export const IconAdd = (props) => (
 		height={props.size ? `${props.size}rem` : `1rem`}
 		fill={props.fill ? `${props.fill}` : `currentColor`}
 		onClick={props.doOnClick}
-		style={{ width: `20px`, height: `20px` }}
+		style={{ width: `20px`, height: `` }}
 	>
 		<path
 			d="M10 6H6v4H4V6H0V4h4V0h2v4h4v2z"
