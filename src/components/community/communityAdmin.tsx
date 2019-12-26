@@ -39,7 +39,7 @@ const CommunityAdminTab = () => {
                         <h6 className="text-capitalize mb-0">smoke admin</h6>
                     </a>
                     <button type="button" className="btn btn-outline-primary add-admin-btn mt-2">
-                        <IconAdd className="p-1"/>
+                        <IconAdd className="p-1" height="20px"/>
                         <span>Add New Admin</span>
                     </button>
                 </Col>
@@ -60,11 +60,11 @@ const CommunityAdminTab = () => {
                     <h5 className="admin-label">Enable partnership</h5>
                     <Row className="no-gutters">
                         <Col md="6" className="radio m-0">
-                            <input id="radio-1" name="radio" type="radio" checked={checked}/>
+                            <input id="radio-1" name="radio" type="radio" checked={checked} className="mr-2"/>
                             <label className="radio-label d-flex align-items-end text-capitalize" htmlFor="radio-1 ">yes</label>
                         </Col>
                         <Col md="6" className="radio m-0">
-                            <input id="radio-1" name="radio" type="radio" checked={checked}/>
+                            <input id="radio-1" name="radio" type="radio" checked={checked} className="mr-2"/>
                             <label className="radio-label d-flex align-items-end text-capitalize" htmlFor="radio-1">no</label>
                         </Col>
                     </Row>

@@ -5,8 +5,9 @@ import {useState} from "react";
 import CommunityAllActivity from "./communityAllActivities";
 import CommunityActivityAnnouncement from "./communityActivityAnnouncement";
 import CommunityActivityPost from "./communityActivityPost";
-import CommunityPostModal from "./postModal";
+import CommunityPostModal from "../../common/modal/postModal";
 import CommunityActivityEventPost from "./communityEventPost";
+import EventPostModal from "../../common/modal/postEventModal";
 
 
 
@@ -57,7 +58,7 @@ const ActivityCommuinity = () => {
                         </NavLink>
                     </NavItem>
                 </div>
-                <CommunityPostModal/>
+                <EventPostModal/>
 
             </Nav>
             <TabContent activeTab={activeTab} className="flex-grow-1 bg-white d-flex overflow-auto">

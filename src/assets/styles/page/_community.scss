@@ -270,7 +270,7 @@ $sort-button-bg: #ececfb;
   object-fit: cover;
 }
 .admin-feild-heading{
-  padding-top: 12px;
+  padding-top: 20px;
   .admin-label{
     font-size: 14px;
     font-weight: 400;
@@ -290,8 +290,8 @@ $sort-button-bg: #ececfb;
   font-size: 12px;
 }
 .about-us-image{
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
   object-fit: cover;
 }
 .delete-image-icon{
@@ -318,3 +318,29 @@ $sort-button-bg: #ececfb;
   color: $secondary;
 }
 
+.event-image-wrapper{
+  border: 1px solid $secondary;
+
+  max-width: 450px;
+  .event-image{
+    max-height: 165px;
+    object-fit: cover;
+  }
+}
+.event-start-date{
+  background-image: url(/images/event.svg);
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-position: right;
+  background-size: auto;
+
+}
+.admin-feild-heading{
+  .radio input[type="radio"] + .radio-label:before{
+    margin-right: 5px;
+  }
+}
+.event-content-wrapper{
+  max-height: 450px;
+  overflow: auto;
+}

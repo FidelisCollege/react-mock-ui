@@ -1,7 +1,7 @@
 import * as React from 'react';
 import {Button, Modal, ModalHeader, ModalBody, ModalFooter, FormGroup, Label, Input} from 'reactstrap';
 import {useState} from "react";
-import {IconAttachment, IconCamera} from "../../common";
+import {IconAttachment, IconCamera} from "..";
 
 const CommunityPostModal = (props) => {
     const {
