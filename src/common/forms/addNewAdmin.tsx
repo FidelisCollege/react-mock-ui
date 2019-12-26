@@ -14,6 +14,7 @@ const AddNewAdminComponent = () => {
                 <span>Add New Admin</span>
             </button>
             <div className="add-new-button">
+                <i className="icon-close"></i>
                 <input className="form-control" type="text" placeholder="enter number "/>
             </div>
         </div>

@@ -3,6 +3,7 @@ import CommunityDetailComponent from "./communityDetailsComponent";
 import LeftNavComponent from "../../common/components/left-nav";
 import {IconleftCaret} from "../../common";
 import CommunityNonMemberBadge from "../../common/badges/communityNonMemberBadge";
+import CommunityNomMemberDetailsComponent from "./communityNonMemeberDetail";
 
 
 const CommunityNonMember = () => {
@@ -45,7 +46,7 @@ const CommunityNonMember = () => {
                                     <CommunityNonMemberBadge/>
                                 </div>
                             </div>
-                            <CommunityDetailComponent/>
+                            <CommunityNomMemberDetailsComponent/>
 
                         </div>
                     </div>
