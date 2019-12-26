@@ -13,7 +13,7 @@ const PostEventTabComponent = (props) => {
 
     return (
         <div className="d-flex flex-column  flex-grow-1">
-            <Nav pills className="pb-2 pt-0 border-bottom community-activity-tabs overflow-auto">
+            <Nav pills className="pb-2 pt-0 community-activity-tabs overflow-auto">
                 <div className="d-flex">
                     <NavItem className="">
                         <NavLink

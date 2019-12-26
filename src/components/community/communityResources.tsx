@@ -25,7 +25,7 @@ const CommunityResources = () => {
                 </div>
             </div>
 
-                <Nav pills className="d-flex justify-content-between align-items-center py-2 community-activity-tabs">
+                <Nav pills className="d-flex justify-content-between align-items-center py-2 community-activity-tabs border-0">
                     <div className="d-flex">
                         <NavItem className="">
                             <NavLink

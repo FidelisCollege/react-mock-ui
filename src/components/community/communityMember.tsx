@@ -2,6 +2,7 @@ import * as React from 'react';
 import CommunityDetailComponent from "./communityDetailsComponent";
 import LeftNavComponent from "../../common/components/left-nav";
 import {IconleftCaret} from "../../common";
+import CommunityMemberBadge from "../../common/badges/communityMemberBadge";
 
 
 const CommunityMember = () => {
@@ -41,12 +42,7 @@ const CommunityMember = () => {
                                             </div>
                                         </h6>
                                     </div>
-                                    <div className="d-flex joinned-badge">
-                                        <span className="badge badge-pill bg-info text-white d-flex align-items-center">
-                                            <div className="joined-wrapper mr-1"><i className="icon-check"></i></div>
-                                            <span className="font-weight-normal  text-uppercase ml-1">joined</span>
-                                        </span>
-                                    </div>
+                                    <CommunityMemberBadge/>
                                 </div>
                             </div>
                             <CommunityDetailComponent/>

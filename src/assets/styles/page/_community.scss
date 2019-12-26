@@ -1,5 +1,5 @@
 $sort-button-bg: #ececfb;
-
+$border-light: 1px solid $input-border-color;
 .recently-access-head{
     font-size: 18px;
     color:$primary;
@@ -106,6 +106,9 @@ $sort-button-bg: #ececfb;
     color: $info;
     border-radius: 50%;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .joinned-badge{
       padding-left: 78px;
@@ -289,11 +292,12 @@ $sort-button-bg: #ececfb;
 .footer-modal-buttons{
   font-size: 12px;
 }
-.about-us-image{
+.about-us-image {
   width: 120px;
   height: 120px;
   object-fit: cover;
 }
+
 .delete-image-icon{
 
 
@@ -320,6 +324,7 @@ $sort-button-bg: #ececfb;
 
 .event-image-wrapper{
   border: 1px solid $secondary;
+  border-radius: 4px;
 
   max-width: 450px;
   .event-image{
@@ -343,4 +348,19 @@ $sort-button-bg: #ececfb;
 .event-content-wrapper{
   max-height: 450px;
   overflow: auto;
+}
+.event-modal-footer{
+  position: absolute;
+  bottom:0;
+  right: 0;
+  left:0;
+  padding:10px 20px;
+  border-top: 1px solid $input-border-color;
+  background-color: $white;
+}
+.event-description{
+  min-height: 57px;
+}
+.community-activity-tabs{
+  border-bottom: $border-light;
 }

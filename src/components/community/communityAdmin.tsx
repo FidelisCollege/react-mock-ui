@@ -1,6 +1,7 @@
 import * as React from 'react';
 import {Col, FormGroup, Input, Label, Row} from "reactstrap";
 import {IconAdd} from "../../common";
+import AddNewAdminComponent from "../../common/forms/addNewAdmin";
 
 
 
@@ -8,7 +9,6 @@ const CommunityAdminTab = () => {
     var checked;
     return (
         <>
-
             <Row className="flex-column no-gutters">
                 <Col md="12" className="pt-0 admin-feild-heading">
                     <h5 className=" admin-label">Name of community</h5>
@@ -38,25 +38,23 @@ const CommunityAdminTab = () => {
                         <img className="cursor-pointer admins-image mr-2" src="images/media-img.png" alt=""/>
                         <h6 className="text-capitalize mb-0">smoke admin</h6>
                     </a>
-                    <button type="button" className="btn btn-outline-primary add-admin-btn mt-2">
-                        <IconAdd className="p-1" height="20px"/>
-                        <span>Add New Admin</span>
-                    </button>
+                    <AddNewAdminComponent/>
                 </Col>
-                <Col md="" className="admin-feild-heading">
-                    <h5 className="admin-label">Community state</h5>
+                <Col md="12" className="admin-feild-heading">
+                    <h5 className="admin-label">community state</h5>
                     <Row className="no-gutters">
-                        <Col md="6" className="radio m-0">
-                            <input id="radio-1" name="radio" type="radio" checked={checked}/>
-                            <label className="radio-label d-flex align-items-end" htmlFor="radio-1">Published</label>
+                        <Col md="8" className="radio m-0">
+                            <input id="radio-1" name="radio" type="radio" checked={checked} className="mr-2"/>
+                            <label className="radio-label d-flex align-items-end text-capitalize" htmlFor="radio-1 ">published</label>
                         </Col>
-                        <Col md="6" className="radio m-0">
-                            <input id="radio-1" name="radio" type="radio" checked={checked}/>
-                            <label className="radio-label d-flex align-items-end" htmlFor="radio-1">Unpublished</label>
+                        <Col md="9" className="radio m-0">
+                            <input id="radio-1" name="radio" type="radio" checked={checked} className="mr-2"/>
+                            <label className="radio-label d-flex align-items-end text-capitalize" htmlFor="radio-1">unpublished</label>
                         </Col>
                     </Row>
+
                 </Col>
-                <Col md="" className="admin-feild-heading">
+                <Col md="12" className="admin-feild-heading">
                     <h5 className="admin-label">Enable partnership</h5>
                     <Row className="no-gutters">
                         <Col md="6" className="radio m-0">

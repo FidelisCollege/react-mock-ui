@@ -18,16 +18,8 @@ const CommunityDetailsComponent = (props) => {
     return (
         <div className="community-details community-activity-detail d-flex flex-lg-row flex-column flex-grow-1 mt-2 mt-md-3 overflow-auto bg-white rounded card-shadow">
             <div className="d-lg-none d-flex flex-column overflow-auto community-nav-pills">
-                <Nav pills className="d-flex justify-content-between align-items-center p-2 border-bottom community-activity-tabs overflow-auto d-lg-none">
+                <Nav pills className="d-flex justify-content-between align-items-center p-2  community-activity-tabs overflow-auto d-lg-none">
                     <div className="d-flex">
-                        <NavItem className="mr-3">
-                            <NavLink
-                                className={"text-capitalize" + (activeTab === 'activities' ? ' active ' : '')}
-                                onClick={() => toggle('activities')}
-                            >
-                                activities
-                            </NavLink>
-                        </NavItem>
                         <NavItem>
                             <NavLink
                                 className={"text-capitalize btn" + (activeTab === 'about' ? ' active ' : '')}
@@ -38,58 +30,28 @@ const CommunityDetailsComponent = (props) => {
                         </NavItem>
                         <NavItem>
                             <NavLink
-                                className={"text-capitalize btn" + (activeTab === 'members' ? ' active ' : '')}
-                                onClick={() => toggle('members')}
-                            >
-                                members
-                            </NavLink>
-                        </NavItem>
-                        <NavItem>
-                            <NavLink
-                                className={"text-capitalize btn" + (activeTab === 'resource' ? ' active ' : '')}
-                                onClick={() => toggle('resource')}
-                            >
-                                resources
-                            </NavLink>
-                        </NavItem>
-                        <NavItem>
-                            <NavLink
                                 className={"text-capitalize btn" + (activeTab === 'relatedCommunities' ? ' active ' : '')}
                                 onClick={() => toggle('relatedCommunities')}
                             >
-                                communities
+                                related communities
                             </NavLink>
                         </NavItem>
                         <NavItem>
                             <NavLink
-                                className={"text-capitalize btn" + (activeTab === 'calender' ? ' active ' : '')}
-                                onClick={() => toggle('calender')}
+                                className={"text-capitalize btn" + (activeTab === 'content' ? ' active ' : '')}
+                                onClick={() => toggle('content')}
                             >
-                                calender
+                                content
                             </NavLink>
                         </NavItem>
-                        <NavItem>
-                            <NavLink
-                                className={"text-capitalize btn" + (activeTab === 'admin' ? ' active ' : '')}
-                                onClick={() => toggle('admin')}
-                            >
-                                admin
-                            </NavLink>
-                        </NavItem>
+
                     </div>
                 </Nav>
             </div>
 
             <div className="d-md-none d-lg-flex  d-none ">
                 <Nav className="d-none d-lg-flex flex-column align-content-start align-items-start p-2 card-shadow bg-white">
-                    <NavItem className="mb-2 nav-items">
-                        <NavLink
-                            className={"tab-buttons text-capitalize text-dark f-14" + (activeTab === 'activities' ? ' active ' : '')}
-                            onClick={() => { toggle('activities'); }}
-                        >
-                            activities
-                        </NavLink>
-                    </NavItem>
+
                     <NavItem className="mb-2 nav-items ">
                         <NavLink
                             className={"tab-buttons text-capitalize text-dark f-14" + (activeTab === 'about' ? ' active ' : '')}
@@ -101,22 +63,6 @@ const CommunityDetailsComponent = (props) => {
 
                     <NavItem className="mb-2 nav-items">
                         <NavLink
-                            className={"tab-buttons text-capitalize text-dark f-14" + (activeTab === 'members' ? ' active ' : '')}
-                            onClick={() => { toggle('members'); }}
-                        >
-                            members
-                        </NavLink>
-                    </NavItem>
-                    <NavItem className="mb-2 nav-items">
-                        <NavLink
-                            className={"tab-buttons text-capitalize text-dark f-14" + (activeTab === 'resource' ? ' active ' : '')}
-                            onClick={() => { toggle('resource'); }}
-                        >
-                            resources
-                        </NavLink>
-                    </NavItem>
-                    <NavItem className="mb-2 nav-items">
-                        <NavLink
                             className={"tab-buttons text-capitalize text-dark f-14" + (activeTab === 'relatedCommunities' ? ' active ' : '')}
                             onClick={() => { toggle('relatedCommunities'); }}
                         >
@@ -125,18 +71,10 @@ const CommunityDetailsComponent = (props) => {
                     </NavItem>
                     <NavItem className="mb-2 nav-items">
                         <NavLink
-                            className={"tab-buttons text-capitalize text-dark f-14" + (activeTab === 'calender' ? ' active ' : '')}
-                            onClick={() => { toggle('calender'); }}
+                            className={"tab-buttons text-capitalize text-dark f-14" + (activeTab === 'content' ? ' active ' : '')}
+                            onClick={() => { toggle('content'); }}
                         >
-                            calender
-                        </NavLink>
-                    </NavItem>
-                    <NavItem className="mb-2 nav-items">
-                        <NavLink
-                            className={"tab-buttons text-capitalize text-dark f-14" + (activeTab === 'admin' ? ' active ' : '')}
-                            onClick={() => { toggle('admin'); }}
-                        >
-                            admin
+                            content
                         </NavLink>
                     </NavItem>
                 </Nav>
@@ -146,24 +84,13 @@ const CommunityDetailsComponent = (props) => {
                 <TabPane tabId="about" className="overflow-auto">
                     <AboutCommuinityDetails/>
                 </TabPane>
-                <TabPane tabId="activities" className="overflow-auto flex-grow-1">
-                    <ActivityCommuinity/>
+                <TabPane tabId="relatedCommunities" className="overflow-auto flex-grow-1">
+                    related communities
                 </TabPane>
-                <TabPane tabId="members" className="overflow-auto flex-grow-1 ">
-                    <CommunityMembers/>
+                <TabPane tabId="content" className="overflow-auto flex-grow-1 ">
+                    content
                 </TabPane>
-                <TabPane tabId="resource" className="overflow-auto flex-grow-1 ">
-                    <CommunityResources/>
-                </TabPane>
-                <TabPane tabId="relatedCommunities" className="overflow-auto flex-grow-1 ">
-                    <RelatedCommunityDetails/>
-                </TabPane>
-                <TabPane tabId="calender" className="overflow-auto flex-grow-1 ">
-                    calender
-                </TabPane>
-                <TabPane tabId="admin" className="overflow-auto flex-grow-1 ">
-                    <CommunityAdminTab />
-                </TabPane>
+
             </TabContent>
 
         </div>
