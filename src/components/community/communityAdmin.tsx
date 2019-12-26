@@ -37,6 +37,7 @@ const CommunityAdminTab = () => {
                     <a href="#" className="d-flex align-items-center">
                         <img className="cursor-pointer admins-image mr-2" src="images/media-img.png" alt=""/>
                         <h6 className="text-capitalize mb-0">smoke admin</h6>
+                        <i className="icon-close f-16 ml-2"></i>
                     </a>
                     <AddNewAdminComponent/>
                 </Col>
