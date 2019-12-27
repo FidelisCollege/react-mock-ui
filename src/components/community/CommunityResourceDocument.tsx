@@ -6,7 +6,7 @@ import ResourcesDocumentComponent from "./resourceDocumentComponent";
 import ResourcesDocumentWeblink from "./rexourceDocumentWeblink";
 
 const CommunityResourceDocument = (props) => {
-    const [activeTab, setActiveTab] = useState('1');
+    const [activeTab, setActiveTab] = useState('document');
 
     const toggle = tab => {
         if(activeTab !== tab) setActiveTab(tab);

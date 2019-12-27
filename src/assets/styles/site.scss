@@ -51,13 +51,14 @@
 @import "page/mentor";
 @import "page/login";
 @import "page/purpose-widget";
+@import "page/app";
 
 // Student Profile Theme
 @import "theme/student-profile";
 
 
 //IE Bug Fix.
-@import "ie-bug-fix";
+//@import "ie-bug-fix";
 //scrollbar
 //@import "components/simplebar";
 
