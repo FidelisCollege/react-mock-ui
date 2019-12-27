@@ -11,7 +11,7 @@ import CommunityResourceDocument from "./CommunityResourceDocument";
 
 
 const CommunityResources = () => {
-    const [activeTab, setActiveTab] = useState('1');
+    const [activeTab, setActiveTab] = useState('3');
 
     const toggle = tab => {
         if (activeTab !== tab) setActiveTab(tab);
@@ -25,7 +25,7 @@ const CommunityResources = () => {
                 </div>
             </div>
 
-                <Nav pills className="d-flex justify-content-between align-items-center py-2 community-activity-tabs border-0">
+                <Nav pills className="d-flex justify-content-between align-items-center py-2 community-activity-tabs">
                     <div className="d-flex">
                         <NavItem className="">
                             <NavLink

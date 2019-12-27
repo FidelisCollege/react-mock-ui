@@ -2,6 +2,8 @@ import * as React from 'react';
 import { TabContent, TabPane, Nav, NavItem, NavLink, Card, Button, CardTitle, CardText, Row, Col } from 'reactstrap';
 import classnames from 'classnames';
 import {useState} from "react";
+import ResourcesDocumentComponent from "./resourceDocumentComponent";
+import ResourcesDocumentWeblink from "./rexourceDocumentWeblink";
 
 const CommunityResourceDocument = (props) => {
     const [activeTab, setActiveTab] = useState('1');
@@ -12,30 +14,32 @@ const CommunityResourceDocument = (props) => {
 
     return (
         <div className="">
-            <Nav tabs className="community-activity-tabs border-0 justify-content-start">
-                <NavItem>
-                    <NavLink
-                        className={classnames({ active: activeTab === '1' })}
-                        onClick={() => { toggle('1'); }}
-                    >
-                       document
-                    </NavLink>
-                </NavItem>
-                <NavItem>
-                    <NavLink
-                        className={classnames({ active: activeTab === '2' })}
-                        onClick={() => { toggle('2'); }}
-                    >
-                        weblink
-                    </NavLink>
-                </NavItem>
+            <Nav tabs className="community-activity-tabs border-0 justify-content-start text-capitalize py-3">
+                <div className="button-toggle d-flex p-0">
+                    <NavItem>
+                        <NavLink
+                            className={classnames({ active: activeTab === 'document' })}
+                            onClick={() => { toggle('document'); }}
+                        >
+                           document
+                        </NavLink>
+                    </NavItem>
+                    <NavItem>
+                        <NavLink
+                            className={classnames({ active: activeTab === 'weblink' })}
+                            onClick={() => { toggle('weblink'); }}
+                        >
+                            weblink
+                        </NavLink>
+                    </NavItem>
+                </div>
             </Nav>
             <TabContent activeTab={activeTab}>
-                <TabPane tabId="1">
-                    1
+                <TabPane tabId="document">
+                    <ResourcesDocumentComponent/>
                 </TabPane>
-                <TabPane tabId="2">
-                    2
+                <TabPane tabId="weblink">
+                    <ResourcesDocumentWeblink/>
                 </TabPane>
             </TabContent>
         </div>

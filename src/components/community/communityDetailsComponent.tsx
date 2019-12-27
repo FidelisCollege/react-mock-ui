@@ -9,7 +9,7 @@ import CommunityResources from "./communityResources";
 import CommunityAdminTab from "./communityAdmin";
 
 const CommunityDetailsComponent = (props) => {
-    const [activeTab, setActiveTab] = useState('activities');
+    const [activeTab, setActiveTab] = useState('resource');
 
     const toggle = tab => {
         if(activeTab !== tab) setActiveTab(tab);
