@@ -164,19 +164,16 @@ export const IconGoogle = (props) => (
 );
 
 export const IconAdd = (props) => (
-	<svg viewBox=""
+	<svg viewBox="0 0 24 24"
 		className={props.className ? `icons ${props.className}` : 'icons'}
 		width={`8rem`}
 		height={props.size ? `${props.size}rem` : `1.5rem`}
 		fill={props.fill ? `${props.fill}` : `currentColor`}
 		onClick={props.doOnClick}
-		style={{ width: `20px`, height: `` }}
+		style={{ width: `20px`, height: `20px` }}
 	>
-		<path
-			d="M10 6H6v4H4V6H0V4h4V0h2v4h4v2z"
-			fill="currentColor"
-			fillRule="evenodd"
-		/>
+		<path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
+		<path d="M0 0h24v24H0z" fill="none" />
 	</svg>
 );
 export const IconDown = (props) => (
@@ -318,5 +315,18 @@ export const IconAddImage = (props) => (
 		<path d="M21 6h-3.17L16 4h-6v2h5.12l1.83 2H21v12H5v-9H3v9c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zM8 14c0 2.76 2.24 5 5 5s5-2.24 5-5-2.24-5-5-5-5 2.24-5 5zm5-3c1.65 0 3 1.35 3 3s-1.35 3-3 3-3-1.35-3-3 1.35-3 3-3zM5 6h3V4H5V1H3v3H0v2h3v3h2z" />
 	</svg>
 );
-
+export const IconDownCaret = (props) => (
+	<svg
+		viewBox="0 0 24 24"
+		className={props.className ? `icons ${props.className}` : 'icons'}
+		width={``}
+		height={props.size ? `${props.size}rem` : `1rem`}
+		fill={props.fill ? `${props.fill}` : `currentColor`}
+		onClick={props.doOnClick}
+		style={{ width: `20px`, height: `16px` }}
+	>
+		<path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z" />
+		<path fill="none" d="M0 0h24v24H0V0z" />
+	</svg>
+);
 

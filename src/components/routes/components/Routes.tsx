@@ -66,8 +66,8 @@ class Routes extends React.Component<any, RoutesState> {
             <BrowserRouter>
                 <NavBarComponent />
                 <div className="main-content">
-                    <SideBarComponent isOpenedSidebar={isOpenedSidebar} toggleSidebar={this.onToggleSidebar} closeSideBar={this.onCloseSideBar} />
-                    <CommonLeftNav/>
+                    {/*<SideBarComponent isOpenedSidebar={isOpenedSidebar} toggleSidebar={this.onToggleSidebar} closeSideBar={this.onCloseSideBar} />*/}
+                    {/*<CommonLeftNav/>*/}
                     <Switch>{this.renderRoutes(routes)}</Switch>
                 </div>
             </BrowserRouter>
