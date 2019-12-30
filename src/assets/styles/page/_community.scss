@@ -1,5 +1,4 @@
 $sort-button-bg: #ececfb;
-$border-light: 1px solid $input-border-color;
 .recently-access-head{
     font-size: 18px;
     color:$primary;
@@ -43,10 +42,9 @@ $border-light: 1px solid $input-border-color;
     border-radius: 50%;
 }
 .community-card{
-    padding:0 0 10px 0;
+    padding: 10px;
 }
 .card-sort-buttons{
-  padding: 10px 14px;
   color: $light;
   &:hover{
       color: $primary;
@@ -68,31 +66,27 @@ $border-light: 1px solid $input-border-color;
 }
 
 .profile-banner-wrapper{
+  min-height: 101px;
   background-image: url("images/profile-background.png");
   background-repeat: no-repeat;
   background-size: cover;
   object-fit: cover;
   border-radius: 4px;
   @media (max-width: 576px){
+      min-height: 116px;
   }
+
   .profile-banner-content{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 11px 13px;
-    @media (max-width: 576px ) {
-      flex-direction: column;
-      align-items: baseline;
-    }
-
-
+      position: absolute;
+      top:0;
+      justify-content: space-between;
+      align-items: center;
       .profile-img{
           border-radius: 50%;
           border: 4px solid $white;
       }
     .profile-banner-heading{
         font-size: 24px;
-      line-height: 1;
       @media (max-width: 576px){
           font-size: 16px;
       }
@@ -100,15 +94,11 @@ $border-light: 1px solid $input-border-color;
     }
   }
   .joined-wrapper{
-    width: 14px;
-    height: 14px;
-    background: white;
-    color: $info;
-    border-radius: 50%;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+      width: 14px;
+      height: 14px;
+      background: white;
+      color: $info;
+      border-radius: 50%;
   }
   .joinned-badge{
       padding-left: 78px;
@@ -128,20 +118,27 @@ $border-light: 1px solid $input-border-color;
     padding:10px 14px;
     border: 1px solid transparent;
     box-shadow: none !important;
-    line-height: 1;
-    &.active{
+
+    &:active{
       border: 1px solid $info;
       border-radius: $border-radius;
       color: $primary !important;
-      line-height: 1;
     }
+    &:hover{
+      box-shadow: none;
+      border-color: $info;
+      color: $primary !important;
 
+
+    }
   }
 
 }
 .content-wrapper{
-
-
+    padding:0 30px;
+    @media (max-width: 576px) {
+        padding: 10px;
+    }
     p{
       width: 468px;
       @media (max-width: 576px){
@@ -150,9 +147,6 @@ $border-light: 1px solid $input-border-color;
     }
 }
 .community-activity-tabs{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   .nav-pills .nav-link.active,
   .nav-pills .show > .nav-link {
     color: $primary !important;
@@ -163,7 +157,7 @@ $border-light: 1px solid $input-border-color;
       &.active {
         background-color: $nav-icon-tabs-link-active-bg;
         color: $primary !important;
-        font-weight: 500;
+        font-weight: bold;
         box-shadow: none !important;
       }
 
@@ -173,15 +167,11 @@ $border-light: 1px solid $input-border-color;
 .post-button{
     padding: 7px 34px;
     font-size: 16px;
-    line-height: 1.2;
 }
 
 .communities-detail-content{
    .sort-select{
       max-width: 139px;
-     .custom-select{
-       border-color: $info;
-     }
    }
     .community-activity-tabs{
       min-height: auto !important;
@@ -215,10 +205,13 @@ $border-light: 1px solid $input-border-color;
 .community-tab-content{
     display: flex;
     flex-direction: column;
-
+  .nav-pills .nav-link.active,
+  .nav-pills .show > .nav-link {
+    color: $primary !important;
+  }
     @media (max-width: 576px) {
-      //flex-grow: 1;
-      //overflow: auto;
+      flex-grow: 1;
+      overflow: auto;
     }
 }
 .card-background{
@@ -251,119 +244,4 @@ $border-light: 1px solid $input-border-color;
       font-weight: bold;
     }
   }
-}
-.dashboard-tab-wrapper{
-  .search-input-group{
-    width: 328px;
-    @media (max-width: 576px){
-      width: 100%;
-    }
-
-  }
-}
-.community-nav-pills{
-  min-height:60px;
-}
-.header-border {
-  border: 1px solid $btn-light-bg;
-}
-
-.event-post-img{
-  max-height: 168px;
-  object-fit: cover;
-}
-.admin-feild-heading{
-  padding-top: 20px;
-  .admin-label{
-    font-size: 14px;
-    font-weight: 400;
-
-  }
-}
-.admins-image{
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-.add-admin-btn{
-  font-size: 12px;
-}
-.footer-modal-buttons{
-  font-size: 12px;
-}
-.about-us-image {
-  width: 120px;
-  height: 120px;
-  object-fit: cover;
-}
-
-.delete-image-icon{
-
-
-}
-.delete-image-bg{
-  width: 35px;
-  height: 35px;
-  background-color: #3b4499;
-  color: #fff;
-  position: absolute;
-  top: 0;
-  right: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 0 0 0px 29px;
-  padding-bottom: 7px;
-}
-.add-image-card{
-  border: 1px dotted $secondary;
-  background-color: #F4F4F4;
-  color: $secondary;
-}
-
-.event-image-wrapper{
-  border: 1px solid $secondary;
-  border-radius: 4px;
-
-  max-width: 450px;
-  .event-image{
-    max-height: 165px;
-    object-fit: cover;
-  }
-}
-.event-start-date{
-  background-image: url(/images/event.svg);
-  background-repeat: no-repeat;
-  object-fit: cover;
-  background-position: right;
-  background-size: auto;
-
-}
-.admin-feild-heading{
-  .radio input[type="radio"] + .radio-label:before{
-    margin-right: 5px;
-  }
-}
-.event-content-wrapper{
-  max-height: 450px;
-  overflow: auto;
-}
-.event-modal-footer{
-  position: absolute;
-  bottom:0;
-  right: 0;
-  left:0;
-  padding:10px 20px;
-  border-top: 1px solid $input-border-color;
-  background-color: $white;
-}
-.event-description{
-  min-height: 57px;
-}
-.community-activity-tabs{
-  border-bottom: $border-light;
-}
-.add-document-button{
-  font-size: 12px;
 }

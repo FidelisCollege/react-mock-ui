@@ -6,7 +6,10 @@ $dropdown-border-color: #ddd;
   border-radius: 4px !important;
   font-size: 14px;
   cursor: pointer;
-  max-height: 37px !important;
+  &:hover{
+    color: $white !important;
+    background-color: $primary;
+  }
   @media (max-width: 576px){
     background-color: $white;
     color: $primary;
@@ -16,9 +19,7 @@ $dropdown-border-color: #ddd;
 }
 
 .invite-mentor-btn{
-  line-height: 1.2;
-  background-color: $white;
-  padding: 8px 12px;
+
 }
 .mentor-card{
   //width:147px ;
@@ -35,9 +36,6 @@ $dropdown-border-color: #ddd;
     overflow: hidden;
     padding:10px;
     box-sizing: content-box;
-  }
-  .card-title{
-    max-width: 125px;
   }
 }
 .add-mentor{
@@ -236,10 +234,9 @@ $dropdown-border-color: #ddd;
     }
   }
   .search-input-group{
-    width: 329px;
-    max-width: 100%;
+    width: 50%;
     @media (max-width: 576px){
-      max-width: 100%;
+      width: 100%;
     }
   }
 }
@@ -251,11 +248,11 @@ $dropdown-border-color: #ddd;
 
 }
 .dashboard-tab-wrapper{
-
-  overflow-x: hidden !important; ;
-  //@media (max-width: 576px){
-  //  height: 500px;
-  //}*/
+  /*overflow-y: auto;
+  overflow-x: hidden ;
+  @media (max-width: 576px){
+    height: 500px;
+  }*/
 }
 .chat-wrapper{
   bottom:0;
@@ -263,30 +260,10 @@ $dropdown-border-color: #ddd;
   background-color: $primary;
   color: $white;
   display: flex;
-  .chat-wrapper-img{
-    width: 30px;
-    height: 30px;
-    margin-right: 16px;
-    border-radius: 4px;
-  }
   @media (max-width: 576px){
-    bottom:15px;
-    border-radius: 8px;
-    padding: 14px 12px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 1px 9px 0;
-    text-transform: capitalize;
+      background-color: transparent;
+      //bottom:40px;
 
-
-  }
-  .chat-wrapper-btn{
-    border-radius: 4px;
-    background-color: $white;
-    padding: 7px 14px;
-    font-size: 14px;
-    color: $primary;
   }
 }
 .badge-choose-function{
@@ -358,42 +335,4 @@ $dropdown-border-color: #ddd;
 }
 .save-search-button{
   min-width: 111px;
-}
-.dashboard-tab-header{
-    .tab-buttons{
-      &:hover{
-        color: $white !important;
-        background-color: $primary;
-      }
-    }
-}
-
-.card-row .card-col:nth-child(1){
-    padding-left:0;
-}
-.card-row .card-col:nth-child(3){
-  padding-right:0;
-}
-.recommend-card{
-  background-color: $info;
-  border-radius: 6px;
-  padding: 12px;
-  line-height: 1;
-}
-.recommend-btn{
-  border: 1px solid $white;
-  color: $white;
-  background-color: transparent;
-  &:hover{
-    background-color: $white;
-    color: $info;
-    border: 1px solid $white;
-
-  }
-}
-.recommend-btn-wrapper{
-  white-space: nowrap;
-}
-.search-input-group{
-  min-width: 275px;
 }

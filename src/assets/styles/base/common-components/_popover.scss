@@ -27,16 +27,9 @@
 .text-area{
     min-width: 14.0833rem;
     min-height: 13.0833rem;
-
+    border:none;
 }
 .popover-header{
     //background-color: $primary;
     //color: $white;
-}
-.text-area-icon{
-    border: 1px solid $input-border-color;
-    border-top: 0;
-    border-radius: 0 0 4px 4px;
-    padding: 5px;
-    margin-top: -6px;
 }

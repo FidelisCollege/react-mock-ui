@@ -17,7 +17,6 @@
 @import "components/student-list";
 @import "components/student-card";
 
-
 @import "components/progressbar-circular";
 @import "components/person";
 
@@ -30,7 +29,6 @@
 @import "components/modal/modal-recommend";
 
 @import "components/message";
-//@import "base/common-components/scrollbar";
 
 
 
@@ -50,16 +48,13 @@
 @import "page/onboarding";
 @import "page/mentor";
 @import "page/login";
-@import "page/purpose-widget";
-@import "page/app";
-@import "page/profile";
 
 // Student Profile Theme
 @import "theme/student-profile";
 
 
 //IE Bug Fix.
-//@import "ie-bug-fix";
+@import "ie-bug-fix";
 //scrollbar
 //@import "components/simplebar";
 
