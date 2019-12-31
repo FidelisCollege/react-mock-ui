@@ -1,0 +1,81 @@
+$gray-888: #888888;
+$switch-success-color: #669c3a;
+.gray-border-bottom{
+  border-bottom: 1px solid $dropdown-border-color;
+}
+.gray-888{
+  color: #888888;
+}
+.profile-section-wrapper{
+  @media (max-width: 575.98px) {
+    overflow-y: auto;
+  }
+}
+.profile-page-wrapper{
+
+}
+.profile-left-section{
+  max-width: 380px;
+  .person-img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+
+  }
+  .section-footer{
+    border-top: 1px solid $dropdown-border-color;
+    border-bottom: 1px solid $dropdown-border-color;
+    padding: 15px 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width:767px) {
+      padding-right: 0;
+      padding-left: 0;
+    }
+    label{
+      color: $gray-888;
+    }
+  }
+}
+.social-icon-bg{
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: $primary;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $white;
+}
+.introduction-content{
+  color: $gray-888;
+  font-size: 14px;
+  line-height: 1.7;
+}
+.right-section-card{
+  padding: 16px 16px;
+}
+.react-progressbar{
+  width:57px;
+  height: 57px;
+  border-radius: 50%;
+  background-color: #888888;
+
+}
+.switch-button{
+  .custom-control-input:checked ~ .custom-control-label::before{
+    color: $switch-success-color !important;
+    border-color: $switch-success-color !important;
+    background-color: $switch-success-color !important;
+  }
+}
+.individual-experience-card{
+   background-color: $body-bg;
+  border-radius: $border-radius;
+}
+.individual-card-heading{
+  color: $gray-eight;
+  font-size: 14px;
+  font-weight: 600;
+}
