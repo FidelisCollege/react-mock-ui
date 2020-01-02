@@ -11,7 +11,7 @@ const EducationCard = () => {
         <Card className="border-0 card-shadow right-section-card flex-row align-items-center mb-3">
             <div className="flex-grow-1">
                 <div className="d-flex justify-content-between flex-grow-1 pb-3">
-                    <p className="f-14 text-dark mb-0 ml-1 text-capitalize">Education</p>
+                    <p className="f-14 text-dark mb-0  text-capitalize">Education</p>
                     <SwitchButton/>
                 </div>
                 <a href="" className="text-primary f-13 text-capitalize d-flex align-items-baseline line-height-1">

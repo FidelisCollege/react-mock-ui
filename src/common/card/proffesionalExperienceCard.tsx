@@ -12,7 +12,7 @@ const ProfileExperienceCard = () => {
         <Card className="border-0 card-shadow right-section-card flex-row align-items-center  mb-3">
             <div className="flex-grow-1">
                 <div className="d-flex justify-content-between flex-grow-1 gray-border-bottom pb-3">
-                    <p className="f-14 text-dark mb-0 ml-1">Profile Completion</p>
+                    <p className="f-14 text-dark mb-0 ">Profile Completion</p>
                     <SwitchButton/>
                 </div>
                 <div>
