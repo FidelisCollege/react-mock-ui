@@ -2,6 +2,7 @@ import * as React from 'react';
 import {Card} from "reactstrap";
 import {IconAdd} from "../../common";
 import SwitchButton from "../forms/switchButtons";
+import IndividualExperienceCard from "./individual-experience-card";
 
 
 
@@ -15,17 +16,12 @@ const ProfileExperienceCard = () => {
                     <SwitchButton/>
                 </div>
                 <div>
-                    <div className="p-3 individual-experience-card my-3">
-                        <label className="individual-card-heading">Software Engineer II</label>
-                        <div className="gray-888 f-14">CISCO Limited</div>
-                        <div className="gray-888 f-14">June, 2018 - Present</div>
-                    </div>
-                    <div className="p-3 individual-experience-card my-3">
-                        <label className="individual-card-heading">Software Engineer II</label>
-                        <div className="gray-888 f-14">CISCO Limited</div>
-                        <div className="gray-888 f-14">June, 2018 - Present</div>
-                    </div>
-                    <a href="" className="text-primary f-13 text-capitalize"><IconAdd className="text-primary mb-1"/>add</a>
+                    <IndividualExperienceCard/>
+                    <IndividualExperienceCard/>
+
+                    <a href="" className="text-primary f-13 text-capitalize d-flex align-items-baseline line-height-1">
+                        <i className="icon-add text-primary font-weight-bold mr-1 add-doc"/>add
+                    </a>
                 </div>
             </div>
         </Card>

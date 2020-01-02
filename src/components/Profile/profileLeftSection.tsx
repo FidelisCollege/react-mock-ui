@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {Card} from "reactstrap";
+import {Card, Col, Row} from "reactstrap";
 import {IconEye, IconFacebook, IconInstagram, IconLinkdin, IconPublish, IconSettings, IconTwitter} from "../../common";
 
 
@@ -20,15 +20,15 @@ const ProfileLeftSection = () => {
                     <div className="section-footer">
                         <div className="d-flex align-items-center">
                             <IconPublish className="text-primary"/>
-                            <a className="ml-3 text-capitalize f-14 text-dark">publish</a>
+                            <a className="ml-2 text-capitalize f-14 text-dark">publish</a>
                         </div>
                         <div className="d-flex align-items-center mx-md-4">
                             <IconEye className="text-primary"/>
-                            <a className="ml-3 text-capitalize f-14 text-dark">view</a>
+                            <a className="ml-2 text-capitalize f-14 text-dark">view</a>
                         </div>
                         <div className="d-flex align-items-center">
                             <IconSettings className="text-primary"/>
-                            <a className="ml-3 text-capitalize f-14 text-dark">settings</a>
+                            <a className="ml-2 text-capitalize f-14 text-dark">settings</a>
                         </div>
                     </div>
                     <div className="section-footer flex-column px-0 f-14">
@@ -42,12 +42,18 @@ const ProfileLeftSection = () => {
                         </div>
                     </div>
                     <div className="section-footer px-0 flex-column">
-                        <div className="w-100">
-                            <a href="" className=" f-14 text-light mr-4">+1 234 567890(M)</a>
-                            <a href="" className=" f-14 text-light mr-4">+1 234 567890(L)</a>
-                            <a href="" className=" f-14 text-light">+1 234 567890(W)</a>
-                        </div>
-                        <div className="d-flex w-100 mt-4">
+                        <Row className="">
+                            <Col md="12" className="mb-2">
+                                <a href="" className=" f-14 text-light mr-4">+1 234 567890(L)</a>
+                            </Col>
+                            <Col md="12" className="mb-2">
+                                <a href="" className=" f-14 text-light mr-4">+1 234 567890(W)</a>
+                            </Col>
+                            <Col md="12" className="mb-2">
+                                <a href="" className=" f-14 text-light">+1 234 567890(M)</a>
+                            </Col>
+                        </Row>
+                        <div className="d-flex w-100 mt-3">
                             <div className="social-icon-bg mr-4">
                                 <IconFacebook/>
                             </div>

@@ -28,7 +28,9 @@ const MilitaryExperienceCard = () => {
                             standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
                             scrambled it to makea type specimen book.</p>
                     </div>
-                    <a href="" className="text-primary f-13 text-capitalize mt-2"><IconAdd className="text-primary mb-2"/>add</a>
+                    <a href="" className="text-primary f-13 text-capitalize d-flex align-items-baseline line-height-1">
+                        <i className="icon-add text-primary font-weight-bold mr-1 add-doc"/>add
+                    </a>
                 </div>
             </div>
         </Card>
