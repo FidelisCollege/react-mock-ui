@@ -1,0 +1,88 @@
+//Scroll and Overflow...
+.overflow-hidden{
+    overflow: hidden;
+}
+.overflow-scroll {
+    @include scroll-y();
+}
+.overflow-scroll-x {
+    @include scroll-x();
+}
+
+//.scroll-container{         //Scroll Bug Fix class for FF and IE10, IE11
+//    @extend %scroll-container;
+//}
+
+
+//Scroll Utility
+.overflow-parent-wrapper{
+    position: absolute;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    .overflow-content-wrapper{
+        display: flex;
+        flex: 1;
+        min-height: 0;
+        .overflow-container {
+            flex: 1;
+            overflow: auto;
+        }
+    }
+
+}
+
+
+
+//Link...
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.link {
+    @extend .cursor-pointer;
+}
+
+.underline {
+    @extend .cursor-pointer;
+    text-decoration: underline;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+//Center...
+.absolute-center {
+    @include absolute-center();
+}
+
+//Font...
+
+$font-size-list: 10, 12, 13, 14, 15, 16, 18,20, 22, 24, 26, 28, 30, 32, 34, 36, 42, 50, 55; //Generate font class (.f-*) cycles through font-size-list
+
+@each $font-size in $font-size-list {
+    .f-#{$font-size} {
+        font-size: ($font-size/16)*1rem; //Convert PX into rem...
+        //font-size: rem($font-size*1px);
+    }
+}
+
+//width...
+$custom-width-fixed: 30, 35;
+@each $width in $custom-width-fixed {
+    .w-#{$width} {
+        width: ($width/16)*1rem; //Convert PX into rem...
+        //font-size: rem($font-size*1px);
+    }
+}
+
+//No data...
+.no-data{
+    min-height: rem(10px);
+}
+
+

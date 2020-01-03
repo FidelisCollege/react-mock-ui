@@ -1,0 +1,17 @@
+$carousel-indicator-radius :  50%;
+
+.carousel-inner {
+    width: auto;
+}
+
+.carousel-item{
+    @include media-breakpoint-between(sm, xl){
+        display: block;
+    }
+}
+.carousel-indicators{
+    li{
+        @include border-radius($carousel-indicator-radius);
+    }
+}
+

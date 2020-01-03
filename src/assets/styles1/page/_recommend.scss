@@ -1,0 +1,33 @@
+$recommend-list-font-size : .875rem;
+$recommend-list-line-height : 1.3;
+
+.recommend-msg, .recommend-tag, .recommended-label{
+    font-size: $recommend-list-font-size;
+    line-height: $recommend-list-line-height;
+    font-weight: $font-weight-light;
+}
+
+.recommend-msg{
+    font-weight: $font-weight-base;
+}
+
+.recommend-title{
+    color: $gray-eight;
+    margin-bottom: 0.35rem;
+}
+
+.recommend-tag{
+    color: $secondary;
+    & + .recommend-tag{
+        &::before{
+            content:'/';
+            margin-left:.25rem;
+            margin-right:.25rem;
+        }
+    }
+
+}
+
+.list-border{
+    border-bottom: 1px solid $input-border-color;
+}

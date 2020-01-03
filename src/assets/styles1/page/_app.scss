@@ -1,0 +1,59 @@
+$light-pruple: #eff2ff;
+$collapse-bg: #f9f9f9;
+
+.main-wrapper{
+  padding: 15px 57px;
+}
+.main-inner-wrapper{
+  border-radius: $border-radius;
+  background-color: $white;
+  box-shadow: $box-shadow;
+  padding: 15px;
+}
+.main-left-wrapper{
+  max-width: 313px;
+  border: $border-light;
+  border-radius: $border-radius;
+  overflow: auto;
+}
+.left-wrapper-header{
+  background-color: $light-pruple;
+  border-bottom: 1px solid #d2d6ff;
+  padding:20px;
+}
+.about-app-content{
+  color: $gray-nine;
+
+}
+.app-content-wrapper{
+  padding: 25px 0;
+}
+.set-date-input{
+  max-width: 111px;
+}
+.about-author-content{
+  line-height: 1.8;
+  color: $gray-nine;
+}
+.app-collapse{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid $input-border-color;
+  border-radius: $border-radius;
+  padding: 15px;
+  background-color: $collapse-bg;
+  font-size: 14px;
+  color:$dark;
+
+}
+.app-collapse-content{
+  .li{
+    width:8px;
+    height: 8px;
+    border-radius: 50%;
+  }
+}
+.app-collapse-card{
+
+}
