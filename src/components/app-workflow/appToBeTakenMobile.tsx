@@ -1,9 +1,9 @@
 import * as React from 'react';
 
-const AppLeftNav = () => {
+const MobileAppLeftNav = () => {
     return (
-        <div className="main-left-wrapper flex-grow-1 d-none d-md-block d-lg-block">
-            <div className="left-wrapper-header">
+        <div className="main-left-wrapper flex-grow-1">
+            <div className="left-wrapper-header d-none d-md-block">
                 <h4 className="mb-1 f-16 text-dark">App to be taken</h4>
                 <p className="m-0 f-13 text-light">David Simmons, San Jose State University</p>
             </div>
@@ -15,7 +15,7 @@ const AppLeftNav = () => {
                         <span><a href="" className="text-capitalize text-primary">show more</a></span>
                     </p>
                     <a className="#">
-                       <h4 className="f-16 text-dark">$ 20.00</h4>
+                        <h4 className="f-16 text-dark">$ 20.00</h4>
                     </a>
                     <button type="button" className=" btn btn-primary text-capitalize py-2">add to learning path </button>
                     <div className="d-flex text-light f-14 text-capitalize py-4 border-bottom">
@@ -59,4 +59,4 @@ const AppLeftNav = () => {
     );
 }
 
-export default  AppLeftNav;
+export default  MobileAppLeftNav;

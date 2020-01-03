@@ -3,6 +3,9 @@ $collapse-bg: #f9f9f9;
 
 .main-wrapper{
   padding: 15px 57px;
+  @media (max-width: 576px) {
+    padding:15px;
+  }
 }
 .main-inner-wrapper{
   border-radius: $border-radius;
@@ -10,11 +13,14 @@ $collapse-bg: #f9f9f9;
   box-shadow: $box-shadow;
   padding: 15px;
 }
-.main-left-wrapper{
-  max-width: 313px;
+.main-left-wrapper {
+  max-width: 315px;
   border: $border-light;
   border-radius: $border-radius;
   overflow: auto;
+  @media (max-width: 576px) {
+    max-width: 100%;
+  }
 }
 .left-wrapper-header{
   background-color: $light-pruple;
@@ -56,4 +62,13 @@ $collapse-bg: #f9f9f9;
 }
 .app-collapse-card{
 
+}
+.main-right-wrapper{
+  .nav-item{
+    white-space: nowrap;
+  }
+  .tab-buttons{
+    border: 0;
+
+  }
 }
