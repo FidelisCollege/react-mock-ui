@@ -7,12 +7,12 @@ $switch-success-color: #669c3a;
   color: #888888;
 }
 .profile-section-wrapper{
+
+}
+.profile-page-wrapper{
   @media (max-width: 575.98px) {
     overflow-y: auto;
   }
-}
-.profile-page-wrapper{
-
 }
 .profile-left-section{
   max-width: 380px;
@@ -83,4 +83,28 @@ $switch-success-color: #669c3a;
   font-size: 9px;
   font-weight: bold;
 
+}
+.new-experience-modal{
+    max-width: 479px;
+  .modal-header{
+    font-size: 18px;
+    color: $black;
+  }
+  .modal-content{
+    padding:0 15px;
+  }
+  .event-description{
+    height: 127px;
+    max-height: 127px;
+    overflow: auto;
+  }
+  .modal-body{
+    overflow-x: hidden !important;
+  }
+}
+.list-type-items{
+  height: 10px;
+  width:10px;
+  border-radius: 50%;
+  background-color: $primary;
 }

@@ -3,6 +3,7 @@ import {Card} from "reactstrap";
 import {IconAdd} from "../../common";
 import SwitchButton from "../forms/switchButtons";
 import IndividualExperienceCard from "./individual-experience-card";
+import AddNewExperienceModal from "../modal/addNewExperienceModal";
 
 
 
@@ -18,10 +19,7 @@ const ProfileExperienceCard = () => {
                 <div>
                     <IndividualExperienceCard/>
                     <IndividualExperienceCard/>
-
-                    <a href="" className="text-primary f-13 text-capitalize d-flex align-items-baseline line-height-1">
-                        <i className="icon-add text-primary font-weight-bold mr-1 add-doc"/>add
-                    </a>
+                    <AddNewExperienceModal/>
                 </div>
             </div>
         </Card>

@@ -11,9 +11,6 @@ const MentorResourceCard = () => {
             <div className="card pb-0 text-capitalize bg-transparent border-0">
 
                 <div className="card-body d-flex ">
-                    <div>
-                        <img className="cursor-pointer mr-3" src="images/media-img.png" alt=""/>
-                    </div>
                     <div className=' text-truncate'>
                         <h6 className="mb-0 person-message">
                             <a href="#" className="f-14 text-dark font-weight-bold text-capitalize">Modern Catholic Social Documents and Political Economy</a>
