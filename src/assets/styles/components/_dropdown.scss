@@ -195,3 +195,17 @@ $dropdown-menu-container-height: 21.875rem !default;
 .dropdown-menu{
     @include box-shadow(0 0 .625rem 0 rgba(153,153,153, .35));
 }
+
+@media (max-width: 1024px) {
+
+}
+.dropdown-item{
+    &:hover{
+        background-color: $primary;
+        color: $white;
+    }
+    &:active{
+        background-color: $primary;
+        color: $white;
+    }
+}

@@ -18,7 +18,7 @@ const AddNewExperienceModal = (props) => {
                 <i className="icon-add text-primary font-weight-bold mr-1 add-doc"/>add
             </button>
 
-            <Modal isOpen={modal} toggle={toggle} className="new-experience-modal">
+            <Modal isOpen={modal} toggle={toggle} className="Profile-modals">
                 <ModalHeader toggle={toggle}>Add Experience</ModalHeader>
                 <ModalBody className="overflow-auto px-0">
                     <div className="pt-0 admin-feild-heading mb-4">
@@ -58,8 +58,6 @@ const AddNewExperienceModal = (props) => {
                             </div>
                         </div>
                     </div>
-
-
                     <div className="pt-0 admin-feild-heading mb-4">
                         <h5 className=" admin-label text-capitalize text-dark">function</h5>
                         <input className="form-control" type="text" placeholder="Geographical information systems manager"/>

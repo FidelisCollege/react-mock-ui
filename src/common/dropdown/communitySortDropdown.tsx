@@ -6,8 +6,8 @@ const CommunitySortDropdown = (props) => {
 
         <div className="input-group sort-select">
             <select className="custom-select py-2" id="inputGroupSelect04">
-                <option className="text-capitalize">community size</option>
-                <option value="1">One</option>
+                <option className="text-capitalize select-options">community size</option>
+                <option value="1" className="select-options">One</option>
             </select>
         </div>
 

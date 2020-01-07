@@ -1,6 +1,8 @@
 import * as React from 'react';
 import {Card, Col, Row} from "reactstrap";
 import {IconEye, IconFacebook, IconInstagram, IconLinkdin, IconPublish, IconSettings, IconTwitter} from "../../common";
+import ProfilePublishModal from "../../common/modal/profilePublishModal";
+import SocialIconWrapper from "./socialIconsWrapper";
 
 
 
@@ -18,10 +20,7 @@ const ProfileLeftSection = () => {
                         </div>
                     </div>
                     <div className="section-footer">
-                        <div className="d-flex align-items-center">
-                            <IconPublish className="text-primary"/>
-                            <a className="ml-2 text-capitalize f-14 text-dark">publish</a>
-                        </div>
+                        <ProfilePublishModal/>
                         <div className="d-flex align-items-center mx-md-4">
                             <IconEye className="text-primary"/>
                             <a className="ml-2 text-capitalize f-14 text-dark">view</a>
@@ -53,20 +52,7 @@ const ProfileLeftSection = () => {
                                 <a href="" className=" f-14 text-light">+1 234 567890(M)</a>
                             </Col>
                         </Row>
-                        <div className="d-flex w-100 mt-3">
-                            <div className="social-icon-bg mr-4">
-                                <IconFacebook/>
-                            </div>
-                            <div className="social-icon-bg mr-4">
-                                <IconLinkdin/>
-                            </div>
-                            <div className="social-icon-bg mr-4">
-                                <IconTwitter/>
-                            </div>
-                            <div className="social-icon-bg mr-4">
-                                <IconInstagram/>
-                            </div>
-                        </div>
+                        <SocialIconWrapper/>
                     </div>
                     <div className="py-4">
                         <h4 className="text-dark f-14">Introduction</h4>
