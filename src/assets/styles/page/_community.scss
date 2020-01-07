@@ -67,7 +67,7 @@ $sort-button-bg: #ececfb;
 
 .profile-banner-wrapper{
   min-height: 101px;
-  background-image: url("images/profile-background.png");
+  background-image: url("#{$bg-img-base-path}/profile-background.png");
   background-repeat: no-repeat;
   background-size: cover;
   object-fit: cover;
@@ -215,7 +215,7 @@ $sort-button-bg: #ececfb;
     }
 }
 .card-background{
-  background-image: url("images/cardBg.png");
+  background-image: url("#{$bg-img-base-path}/cardBg.png");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 10px;

@@ -2,8 +2,8 @@ import * as React from 'react';
 import { connect } from 'react-redux';
 
 // import '../../assets/styles/site.scss';
-import '../../assets/styles/student/student.scss';
-// import '../../assets/styles/coach/coach.scss';
+// import '../../assets/styles/student/student.scss';
+import '../../assets/styles/coach/coach.scss';
 import Routes from '../routes/components/Routes';
 import { StateInterface, ApiCallInterface } from '../../store';
 import { getUserAction } from './actions/getUserAction';

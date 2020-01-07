@@ -18,20 +18,20 @@ const AboutCommuinityDetails = () => {
                     make a type specimen book.
                 </p>
                 <div className="d-flex justify-content-md-between align-items-center flex-wrap">
-                    <div className="mb-2 position-relative"  >
+                    <div className="mb-2 position-relative mr-2"  >
                         <img className="cursor-pointer about-us-image img-fluid" src="images/media-img.png" alt=""/>
                         <a href="" className="delete-image-bg">
                             <IconTrash className="position-absolute delete-image-icon text-white"/>
                         </a>
                     </div>
-                    <div className="mb-2 position-relative"  >
+                    <div className="mb-2 position-relative mr-2">
                         <img className="cursor-pointer about-us-image img-fluid" src="images/media-img.png" alt=""/>
                         <a href="" className="delete-image-bg">
                             <IconTrash className="position-absolute delete-image-icon text-white"/>
                         </a>
                     </div>
-                    <div className="mb-2 position-relative"  >
-                        <img className="cursor-pointer about-us-image img-fluid" src="images/media-img.png" alt=""/>
+                    <div className="mb-2 position-relative mr-2">
+                        <img className="cursor-pointer about-us-image img-fluid " src="images/media-img.png" alt=""/>
                         <a href="" className="delete-image-bg">
                             <IconTrash className="position-absolute delete-image-icon text-white"/>
                         </a>

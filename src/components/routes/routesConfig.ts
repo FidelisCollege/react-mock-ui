@@ -16,6 +16,7 @@ import PurposeWidget from "../student/porposeWidget";
 import StudentLandingContainer from '../studentLandingPage/containers/studentLandingContainer';
 import EditPurposeWidget from "../student/editPurposeFlow";
 import AppWorkFlow from "../app-workflow/appWorkFlow";
+import ProfilePage from "../Profile/profilePage";
 
 export enum RouteUrls {
     MENTOR = '/mentor',
@@ -32,7 +33,8 @@ export enum RouteUrls {
     MENTOR_DETAILS = '/mentor-detail',
     PURPOSE_WIDGET = '/purpose-widget',
     EDIT_PURPOSE_WIDGET = '/EditPurposeWidget',
-    APP_WORKFLOW ='/appWorkflow'
+    APP_WORKFLOW ='/appWorkflow',
+    PROFILE_PAGE ='/profilePage'
 }
 
 export const routes: RouteConfigInterface[] = [
@@ -119,6 +121,11 @@ export const routes: RouteConfigInterface[] = [
     {
         path: RouteUrls.APP_WORKFLOW,
         component: AppWorkFlow,
+        childRoutes: []
+    },
+    {
+        path: RouteUrls.PROFILE_PAGE,
+        component: ProfilePage,
         childRoutes: []
     },
 ];

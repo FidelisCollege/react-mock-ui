@@ -8,7 +8,7 @@ import PostDropdown from "../../common/dropdown/postDropdown";
 const UploadedDocumentComponent = () => {
     return (
         <>
-            <Row className="pt-3 flex-nowrap m-0">
+            <Row className="pt-3 flex-nowrap m-0 no-gutters ">
                 <Col md="10" xs="10">
                    <h5 className="mb-0">filename</h5>
                 </Col>
@@ -21,23 +21,23 @@ const UploadedDocumentComponent = () => {
 
             </Row>
             <div className="uploaded-document-wrapper">
-                <Row className=" flex-nowrap border-bottom py-3 text-secondary m-0 uploaded-document-row">
+                <Row className=" flex-nowrap border-bottom py-3 text-secondary m-0 uploaded-document-row  f-14 no-gutters">
                     <Col md="10" xs="10" className="uploaded-document-col">
                         <p className="mb-0 f-14 text-truncate">Averylongfilenamethatiscraxy.pdf</p>
                     </Col>
                     <Col md="10" xs="10" className="uploaded-document-col">
-                        <p className="mb-0 d-flex">5/12/2019, <span>10:00AM</span></p>
+                        <p className="mb-0 d-flex  f-14">5/12/2019, <span>10:00AM</span></p>
                     </Col>
-                    <Col md="4">
+                    <Col md="4" className="d-flex align-items-center">
                        <PostDropdown/>
                     </Col>
                 </Row>
-                <Row className="flex-nowrap border-bottom py-3 text-secondary m-0">
+                <Row className="flex-nowrap border-bottom py-3 text-secondary m-0  f-14 no-gutters">
                     <Col md="10" xs="10" className="">
                         <p className="mb-0 f-14 text-truncate">Averylongfilenamethatiscraxy.pdf</p>
                     </Col>
                     <Col md="10" xs="10">
-                        <p className="mb-0 d-flex">5/12/2019, <span>10:00AM</span></p>
+                        <p className="mb-0 d-flex  f-14">5/12/2019, <span>10:00AM</span></p>
                     </Col>
                     <Col md="4" xs="4">
                         <PostDropdown/>
