@@ -338,18 +338,18 @@ $dropdown-item-color: #222;
 //
 // Dropdown menu container and contents.
 
-$dropdown-min-width:                rem(208px);
+//$dropdown-min-width:                rem(208px);
 $dropdown-padding-y:                rem(1px);
 $dropdown-spacer:                   rem(4px);
 $dropdown-bg:                       $white !default;
-$dropdown-border-color:             #8498fa !default;
+$dropdown-border-color:             $white!default;
 $dropdown-border-radius:            0;
 $dropdown-border-width:             $border-width !default;
 $dropdown-divider-bg:               #f3f3f3;
 $dropdown-box-shadow:               0 0 .625rem rgba(153,153,153, .35) !default;
 $dropdown-link-color:               $dropdown-item-color;
-$dropdown-link-hover-color:         $primary;
-$dropdown-link-hover-bg:            $white;
+$dropdown-link-hover-color:         $white;
+$dropdown-link-hover-bg:            $primary;
 
 $dropdown-link-active-color:        $primary;
 $dropdown-link-active-bg:           $white;

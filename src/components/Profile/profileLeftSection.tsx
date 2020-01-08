@@ -3,6 +3,8 @@ import {Card, Col, Row} from "reactstrap";
 import {IconEye, IconFacebook, IconInstagram, IconLinkdin, IconPublish, IconSettings, IconTwitter} from "../../common";
 import ProfilePublishModal from "../../common/modal/profilePublishModal";
 import SocialIconWrapper from "./socialIconsWrapper";
+import CommunitiesCard from "../../common/card/communitiesCard";
+import SwitchButton from "../../common/forms/switchButtons";
 
 
 
@@ -54,14 +56,25 @@ const ProfileLeftSection = () => {
                         </Row>
                         <SocialIconWrapper/>
                     </div>
-                    <div className="py-4">
-                        <h4 className="text-dark f-14">Introduction</h4>
+                    <div className=" section-footer flex-column px-0">
+                        <h4 className="text-dark f-14 align-self-start">Introduction</h4>
                         <p className="introduction-content">You think water moves fast? You should see ice. It moves like it has a mind.
                             Like it knows it killed the world once andgot a taste for murder. After the avalanche,
                             it took us aweek to climb out. Now, I don’t know exactly when we turned on each other,
                             but I know that seven of us survived the slide… and only five made it out. Now we took an oath,
                             that I’m breaking now. We said we’d say it was the snow
                             that killed the other two, but it wasn’t. Nature is lethal but it doesn’t hold a candle to man.</p>
+                    </div>
+                    <div className="section-footer  f-14">
+                        <div className="flex-grow-1">
+                            <div className="d-flex justify-content-between flex-grow-1  pb-3">
+                                <p className="f-14 text-dark mb-0  text-capitalize">Communities</p>
+                                <SwitchButton/>
+                            </div>
+                            <a href="" className="text-primary f-13 text-capitalize d-flex align-items-baseline line-height-1">
+                                <i className="icon-add text-primary font-weight-bold mr-1 add-doc"/>add
+                            </a>
+                        </div>
                     </div>
                 </div>
             </Card>

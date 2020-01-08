@@ -4,6 +4,7 @@ import classnames from 'classnames';
 import {useState} from "react";
 import PostEventsTabContent from "./postEventTabContent";
 
+
 const PostEventTabComponent = (props) => {
     const [activeTab, setActiveTab] = useState('1');
 
@@ -44,7 +45,7 @@ const PostEventTabComponent = (props) => {
             </Nav>
             <TabContent activeTab={activeTab}>
                 <TabPane tabId="1">
-                    abs
+                    sd
                 </TabPane>
                 <TabPane tabId="2">
                     abc

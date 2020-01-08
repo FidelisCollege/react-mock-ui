@@ -15,7 +15,12 @@ const ProfileCompletionCard = () => {
                     <p className="f-14 text-dark mb-0 ml-1">Profile Completion</p>
                     <a className="f-13 text-capitalize"><i className="icon-add text-primary font-weight-bold mr-1 add-doc"/>add experience</a><span className="f-13 text-secondary"> to reach 85%</span>
                 </div>
-                <ReArrangeSectionModal/>
+                <div className="d-flex align-items-center">
+                    <div>
+                        <button className="btn btn-primary text-capitalize f-14 mr-2">add</button>
+                    </div>
+                    <ReArrangeSectionModal/>
+                </div>
             </div>
 
         </Card>
