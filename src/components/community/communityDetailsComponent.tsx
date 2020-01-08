@@ -82,7 +82,7 @@ const CommunityDetailsComponent = (props) => {
             </div>
 
             <div className="d-md-none d-lg-flex  d-none ">
-                <Nav className="d-none d-lg-flex flex-column align-content-start align-items-start p-2 card-shadow bg-white">
+                <Nav className="d-none d-lg-flex flex-column align-content-start align-items-start p-2 card-shadow bg-white overflow-auto flex-nowrap">
                     <NavItem className="mb-2 nav-items">
                         <NavLink
                             className={"tab-buttons text-capitalize text-dark f-14" + (activeTab === 'activities' ? ' active ' : '')}
