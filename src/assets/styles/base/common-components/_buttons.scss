@@ -73,7 +73,11 @@ button.close{
     box-shadow: none;
 }
 
-
+.btn-outline-secondary{
+    &:hover{
+        color: $white !important;
+    }
+}
 
 
 

@@ -43,17 +43,17 @@ const ProfileInformationModalCard = () => {
 
                     </Row>
                 </div>
-                <div className="p-4 gray-border-bottom">
+                <div className="p-md-4 px-0 py-4 gray-border-bottom f-14">
                     <Row className="no-gutters">
-                        <Col md="3"><label className="text-secondary f-14 text-capitalize">Primary</label></Col>
-                        <Col md="11"><a href="" className="text-light">natalie.anderson@fidelis-inc.com</a></Col>
-                        <Col md="5"> <a href="" className=" f-14 text-light">+1 234 567890(L)</a></Col>
-                        <Col md="5"> <a href="" className=" f-14 text-light">+1 234 567890(L)</a></Col>
+                        <Col md="3" xs="4"><label className="text-secondary f-14 text-capitalize">Primary</label></Col>
+                        <Col md="11" xs="20"><a href="" className="text-light  ml-2">natalie.anderson@fidelis-inc.com</a></Col>
+                        <Col md="5" xs="10"> <a href="" className=" f-14 text-light">+1 234 567890(L)</a></Col>
+                        <Col md="5" xs="10"> <a href="" className=" f-14 text-light">+1 234 567890(L)</a></Col>
                     </Row>
-                    <Row className="no-gutters">
-                        <Col md="3"><label className="text-secondary f-14 text-capitalize">secondary</label></Col>
-                        <Col md="11"><a href="" className="text-light">natalie.anderson@fidelis-inc.com</a></Col>
-                        <Col md="5"> <a href="" className=" f-14 text-light">+1 234 567890(L)</a></Col>
+                    <Row className="no-gutters mt-2 mt-md-0">
+                        <Col md="3" xs="4"><label className="text-secondary f-14 text-capitalize">secondary</label></Col>
+                        <Col md="11" xs="20"><a href="" className="text-light  ml-4">natalie.anderson@fidelis-inc.com</a></Col>
+                        <Col md="5" xs="12"> <a href="" className=" f-14 text-light">+1 234 567890(L)</a></Col>
                     </Row>
                 </div>
                 <div className="py-4 gray-border-bottom">

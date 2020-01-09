@@ -17,7 +17,7 @@ const ProfileCompletionCard = () => {
                 </div>
                 <div className="d-flex align-items-center">
                     <div>
-                        <button className="btn btn-primary text-capitalize f-14 mr-2">add</button>
+                        <button className="btn btn-outline-secondary text-capitalize f-14 mr-2">add</button>
                     </div>
                     <ReArrangeSectionModal/>
                 </div>
