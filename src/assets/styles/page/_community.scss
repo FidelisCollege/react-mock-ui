@@ -367,3 +367,10 @@ $border-light: 1px solid $input-border-color;
 .add-document-button{
   font-size: 12px;
 }
+.line-clamp{
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  max-width: 300px;
+}

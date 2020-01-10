@@ -15,7 +15,8 @@ const ResourceAppCard = () => {
                     <h6 className="mb-0 person-message">
                         <a href="#" className="f-14 text-dark font-weight-bold text-capitalize">App name 1</a>
                     </h6>
-                    <p className="f-12 text-secondary mb-0">App description can come in this line</p>
+                    <p className="f-12 text-secondary mb-0 line-clamp">App description can come in this line App description can come in this line App description can come in this line App description
+                        can come in this line App description can come in this line App description can come in this line App description can come in this line</p>
                 </div>
                 <div className="">
                     <a href="#">

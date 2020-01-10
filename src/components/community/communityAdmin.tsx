@@ -58,11 +58,11 @@ const CommunityAdminTab = () => {
                 <Col md="12" className="admin-feild-heading">
                     <h5 className="admin-label">Enable partnership</h5>
                     <Row className="no-gutters">
-                        <Col md="6" className="radio m-0">
+                        <Col md="10" className="radio m-0">
                             <input id="radio-1" name="radio" type="radio" checked={checked} className="mr-2"/>
                             <label className="radio-label d-flex align-items-end text-capitalize" htmlFor="radio-1 ">yes</label>
                         </Col>
-                        <Col md="6" className="radio m-0">
+                        <Col md="10" className="radio m-0">
                             <input id="radio-1" name="radio" type="radio" checked={checked} className="mr-2"/>
                             <label className="radio-label d-flex align-items-end text-capitalize" htmlFor="radio-1">no</label>
                         </Col>

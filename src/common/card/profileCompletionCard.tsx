@@ -2,6 +2,8 @@ import * as React from 'react';
 import {Card} from "reactstrap";
 import {IconAdd} from "../../common";
 import ReArrangeSectionModal from "../modal/reArrangeModal";
+import AddNewExperienceModal from "../modal/addNewExperienceModal";
+import AddExperienceModal from "../modal/addExperienceModal";
 
 
 
@@ -17,7 +19,7 @@ const ProfileCompletionCard = () => {
                 </div>
                 <div className="d-flex align-items-center">
                     <div>
-                        <button className="btn btn-outline-secondary text-capitalize f-14 mr-2">add</button>
+                        <AddExperienceModal/>
                     </div>
                     <ReArrangeSectionModal/>
                 </div>

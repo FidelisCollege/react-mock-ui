@@ -27,8 +27,8 @@ const ProfileRightSection = () => {
                 <TextScoresCard/>
                 <KnowledgeSkillsCard/>
                 <AwardsCard/>
-                <InterestCard/>
-                <CommunitiesCard/>
+                {/*<InterestCard/>*/}
+                {/*<CommunitiesCard/>*/}
             </div>
         </div>
     );

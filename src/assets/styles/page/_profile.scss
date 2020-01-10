@@ -53,6 +53,10 @@ $switch-success-color: #669c3a;
   color: $gray-888;
   font-size: 14px;
   line-height: 1.7;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .right-section-card{
   padding: 16px 16px;
@@ -230,5 +234,17 @@ $switch-success-color: #669c3a;
     top: 0;
   }
 
+}
+.modal-row {
+  .modal-column{
+    padding: 15px;
+    cursor: pointer;
+    margin-top: -1px;
+    margin-left: -1px;
+    text-align: center;
+    font-size: 16px;
+    color: #999;
+    border: 1px solid #eee;
+  }
 }
 

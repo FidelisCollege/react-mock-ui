@@ -13,7 +13,7 @@ const ProfileLeftSection = () => {
     return (
         <div className="flex-grow-1 profile-left-section d-flex">
             <Card className="border-0 flex-grow-1 card-shadow px-3 overflow-auto">
-                <div>
+
                     <div className="d-flex py-4 align-items-center flex-column flex-md-row text-center text-md-left">
                         <img className="mr-2 person-img" src="https://d14yfdwx2sby9t.cloudfront.net/upload/image/user/8bd714d1-3bc0-4723-8e1e-f5d7d860a3aa.jpg" alt=""/>
                         <div className="person-info text-capitalize">
@@ -25,11 +25,11 @@ const ProfileLeftSection = () => {
                         <ProfilePublishModal/>
                         <div className="d-flex align-items-center mx-md-4">
                             <IconEye className="text-primary"/>
-                            <a className="ml-2 text-capitalize f-14 text-dark">view</a>
+                            <a className="ml-2 text-capitalize f-14 text-dark">preview</a>
                         </div>
                         <div className="d-flex align-items-center">
                             <IconSettings className="text-primary"/>
-                            <a className="ml-2 text-capitalize f-14 text-dark">settings</a>
+                            <a className="ml-2 text-capitalize f-14 text-dark">edit</a>
                         </div>
                     </div>
                     <div className="section-footer flex-column px-0 f-14">
@@ -65,17 +65,24 @@ const ProfileLeftSection = () => {
                             that I’m breaking now. We said we’d say it was the snow
                             that killed the other two, but it wasn’t. Nature is lethal but it doesn’t hold a candle to man.</p>
                     </div>
-                    <div className="section-footer  f-14">
+                    <div className="section-footer  f-14 px-0">
                         <div className="flex-grow-1">
-                            <div className="d-flex justify-content-between flex-grow-1  pb-3">
+                            <div className="d-flex justify-content-between flex-grow-1">
                                 <p className="f-14 text-dark mb-0  text-capitalize">Communities</p>
                                 <SwitchButton/>
                             </div>
-                            <a href="" className="text-primary f-13 text-capitalize d-flex align-items-baseline line-height-1">
-                                <i className="icon-add text-primary font-weight-bold mr-1 add-doc"/>add
-                            </a>
+
                         </div>
                     </div>
+                    <div className="section-footer  f-14 px-0">
+                        <div className="flex-grow-1">
+                            <div className="d-flex justify-content-between flex-grow-1">
+                                <p className="f-14 text-dark mb-0  text-capitalize">interest</p>
+                                <SwitchButton/>
+                            </div>
+
+                        </div>
+
                 </div>
             </Card>
         </div>
