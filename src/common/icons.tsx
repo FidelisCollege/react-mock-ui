@@ -415,7 +415,7 @@ export const IconInstagram = (props) => (
 export const IconSkills = (props) => (
 	<svg viewBox="0 0 489.183 489.183" {...props}
 		 className={props.className ? `icons ${props.className}` : 'icons'}
-		 width={18} height={}
+		 width={18} height={18}
 		 fill={props.fill ? `${props.fill}` : `currentColor`}
 		 onClick={props.doOnClick}
 	>
@@ -426,7 +426,7 @@ export const IconSkills = (props) => (
 export const IconDegree = (props) => (
 	<svg viewBox="0 0 512 512" {...props}
 		 className={props.className ? `icons ${props.className}` : 'icons'}
-		 width={18} height={}
+		 width={18} height={18}
 		 fill={props.fill ? `${props.fill}` : `currentColor`}
 		 onClick={props.doOnClick}
 	>
@@ -437,7 +437,7 @@ export const IconDegree = (props) => (
 export const IconAward = (props) => (
 	<svg viewBox="0 0 511.999 511.999" {...props}
 		 className={props.className ? `icons ${props.className}` : 'icons'}
-		 width={18} height={}
+		 width={18} height={18}
 		 fill={props.fill ? `${props.fill}` : `currentColor`}
 		 onClick={props.doOnClick}
 	>
@@ -448,7 +448,7 @@ export const IconAward = (props) => (
 export const IconOrganization = (props) => (
 	<svg viewBox="0 0 96 96" {...props}
 		 className={props.className ? `icons ${props.className}` : 'icons'}
-		 width={18} height={}
+		 width={18} height={18}
 		 fill={props.fill ? `${props.fill}` : `currentColor`}
 		 onClick={props.doOnClick}
 	>
@@ -462,7 +462,7 @@ export const IconOrganization = (props) => (
 export const IconScore = (props) => (
 	<svg viewBox="0 0 512 512" {...props}
 		 className={props.className ? `icons ${props.className}` : 'icons'}
-		 width={18} height={}
+		 width={18} height={18}
 		 fill={props.fill ? `${props.fill}` : `currentColor`}
 		 onClick={props.doOnClick}
 	>
@@ -473,7 +473,7 @@ export const IconScore = (props) => (
 export const IconMilitaryExperience = (props) => (
 	<svg viewBox="0 0 297.334 297.334" {...props}
 		 className={props.className ? `icons ${props.className}` : 'icons'}
-		 width={18} height={}
+		 width={18} height={18}
 		 fill={props.fill ? `${props.fill}` : `currentColor`}
 		 onClick={props.doOnClick}
 	>
@@ -485,7 +485,7 @@ export const IconMilitaryExperience = (props) => (
 export const IconProfessionalExperience = (props) => (
 	<svg viewBox="0 0 512 512" {...props}
 		 className={props.className ? `icons ${props.className}` : 'icons'}
-		 width={18} height={}
+		 width={18} height={18}
 		 fill={props.fill ? `${props.fill}` : `currentColor`}
 		 onClick={props.doOnClick}
 	>
@@ -497,7 +497,7 @@ export const IconProfessionalExperience = (props) => (
 export const IconEducationExperience = (props) => (
 	<svg viewBox="0 0 512 512" {...props}
 		 className={props.className ? `icons ${props.className}` : 'icons'}
-		 width={18} height={}
+		 width={18} height={18}
 		 fill={props.fill ? `${props.fill}` : `currentColor`}
 		 onClick={props.doOnClick}
 	>

@@ -17,7 +17,7 @@ const AboutCommuinityDetails = () => {
                     1500s, when an unknown printer took a galley of type and scrambled it to
                     make a type specimen book.
                 </p>
-                <div className="d-flex justify-content-md-between align-items-center flex-wrap">
+                <div className="d-flex align-items-center flex-wrap">
                     <div className="mb-2 position-relative mr-2"  >
                         <img className="cursor-pointer about-us-image img-fluid" src="images/media-img.png" alt=""/>
                         <a href="" className="delete-image-bg">

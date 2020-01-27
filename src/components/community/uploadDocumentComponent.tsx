@@ -12,7 +12,7 @@ const DocumentUploadComponent = () => {
                 <label className="text-dark f-14 font-weight-bold">Upload Document :</label>
             </Col>
             <Col>
-                <button type="button" className=" btn btn-primary text-capitalize">choose file</button>
+                <button type="button" className=" btn btn-primary text-capitalize py-2">choose file</button>
             </Col>
 
         </Row>
@@ -22,7 +22,7 @@ const DocumentUploadComponent = () => {
             </Col>
             <Col>
                 <input className="form-control text-capitalize" type="text" placeholder="Enter name to be displayed"/>
-                <button type="button" className=" btn btn-primary text-capitalize mt-2 add-document-button px-3 btn-lg">add document </button>
+                <button type="button" className=" btn btn-primary text-capitalize mt-2 add-document-button px-3 py-2">add document </button>
             </Col>
 
         </Row>
