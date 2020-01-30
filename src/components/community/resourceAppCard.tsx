@@ -2,6 +2,7 @@ import * as React from 'react';
 import {Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle, Button} from 'reactstrap';
 import CommunityActivityPostDetail from "./communityAllActivities";
 import {IconAdd, IconBookMark} from "../../common";
+import AppTooltip from "../../common/tooltip/app-tooltip";
 
 const ResourceAppCard = () => {
     return (
@@ -15,8 +16,10 @@ const ResourceAppCard = () => {
                     <h6 className="mb-0 person-message">
                         <a href="#" className="f-14 text-dark font-weight-bold text-capitalize">App name 1</a>
                     </h6>
-                    <p className="f-12 text-secondary mb-0 line-clamp">App description can come in this line App description can come in this line App description can come in this line App description
-                        can come in this line App description can come in this line App description can come in this line App description can come in this line</p>
+                    <p className="f-12 text-secondary mb-0 line-clamp" id="AppTooltip">App description can come in this line App description can come in this line App description can come in this line App description
+                        can come in this line App description can come in this line App description can come in this line App description can come in this line
+                        <AppTooltip/>
+                    </p>
                 </div>
                 <div className="">
                     <a href="#">

@@ -4,7 +4,7 @@
   "description": "Fidelis project for react UI",
   "main": "index.ts",
   "scripts": {
-    "start": "webpack-dev-server --mode development --port 3100 --content-base public/ --history-api-fallback",
+    "start": "webpack-dev-server --mode development --port 4100 --content-base public/ --history-api-fallback",
     "build": "webpack --mode production",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint src/**",
@@ -76,7 +76,7 @@
     "image-webpack-loader": "^6.0.0",
     "install": "^0.12.2",
     "loaders.css": "^0.1.2",
-    "node-sass": "^4.12.0",
+    "node-sass": "^4.13.1",
     "postcss-loader": "^2.0.6",
     "precss": "^4.0.0",
     "react-icon-system": "^1.0.4",

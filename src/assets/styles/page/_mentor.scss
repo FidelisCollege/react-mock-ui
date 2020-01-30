@@ -83,10 +83,20 @@ $dropdown-border-color: #ddd;
     padding: 0;
   }
 }
+.save-search-menu{
+  .dropdown-item{
+    &:active{
+      background-color: transparent !important;
+      color: $gray-eight;
+
+    }
+  }
+}
 /*advance-search mentor*/
 .advance-search-input{
   padding: 5px 10px;
   max-width: 330px;
+
   @media (max-width: 576px) {
       width: 144px;
       padding-right: 0;
@@ -144,6 +154,9 @@ $dropdown-border-color: #ddd;
         margin-left: -107px !important;
         right:0;
     }
+  .dropdown-item{
+    background: transparent !important;
+  }
   .advance-search-name{
     font-size: 14px;
 
@@ -338,6 +351,7 @@ $dropdown-border-color: #ddd;
   }
   .media-img{
       border-radius: 50%;
+      max-width: 58px;
   }
 }
 .add-mentor-button{
