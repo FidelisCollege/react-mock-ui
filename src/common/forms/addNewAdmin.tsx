@@ -27,7 +27,6 @@ const AddNewAdminComponent = () => {
             </div>
         );
     }
-
 }
 
 

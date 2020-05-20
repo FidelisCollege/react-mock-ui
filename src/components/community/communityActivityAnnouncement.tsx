@@ -20,7 +20,7 @@ const CommunityActivityAnnouncement  = () => {
                             </h6>
                             <PostDropdown/>
                         </div>
-                        <time className="f-14 text-secondaryd-flex">5 Sep 2019</time>
+                        <time className="f-14 text-secondary d-flex">5 Sep 2019</time>
                         <hr/>
                         <div className="">
                             <h3 className="f-14 ">Clay Modelling Workshop - Clayform Studio</h3>
